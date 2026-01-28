@@ -1,0 +1,25 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "The right box. This is where I found the lever."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "It doesn't feel like there's anything else in here. I should look elsewhere."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "... I need to hurry. The dark is unsettling. Especially in a place like this..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "I don't know when the next thing will pop out at me.",
+            "endOfScene": true
+        }
+    ]
+}

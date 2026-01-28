@@ -1,0 +1,40 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "And there. The lever is back in."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "It would be nice if the power came back if I just pulled it down."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "... No luck. Of course it's stuck."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "It's fine, at least I'm one step closer. It looks like the emergency light system requires some sort of code that I can input here."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "It's a bunch of digits... I don't think I saw any sort of number code lying around the room. Not that I would even be able to see it in the dark."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Perhaps this label... is a hint in itself?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "I'll just have to work with what I have. I'll keep thinking about it.",
+            "endOfScene": true
+        }
+    ]
+}

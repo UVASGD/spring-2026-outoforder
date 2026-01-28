@@ -1,0 +1,25 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Looking at it closer, it's pretty clear that there are three glowing shapes above the place to enter the digits."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "The first shape connects to the first two slots, and the second shape connects to the third and fourth slots. But the final shape connects to the last three."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "In each of the shapes, there is... a particular rounded line. I wonder if that means anything."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "I'm sure something here relates to some sort of number that I would have to input as the code. Just what could it be though?",
+            "endOfScene": true
+        }
+    ]
+}
