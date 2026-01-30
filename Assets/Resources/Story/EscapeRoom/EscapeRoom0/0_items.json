@@ -40,5 +40,11 @@
         "detailed": false,
         "collectible": false,
         "description": ""
+   },
+   {
+        "name": "LockedBox",
+        "detailed": true,
+        "collectible": false,
+        "description": ""
    }
 ]
