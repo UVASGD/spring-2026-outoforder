@@ -18,8 +18,9 @@ public class LocationsScript : MonoBehaviour
     private GameObject currentLocation;
     private TextMeshProUGUI currentLocationTMP;
     private GameObject content;
-
     private Dictionary<string, GameObject> puzzles = new();
+    private string currentPuzzle;
+    private Button backButton;
 
     void Start()
     {
@@ -46,6 +47,9 @@ public class LocationsScript : MonoBehaviour
         {
             puzzle.SetActive(false);
         }
+
+        backButton = transform.parent.transform.Find("BackButton").GetComponent<Button>();
+        backButton.gameObject.SetActive(false);
     }
 
     public void ExamineItem()
@@ -60,13 +64,22 @@ public class LocationsScript : MonoBehaviour
             int itemIndex = itemController.itemIndex;
             print($"looking at {itemData.name}");
             CollectItem(itemData, itemIndex);
-            ZoomItem(itemData);
+            EnterItem(itemData);
         }
     }
 
-    public void ZoomItem(ItemData itemData)
+    // PUBLIC HELPERS
+
+    public void EnterItem(ItemData itemData)
     {
-        if (itemData.detailed) StartCoroutine(WaitToZoomItem(itemData));
+        if (itemData.detailed) StartCoroutine(WaitToEnterItem(itemData));
+    }
+    
+    public void ExitItem()
+    {
+        puzzles[currentPuzzle].gameObject.SetActive(false);
+        backButton.gameObject.SetActive(false);
+        currentPuzzle = "";
     }
 
     public void ChangeLocation()
@@ -97,7 +110,7 @@ public class LocationsScript : MonoBehaviour
         }
     }
 
-    // HELPERS
+    // PRIVATE HELPERS
     private void InteractItem(ManualInteraction manualInteraction)
     {
         manualInteraction.ItemInteraction();
@@ -125,13 +138,15 @@ public class LocationsScript : MonoBehaviour
         currentLocationTMP.text = GameData.escapeRoomGameplayManagerScript.locations[currentLocationIndex];
     }
 
-    private IEnumerator WaitToZoomItem(ItemData itemData)
+    private IEnumerator WaitToEnterItem(ItemData itemData)
     {
         while (GameData.currentlyTalking)
         {
             yield return null;
         }
 
-        puzzles[itemData.name.Replace(" ", "") + "Puzzle"].gameObject.SetActive(true);
+        currentPuzzle = itemData.name.Replace(" ", "") + "Puzzle";
+        puzzles[currentPuzzle].gameObject.SetActive(true);
+        backButton.gameObject.SetActive(true);
     }
 }
