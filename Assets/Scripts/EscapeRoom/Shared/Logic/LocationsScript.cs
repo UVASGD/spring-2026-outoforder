@@ -29,7 +29,7 @@ public class LocationsScript : MonoBehaviour
         location2 = transform.Find("Location2").gameObject;
         location3 = transform.Find("Location3").gameObject;
         location4 = transform.Find("Location4").gameObject;
-    
+
         GameObject popUpAreas = transform.parent.transform.Find("MenuBar").transform.Find("PopUpAreas").gameObject;
 
         currentLocation = location0;
@@ -50,6 +50,11 @@ public class LocationsScript : MonoBehaviour
 
         backButton = transform.parent.transform.Find("BackButton").GetComponent<Button>();
         backButton.gameObject.SetActive(false);
+
+        location1.SetActive(false);
+        location2.SetActive(false);
+        location3.SetActive(false);
+        location4.SetActive(false);
     }
 
     public void ExamineItem()

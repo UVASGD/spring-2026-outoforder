@@ -15,7 +15,7 @@ public class ManualInteraction : MonoBehaviour
     {
         // flag check
         // if the current flag is true, update dialogue to be the next one possible
-        if (characterDialoguesIndex < activatingFlags.Count && GameProgression.GameProgressionInstance.GetFlag(activatingFlags[characterDialoguesIndex]))
+        while (characterDialoguesIndex < activatingFlags.Count && GameProgression.GameProgressionInstance.GetFlag(activatingFlags[characterDialoguesIndex]))
         {
             characterDialoguesIndex++;
         }

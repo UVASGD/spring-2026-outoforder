@@ -7,30 +7,51 @@ public class Puzzle : MonoBehaviour
 {
     protected char[] answer;
     protected char[] guess;
+    protected bool solved;
 
     public void AttemptSolve()
     {
         // print($"the answer is {new string(answer)} and the guess was {new string(guess)}");
         // TODO: VERY TEMPORARY
-        if (answer.SequenceEqual(guess)) GameObject.Find("DemoMessage").GetComponent<TextMeshProUGUI>().text = "DEMO MESSAGE: SUCCESS";
+        if (!solved && answer.SequenceEqual(guess)) 
+        {
+            PostSolve();
+        }
+        else if (answer.SequenceEqual(guess))
+        {
+            ResetSpecific();
+        }
     }
 
     public void IncrementDigit()
     {
-        GameObject digit = EventSystem.current.currentSelectedGameObject;
-        TextMeshProUGUI digitTMP = digit.GetComponentInChildren<TextMeshProUGUI>();
-        int currentDigit = int.Parse(digitTMP.text);
-
-        if (currentDigit == 9)
+        if (!solved)
         {
-            currentDigit = 0;
-        }
-        else
-        {
-            currentDigit++;
-        }
+           GameObject digit = EventSystem.current.currentSelectedGameObject;
+            TextMeshProUGUI digitTMP = digit.GetComponentInChildren<TextMeshProUGUI>();
+            int currentDigit = int.Parse(digitTMP.text);
 
-        digitTMP.text = currentDigit.ToString();
-        guess[digit.transform.GetSiblingIndex()] = (char)('0' + currentDigit);
+            if (currentDigit == 9)
+            {
+                currentDigit = 0;
+            }
+            else
+            {
+                currentDigit++;
+            }
+
+            digitTMP.text = currentDigit.ToString();
+            guess[digit.transform.GetSiblingIndex()] = (char)('0' + currentDigit); 
+        }
     }
+
+    private void PostSolve()
+    {
+        solved = true;
+        PostSolveSpecific();
+    }
+
+    protected virtual void PostSolveSpecific() {}
+
+    protected virtual void ResetSpecific() {}
 }
