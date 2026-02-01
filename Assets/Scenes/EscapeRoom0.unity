@@ -1246,12 +1246,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
+  eventOffset: 1
   activatingFlags:
   - solvedLightSwitchPuzzle
   - firstInteractionLockedDrawer
   triggeringFlags:
   - firstInteractionLockedDrawer
-  characterDialoguesIndex: 0
+  dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 7d034fa91ed33414eaf56f9dc7588591, type: 3}
   - {fileID: 4900000, guid: dadeb8fd12d5f44089642213b6ab92ac, type: 3}
@@ -2385,9 +2386,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
+  eventOffset: 0
   activatingFlags: []
   triggeringFlags: []
-  characterDialoguesIndex: 0
+  dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: bcb4e7698e40f874a93cf45d8eb87e5f, type: 3}
   - {fileID: 4900000, guid: bcb4e7698e40f874a93cf45d8eb87e5f, type: 3}
@@ -2556,11 +2558,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
+  eventOffset: 0
   activatingFlags:
   - firstLightSwitch
   triggeringFlags:
   - firstLightSwitch
-  characterDialoguesIndex: 0
+  dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 8640f4486a767a640b1bf3753b6f5104, type: 3}
   - {fileID: 4900000, guid: e67d66385eeda6c49a5e92bac2b261d4, type: 3}
@@ -4463,12 +4466,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
+  eventOffset: 0
   activatingFlags:
   - firstLockedDrawerPuzzle
   - solvedLockedDrawerPuzzle
   triggeringFlags:
   - firstLockedDrawerPuzzle
-  characterDialoguesIndex: 0
+  dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 4c11651a89893d04596fd361670d3744, type: 3}
   - {fileID: 4900000, guid: 18e7e7c2ecb0ec145ac4f567201787e6, type: 3}
@@ -4901,13 +4905,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
+  eventOffset: 0
   activatingFlags:
   - firstLightSwitchPuzzle
   - solvedLightSwitchPuzzle
   - lastLightSwitchPuzzle
   triggeringFlags:
   - firstLightSwitchPuzzle
-  characterDialoguesIndex: 0
+  dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 38f5bd492de912947afa9e5b2d681efb, type: 3}
   - {fileID: 4900000, guid: e87543fe6768eda4583a8f3fc05345b0, type: 3}
@@ -5157,9 +5162,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
+  eventOffset: 0
   activatingFlags: []
   triggeringFlags: []
-  characterDialoguesIndex: 0
+  dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 7c06620fdc8c34242a735b8565c54780, type: 3}
 --- !u!114 &750871340
@@ -6072,11 +6078,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
+  eventOffset: 0
   activatingFlags:
   - firstInteraction
   triggeringFlags:
   - firstInteraction
-  characterDialoguesIndex: 0
+  dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 3c3b4f7f1e54e8d4fa57aff0409d08af, type: 3}
   - {fileID: 4900000, guid: 303f9e4c7fd768646a671c104ee7647a, type: 3}
@@ -10278,9 +10285,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
+  eventOffset: 0
   activatingFlags: []
   triggeringFlags: []
-  characterDialoguesIndex: 0
+  dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 79fd76782f06ef34f8e47533be0ba402, type: 3}
 --- !u!114 &1700223674
@@ -10448,9 +10456,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
+  eventOffset: 0
   activatingFlags: []
   triggeringFlags: []
-  characterDialoguesIndex: 0
+  dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 97467f04368a460449a242f5c67df23d, type: 3}
 --- !u!114 &1701620828
@@ -10618,9 +10627,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
+  eventOffset: 0
   activatingFlags: []
   triggeringFlags: []
-  characterDialoguesIndex: 0
+  dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 7df18442689d5b947ba846513935fc1a, type: 3}
 --- !u!114 &1718981245
