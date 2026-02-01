@@ -1247,11 +1247,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   activatingFlags:
+  - solvedLightSwitchPuzzle
   - firstInteractionLockedDrawer
   triggeringFlags:
   - firstInteractionLockedDrawer
   characterDialoguesIndex: 0
   characterDialogues:
+  - {fileID: 4900000, guid: 7d034fa91ed33414eaf56f9dc7588591, type: 3}
   - {fileID: 4900000, guid: dadeb8fd12d5f44089642213b6ab92ac, type: 3}
   - {fileID: 4900000, guid: 965522333dd874567afaa8129a0e4d46, type: 3}
 --- !u!114 &243053282

@@ -8,20 +8,22 @@ public class ManualInteraction : MonoBehaviour
     [SerializeField] private List<string> triggeringFlags;
 
     [Header("[DIALOGUE]")]
-    [SerializeField] private int characterDialoguesIndex;
+    [SerializeField] private int dialoguesIndex;
     [SerializeField] private List<TextAsset> characterDialogues;
 
     public void ItemInteraction()
     {
         // flag check
         // if the current flag is true, update dialogue to be the next one possible
-        while (characterDialoguesIndex < activatingFlags.Count && GameProgression.GameProgressionInstance.GetFlag(activatingFlags[characterDialoguesIndex]))
+        while (dialoguesIndex < activatingFlags.Count && GameProgression.GameProgressionInstance.GetFlag(activatingFlags[dialoguesIndex]) 
+            && (GameData.escapeRoomNumber == 0 && GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
         {
-            characterDialoguesIndex++;
+            print("incremented index");
+            dialoguesIndex++;
         }
         
-        if (characterDialoguesIndex < triggeringFlags.Count) GameProgression.GameProgressionInstance.SetFlag(triggeringFlags[characterDialoguesIndex], true);
+        if (dialoguesIndex < triggeringFlags.Count) GameProgression.GameProgressionInstance.SetFlag(triggeringFlags[dialoguesIndex], true);
 
-        GameProgression.GameProgressionInstance.ShowDialogue(characterDialogues[characterDialoguesIndex]);
+        GameProgression.GameProgressionInstance.ShowDialogue(characterDialogues[dialoguesIndex]);
     }
 }
