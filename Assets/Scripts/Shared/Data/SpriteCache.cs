@@ -20,7 +20,7 @@ public class SpriteCache : ScriptableObject
         {
             sprites[loadedSprite.name] = loadedSprite;
 
-            // Debug.Log($"loaded {loadedSprite.name}");
+            Debug.Log($"loaded {loadedSprite.name}");
         }
     }
 }

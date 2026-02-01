@@ -404,7 +404,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7322885499304307244, guid: 59ad0297dac74054ba69c2bb6d45d339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 59ad0297dac74054ba69c2bb6d45d339, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1349,7 +1349,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7322885499304307244, guid: 59ad0297dac74054ba69c2bb6d45d339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 59ad0297dac74054ba69c2bb6d45d339, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4463,13 +4463,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   activatingFlags:
-  - firstLightSwitchPuzzle
+  - firstLockedDrawerPuzzle
+  - solvedLockedDrawerPuzzle
   triggeringFlags:
-  - firstLightSwitchPuzzle
+  - firstLockedDrawerPuzzle
   characterDialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: dadeb8fd12d5f44089642213b6ab92ac, type: 3}
-  - {fileID: 4900000, guid: 965522333dd874567afaa8129a0e4d46, type: 3}
+  - {fileID: 4900000, guid: 4c11651a89893d04596fd361670d3744, type: 3}
+  - {fileID: 4900000, guid: 18e7e7c2ecb0ec145ac4f567201787e6, type: 3}
+  - {fileID: 4900000, guid: ea3829a1df5ab85499f905b0fff49f87, type: 3}
 --- !u!114 &723871505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4546,7 +4548,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -209326579508930247, guid: 08c050f894cf917428f3b8ed0f4e7304, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ee8ebbe586d36ea4f9e797aedde67cd5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
