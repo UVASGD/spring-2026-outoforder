@@ -3,17 +3,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "Hm, this drawer won't open."
+            "dialogue": "I can't make out what this figure is. From the feel of it... it's a drawer?"
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "It looks like it needs a code of some sort...?"
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Let me try inputting something.",
+            "dialogue": "I should turn on the light first though. I don't want to mess with anything by accident.",
             "endOfScene": true
         }
     ]

@@ -4,24 +4,38 @@ using UnityEngine;
 public class ManualInteraction : MonoBehaviour
 {
     [Header("[FLAGS]")]
+    [SerializeField] private int eventOffset;
     [SerializeField] private List<string> activatingFlags;
     [SerializeField] private List<string> triggeringFlags;
 
     [Header("[DIALOGUE]")]
-    [SerializeField] private int characterDialoguesIndex;
+    [SerializeField] private int dialoguesIndex;
     [SerializeField] private List<TextAsset> characterDialogues;
 
     public void ItemInteraction()
     {
-        // flag check
-        // if the current flag is true, update dialogue to be the next one possible
-        while (characterDialoguesIndex < activatingFlags.Count && GameProgression.GameProgressionInstance.GetFlag(activatingFlags[characterDialoguesIndex]))
+        // flag check: if the current flag is true, update dialogue to be the next one possible
+        while (dialoguesIndex < activatingFlags.Count && GameProgression.GameProgressionInstance.GetFlag(activatingFlags[dialoguesIndex]))
         {
-            characterDialoguesIndex++;
+            dialoguesIndex++;
         }
         
-        if (characterDialoguesIndex < triggeringFlags.Count) GameProgression.GameProgressionInstance.SetFlag(triggeringFlags[characterDialoguesIndex], true);
+        if (dialoguesIndex < triggeringFlags.Count + eventOffset
+            && ((GameData.escapeRoomNumber == 0 
+                && (gameObject.name.Equals("LightSwitch") 
+                || gameObject.name.Equals("Lever") 
+                || (gameObject.name.Equals("LightSwitchPuzzle") && GameProgression.GameProgressionInstance.GetFlag("firstInteractionLever")) 
+                || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
+            || (GameData.escapeRoomNumber == 1)
+            || (GameData.escapeRoomNumber == 2)
+            || (GameData.escapeRoomNumber == 3)
+            || (GameData.escapeRoomNumber == 4)))
+        {
+            GameProgression.GameProgressionInstance.SetFlag(triggeringFlags[dialoguesIndex - eventOffset], true);
+        }
 
-        GameProgression.GameProgressionInstance.ShowDialogue(characterDialogues[characterDialoguesIndex]);
+        print($"solvedLightSwitchPuzzle: {GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")}");
+
+        GameProgression.GameProgressionInstance.ShowDialogue(characterDialogues[dialoguesIndex]);
     }
 }

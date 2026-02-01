@@ -3,12 +3,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "That worked... the lights are all back on."
+            "dialogue": "The drawer again."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look around the room. There must be something in here that can help me.",
+            "dialogue": "Maybe I should try a different code?",
             "endOfScene": true
         }
     ]

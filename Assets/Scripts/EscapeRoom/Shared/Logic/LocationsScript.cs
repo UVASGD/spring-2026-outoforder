@@ -69,7 +69,12 @@ public class LocationsScript : MonoBehaviour
             int itemIndex = itemController.itemIndex;
             print($"looking at {itemData.name}");
             CollectItem(itemData, itemIndex);
-            EnterItem(itemData);
+            // TODO: maybe more specific conditions of not entering an item in later rooms 
+            if ((GameData.escapeRoomNumber == 0 && (itemData.name.Equals("Light Switch") || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
+                || GameData.escapeRoomNumber > 0) 
+            {
+                EnterItem(itemData);
+            }
         }
     }
 
