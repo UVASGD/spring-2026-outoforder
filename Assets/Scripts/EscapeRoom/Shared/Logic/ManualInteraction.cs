@@ -21,7 +21,11 @@ public class ManualInteraction : MonoBehaviour
         }
         
         if (dialoguesIndex < triggeringFlags.Count + eventOffset
-            && ((GameData.escapeRoomNumber == 0 && (gameObject.name.Contains("LightSwitch") || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
+            && ((GameData.escapeRoomNumber == 0 
+                && (gameObject.name.Equals("LightSwitch") 
+                || gameObject.name.Equals("Lever") 
+                || (gameObject.name.Equals("LightSwitchPuzzle") && GameProgression.GameProgressionInstance.GetFlag("firstInteractionLever")) 
+                || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
             || (GameData.escapeRoomNumber == 1)
             || (GameData.escapeRoomNumber == 2)
             || (GameData.escapeRoomNumber == 3)

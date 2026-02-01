@@ -3,7 +3,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "The lights are on now. There's no time to waste.",
+            "dialogue": "That worked... the lights are all back on."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "I should take a closer look around the room. There must be something in here that can help me.",
             "endOfScene": true
         }
     ]
