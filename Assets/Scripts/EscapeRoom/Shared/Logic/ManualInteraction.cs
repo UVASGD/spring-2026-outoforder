@@ -4,6 +4,7 @@ using UnityEngine;
 public class ManualInteraction : MonoBehaviour
 {
     [Header("[FLAGS]")]
+    [SerializeField] private int eventOffset;
     [SerializeField] private List<string> activatingFlags;
     [SerializeField] private List<string> triggeringFlags;
 
@@ -19,11 +20,17 @@ public class ManualInteraction : MonoBehaviour
             dialoguesIndex++;
         }
         
-        if (dialoguesIndex < triggeringFlags.Count
-            && (GameData.escapeRoomNumber == 0 && (gameObject.name.Equals("LightSwitch") || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle"))))
+        if (dialoguesIndex < triggeringFlags.Count + eventOffset
+            && ((GameData.escapeRoomNumber == 0 && (gameObject.name.Contains("LightSwitch") || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
+            || (GameData.escapeRoomNumber == 1)
+            || (GameData.escapeRoomNumber == 2)
+            || (GameData.escapeRoomNumber == 3)
+            || (GameData.escapeRoomNumber == 4)))
         {
-            GameProgression.GameProgressionInstance.SetFlag(triggeringFlags[dialoguesIndex], true);
+            GameProgression.GameProgressionInstance.SetFlag(triggeringFlags[dialoguesIndex - eventOffset], true);
         }
+
+        print($"solvedLightSwitchPuzzle: {GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")}");
 
         GameProgression.GameProgressionInstance.ShowDialogue(characterDialogues[dialoguesIndex]);
     }
