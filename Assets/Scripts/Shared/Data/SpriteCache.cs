@@ -9,7 +9,7 @@ public class SpriteCache : ScriptableObject
 
     void OnEnable()
     {
-        LoadSpritesFromPath("Art/VisualNovel/");
+        LoadSpritesFromPath("Art/");
     }
 
     void LoadSpritesFromPath(string path)

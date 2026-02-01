@@ -29,12 +29,12 @@ public class LocationsScript : MonoBehaviour
         location2 = transform.Find("Location2").gameObject;
         location3 = transform.Find("Location3").gameObject;
         location4 = transform.Find("Location4").gameObject;
-    
+
         GameObject popUpAreas = transform.parent.transform.Find("MenuBar").transform.Find("PopUpAreas").gameObject;
 
         currentLocation = location0;
         currentLocationTMP = popUpAreas.transform.Find("MovePopUp").transform.Find("CurrentLocationText").GetComponent<TextMeshProUGUI>();
-        currentLocationTMP.text = GameData.escapeRoomGameplayManagerScript.locations[0];
+        currentLocationTMP.text = GameData.escapeRoomGameplayManagerScript.locationNames[0];
 
         content = popUpAreas.transform.Find("ItemPopUp").transform.GetComponentInChildren<VerticalLayoutGroup>().gameObject;
 
@@ -50,6 +50,11 @@ public class LocationsScript : MonoBehaviour
 
         backButton = transform.parent.transform.Find("BackButton").GetComponent<Button>();
         backButton.gameObject.SetActive(false);
+
+        location1.SetActive(false);
+        location2.SetActive(false);
+        location3.SetActive(false);
+        location4.SetActive(false);
     }
 
     public void ExamineItem()
@@ -135,7 +140,7 @@ public class LocationsScript : MonoBehaviour
         currentLocation?.SetActive(false);
         location.SetActive(true);
         currentLocation = location;
-        currentLocationTMP.text = GameData.escapeRoomGameplayManagerScript.locations[currentLocationIndex];
+        currentLocationTMP.text = GameData.escapeRoomGameplayManagerScript.locationNames[currentLocationIndex];
     }
 
     private IEnumerator WaitToEnterItem(ItemData itemData)

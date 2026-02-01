@@ -1,6 +1,6 @@
 [
    {
-        "name": "LightSwitch",
+        "name": "Light Switch",
         "detailed": true,
         "collectible": false,
         "description": ""
@@ -38,6 +38,12 @@
    {
         "name": "Top Box",
         "detailed": false,
+        "collectible": false,
+        "description": ""
+   },
+   {
+        "name": "Locked Drawer",
+        "detailed": true,
         "collectible": false,
         "description": ""
    }
