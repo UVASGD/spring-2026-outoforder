@@ -17,11 +17,11 @@ public class Puzzle : MonoBehaviour
         // TODO: VERY TEMPORARY
         if (!solved && answer.SequenceEqual(guess)) 
         {
-            PostSolve();
+            SolvedPuzzle();
         }
-        else if (answer.SequenceEqual(guess))
+        else if (!answer.SequenceEqual(guess))
         {
-            ResetSpecific();
+            ErrorPuzzle();
         }
     }
 
@@ -47,13 +47,17 @@ public class Puzzle : MonoBehaviour
         }
     }
 
-    private void PostSolve()
+    private void SolvedPuzzle()
     {
+        print("TODO: CORRECT GUESS UI");
         solved = true;
-        PostSolveSpecific();
+        SolvedPuzzleSpecific();
     }
 
-    protected virtual void PostSolveSpecific() {}
+    private void ErrorPuzzle()
+    {
+        print("TODO: ERROR GUESS UI");
+    }
 
-    protected virtual void ResetSpecific() {}
+    protected virtual void SolvedPuzzleSpecific() {}
 }

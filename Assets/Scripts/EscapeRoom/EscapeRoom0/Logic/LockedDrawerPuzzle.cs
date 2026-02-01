@@ -1,3 +1,6 @@
+using System.Linq;
+using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class LockedDrawerPuzzle : Puzzle
@@ -8,16 +11,11 @@ public class LockedDrawerPuzzle : Puzzle
         guess = new char[] { '0', '0', '0', '0' };
     }
 
-    protected override void PostSolveSpecific()
+    protected override void SolvedPuzzleSpecific()
     {
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["UnlockedDrawerPuzzle"];
         GameProgression.GameProgressionInstance.SetFlag("firstLockedDrawerPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedLockedDrawerPuzzle", true);
         gameObject.GetComponent<ManualInteraction>().ItemInteraction();
-    }
-
-    protected override void ResetSpecific()
-    {
-
     }
 }
