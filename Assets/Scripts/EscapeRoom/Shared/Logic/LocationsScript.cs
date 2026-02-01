@@ -34,7 +34,7 @@ public class LocationsScript : MonoBehaviour
 
         currentLocation = location0;
         currentLocationTMP = popUpAreas.transform.Find("MovePopUp").transform.Find("CurrentLocationText").GetComponent<TextMeshProUGUI>();
-        currentLocationTMP.text = GameData.escapeRoomGameplayManagerScript.locations[0];
+        currentLocationTMP.text = GameData.escapeRoomGameplayManagerScript.locationNames[0];
 
         content = popUpAreas.transform.Find("ItemPopUp").transform.GetComponentInChildren<VerticalLayoutGroup>().gameObject;
 
@@ -140,7 +140,7 @@ public class LocationsScript : MonoBehaviour
         currentLocation?.SetActive(false);
         location.SetActive(true);
         currentLocation = location;
-        currentLocationTMP.text = GameData.escapeRoomGameplayManagerScript.locations[currentLocationIndex];
+        currentLocationTMP.text = GameData.escapeRoomGameplayManagerScript.locationNames[currentLocationIndex];
     }
 
     private IEnumerator WaitToEnterItem(ItemData itemData)

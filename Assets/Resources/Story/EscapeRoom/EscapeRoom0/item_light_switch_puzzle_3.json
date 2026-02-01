@@ -1,0 +1,10 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "The lights are on now. There's no time to waste.",
+            "endOfScene": true
+        }
+    ]
+}
