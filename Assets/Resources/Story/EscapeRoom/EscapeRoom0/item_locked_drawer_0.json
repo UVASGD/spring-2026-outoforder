@@ -8,7 +8,7 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "I should turn on the light first though. I don't want to mess with anything by accident",
+            "dialogue": "I should turn on the light first though. I don't want to mess with anything by accident.",
             "endOfScene": true
         }
     ]

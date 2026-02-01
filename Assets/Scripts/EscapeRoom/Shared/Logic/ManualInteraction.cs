@@ -13,16 +13,17 @@ public class ManualInteraction : MonoBehaviour
 
     public void ItemInteraction()
     {
-        // flag check
-        // if the current flag is true, update dialogue to be the next one possible
-        while (dialoguesIndex < activatingFlags.Count && GameProgression.GameProgressionInstance.GetFlag(activatingFlags[dialoguesIndex]) 
-            && (GameData.escapeRoomNumber == 0 && GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
+        // flag check: if the current flag is true, update dialogue to be the next one possible
+        while (dialoguesIndex < activatingFlags.Count && GameProgression.GameProgressionInstance.GetFlag(activatingFlags[dialoguesIndex]))
         {
-            print("incremented index");
             dialoguesIndex++;
         }
         
-        if (dialoguesIndex < triggeringFlags.Count) GameProgression.GameProgressionInstance.SetFlag(triggeringFlags[dialoguesIndex], true);
+        if (dialoguesIndex < triggeringFlags.Count
+            && (GameData.escapeRoomNumber == 0 && (gameObject.name.Equals("LightSwitch") || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle"))))
+        {
+            GameProgression.GameProgressionInstance.SetFlag(triggeringFlags[dialoguesIndex], true);
+        }
 
         GameProgression.GameProgressionInstance.ShowDialogue(characterDialogues[dialoguesIndex]);
     }
