@@ -24,11 +24,21 @@ public class SaveDataScript : MonoBehaviour
     public void saveData()
     {
         setPlayTime();
+        storeGameDataInPlayerPrefs();
     }
 
     private void setPlayTime()
     {
         GameData.playTime = DateTime.Now - startTime;
         startTime = DateTime.Now;
+    }
+
+    private void storeGameDataInPlayerPrefs()
+    {
+        PlayerPrefs.SetInt("Escape Room Number", GameData.escapeRoomNumber);
+        PlayerPrefs.SetString("Play Time", GameData.playTime.ToString());
+        Debug.Log("Player Prefs:");
+        Debug.Log(PlayerPrefs.GetString("Escape Room Number"));
+        Debug.Log(PlayerPrefs.GetString("Play Time"));
     }
 }
