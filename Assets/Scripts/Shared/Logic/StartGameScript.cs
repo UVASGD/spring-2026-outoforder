@@ -4,14 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    private DateTime startTime;
-
-    public TimeSpan playTime; 
-
+    public static SaveDataScript saveDataScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        startTime = DateTime.Now;
+        saveDataScript = new SaveDataScript();
     }
 
     // Update is called once per frame
@@ -20,13 +17,14 @@ public class StartGame : MonoBehaviour
         
     }
 
-    public void changeScene(string name) 
+    public void startGame(string sceneName)
     {
-        SceneManager.LoadScene(name);
+        saveDataScript.setStartTime(DateTime.Now);
+        changeScene(sceneName);
     }
 
-    public void setPlayTime()
+    private void changeScene(string name) 
     {
-        playTime = DateTime.Now - startTime;
+        SceneManager.LoadScene(name);
     }
 }
