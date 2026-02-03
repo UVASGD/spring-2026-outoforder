@@ -1,6 +1,9 @@
-﻿namespace EscapeRoom.EscapeRoom0.Logic
+﻿using UnityEngine;
+using UnityEngine.EventSystems;
+
+namespace EscapeRoom.EscapeRoom0.Logic
 {
-    public class AntifreezeDispenser : Puzzle
+    public class AntifreezeDispenserPuzzle : Puzzle
     {
         private enum State
         {
@@ -8,6 +11,7 @@
         }
 
         private State currentState = State.Idle;
+        private int selectedLetterIndex = -1;
         
         void Awake()
         {
@@ -15,8 +19,14 @@
             answer = new char[] { 'A', 'N', 'T', 'I', 'F', 'R', 'E', 'E', 'Z', 'E'};
         }
 
-        void OnLetterClick()
+        public void OnLetterClick()
         {
+            if (currentState == State.Idle)
+            {
+                GameObject button = EventSystem.current.currentSelectedGameObject;
+                selectedLetterIndex = button.transform.GetSiblingIndex();
+                Debug.Log(selectedLetterIndex);
+            }
             // If Idle: Highlight letter
             // If LetterSelected: Swap letters
         }
