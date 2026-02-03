@@ -17,7 +17,7 @@ public class StartNewGameScript : MonoBehaviour
 
     public void StartNewGame()
     {
-        GameData.escapeRoomNumber = 0;
+        GameData.escapeRoomNumber = 2;
         startGameScript.StartGame("EscapeRoom0");
     }
 }
