@@ -1212,6 +1212,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1721952485}
     m_Modifications:
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1721952486}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLetterClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EscapeRoom.EscapeRoom0.Logic.AntifreezeDispenserPuzzle, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3281624604238143339, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1309,6 +1321,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1721952485}
     m_Modifications:
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1721952486}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLetterClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EscapeRoom.EscapeRoom0.Logic.AntifreezeDispenserPuzzle, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3281624604238143339, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7182,6 +7206,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1721952485}
     m_Modifications:
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1721952486}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLetterClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EscapeRoom.EscapeRoom0.Logic.AntifreezeDispenserPuzzle, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3281624604238143339, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7763,6 +7799,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1721952485}
     m_Modifications:
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1721952486}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLetterClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EscapeRoom.EscapeRoom0.Logic.AntifreezeDispenserPuzzle, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3281624604238143339, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7996,6 +8044,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1721952485}
     m_Modifications:
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1721952486}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLetterClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EscapeRoom.EscapeRoom0.Logic.AntifreezeDispenserPuzzle, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3281624604238143339, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9918,6 +9978,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1721952485}
     m_Modifications:
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1721952486}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLetterClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EscapeRoom.EscapeRoom0.Logic.AntifreezeDispenserPuzzle, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3281624604238143339, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -10527,6 +10599,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1721952485}
     m_Modifications:
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1721952486}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLetterClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EscapeRoom.EscapeRoom0.Logic.AntifreezeDispenserPuzzle, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3281624604238143339, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11577,7 +11661,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1721952484}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12133,6 +12217,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1721952485}
     m_Modifications:
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1721952486}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLetterClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EscapeRoom.EscapeRoom0.Logic.AntifreezeDispenserPuzzle, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3281624604238143339, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -12230,6 +12326,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1721952485}
     m_Modifications:
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1721952486}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLetterClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911138420822062155, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EscapeRoom.EscapeRoom0.Logic.AntifreezeDispenserPuzzle, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3281624604238143339, guid: c54bed4b1fde14f4784a8143baa10457, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
