@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System;
 using UnityEngine;
 
@@ -35,11 +36,12 @@ public class SaveDataScript : MonoBehaviour
 
     private void StoreGameDataInPlayerPrefs()
     {
-        GameData.escapeRoomNumber = 4;
         PlayerPrefs.SetInt("Escape Room Number", GameData.escapeRoomNumber);
         PlayerPrefs.SetString("Play Time", GameData.playTime.ToString());
+        // PlayerPrefs.SetString("Route Flags", GameData.routeFlags.ToString());
         Debug.Log("Player Prefs:");
         Debug.Log(PlayerPrefs.GetInt("Escape Room Number"));
         Debug.Log(PlayerPrefs.GetString("Play Time"));
+        // Debug.Log(PlayerPrefs.GetString("Route Flags"));
     }
 }
