@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class SetSlotInfo : MonoBehaviour
 {
-    private TextMeshPro slotInfo; 
+    private TextMeshProUGUI slotInfo; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        slotInfo = GetComponent<TextMeshPro>();
+        slotInfo = GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -16,8 +16,8 @@ public class SetSlotInfo : MonoBehaviour
         
     }
 
-    public void printInfo()
+    public void SetInfo()
     {
-        Debug.Log(slotInfo.text);
+        slotInfo.SetText("Escape Room No: " + PlayerPrefs.GetInt("Escape Room Number"));
     }
 }
