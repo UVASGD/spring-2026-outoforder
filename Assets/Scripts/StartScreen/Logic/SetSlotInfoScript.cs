@@ -18,6 +18,7 @@ public class SetSlotInfo : MonoBehaviour
 
     public void SetInfo()
     {
+        slotInfo = GetComponent<TextMeshProUGUI>();
         slotInfo.SetText("Escape Room No: " + PlayerPrefs.GetInt("Escape Room Number"));
     }
 }

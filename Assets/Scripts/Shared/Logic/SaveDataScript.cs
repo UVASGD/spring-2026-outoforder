@@ -35,6 +35,7 @@ public class SaveDataScript : MonoBehaviour
 
     private void StoreGameDataInPlayerPrefs()
     {
+        GameData.escapeRoomNumber = 4;
         PlayerPrefs.SetInt("Escape Room Number", GameData.escapeRoomNumber);
         PlayerPrefs.SetString("Play Time", GameData.playTime.ToString());
         Debug.Log("Player Prefs:");
