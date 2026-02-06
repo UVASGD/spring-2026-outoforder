@@ -5,6 +5,7 @@ public static class GameData
 {
     // save relevant data
     public static int escapeRoomNumber;
+    public static int visualNovelNumber;
     public static int visualNovelDialogueIndex;
     public static List<string> routeFlags;
 
@@ -13,5 +14,9 @@ public static class GameData
     public static Coroutine fadeCoroutine;
 
     // escape room
+    // change this name convention, to no script
     public static EscapeRoomGameplayManagerScript escapeRoomGameplayManagerScript;
+
+    // escape room
+    public static VisualNovelGameplay visualNovelGameplayManagerScript;
 }
