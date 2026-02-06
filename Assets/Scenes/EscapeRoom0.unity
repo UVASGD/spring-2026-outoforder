@@ -2238,7 +2238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &372740699
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5051,7 +5051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &726791782
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5884,7 +5884,7 @@ GameObject:
   - component: {fileID: 791851803}
   - component: {fileID: 791851805}
   m_Layer: 0
-  m_Name: FirstBox
+  m_Name: FirstSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8279,7 +8279,7 @@ GameObject:
   - component: {fileID: 1056524510}
   - component: {fileID: 1056524509}
   m_Layer: 0
-  m_Name: FirstTypingBox
+  m_Name: InputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10228,7 +10228,7 @@ GameObject:
   - component: {fileID: 1318945128}
   - component: {fileID: 1318945130}
   m_Layer: 0
-  m_Name: SecondBox
+  m_Name: SecondSlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10629,8 +10629,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ElectricCircuitPuzzle
   inputField: {fileID: 1056524509}
   finalLight: {fileID: 1158879330}
-  firstSlotButton: {fileID: 0}
-  secondSlotButton: {fileID: 0}
+  firstButton: {fileID: 0}
+  secondButton: {fileID: 0}
 --- !u!114 &1388625915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15627,7 +15627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2089523878
 RectTransform:
   m_ObjectHideFlags: 0

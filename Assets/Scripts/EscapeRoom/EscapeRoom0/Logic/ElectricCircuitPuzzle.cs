@@ -5,17 +5,13 @@ using TMPro;
 
 public class ElectricCircuitPuzzle : Puzzle
 {
-    public TMP_InputField inputField;
-    public GameObject finalLight;
-
-    public Button firstButton;
-    public Button secondButton;
-
+    private TMP_InputField inputField;
+    private Image finalLight;
+    private Button firstSlot;
+    private Button secondSlot;
+    private Button currentSlot;
     private char? firstGateCode = null;
     private char? secondGateCode = null;
-
-    private Button currentButton;
-
     private Dictionary<string, char> firstSlotValidGate = new Dictionary<string, char>
     {
         { "AND",  '0' },
@@ -25,41 +21,38 @@ public class ElectricCircuitPuzzle : Puzzle
         { "XOR",  '4' },
         { "XNOR", '5' }
     };
-
-
     private Dictionary<string, char> secondSlotValidGate = new Dictionary<string, char>
     {
         { "NOT", '6' }
     };
 
-
-    void Start()
+    void Awake()
     {
-        inputField.gameObject.SetActive(false);
+        inputField = GameObject.Find("InputField").gameObject.GetComponent<TMP_InputField>();
+        finalLight = GameObject.Find("FinalLight").gameObject.GetComponent<Image>();
+        firstSlot = GameObject.Find("FirstSlot").gameObject.GetComponent<Button>();
+        secondSlot = GameObject.Find("SecondSlot").gameObject.GetComponent<Button>();
 
-        if (finalLight != null)
-        {
-            finalLight.SetActive(false);
-        }
-        
-        inputField.onEndEdit.AddListener(OnTextEntered);
+        inputField.gameObject.SetActive(false);
+        inputField.onSubmit.AddListener(OnTextEntered);
+        finalLight.enabled = false;
     }
 
     public void OnFirstSlotClicked()
     {
-        OpenInputField(firstButton);
-        print("First slot was clicked");
+        OpenInputField(firstSlot);
+        print($"First slot was clicked");
     }
 
     public void OnSecondSlotClicked()
     {
-        OpenInputField(secondButton);
+        OpenInputField(secondSlot);
         print("Second slot was clicked");
     }
 
     private void OpenInputField(Button slotButton)
     {
-        currentButton = slotButton;
+        currentSlot = slotButton;
         inputField.text = "";
         inputField.gameObject.SetActive(true);
         inputField.ActivateInputField();
@@ -68,37 +61,19 @@ public class ElectricCircuitPuzzle : Puzzle
 
     private void OnTextEntered(string text)
     {
-        if (currentButton == null)
-        {
-            // Keeps getting stuck on this line
-            print("Input entered but no slot selected!");
-            return;
-        }
-
         text = text.Trim().ToUpper();
         print("Input " + text);
 
-        if (currentButton == firstButton)
+        if (!((currentSlot == firstSlot) ? firstSlotValidGate : secondSlotValidGate).ContainsKey(text))
         {
-            if (!firstSlotValidGate.TryGetValue(text, out char code))
-            {
-                inputField.text = "";
-                return;
-            }
-            firstGateCode = code;
+            print("TODO: ERROR UI");
+            inputField.text = "";
+            return;
         }
-        else if (currentButton == secondButton)
-        {
-            if (!secondSlotValidGate.TryGetValue(text, out char code))
-            {
-                inputField.text = "";
-                return;
-            }
-            secondGateCode = code;
-        }
+        if (currentSlot == firstSlot) firstGateCode = firstSlotValidGate[text]; else secondGateCode = secondSlotValidGate[text];
 
         inputField.gameObject.SetActive(false);
-        currentButton = null;
+        currentSlot = null;
 
         EvaluateCircuit();
     }
@@ -106,10 +81,11 @@ public class ElectricCircuitPuzzle : Puzzle
 
     private void EvaluateCircuit()
     {
+        print("evaluating");
+        
         if (firstGateCode == null || secondGateCode == null)
         {
             print("One or more gates aren't set");
-            finalLight.SetActive(false);
             return;
         }
 
@@ -118,7 +94,7 @@ public class ElectricCircuitPuzzle : Puzzle
 
         print($"First gate {firstResult}, Final result {finalResult}");
 
-        finalLight.SetActive(finalResult);
+        finalLight.enabled = finalResult;
     }
 
 
