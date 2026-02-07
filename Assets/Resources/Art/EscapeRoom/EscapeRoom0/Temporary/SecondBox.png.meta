@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: 34e5beb33b14f91439ae7b44003a939c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5076612772064336632
+    second: SecondBox_0
+  - first:
+      213: 7545216758809992927
+    second: SecondBox_1
+  - first:
+      213: -569808718464720719
+    second: SecondBox_2
+  - first:
+      213: -8461649628232320988
+    second: SecondBox_3
+  - first:
+      213: -2585942991641682276
+    second: SecondBox_4
+  - first:
+      213: -6171798324939503758
+    second: SecondBox_5
+  - first:
+      213: -3189544368938841049
+    second: SecondBox_6
+  - first:
+      213: -4512556737051635597
+    second: SecondBox_7
+  - first:
+      213: 4776561856238234723
+    second: SecondBox_8
+  - first:
+      213: 2874005276851174954
+    second: SecondBox_9
+  - first:
+      213: 2698999750490214649
+    second: SecondBox_10
+  - first:
+      213: -1112096493929652060
+    second: SecondBox_11
+  - first:
+      213: -6016613986683604946
+    second: SecondBox_12
+  - first:
+      213: 8770784778459285740
+    second: SecondBox_13
+  - first:
+      213: -3827229022437763853
+    second: SecondBox_14
+  - first:
+      213: 7419954247263944676
+    second: SecondBox_15
+  - first:
+      213: 5343180733986903535
+    second: SecondBox_16
+  - first:
+      213: 1292685439969583794
+    second: SecondBox_17
+  - first:
+      213: 8300133434928586886
+    second: SecondBox_18
+  - first:
+      213: -7205070061068422379
+    second: SecondBox_19
+  - first:
+      213: -864212867695849066
+    second: SecondBox_20
+  - first:
+      213: -2211946081375834783
+    second: SecondBox_21
+  - first:
+      213: -2178798928534102420
+    second: SecondBox_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SecondBox_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 281
+        width: 36
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805e4e2b49f3c89b0800000000000000
+      internalID: -5076612772064336632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 284
+        width: 31
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde91367aaef5b860800000000000000
+      internalID: 7545216758809992927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 288
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b06df15df1a718f0800000000000000
+      internalID: -569808718464720719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_3
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 291
+        width: 35
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428756fae7e229a80800000000000000
+      internalID: -8461649628232320988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 273
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9e59cdcc82ec1cd0800000000000000
+      internalID: -2585942991641682276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27741a08f1e595aa0800000000000000
+      internalID: -6171798324939503758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 277
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c8d0e9b467cb3d0800000000000000
+      internalID: -3189544368938841049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 247
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370dd336e8d2061c0800000000000000
+      internalID: -4512556737051635597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 226
+        width: 11
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ca2c073b1c94240800000000000000
+      internalID: 4776561856238234723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 193
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2eff49729482e720800000000000000
+      internalID: 2874005276851174954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_10
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 172
+        width: 12
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f056d029f5c47520800000000000000
+      internalID: 2698999750490214649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_11
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 144
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0ad53812a0190f0800000000000000
+      internalID: -1112096493929652060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_12
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 120
+        width: 10
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e20b31dd471b08ca0800000000000000
+      internalID: -6016613986683604946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_13
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 108
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce80871594618b970800000000000000
+      internalID: 8770784778459285740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_14
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 69
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4188b4b73f2eac0800000000000000
+      internalID: -3827229022437763853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_15
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 64
+        width: 10
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef71d54319f8f660800000000000000
+      internalID: 7419954247263944676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_16
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 19
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe51004719ac62a40800000000000000
+      internalID: 5343180733986903535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_17
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 17
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2e4b70f8a80f110800000000000000
+      internalID: 1292685439969583794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_18
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 5
+        width: 35
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680e241126fff2370800000000000000
+      internalID: 8300133434928586886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_19
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 3
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 513f63c14f2720c90800000000000000
+      internalID: -7205070061068422379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_20
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 4
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691daa2c9f2b104f0800000000000000
+      internalID: -864212867695849066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_21
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16da64522c69d41e0800000000000000
+      internalID: -2211946081375834783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecondBox_22
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 0
+        width: 29
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e19b31be953c1e0800000000000000
+      internalID: -2178798928534102420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SecondBox_0: -5076612772064336632
+      SecondBox_1: 7545216758809992927
+      SecondBox_10: 2698999750490214649
+      SecondBox_11: -1112096493929652060
+      SecondBox_12: -6016613986683604946
+      SecondBox_13: 8770784778459285740
+      SecondBox_14: -3827229022437763853
+      SecondBox_15: 7419954247263944676
+      SecondBox_16: 5343180733986903535
+      SecondBox_17: 1292685439969583794
+      SecondBox_18: 8300133434928586886
+      SecondBox_19: -7205070061068422379
+      SecondBox_2: -569808718464720719
+      SecondBox_20: -864212867695849066
+      SecondBox_21: -2211946081375834783
+      SecondBox_22: -2178798928534102420
+      SecondBox_3: -8461649628232320988
+      SecondBox_4: -2585942991641682276
+      SecondBox_5: -6171798324939503758
+      SecondBox_6: -3189544368938841049
+      SecondBox_7: -4512556737051635597
+      SecondBox_8: 4776561856238234723
+      SecondBox_9: 2874005276851174954
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

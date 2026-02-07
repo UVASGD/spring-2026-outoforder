@@ -52,5 +52,11 @@
         "detailed": true,
         "collectible": false,
         "description": ""
+   },
+   {
+        "name": "Electric Circuit",
+        "detailed": true,
+        "collectible": false,
+        "description": ""
    }
 ]
