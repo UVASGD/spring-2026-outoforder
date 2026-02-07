@@ -1,0 +1,24 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "this is the visual novel 0"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "just a test to see if it works"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "now its time for the escape room"
+        },
+        {
+            "hideUI": true,
+            "narration": "",
+            "flag": "EscapeRoom0"
+        }
+    ]
+}

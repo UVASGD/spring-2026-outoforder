@@ -78,8 +78,12 @@ public class GameProgression : MonoBehaviour
         switch (currentScene)
         {
             case "Cutscene":
+                break;
             case "VisualNovel":
+                break;
             case "EscapeRoom0":
+                StartCoroutine(PlayBGM(0));
+                break;
             case "EscapeRoom1":
             case "EscapeRoom2":
             case "EscapeRoom3":
@@ -104,23 +108,11 @@ public class GameProgression : MonoBehaviour
     }
 
     // Flag
-    public void CheckFlag(string possibleFlag = "")
+    public void SceneTransition(string scene)
     {
         transitioning = true;
 
-        print($"setting flag {possibleFlag}");
-
-        // TODO: fill out as we go
-        switch (currentScene)
-        {
-            case "Cutscene":
-            case "VisualNovel":
-            case "EscapeRoom0":
-            case "EscapeRoom1":
-            case "EscapeRoom2":
-            case "EscapeRoom3":
-                break;
-        }
+        FadeEffect.FadeIn(blackTransition, fadeTime: 2f, scene: scene);
     }
 
     public bool GetFlag(string key)
@@ -151,7 +143,7 @@ public class GameProgression : MonoBehaviour
 
     public IEnumerator PlayBGM(int index, float waitTime = 0.75f, GameObject gameObjectToDeactivate = null, float gameWaitTime = 0f, float fadeSpeed = 0.25f)
     {
-        // print($"switching to music at index {index}");
+        print($"switching to music at index {index}");
         
         float startVolume = audioSourceBGM.volume;
 

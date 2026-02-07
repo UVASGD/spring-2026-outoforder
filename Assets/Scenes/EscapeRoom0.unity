@@ -1616,7 +1616,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &290217730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10627,10 +10627,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d962ecffb644a6349aa3214801a05bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElectricCircuitPuzzle
-  inputField: {fileID: 1056524509}
-  finalLight: {fileID: 1158879330}
-  firstButton: {fileID: 0}
-  secondButton: {fileID: 0}
 --- !u!114 &1388625915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11525,11 +11521,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: bcbd68a7f3518fd4abcd19736051ab01, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
