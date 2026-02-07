@@ -3,13 +3,22 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoNeutral",
-            "dialogue": "antifreeze dispenser puzzle 0"
+            "dialogue": "this is the visual novel 0"
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoNeutral",
-            "dialogue": "I'll just have to work with what I have. I'll keep thinking about it.",
-            "endOfScene": true
+            "dialogue": "just a test to see if it works"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "now its time for the escape room"
+        },
+        {
+            "hideUI": true,
+            "narration": "",
+            "flag": "EscapeRoom0"
         }
     ]
 }

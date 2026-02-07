@@ -356,7 +356,7 @@ public class DialogueSystemScript : MonoBehaviour
     
     private void SetFlag()
     {
-        if (!string.IsNullOrEmpty(currentDialogue.flag)) GameProgression.GameProgressionInstance.CheckFlag(currentDialogue.flag);
+        if (!string.IsNullOrEmpty(currentDialogue.flag)) GameProgression.GameProgressionInstance.SceneTransition(currentDialogue.flag);
     }
 
     private IEnumerator DisableAdvance()
