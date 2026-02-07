@@ -78,11 +78,13 @@ public class GameProgression : MonoBehaviour
         switch (currentScene)
         {
             case "Cutscene":
+                // TODO : different for endings
+                StartCoroutine(PlayBGM(0));
                 break;
             case "VisualNovel":
                 break;
             case "EscapeRoom0":
-                StartCoroutine(PlayBGM(0));
+                StartCoroutine(PlayBGM(1));
                 break;
             case "EscapeRoom1":
             case "EscapeRoom2":

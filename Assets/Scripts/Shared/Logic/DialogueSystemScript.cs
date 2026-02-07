@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueSystemScript : MonoBehaviour
@@ -14,6 +15,10 @@ public class DialogueSystemScript : MonoBehaviour
 
     [Header("[UI]")]
     [SerializeField] private Image dialogueBoxImage;
+    [SerializeField] private GameObject oldCG;
+    [SerializeField] private GameObject activeCG;
+    [SerializeField] private Image oldCGImage;
+    [SerializeField] private Image activeCGImage;
     [SerializeField] private Image speakerSpriteImage;
     [SerializeField] private TextMeshProUGUI nameTMP;
     [SerializeField] private TextMeshProUGUI dialogueTMP;
@@ -44,7 +49,11 @@ public class DialogueSystemScript : MonoBehaviour
     {
         // UI
         dialogueBoxImage = transform.Find("DialogueBox").GetComponent<Image>();
-        speakerSpriteImage = transform.Find("SpeakerSprite").GetComponent<Image>();
+        oldCG = transform.Find("OldCG")?.gameObject;
+        activeCG = transform.Find("ActiveCG")?.gameObject;
+        oldCGImage = oldCG?.GetComponent<Image>();
+        activeCGImage = activeCG?.GetComponent<Image>();
+        speakerSpriteImage = transform.Find("SpeakerSprite")?.GetComponent<Image>();
         nameTMP = transform.Find("Text/NameText").GetComponent<TextMeshProUGUI>();
         dialogueTMP = transform.Find("Text/DialogueText").GetComponent<TextMeshProUGUI>();
         narrationTMP = transform.parent.transform.Find("NarrationText").GetComponent<TextMeshProUGUI>();
@@ -56,10 +65,19 @@ public class DialogueSystemScript : MonoBehaviour
 
     void OnEnable() 
     {
+        if (SceneManager.GetActiveScene().name.Equals("Cutscene"))
+        {    
+            dialogueBoxImage.gameObject.SetActive(false);
+        }
+        else
+        {
+            oldCG.gameObject.SetActive(false);
+            activeCG.gameObject.SetActive(false);
+        }
+        narrationTMP.gameObject.SetActive(false);
         advanceDialogueButton.SetActive(true);
 
         LoadVisualNovelJSONFile();
-
         ProgressMainVNSequence();
 
         GameData.currentlyTalking = true;
@@ -127,8 +145,12 @@ public class DialogueSystemScript : MonoBehaviour
         {
             ShowUI();
 
+            // TODO: do some sort of one other the other thing here
+            // set cg
+            SetCG();
+
             // set sprite
-            SetSprite();
+            if (!SceneManager.GetActiveScene().name.Equals("Cutscene")) SetSprite();
 
             // set dialogue
             SetDialogue();
@@ -161,18 +183,40 @@ public class DialogueSystemScript : MonoBehaviour
 
     public void ShowUI()
     {
-        dialogueBoxImage.enabled = true;
-        speakerSpriteImage.enabled = true;
+        if (!SceneManager.GetActiveScene().name.Equals("Cutscene"))
+        {
+            dialogueBoxImage.enabled = true;
+            speakerSpriteImage.enabled = true;
+        }
         nameTMP.enabled = true;
         dialogueTMP.enabled = true;
     }
 
     public void HideUI()
     {
-        dialogueBoxImage.enabled = false;
-        speakerSpriteImage.enabled = false;
+        if (!SceneManager.GetActiveScene().name.Equals("Cutscene"))
+        {
+            dialogueBoxImage.enabled = false;
+            speakerSpriteImage.enabled = false;
+        }
         nameTMP.enabled = false;
         dialogueTMP.enabled = false;
+    }
+
+        public void SetCG()
+    {
+        if (currentDialogue.cgSprite != null)
+        {
+            Sprite oldCGSprite = oldCGImage.sprite;
+            Sprite newCGSprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.cgSprite];
+
+            if (!oldCGSprite.ToString().Equals(newCGSprite.ToString())) 
+            {
+                oldCGImage.sprite = activeCGImage.sprite;
+                GameProgression.GameProgressionInstance.FadeEffect.FadeInCGSprite(activeCG, newCGSprite);
+                GameProgression.GameProgressionInstance.FadeEffect.FadeOutCGSprite(oldCG, oldCGSprite);
+            }
+        } 
     }
     
     public void SetSprite()

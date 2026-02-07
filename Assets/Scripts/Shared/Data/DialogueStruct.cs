@@ -4,6 +4,7 @@ using System;
 public class DialogueStruct
 {
     public string character;
+    public string cgSprite;
     public string speakerSprite;
     public string dialogue;
     public float textSpeed;

@@ -1,0 +1,27 @@
+{
+    "dialogues": [
+        {
+            "character": "VIRGO",
+            "cgSprite": "VirgoNeutral",
+            "dialogue": "0"
+        },
+        {
+            "character": "VIRGO",
+            "dialogue": "1"
+        },
+        {
+            "character": "VIRGO",
+            "cgSprite": "VirgoEyes",
+            "dialogue": "2 Change picture"
+        },
+        {
+            "character": "VIRGO",
+            "cgSprite": "ASTANeutral",
+            "dialogue": "3 Very nice"
+        },
+        {
+            "hideUI": true,
+            "flag": "VisualNovel"
+        }
+    ]
+}
