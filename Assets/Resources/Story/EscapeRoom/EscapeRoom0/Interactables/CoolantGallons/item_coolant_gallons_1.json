@@ -1,0 +1,16 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "coolant gallons 1"
+
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Could this be useful later?",
+            "endOfScene": true
+        }
+    ]
+}

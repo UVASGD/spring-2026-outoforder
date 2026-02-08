@@ -38,6 +38,7 @@ public class LocationsScript : MonoBehaviour
 
         content = popUpAreas.transform.Find("ItemPopUp").transform.GetComponentInChildren<VerticalLayoutGroup>().gameObject;
 
+        // TODO: include the regular detailed here too
         puzzles = FindObjectsByType<Puzzle>(FindObjectsSortMode.None).OfType<MonoBehaviour>().ToDictionary(
             puzzle => puzzle.gameObject.name,
             puzzle => puzzle.gameObject
@@ -66,9 +67,8 @@ public class LocationsScript : MonoBehaviour
         if (itemController != null)
         {
             ItemData itemData = itemController.itemData;
-            int itemIndex = itemController.itemIndex;
             print($"looking at {itemData.name}");
-            CollectItem(itemData, itemIndex);
+            CollectItem(itemData);
             // TODO: maybe more specific conditions of not entering an item in later rooms
             // TODO: FIRST IS TEMPORARY 
             if ((GameData.escapeRoomNumber == 0 && (itemData.name.Equals("Electric Circuit") || itemData.name.Equals("Light Switch") || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
@@ -127,13 +127,12 @@ public class LocationsScript : MonoBehaviour
         manualInteraction.ItemInteraction();
     }
 
-    private void CollectItem(ItemData itemData, int itemIndex)
+    private void CollectItem(ItemData itemData)
     {
         if (itemData.collectible && !GameData.escapeRoomGameplayManagerScript.collectedItems.Contains(itemData.name))
         {
             print($"collecting {itemData.name}");
             GameObject item = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
-            item.GetComponent<ItemController>().itemIndex = itemIndex;
             item.GetComponentInChildren<TextMeshProUGUI>().text = itemData.name;
             GameData.escapeRoomGameplayManagerScript.collectedItems.Add(itemData.name);
         }
@@ -156,7 +155,7 @@ public class LocationsScript : MonoBehaviour
             yield return null;
         }
 
-        currentPuzzle = itemData.name.Replace(" ", "") + "Puzzle";
+        currentPuzzle = itemData.name.Replace(" ", "") + (itemData.puzzle ? "Puzzle" : "Detailed");
         puzzles[currentPuzzle].gameObject.SetActive(true);
         backButton.gameObject.SetActive(true);
     }

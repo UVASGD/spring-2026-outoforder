@@ -1,62 +1,93 @@
-[
-   {
-        "name": "Light Switch",
-        "detailed": true,
-        "collectible": false,
-        "description": ""
+{
+   "LightSwitch": {
+     "name": "Light Switch",
+     "detailed": true,
+     "puzzle": true,
+     "collectible": false,
+     "description": ""
    },
-   {
-        "name": "Red Core",
-        "detailed": false,
-        "collectible": true,
-        "description": "A glowing red core. The light emitting from it is dull."
+   "AntifreezeDispenser": {
+     "name": "Antifreeze Dispenser",
+     "detailed": true,
+     "puzzle": true,
+     "collectible": false,
+     "description": ""
    },
-   {
-        "name": "Green Core",
-        "detailed": false,
-        "collectible": true,
-        "description": "A glowing green core. The light emitting from it is dull."
+   "ElectricCircuit": {
+     "name": "Electric Circuit",
+     "detailed": true,
+     "puzzle": true,
+     "collectible": false,
+     "description": ""
    },
-   {
-        "name": "Blue Core",
-        "detailed": false,
-        "collectible": true,
-        "description": "A glowing blue core. The light emitting from it is dull."
+   "LockedDrawer": {
+     "name": "Locked Drawer",
+     "detailed": true,
+     "puzzle": true,
+     "collectible": false,
+     "description": ""
    },
-   {
-        "name": "Left Box",
-        "detailed": false,
-        "collectible": false,
-        "description": ""
+   "LockedBox": {
+     "name": "Locked Box",
+     "detailed": true,
+     "puzzle": true,
+     "collectible": false,
+     "description": ""
    },
-   {
-        "name": "Lever",
-        "detailed": false,
-        "collectible": true,
-        "description": "A lever. It seems to be disconnected from something. Is there a place in the room where it belongs?"
+   "RedCore": {
+     "name": "Red Core",
+     "detailed": false,
+     "puzzle": false,
+     "collectible": true,
+     "description": "A glowing red core. The light emitting from it is dull."
    },
-   {
-        "name": "Top Box",
-        "detailed": false,
-        "collectible": false,
-        "description": ""
+   "GreenCore": {
+     "name": "Green Core",
+     "detailed": false,
+     "puzzle": false,
+     "collectible": true,
+     "description": "A glowing green core. The light emitting from it is dull."
    },
-   {
-        "name": "Locked Drawer",
-        "detailed": true,
-        "collectible": false,
-        "description": ""
+   "BlueCore": {
+     "name": "Blue Core",
+     "detailed": false,
+     "puzzle": false,
+     "collectible": true,
+     "description": "A glowing blue core. The light emitting from it is dull."
    },
-   {
-        "name": "Antifreeze Dispenser",
-        "detailed": true,
-        "collectible": false,
-        "description": ""
+   "Lever": {
+      "name": "Lever",
+     "detailed": false,
+     "puzzle": false,
+     "collectible": true,
+     "description": "A lever. It seems to be disconnected from something. Is there a place in the room where it belongs?"
    },
-   {
-        "name": "Electric Circuit",
-        "detailed": true,
-        "collectible": false,
-        "description": ""
+   "TopBox": {
+     "name": "Top Box",
+     "detailed": false,
+     "puzzle": false,
+     "collectible": false,
+     "description": ""
+   },
+   "KeyboardSetup": {
+     "name": "Keyboard Setup",
+     "detailed": true,
+     "puzzle": false,
+     "collectible": false,
+     "description": ""
+   },
+   "Computer": {
+     "name": "Computer",
+     "detailed": false,
+     "puzzle": false,
+     "collectible": false,
+     "description": ""
+   },
+   "CoolantGallons": {
+     "name": "CoolantGallons",
+     "detailed": false,
+     "puzzle": false,
+     "collectible": false,
+     "description": ""
    }
-]
+}

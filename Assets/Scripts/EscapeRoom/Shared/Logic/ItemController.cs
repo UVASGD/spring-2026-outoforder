@@ -4,12 +4,11 @@ using UnityEngine.UI;
 public class ItemController : MonoBehaviour
 {
     public bool scrollView;
-    public int itemIndex;
     public ItemData itemData;
 
     void Start()
     {
-        itemData = GameData.escapeRoomGameplayManagerScript.items[itemIndex];
+        itemData = GameData.escapeRoomGameplayManagerScript.items[gameObject.name];
 
         if (scrollView)
         {
