@@ -100,6 +100,8 @@ public class DialogueSystemScript : MonoBehaviour
 
                 speakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
                 gameObject.SetActive(false);
+
+                GameData.escapeRoomGameplayManagerScript.interactingWith = "";
             }
             else if (!currentDialogue.endOfScene && !typeWriterInEffect && !finishedDialogue)
             {

@@ -30,9 +30,10 @@ public class LockedBoxPuzzle : Puzzle
         int colorIndex = colorToIndex[colorImage.color];
         
         int nextColorIndex = (colorIndex + 1) % colorPalette.Count;
+        print($"next color inded is {nextColorIndex}");
         colorImage.color = colorPalette[nextColorIndex];
         
-        guess[color.transform.GetSiblingIndex()] = (char)nextColorIndex;
+        guess[color.transform.GetSiblingIndex()] = colorToIndex[colorImage.color];
     }
 
     protected override void SolvedPuzzleSpecific()

@@ -33,6 +33,6 @@ public class LightSwitchPuzzle : Puzzle
         GameProgression.GameProgressionInstance.SetFlag("firstLightSwitchPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedLightSwitchPuzzle", true);
         gameObject.GetComponent<ManualInteraction>().ItemInteraction();
-        GameProgression.GameProgressionInstance.SetFlag("lastLightSwitchPuzzle", true);
+        GameProgression.GameProgressionInstance.SetFlag("lastInteractionLightSwitchPuzzle", true);
     }
 }

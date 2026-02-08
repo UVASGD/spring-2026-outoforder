@@ -6014,7 +6014,7 @@ MonoBehaviour:
   - firstInteractionLever
   - firstInteractionLightSwitchPuzzle
   - solvedLightSwitchPuzzle
-  - lastLightSwitchPuzzle
+  - lastInteractionLightSwitchPuzzle
   triggeringFlags:
   - firstInteractionLightSwitchPuzzle
   dialoguesIndex: 0
@@ -6946,9 +6946,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionAntifreezeDispenser
+  - firstInteractionElectricCircuit
   triggeringFlags:
-  - firstInteractionAntifreezeDispenser
+  - firstInteractionElectricCircuit
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 8640f4486a767a640b1bf3753b6f5104, type: 3}
@@ -8464,15 +8464,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstElectricCircuitPuzzle
-  - solvedElectricCircuitPuzzle
+  - firstInteractionLockedBoxPuzzle
+  - solvedLockedBoxPuzzle
   triggeringFlags:
-  - firstElectricCircuitPuzzle
+  - firstInteractionLockedBoxPuzzle
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 76ec2d7e6b680994ea764c83d81e4cf2, type: 3}
-  - {fileID: 4900000, guid: f41d1f59e4b0b6f41afc20626caf2cb2, type: 3}
-  - {fileID: 4900000, guid: 1024806e5f7c561449951c315235c675, type: 3}
+  - {fileID: 4900000, guid: 19eb39ba9a35efe4a9c9895449c91368, type: 3}
+  - {fileID: 4900000, guid: e261493f3232b4c41bfe4d849326c2fe, type: 3}
+  - {fileID: 4900000, guid: 3e1f91520e0027c42adfc76dceed92e2, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -8555,7 +8555,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3492683072904799203, guid: 8ffe3b77ffe0ce640bb9bb1f2ff3165d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ffe3b77ffe0ce640bb9bb1f2ff3165d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12232,10 +12232,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstElectricCircuitPuzzle
+  - firstInteractionElectricCircuitPuzzle
   - solvedElectricCircuitPuzzle
   triggeringFlags:
-  - firstElectricCircuitPuzzle
+  - firstInteractionElectricCircuitPuzzle
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 76ec2d7e6b680994ea764c83d81e4cf2, type: 3}
@@ -14707,10 +14707,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstAntifreezeDispenserPuzzle
+  - firstInteractionAntifreezeDispenserPuzzle
   - solvedAntifreezeDispenserPuzzle
   triggeringFlags:
-  - firstAntifreezeDispenserPuzzle
+  - firstInteractionAntifreezeDispenserPuzzle
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 0e9f020abc91b46418cd67457bae485f, type: 3}
