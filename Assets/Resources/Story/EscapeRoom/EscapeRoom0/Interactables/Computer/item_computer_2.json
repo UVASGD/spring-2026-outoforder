@@ -3,12 +3,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "computer 2"
+            "dialogue": "That's unfortunate, I guess."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "Maybe I should try a different code?",
+            "dialogue": "Still, there's got to be something else useful in this area.",
             "endOfScene": true
         }
     ]

@@ -24,7 +24,7 @@ public class LockedDrawerPuzzle : Puzzle
         }
         remote.SetActive(true);
 
-        GameProgression.GameProgressionInstance.SetFlag("firstLockedDrawerPuzzle", true);
+        GameProgression.GameProgressionInstance.SetFlag("firstInteractionLockedDrawerPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedLockedDrawerPuzzle", true);
         gameObject.GetComponent<ManualInteraction>().ItemInteraction();
     }

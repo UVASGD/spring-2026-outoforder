@@ -3,12 +3,17 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "keyboard setup zoom 1"
+            "dialogue": "I mean yeah, the mouse isn't even facing the right direction."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "I'll just have to work with what I have. I'll keep thinking about it.",
+            "dialogue": "Why would it be facing the drawer?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "These keys are all weird too.",
             "endOfScene": true
         }
     ]

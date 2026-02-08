@@ -75,8 +75,7 @@ public class LocationsScript : MonoBehaviour
             print($"looking at {itemData.name}");
             CollectItem(itemData);
             // TODO: maybe more specific conditions of not entering an item in later rooms
-            // TODO: FIRST IS TEMPORARY 
-            if ((GameData.escapeRoomNumber == 0 && (itemData.name.Equals("Electric Circuit") || itemData.name.Equals("Light Switch") || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
+            if ((GameData.escapeRoomNumber == 0 && (itemData.name.Equals("Light Switch") || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
                 || GameData.escapeRoomNumber > 0) 
             {
                 EnterItem(itemData);

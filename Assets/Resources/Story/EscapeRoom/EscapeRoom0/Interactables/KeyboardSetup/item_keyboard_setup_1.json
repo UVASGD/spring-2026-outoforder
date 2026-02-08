@@ -3,12 +3,7 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "keyboard setup 1"
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Let me try inputting something.",
+            "dialogue": "There's a keyboard and a mouse in front of the monitor.",
             "endOfScene": true
         }
     ]

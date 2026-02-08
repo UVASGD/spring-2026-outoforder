@@ -3,12 +3,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "computer 0"
+            "dialogue": "There's a... computer monitor here."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "I should turn on the light first though. I don't want to mess with anything by accident.",
+            "dialogue": "I'll inspect it more after turning on the light. I'm sure this will be useful.",
             "endOfScene": true
         }
     ]

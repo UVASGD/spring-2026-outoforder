@@ -3,17 +3,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "There's a box on one of the top shelves."
+            "dialogue": "A remote... for some sort of device?"
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "... I can't reach it though. It's too far up."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I can try figuring out how to get it down later... but first, I should figure out how to turn the lights back on.",
+            "dialogue": "I'll just take it for now. I'm sure I can figure it out sooner or later.",
             "endOfScene": true
         }
     ]

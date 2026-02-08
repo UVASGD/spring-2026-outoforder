@@ -3,12 +3,7 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "keyboard setup zoom 2"
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "There's a remote inside.",
+            "dialogue": "Well, that's definitely a unique way of remembering a passcode.",
             "endOfScene": true
         }
     ]

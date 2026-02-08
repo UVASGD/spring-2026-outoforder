@@ -3,17 +3,22 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "computer 1"
+            "dialogue": "I'm sure I can turn on the computer now."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "It looks like it needs a code of some sort...?"
+            "dialogue": "There's gotta be a power cord here somewhere..."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "Let me try inputting something.",
+            "dialogue": "Ah."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "It's completely unplugged.",
             "endOfScene": true
         }
     ]
