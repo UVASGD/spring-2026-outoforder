@@ -11,9 +11,10 @@ public class MenuBarScript : MonoBehaviour
     private GameObject movePopUp;
     private GameObject itemPopUp;
     private GameObject infoPopUp;
+    private Button moveButton;
 
     void Start()
-    {    
+    {
         interactionBlocker = transform.Find("InteractionBlocker").gameObject;
         interactionBlocker.SetActive(false);
 
@@ -22,7 +23,14 @@ public class MenuBarScript : MonoBehaviour
         movePopUp = popUpAreas.transform.Find("MovePopUp").gameObject;
         itemPopUp = popUpAreas.transform.Find("ItemPopUp").gameObject;
         infoPopUp = popUpAreas.transform.Find("InfoPopUp").gameObject;
+
+        moveButton = transform.Find("MenuBarButtons").Find("MoveButton").GetComponent<Button>();
     }
+
+    void Update()
+    {
+        moveButton.interactable = !GameData.escapeRoomGameplayManagerScript.enteredItem;
+    } 
 
     public void ChangeState(string newMenuName)
     {

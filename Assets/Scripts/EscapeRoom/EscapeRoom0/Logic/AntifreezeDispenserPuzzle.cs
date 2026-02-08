@@ -62,7 +62,7 @@ public class AntifreezeDispenserPuzzle : Puzzle
 
     protected override void SolvedPuzzleSpecific()
     {
-        GameProgression.GameProgressionInstance.SetFlag("firstAntifreezeDispenserPuzzle", true);
+        GameProgression.GameProgressionInstance.SetFlag("firstInteractionAntifreezeDispenserPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedAntifreezeDispenserPuzzle", true);
         gameObject.GetComponent<ManualInteraction>().ItemInteraction();
     }

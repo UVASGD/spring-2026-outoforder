@@ -7,6 +7,9 @@ public class ElectricCircuitPuzzle : Puzzle
 {
     private TMP_InputField inputField;
     private Image finalLight;
+    private Image firstSlotImage;
+    private Image secondSlotImage;
+    private Image currentSlotImage;
     private Button firstSlot;
     private Button secondSlot;
     private Button currentSlot;
@@ -28,8 +31,13 @@ public class ElectricCircuitPuzzle : Puzzle
 
     void Awake()
     {
+        answer = new char[] { '2', '6' };
+        guess = new char[] { '7', '7' };
+
         inputField = GameObject.Find("InputField").gameObject.GetComponent<TMP_InputField>();
         finalLight = GameObject.Find("FinalLight").gameObject.GetComponent<Image>();
+        firstSlotImage = GameObject.Find("FirstSlot").gameObject.GetComponent<Image>();
+        secondSlotImage = GameObject.Find("SecondSlot").gameObject.GetComponent<Image>();
         firstSlot = GameObject.Find("FirstSlot").gameObject.GetComponent<Button>();
         secondSlot = GameObject.Find("SecondSlot").gameObject.GetComponent<Button>();
 
@@ -40,27 +48,32 @@ public class ElectricCircuitPuzzle : Puzzle
 
     public void OnFirstSlotClicked()
     {
+        if (currentSlotImage != null) currentSlotImage.color = Color.white;
+        currentSlotImage = firstSlotImage;
         OpenInputField(firstSlot);
-        print($"First slot was clicked");
     }
 
     public void OnSecondSlotClicked()
     {
+        if (currentSlotImage != null) currentSlotImage.color = Color.white;
+        currentSlotImage = secondSlotImage;
         OpenInputField(secondSlot);
-        print("Second slot was clicked");
     }
 
     private void OpenInputField(Button slotButton)
     {
+        currentSlotImage.color = Color.yellow;
         currentSlot = slotButton;
         inputField.text = "";
         inputField.gameObject.SetActive(true);
         inputField.ActivateInputField();
-        inputField.placeholder.GetComponent<TMP_Text>().text = "LOGIC GATE TYPE (BASIC ONLY)";
+        inputField.placeholder.GetComponent<TMP_Text>().text = "LOGIC GATE TYPE";
     }
 
     private void OnTextEntered(string text)
     {
+        currentSlotImage.color = Color.white;
+
         text = text.Trim().ToUpper();
         print("Input " + text);
 
@@ -70,14 +83,23 @@ public class ElectricCircuitPuzzle : Puzzle
             inputField.text = "";
             return;
         }
-        if (currentSlot == firstSlot) firstGateCode = firstSlotValidGate[text]; else secondGateCode = secondSlotValidGate[text];
+
+        if (currentSlot == firstSlot) 
+        {
+            firstGateCode = firstSlotValidGate[text]; 
+            guess[0] = firstGateCode.Value;
+        }
+        else 
+        {
+            secondGateCode = secondSlotValidGate[text];
+            guess[1] = secondGateCode.Value;
+        }
 
         inputField.gameObject.SetActive(false);
         currentSlot = null;
 
         EvaluateCircuit();
     }
-
 
     private void EvaluateCircuit()
     {
@@ -97,7 +119,6 @@ public class ElectricCircuitPuzzle : Puzzle
         finalLight.enabled = finalResult;
     }
 
-
     private bool firstGate(char gate, bool a, bool b)
     {
         return gate switch
@@ -115,5 +136,12 @@ public class ElectricCircuitPuzzle : Puzzle
     private bool secondGate(char gate, bool a)
     {
         return gate == '6' ? !a : false;
+    }
+
+    protected override void SolvedPuzzleSpecific()
+    {
+        GameProgression.GameProgressionInstance.SetFlag("firstInteractionElectricCircuitPuzzle", true);
+        GameProgression.GameProgressionInstance.SetFlag("solvedElectricCircuitPuzzle", true);
+        gameObject.GetComponent<ManualInteraction>().ItemInteraction();
     }
 }

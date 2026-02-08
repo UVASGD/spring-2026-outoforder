@@ -1,0 +1,21 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "A bunch of gallons of liquid."
+
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "'Ethylene Glycol'... the coolant that's used for robots."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "It must be used for robot repairs. Is that why it's down here?",
+            "endOfScene": true
+        }
+    ]
+}

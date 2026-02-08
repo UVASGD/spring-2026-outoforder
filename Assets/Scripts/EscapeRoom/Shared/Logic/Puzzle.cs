@@ -29,7 +29,7 @@ public class Puzzle : MonoBehaviour
     {
         if (!solved)
         {
-           GameObject digit = EventSystem.current.currentSelectedGameObject;
+            GameObject digit = EventSystem.current.currentSelectedGameObject;
             TextMeshProUGUI digitTMP = digit.GetComponentInChildren<TextMeshProUGUI>();
             int currentDigit = int.Parse(digitTMP.text);
 
@@ -56,7 +56,7 @@ public class Puzzle : MonoBehaviour
 
     private void ErrorPuzzle()
     {
-        print("TODO: ERROR GUESS UI");
+        print($"TODO: ERROR GUESS UI; the guess was {new string(guess)}");
     }
 
     protected virtual void SolvedPuzzleSpecific() {}

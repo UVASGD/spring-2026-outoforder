@@ -38,10 +38,16 @@ public class LocationsScript : MonoBehaviour
 
         content = popUpAreas.transform.Find("ItemPopUp").transform.GetComponentInChildren<VerticalLayoutGroup>().gameObject;
 
-        puzzles = FindObjectsByType<Puzzle>(FindObjectsSortMode.None).OfType<MonoBehaviour>().ToDictionary(
-            puzzle => puzzle.gameObject.name,
-            puzzle => puzzle.gameObject
-        );
+        puzzles = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None)
+            .Where(item => 
+                item.gameObject.name.Contains("Zoom", System.StringComparison.OrdinalIgnoreCase) || 
+                item is Puzzle
+            )
+            .GroupBy(item => item.gameObject.name)
+            .ToDictionary(
+                group => group.Key, 
+                group => group.First().gameObject
+            );
 
         foreach (GameObject puzzle in puzzles.Values)
         {
@@ -66,12 +72,10 @@ public class LocationsScript : MonoBehaviour
         if (itemController != null)
         {
             ItemData itemData = itemController.itemData;
-            int itemIndex = itemController.itemIndex;
             print($"looking at {itemData.name}");
-            CollectItem(itemData, itemIndex);
+            CollectItem(itemData);
             // TODO: maybe more specific conditions of not entering an item in later rooms
-            // TODO: FIRST IS TEMPORARY 
-            if ((GameData.escapeRoomNumber == 0 && (itemData.name.Equals("Electric Circuit") || itemData.name.Equals("Light Switch") || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
+            if ((GameData.escapeRoomNumber == 0 && (itemData.name.Equals("Light Switch") || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
                 || GameData.escapeRoomNumber > 0) 
             {
                 EnterItem(itemData);
@@ -83,11 +87,15 @@ public class LocationsScript : MonoBehaviour
 
     public void EnterItem(ItemData itemData)
     {
-        if (itemData.detailed) StartCoroutine(WaitToEnterItem(itemData));
+        if (itemData.detailed)
+        {
+            StartCoroutine(WaitToEnterItem(itemData));
+        }
     }
     
     public void ExitItem()
     {
+        GameData.escapeRoomGameplayManagerScript.enteredItem = false;
         puzzles[currentPuzzle].gameObject.SetActive(false);
         backButton.gameObject.SetActive(false);
         currentPuzzle = "";
@@ -127,13 +135,13 @@ public class LocationsScript : MonoBehaviour
         manualInteraction.ItemInteraction();
     }
 
-    private void CollectItem(ItemData itemData, int itemIndex)
+    private void CollectItem(ItemData itemData)
     {
         if (itemData.collectible && !GameData.escapeRoomGameplayManagerScript.collectedItems.Contains(itemData.name))
         {
             print($"collecting {itemData.name}");
             GameObject item = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
-            item.GetComponent<ItemController>().itemIndex = itemIndex;
+            item.name = itemData.name.Replace(" ", "");
             item.GetComponentInChildren<TextMeshProUGUI>().text = itemData.name;
             GameData.escapeRoomGameplayManagerScript.collectedItems.Add(itemData.name);
         }
@@ -156,7 +164,8 @@ public class LocationsScript : MonoBehaviour
             yield return null;
         }
 
-        currentPuzzle = itemData.name.Replace(" ", "") + "Puzzle";
+        GameData.escapeRoomGameplayManagerScript.enteredItem = true;
+        currentPuzzle = itemData.name.Replace(" ", "") + (itemData.puzzle ? "Puzzle" : "Zoom");
         puzzles[currentPuzzle].gameObject.SetActive(true);
         backButton.gameObject.SetActive(true);
     }

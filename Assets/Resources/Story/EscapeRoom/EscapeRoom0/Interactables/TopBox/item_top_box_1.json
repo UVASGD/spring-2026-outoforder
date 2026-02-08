@@ -3,12 +3,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "The drawer again."
+            "dialogue": "I don't think there's any way for me to get up there actually."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "Maybe I should try a different code?",
+            "dialogue": "Well, it's best to just keep moving. I should focus on something else.",
             "endOfScene": true
         }
     ]
