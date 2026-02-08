@@ -3,12 +3,22 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "antifreeze dispenser puzzle 0"
+            "dialogue": "It's a dispenser of some sort."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "I'll just have to work with what I have. I'll keep thinking about it.",
+            "dialogue": "By the smell of it... isn't this coolant?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "I'd assume that the hollow core would have to fit somewhere here, and then I'd be able to refill it."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "But what's with this screen?",
             "endOfScene": true
         }
     ]

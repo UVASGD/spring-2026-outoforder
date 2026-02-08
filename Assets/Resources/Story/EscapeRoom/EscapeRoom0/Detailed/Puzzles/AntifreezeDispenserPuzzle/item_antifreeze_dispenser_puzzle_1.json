@@ -3,12 +3,17 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "antifreeze dispenser puzzle 1"
+            "dialogue": "The letters are all jumbled up."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "I'll just have to work with what I have. I'll keep thinking about it.",
+            "dialogue": "It probably spells out some sort of word."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Maybe if I could rearrange it, the dispenser will be enabled...",
             "endOfScene": true
         }
     ]
