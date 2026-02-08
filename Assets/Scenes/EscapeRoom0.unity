@@ -5583,7 +5583,7 @@ GameObject:
   - component: {fileID: 750871340}
   - component: {fileID: 750871339}
   m_Layer: 0
-  m_Name: DullBlueSphere
+  m_Name: BlueCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10533,6 +10533,7 @@ GameObject:
   - component: {fileID: 1388625915}
   - component: {fileID: 1388625914}
   - component: {fileID: 1388625913}
+  - component: {fileID: 1388625917}
   m_Layer: 0
   m_Name: ElectricCircuitPuzzle
   m_TagString: Untagged
@@ -10669,6 +10670,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388625911}
   m_CullTransparentMesh: 1
+--- !u!114 &1388625917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388625911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
+  eventOffset: 0
+  activatingFlags:
+  - firstElectricCircuitPuzzle
+  - solvedElectricCircuitPuzzle
+  triggeringFlags:
+  - firstElectricCircuitPuzzle
+  dialoguesIndex: 0
+  characterDialogues:
+  - {fileID: 4900000, guid: 76ec2d7e6b680994ea764c83d81e4cf2, type: 3}
+  - {fileID: 4900000, guid: f41d1f59e4b0b6f41afc20626caf2cb2, type: 3}
+  - {fileID: 4900000, guid: 1024806e5f7c561449951c315235c675, type: 3}
 --- !u!1 &1395712323
 GameObject:
   m_ObjectHideFlags: 0
@@ -12363,7 +12387,7 @@ GameObject:
   - component: {fileID: 1700223674}
   - component: {fileID: 1700223673}
   m_Layer: 0
-  m_Name: DullRedSphere
+  m_Name: RedCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12705,7 +12729,7 @@ GameObject:
   - component: {fileID: 1718981245}
   - component: {fileID: 1718981244}
   m_Layer: 0
-  m_Name: DullGreenSphere
+  m_Name: GreenCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

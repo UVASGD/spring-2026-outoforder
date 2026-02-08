@@ -10,7 +10,6 @@ public class LocationData : MonoBehaviour
 
     void Start()
     {
-        GameData.escapeRoomGameplayManagerScript.locationNames = JsonConvert.DeserializeObject<List<string>>(Resources.Load<TextAsset>("Story/EscapeRoom/EscapeRoom0/0_locations").text);
         UpdateLocationText();
     }
 

@@ -6,22 +6,22 @@
         "description": ""
    },
    {
-        "name": "Dull Red Sphere",
+        "name": "Red Core",
         "detailed": false,
         "collectible": true,
-        "description": "A glowing red sphere. The light emitting from it is dull."
+        "description": "A glowing red core. The light emitting from it is dull."
    },
    {
-        "name": "Dull Green Sphere",
+        "name": "Green Core",
         "detailed": false,
         "collectible": true,
-        "description": "A glowing green sphere. The light emitting from it is dull."
+        "description": "A glowing green core. The light emitting from it is dull."
    },
    {
-        "name": "Dull Blue Sphere",
+        "name": "Blue Core",
         "detailed": false,
         "collectible": true,
-        "description": "A glowing blue sphere. The light emitting from it is dull."
+        "description": "A glowing blue core. The light emitting from it is dull."
    },
    {
         "name": "Left Box",

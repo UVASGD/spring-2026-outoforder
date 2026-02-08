@@ -71,8 +71,8 @@ public class DialogueSystemScript : MonoBehaviour
         }
         else
         {
-            oldCG.gameObject.SetActive(false);
-            activeCG.gameObject.SetActive(false);
+            oldCG?.gameObject.SetActive(false);
+            activeCG?.gameObject.SetActive(false);
         }
         narrationTMP.gameObject.SetActive(false);
         advanceDialogueButton.SetActive(true);
@@ -147,7 +147,7 @@ public class DialogueSystemScript : MonoBehaviour
 
             // TODO: do some sort of one other the other thing here
             // set cg
-            SetCG();
+            if (!SceneManager.GetActiveScene().name.Contains("EscapeRoom")) SetCG();
 
             // set sprite
             if (!SceneManager.GetActiveScene().name.Equals("Cutscene")) SetSprite();
