@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ManualInteraction : MonoBehaviour
@@ -12,8 +13,20 @@ public class ManualInteraction : MonoBehaviour
     [SerializeField] private int dialoguesIndex;
     [SerializeField] private List<TextAsset> characterDialogues;
 
+    [Header("[DATA]")]
+    [SerializeField] private ItemData itemData;
+
+    void Start()
+    {
+        // TODO: EVERYONE SHOULD HAVE ITEMDATA EVENTUALLY - PUZZLES AND ZOOMS DO NOT ATM
+        itemData = GetComponent<ItemController>()?.itemData;
+    }
+
     public void ItemInteraction()
     {
+        // TODO: EVERYONE SHOULD HAVE ITEMDATA EVENTUALLY - PUZZLES AND ZOOMS DO NOT ATM
+        GameData.escapeRoomGameplayManagerScript.interactingWith = itemData != null ? itemData.name : "";
+
         // flag check: if the current flag is true, update dialogue to be the next one possible
         while (dialoguesIndex < activatingFlags.Count && GameProgression.GameProgressionInstance.GetFlag(activatingFlags[dialoguesIndex]))
         {
@@ -33,8 +46,6 @@ public class ManualInteraction : MonoBehaviour
         {
             GameProgression.GameProgressionInstance.SetFlag(triggeringFlags[dialoguesIndex - eventOffset], true);
         }
-
-        print($"solvedLightSwitchPuzzle: {GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")}");
 
         GameProgression.GameProgressionInstance.ShowDialogue(characterDialogues[dialoguesIndex]);
     }

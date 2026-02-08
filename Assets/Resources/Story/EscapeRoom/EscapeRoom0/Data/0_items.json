@@ -96,5 +96,12 @@
      "puzzle": false,
      "collectible": false,
      "description": ""
+   },
+   "Monitors": {
+     "name": "Monitors",
+     "detailed": false,
+     "puzzle": false,
+     "collectible": false,
+     "description": ""
    }
 }

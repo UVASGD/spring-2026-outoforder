@@ -29,7 +29,7 @@ public class Puzzle : MonoBehaviour
     {
         if (!solved)
         {
-           GameObject digit = EventSystem.current.currentSelectedGameObject;
+            GameObject digit = EventSystem.current.currentSelectedGameObject;
             TextMeshProUGUI digitTMP = digit.GetComponentInChildren<TextMeshProUGUI>();
             int currentDigit = int.Parse(digitTMP.text);
 
