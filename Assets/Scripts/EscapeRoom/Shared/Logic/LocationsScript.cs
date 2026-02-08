@@ -38,11 +38,16 @@ public class LocationsScript : MonoBehaviour
 
         content = popUpAreas.transform.Find("ItemPopUp").transform.GetComponentInChildren<VerticalLayoutGroup>().gameObject;
 
-        // TODO: include the regular detailed here too
-        puzzles = FindObjectsByType<Puzzle>(FindObjectsSortMode.None).OfType<MonoBehaviour>().ToDictionary(
-            puzzle => puzzle.gameObject.name,
-            puzzle => puzzle.gameObject
-        );
+        puzzles = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None)
+            .Where(item => 
+                item.gameObject.name.Contains("Zoom", System.StringComparison.OrdinalIgnoreCase) || 
+                item is Puzzle
+            )
+            .GroupBy(item => item.gameObject.name)
+            .ToDictionary(
+                group => group.Key, 
+                group => group.First().gameObject
+            );
 
         foreach (GameObject puzzle in puzzles.Values)
         {
@@ -155,7 +160,7 @@ public class LocationsScript : MonoBehaviour
             yield return null;
         }
 
-        currentPuzzle = itemData.name.Replace(" ", "") + (itemData.puzzle ? "Puzzle" : "Detailed");
+        currentPuzzle = itemData.name.Replace(" ", "") + (itemData.puzzle ? "Puzzle" : "Zoom");
         puzzles[currentPuzzle].gameObject.SetActive(true);
         backButton.gameObject.SetActive(true);
     }
