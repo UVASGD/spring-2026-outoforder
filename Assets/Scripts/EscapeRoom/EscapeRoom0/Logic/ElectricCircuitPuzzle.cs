@@ -7,6 +7,9 @@ public class ElectricCircuitPuzzle : Puzzle
 {
     private TMP_InputField inputField;
     private Image finalLight;
+    private Image firstSlotImage;
+    private Image secondSlotImage;
+    private Image currentSlotImage;
     private Button firstSlot;
     private Button secondSlot;
     private Button currentSlot;
@@ -30,6 +33,8 @@ public class ElectricCircuitPuzzle : Puzzle
     {
         inputField = GameObject.Find("InputField").gameObject.GetComponent<TMP_InputField>();
         finalLight = GameObject.Find("FinalLight").gameObject.GetComponent<Image>();
+        firstSlotImage = GameObject.Find("FirstSlot").gameObject.GetComponent<Image>();
+        secondSlotImage = GameObject.Find("SecondSlot").gameObject.GetComponent<Image>();
         firstSlot = GameObject.Find("FirstSlot").gameObject.GetComponent<Button>();
         secondSlot = GameObject.Find("SecondSlot").gameObject.GetComponent<Button>();
 
@@ -40,27 +45,32 @@ public class ElectricCircuitPuzzle : Puzzle
 
     public void OnFirstSlotClicked()
     {
+        if (currentSlotImage != null) currentSlotImage.color = Color.white;
+        currentSlotImage = firstSlotImage;
         OpenInputField(firstSlot);
-        print($"First slot was clicked");
     }
 
     public void OnSecondSlotClicked()
     {
+        if (currentSlotImage != null) currentSlotImage.color = Color.white;
+        currentSlotImage = secondSlotImage;
         OpenInputField(secondSlot);
-        print("Second slot was clicked");
     }
 
     private void OpenInputField(Button slotButton)
     {
+        currentSlotImage.color = Color.yellow;
         currentSlot = slotButton;
         inputField.text = "";
         inputField.gameObject.SetActive(true);
         inputField.ActivateInputField();
-        inputField.placeholder.GetComponent<TMP_Text>().text = "LOGIC GATE TYPE (BASIC ONLY)";
+        inputField.placeholder.GetComponent<TMP_Text>().text = "LOGIC GATE TYPE";
     }
 
     private void OnTextEntered(string text)
     {
+        currentSlotImage.color = Color.white;
+
         text = text.Trim().ToUpper();
         print("Input " + text);
 
