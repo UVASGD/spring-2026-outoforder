@@ -3,12 +3,17 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "electric circuit puzzle 0"
+            "dialogue": "Oh god, it's a circuit."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "I'll just have to work with what I have. I'll keep thinking about it.",
+            "dialogue": "The two lights on the left are on, on the one on the right is off."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "I'm assuming that I'd just have to place the correct logic gates so that the last light is switched on as well.",
             "endOfScene": true
         }
     ]

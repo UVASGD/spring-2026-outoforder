@@ -3,12 +3,17 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "electric circuit puzzle 1"
+            "dialogue": "The first slot for the gate takes two inputs, the two lights."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "I'll just have to work with what I have. I'll keep thinking about it.",
+            "dialogue": "So the second slot for the gate must take one."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "What combination of gates could that be...",
             "endOfScene": true
         }
     ]

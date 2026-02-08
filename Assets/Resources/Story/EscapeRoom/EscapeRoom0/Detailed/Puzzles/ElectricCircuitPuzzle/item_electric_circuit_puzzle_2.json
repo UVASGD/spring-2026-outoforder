@@ -3,12 +3,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "electric circuit puzzle 2"
+            "dialogue": "That was easy enough."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "I'll just have to work with what I have. I'll keep thinking about it.",
+            "dialogue": "Looks like electricity from the circuit recharged the blue core.",
             "endOfScene": true
         }
     ]
