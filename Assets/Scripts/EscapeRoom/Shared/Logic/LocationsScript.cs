@@ -88,11 +88,15 @@ public class LocationsScript : MonoBehaviour
 
     public void EnterItem(ItemData itemData)
     {
-        if (itemData.detailed) StartCoroutine(WaitToEnterItem(itemData));
+        if (itemData.detailed)
+        {
+            StartCoroutine(WaitToEnterItem(itemData));
+        }
     }
     
     public void ExitItem()
     {
+        GameData.escapeRoomGameplayManagerScript.enteredItem = false;
         puzzles[currentPuzzle].gameObject.SetActive(false);
         backButton.gameObject.SetActive(false);
         currentPuzzle = "";
@@ -138,6 +142,7 @@ public class LocationsScript : MonoBehaviour
         {
             print($"collecting {itemData.name}");
             GameObject item = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
+            item.name = itemData.name;
             item.GetComponentInChildren<TextMeshProUGUI>().text = itemData.name;
             GameData.escapeRoomGameplayManagerScript.collectedItems.Add(itemData.name);
         }
@@ -160,6 +165,7 @@ public class LocationsScript : MonoBehaviour
             yield return null;
         }
 
+        GameData.escapeRoomGameplayManagerScript.enteredItem = true;
         currentPuzzle = itemData.name.Replace(" ", "") + (itemData.puzzle ? "Puzzle" : "Zoom");
         puzzles[currentPuzzle].gameObject.SetActive(true);
         backButton.gameObject.SetActive(true);

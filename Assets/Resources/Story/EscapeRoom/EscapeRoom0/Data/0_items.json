@@ -62,6 +62,13 @@
      "collectible": true,
      "description": "A lever. It seems to be disconnected from something. Is there a place in the room where it belongs?"
    },
+   "Remote": {
+      "name": "Remote",
+     "detailed": false,
+     "puzzle": false,
+     "collectible": true,
+     "description": "A remote with batteries still intact. Pointing it to the right device should turn it on."
+   },
    "TopBox": {
      "name": "Top Box",
      "detailed": false,

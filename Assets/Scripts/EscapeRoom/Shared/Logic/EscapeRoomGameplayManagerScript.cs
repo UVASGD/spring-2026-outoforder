@@ -10,6 +10,7 @@ public class EscapeRoomGameplayManagerScript : MonoBehaviour
     public Dictionary<string, ItemData> items;
     public HashSet<string> collectedItems = new();
     public Dictionary<string, string> itemDescriptions = new();
+    public bool enteredItem;
 
     void Awake()
     {

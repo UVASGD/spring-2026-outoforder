@@ -1,0 +1,20 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "There's a box on one of the top shelves."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "... I can't reach it though. It's too far up."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "I can try figuring out how to get it down later... but first, I should figure out how to turn the lights back on.",
+            "endOfScene": true
+        }
+    ]
+}
