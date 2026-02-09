@@ -17,10 +17,10 @@ public class EscapeRoomGameplayManagerScript : MonoBehaviour
     {
         GameData.escapeRoomGameplayManagerScript = this;
         
-        locationNames = JsonConvert.DeserializeObject<List<string>>(Resources.Load<TextAsset>($"Story/EscapeRoom/EscapeRoom{GameData.escapeRoomNumber}/Data/{GameData.escapeRoomNumber}_locations").text);
+        locationNames = JsonConvert.DeserializeObject<List<string>>(Resources.Load<TextAsset>($"Story/EscapeRoom/EscapeRoom{GameData.escapeRoomNumber}/Data/locations").text);
         locations.AddRange(Enumerable.Range(0, 5).Select(i => GameObject.Find($"Location{i}")));
 
-        items = JsonConvert.DeserializeObject<Dictionary<string, ItemData>>(Resources.Load<TextAsset>($"Story/EscapeRoom/EscapeRoom{GameData.escapeRoomNumber}/Data/{GameData.escapeRoomNumber}_items").text);
+        items = JsonConvert.DeserializeObject<Dictionary<string, ItemData>>(Resources.Load<TextAsset>($"Story/EscapeRoom/EscapeRoom{GameData.escapeRoomNumber}/Data/items").text);
         foreach (ItemData item in items.Values)
         {
             itemDescriptions.Add(item.name, item.description);

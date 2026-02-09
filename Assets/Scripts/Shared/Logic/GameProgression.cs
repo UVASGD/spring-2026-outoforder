@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 public class GameProgression : MonoBehaviour
 {
+    [Header("DEBUG")]
+    [SerializeField] private int debugEscapeRoomNumber;
+
     [Header("DATA")]
     public static GameProgression GameProgressionInstance;
     public SpriteCache SpriteCache; // move to GameData?
@@ -39,6 +42,8 @@ public class GameProgression : MonoBehaviour
 
     void Awake()
     {
+        GameData.escapeRoomNumber = debugEscapeRoomNumber;
+
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
 
