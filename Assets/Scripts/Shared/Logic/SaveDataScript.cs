@@ -36,9 +36,10 @@ public class SaveDataScript : MonoBehaviour
 
     private void StoreGameDataInPlayerPrefs()
     {
+        JsonSerializer serializer = new JsonSerializer();
         PlayerPrefs.SetInt("Escape Room Number", GameData.escapeRoomNumber);
         PlayerPrefs.SetString("Play Time", GameData.playTime.ToString());
-        // PlayerPrefs.SetString("Route Flags", GameData.routeFlags.ToString());
+        PlayerPrefs.SetString("Route Flags", serializer.Serialize(GameData.routeFlags));
         Debug.Log("Player Prefs:");
         Debug.Log(PlayerPrefs.GetInt("Escape Room Number"));
         Debug.Log(PlayerPrefs.GetString("Play Time"));
