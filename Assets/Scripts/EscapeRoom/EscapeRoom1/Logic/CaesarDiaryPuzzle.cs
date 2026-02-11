@@ -3,25 +3,10 @@ using UnityEngine.UI;
 
 public class CaesarDiaryPuzzle : Puzzle
 {
-    public GameObject submit;
-    private bool leverRepaired;
-
     void Awake()
     {
         answer = new char[] { 'K', 'I', 'M', 'A', 'I', 'Z' };
-        guess = new char[] { 'A', 'A', 'A', 'A', 'A', 'A' };
-
-        submit = transform.Find("Submit").gameObject;
-    }
-
-    void Update()
-    {
-        if (!leverRepaired && GameProgression.GameProgressionInstance.GetFlag("firstInteractionLightSwitchPuzzle"))
-        {
-            leverRepaired = true;
-            submit.GetComponent<Button>().enabled = true;
-            submit.GetComponent<Image>().enabled = true;
-        }
+        guess = new char[] { 'C', 'A', 'E', 'S', 'A', 'R' };
     }
 
     protected override void SolvedPuzzleSpecific()
