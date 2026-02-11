@@ -26,6 +26,11 @@ public class ManualInteraction : MonoBehaviour
         // TODO: EVERYONE SHOULD HAVE ITEMDATA EVENTUALLY - PUZZLES AND ZOOMS DO NOT ATM
         GameData.escapeRoomGameplayManagerScript.interactingWith = gameObject.name;
 
+        if (!string.IsNullOrEmpty(GameData.escapeRoomGameplayManagerScript.selectedItem) && !string.IsNullOrEmpty(GameData.escapeRoomGameplayManagerScript.interactingWith))
+        {
+            GameData.escapeRoomGameplayManagerScript.UseItem(GameData.escapeRoomGameplayManagerScript.selectedItem, GameData.escapeRoomGameplayManagerScript.interactingWith);
+        }
+
         // flag check: if the current flag is true, update dialogue to be the next one possible
         while (dialoguesIndex < activatingFlags.Count && GameProgression.GameProgressionInstance.GetFlag(activatingFlags[dialoguesIndex]))
         {
@@ -36,7 +41,7 @@ public class ManualInteraction : MonoBehaviour
             && ((GameData.escapeRoomNumber == 0 
                 && (gameObject.name.Equals("LightSwitch") 
                 || gameObject.name.Equals("Lever") 
-                || (gameObject.name.Equals("LightSwitchPuzzle") && GameProgression.GameProgressionInstance.GetFlag("useLever")) 
+                || (gameObject.name.Equals("LightSwitchPuzzle") && GameProgression.GameProgressionInstance.GetFlag("usedLever")) 
                 || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
             || (GameData.escapeRoomNumber == 1)
             || (GameData.escapeRoomNumber == 2)

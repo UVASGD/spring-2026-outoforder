@@ -16,7 +16,7 @@ public class LightSwitchPuzzle : Puzzle
 
     void Update()
     {
-        if (!leverRepaired && GameData.escapeRoomGameplayManagerScript.UseItem("Lever", "LightSwitchPuzzle"))
+        if (!leverRepaired && GameProgression.GameProgressionInstance.GetFlag("usedLever"))
         {
             leverRepaired = true;
             submit.GetComponent<Button>().enabled = true;
@@ -30,7 +30,7 @@ public class LightSwitchPuzzle : Puzzle
 
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["UnlockedLightSwitchPuzzle"];
 
-        GameProgression.GameProgressionInstance.SetFlag("firstLightSwitchPuzzle", true);
+        GameProgression.GameProgressionInstance.SetFlag("firstInteractionLightSwitchPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedLightSwitchPuzzle", true);
         gameObject.GetComponent<ManualInteraction>().ItemInteraction();
         GameProgression.GameProgressionInstance.SetFlag("lastInteractionLightSwitchPuzzle", true);
