@@ -7,9 +7,12 @@ public class EscapeRoomGameplayManagerScript : MonoBehaviour
 {
     public List<string> locationNames;
     public List<GameObject> locations;
-    public Dictionary<string, ItemData> items;
-    public HashSet<string> collectedItems = new();
+    
+    public string selectedItem;
+    public Dictionary<string, ItemData> items = new();
+    public Dictionary<string, GameObject> collectedItemsScrollView = new();
     public Dictionary<string, string> itemDescriptions = new();
+    
     public string interactingWith;
     public bool enteredItem;
 
@@ -25,5 +28,19 @@ public class EscapeRoomGameplayManagerScript : MonoBehaviour
         {
             itemDescriptions.Add(item.name, item.description);
         }
+    }
+
+    public bool UseItem(string directItem, string indirectItem)
+    {
+        print($"selected item is {selectedItem}! and interactingWith is {interactingWith}!");
+        // TODO MAYBE SOME SORT OF USED ITEM SOUND EFFECT
+        if (selectedItem.Equals(directItem) && interactingWith.Equals(indirectItem))
+        {
+            Destroy(collectedItemsScrollView[directItem]);
+            collectedItemsScrollView.Remove(directItem);
+            GameProgression.GameProgressionInstance.SetFlag($"used{directItem}", true);
+            return true;
+        }
+        return false;
     }
 }

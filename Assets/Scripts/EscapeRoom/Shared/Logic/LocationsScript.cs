@@ -137,13 +137,13 @@ public class LocationsScript : MonoBehaviour
 
     private void CollectItem(ItemData itemData)
     {
-        if (itemData.collectible && !GameData.escapeRoomGameplayManagerScript.collectedItems.Contains(itemData.name))
+        if (itemData.collectible && !GameData.escapeRoomGameplayManagerScript.collectedItemsScrollView.ContainsKey(itemData.name))
         {
             print($"collecting {itemData.name}");
             GameObject item = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
             item.name = itemData.name.Replace(" ", "");
             item.GetComponentInChildren<TextMeshProUGUI>().text = itemData.name;
-            GameData.escapeRoomGameplayManagerScript.collectedItems.Add(itemData.name);
+            GameData.escapeRoomGameplayManagerScript.collectedItemsScrollView[itemData.name] = item;
         }
     }
 

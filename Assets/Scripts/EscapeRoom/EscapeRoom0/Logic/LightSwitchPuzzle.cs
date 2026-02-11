@@ -16,7 +16,7 @@ public class LightSwitchPuzzle : Puzzle
 
     void Update()
     {
-        if (!leverRepaired && GameProgression.GameProgressionInstance.GetFlag("firstInteractionLightSwitchPuzzle"))
+        if (!leverRepaired && GameData.escapeRoomGameplayManagerScript.UseItem("Lever", "LightSwitchPuzzle"))
         {
             leverRepaired = true;
             submit.GetComponent<Button>().enabled = true;
