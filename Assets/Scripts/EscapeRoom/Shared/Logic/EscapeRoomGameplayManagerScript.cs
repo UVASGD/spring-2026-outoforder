@@ -1,15 +1,20 @@
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class EscapeRoomGameplayManagerScript : MonoBehaviour
 {
     public List<string> locationNames;
     public List<GameObject> locations;
-    public Dictionary<string, ItemData> items;
-    public HashSet<string> collectedItems = new();
+    
+    public string selectedItem;
+    public Dictionary<string, ItemData> items = new();
+    public Dictionary<string, GameObject> collectedItemsScrollView = new();
     public Dictionary<string, string> itemDescriptions = new();
+    public Dictionary<string, string> usages = new();
+    
     public string interactingWith;
     public bool enteredItem;
 
@@ -25,5 +30,21 @@ public class EscapeRoomGameplayManagerScript : MonoBehaviour
         {
             itemDescriptions.Add(item.name, item.description);
         }
+        
+        usages = JsonConvert.DeserializeObject<Dictionary<string, string>>(Resources.Load<TextAsset>($"Story/EscapeRoom/EscapeRoom{GameData.escapeRoomNumber}/Data/usages").text);
+    }
+
+    public bool UseItem(string directItem, string indirectItem)
+    {
+        // TODO MAYBE SOME SORT OF USED ITEM SOUND EFFECT
+        if (usages.TryGetValue(directItem, out var value) && value == indirectItem)
+        {
+            selectedItem = "";
+            Destroy(collectedItemsScrollView[directItem]);
+            collectedItemsScrollView.Remove(directItem);
+            GameProgression.GameProgressionInstance.SetFlag($"used{directItem}", true);
+            return true;
+        }
+        return false;
     }
 }
