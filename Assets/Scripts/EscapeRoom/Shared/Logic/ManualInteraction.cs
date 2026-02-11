@@ -41,8 +41,7 @@ public class ManualInteraction : MonoBehaviour
             && ((GameData.escapeRoomNumber == 0 
                 && (gameObject.name.Equals("LightSwitch") 
                 || gameObject.name.Equals("Lever") 
-                || (gameObject.name.Equals("LightSwitchPuzzle") && GameProgression.GameProgressionInstance.GetFlag("usedLever")) 
-                || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
+                || (gameObject.name.Equals("LightSwitchPuzzle") && GameProgression.GameProgressionInstance.GetFlag("usedLever"))))
             || (GameData.escapeRoomNumber == 1)
             || (GameData.escapeRoomNumber == 2)
             || (GameData.escapeRoomNumber == 3)
