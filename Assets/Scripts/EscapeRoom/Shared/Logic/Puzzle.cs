@@ -46,6 +46,27 @@ public class Puzzle : MonoBehaviour
             guess[digit.transform.GetSiblingIndex()] = (char)('0' + currentDigit); 
         }
     }
+    public void IncrementLetter()
+    {
+        if (!solved)
+        {
+            GameObject character = EventSystem.current.currentSelectedGameObject;
+            TextMeshProUGUI letterTMP = character.GetComponentInChildren<TextMeshProUGUI>();
+
+            char currentChar = letterTMP.text[0];
+
+            // Force uppercase
+            if (currentChar < 'A' || currentChar > 'Z')
+            {
+                currentChar = 'A';
+            }
+
+            char nextChar = (char)('A' + (currentChar - 'A' + 1) % 26);
+
+            letterTMP.text = nextChar.ToString();
+            guess[character.transform.GetSiblingIndex()] = nextChar;
+        }
+    }
 
     private void SolvedPuzzle()
     {
