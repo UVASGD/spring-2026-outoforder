@@ -6951,8 +6951,8 @@ MonoBehaviour:
   - firstInteractionElectricCircuit
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 8640f4486a767a640b1bf3753b6f5104, type: 3}
-  - {fileID: 4900000, guid: e67d66385eeda6c49a5e92bac2b261d4, type: 3}
+  - {fileID: 4900000, guid: 6d4e6707b702c0043b7229d867810bc2, type: 3}
+  - {fileID: 4900000, guid: 372056f191339f4459676af3f2aadea7, type: 3}
   itemData:
     name: 
     detailed: 0
