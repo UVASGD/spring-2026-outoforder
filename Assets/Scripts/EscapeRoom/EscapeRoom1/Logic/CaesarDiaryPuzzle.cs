@@ -11,13 +11,11 @@ public class CaesarDiaryPuzzle : Puzzle
 
     protected override void SolvedPuzzleSpecific()
     {
-        GameData.escapeRoomGameplayManagerScript.locations.ForEach(location => location.GetComponent<Image>().color = Color.white);
+        //GameData.escapeRoomGameplayManagerScript.locations.ForEach(location => location.GetComponent<Image>().color = Color.white);
 
-        gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["UnlockedLightSwitchPuzzle"];
+        //gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["UnlockedLightSwitchPuzzle"];
 
-        GameProgression.GameProgressionInstance.SetFlag("firstLightSwitchPuzzle", true);
-        GameProgression.GameProgressionInstance.SetFlag("solvedLightSwitchPuzzle", true);
-        gameObject.GetComponent<ManualInteraction>().ItemInteraction();
-        GameProgression.GameProgressionInstance.SetFlag("lastInteractionLightSwitchPuzzle", true);
+        //GameProgression.GameProgressionInstance.SetFlag("firstLightSwitchPuzzle", true);
+        GameProgression.GameProgressionInstance.SetFlag("solvedCaesarDiaryPuzzle", true);
     }
 }

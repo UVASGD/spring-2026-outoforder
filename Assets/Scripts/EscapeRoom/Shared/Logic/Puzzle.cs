@@ -13,7 +13,7 @@ public class Puzzle : MonoBehaviour
 
     public void AttemptSolve()
     {
-        // print($"the answer is {new string(answer)} and the guess was {new string(guess)}");
+        print($"the answer is {new string(answer)} and the guess was {new string(guess)}");
         // TODO: VERY TEMPORARY
         if (!solved && answer.SequenceEqual(guess)) 
         {
