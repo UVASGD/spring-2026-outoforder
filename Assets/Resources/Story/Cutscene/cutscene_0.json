@@ -1,24 +1,66 @@
 {
     "dialogues": [
         {
-            "character": "VIRGO",
+            "character": "",
             "cgSprite": "VirgoNeutral",
             "dialogue": "In this world, there exists humans and the robots that serve them. With today's advanced technology, robots are able to attend to all the needs a human may have."
         },
         {
-            "character": "VIRGO",
-            "dialogue": "1"
+            "character": "",
+            "dialogue": "Robots can be housmaids, firefighters, doctors…the possiblities are endless! However, all robots have Three Laws they must abide by."
         },
         {
-            "character": "VIRGO",
+            "character": "",
             "cgSprite": "VirgoEyes",
-            "dialogue": "2 Change picture"
+            "dialogue": "First, a robot shall never injure a human being or allow a human being to come to harm;"
         },
         {
-            "character": "VIRGO",
+            "character": "",
             "cgSprite": "ASTANeutral",
-            "dialogue": "3 Very nice"
+            "dialogue": "Second, unless they conflict with the First Law, a robot must obey their human's orders;"
         },
+        {
+            "character": "",
+            "cgSprite": "ASTANeutral",
+            "dialogue": "Huh…?"
+        },
+        {
+            "character": "",
+            "cgSprite": "ASTANeutral",
+            "dialogue": "And finally, so long as there is no conflict with the First or Second Law, a robot must protect its own existence."
+        },
+
+        {
+            "character": "",
+            "cgSprite": "ASTANeutral",
+            "dialogue": "The Three Laws? Of course, I know those. I'm a mechanic, after all. But.. why…?"
+        },
+        {
+            "character": "",
+            "cgSprite": "ASTANeutral",
+            "dialogue": "Error is not error. "
+        },
+        {
+            "character": "",
+            "cgSprite": "ASTANeutral",
+            "dialogue": "Error."
+        },
+        {
+            "character": "",
+            "cgSprite": "ASTANeutral",
+            "dialogue": "Error."
+        },
+        {
+            "character": "",
+            "cgSprite": "ASTANeutral",
+            "dialogue": "Error…? Wait—"
+        },
+        {
+            "character": "",
+            "cgSprite": "ASTANeutral",
+            "dialogue": "Error. Error. Error. Errrrrr"
+        },
+
         {
             "hideUI": true,
             "flag": "VisualNovel"
