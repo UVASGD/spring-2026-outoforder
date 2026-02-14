@@ -13,7 +13,7 @@ public class Puzzle : MonoBehaviour
 
     public void AttemptSolve()
     {
-        // print($"the answer is {new string(answer)} and the guess was {new string(guess)}");
+        print($"the answer is {new string(answer)} and the guess was {new string(guess)}");
         // TODO: VERY TEMPORARY
         if (!solved && answer.SequenceEqual(guess)) 
         {
@@ -44,6 +44,27 @@ public class Puzzle : MonoBehaviour
 
             digitTMP.text = currentDigit.ToString();
             guess[digit.transform.GetSiblingIndex()] = (char)('0' + currentDigit); 
+        }
+    }
+    public void IncrementLetter()
+    {
+        if (!solved)
+        {
+            GameObject character = EventSystem.current.currentSelectedGameObject;
+            TextMeshProUGUI letterTMP = character.GetComponentInChildren<TextMeshProUGUI>();
+
+            char currentChar = letterTMP.text[0];
+
+            // Force uppercase
+            if (currentChar < 'A' || currentChar > 'Z')
+            {
+                currentChar = 'A';
+            }
+
+            char nextChar = (char)('A' + (currentChar - 'A' + 1) % 26);
+
+            letterTMP.text = nextChar.ToString();
+            guess[character.transform.GetSiblingIndex()] = nextChar;
         }
     }
 
