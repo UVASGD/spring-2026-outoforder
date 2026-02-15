@@ -12,7 +12,7 @@ public class ItemController : MonoBehaviour
 
         if (scrollView)
         {
-            GetComponent<Button>().onClick.AddListener(() => GetComponentInParent<ItemPopUpScript>().ShowItem());
+            GetComponent<Button>().onClick.AddListener(() => GetComponentInParent<ItemPopUp>().ShowItem());
         }
         else
         {

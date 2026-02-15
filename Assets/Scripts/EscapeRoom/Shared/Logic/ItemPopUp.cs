@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ItemPopUpScript : MonoBehaviour
+public class ItemPopUp : MonoBehaviour
 {
     private string displayedItem;
     private TextMeshProUGUI nameText;

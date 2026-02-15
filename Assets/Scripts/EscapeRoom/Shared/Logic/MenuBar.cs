@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MenuBarScript : MonoBehaviour
+public class MenuBar : MonoBehaviour
 {
     [SerializeField] private string currentMenuName = "none";
     private GameObject currentPopUp;

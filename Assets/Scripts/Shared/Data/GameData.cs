@@ -15,7 +15,7 @@ public static class GameData
 
     // escape room
     // change this name convention, to no script
-    public static EscapeRoomGameplayManagerScript escapeRoomGameplayManagerScript;
+    public static EscapeRoomGameplay escapeRoomGameplayManagerScript;
 
     // escape room
     public static VisualNovelGameplay visualNovelGameplayManagerScript;
