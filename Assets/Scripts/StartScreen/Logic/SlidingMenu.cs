@@ -1,19 +1,8 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
-public class SlidingMenuScript : MonoBehaviour
+public class SlidingMenu : MonoBehaviour
 {
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-        
-    }
-
     public void MoveLeft()
     {
         StartCoroutine(Move(-400f));

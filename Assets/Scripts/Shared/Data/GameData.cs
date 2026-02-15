@@ -8,7 +8,7 @@ public static class GameData
     public static int escapeRoomNumber;
     public static int visualNovelNumber;
     public static int visualNovelDialogueIndex;
-    public static Dictionary<string, bool> routeFlags;
+    public static Dictionary<string, bool> routeFlags = new();
     public static TimeSpan playTime; 
 
     // shared

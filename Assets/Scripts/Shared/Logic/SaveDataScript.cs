@@ -1,30 +1,18 @@
-using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 
-public class SaveDataScript : MonoBehaviour
+// TODO: Move this into GameProgression as it is a persisting object throughout the scenes
+// if (something) saveDataScript.SetStartTime(DateTime.Now); do something like this for when the button clicked goes to game
+public class SaveData : MonoBehaviour
 {
     private DateTime startTime; 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void SetStartTime(DateTime newStartTime)
     {
         startTime = newStartTime; 
     }
 
-    public void SaveData()
+    public void Save()
     {
         SetPlayTime();
         StoreGameDataInPlayerPrefs();
@@ -38,14 +26,10 @@ public class SaveDataScript : MonoBehaviour
 
     private void StoreGameDataInPlayerPrefs()
     {
-        // GameData.routeFlags = new Dictionary<string, bool>();
         GameData.routeFlags.Add("Flag 1", true);
         PlayerPrefs.SetInt("Escape Room Number", GameData.escapeRoomNumber);
         PlayerPrefs.SetString("Play Time", GameData.playTime.ToString());
         PlayerPrefs.SetString("Route Flags", JsonUtility.ToJson(GameData.routeFlags));
-        Debug.Log("Player Prefs:");
-        Debug.Log(PlayerPrefs.GetInt("Escape Room Number"));
-        Debug.Log(PlayerPrefs.GetString("Play Time"));
-        Debug.Log(PlayerPrefs.GetString("Route Flags"));
+        Debug.Log($"Player Prefs: Escape Room Number: {PlayerPrefs.GetInt("Escape Room Number")}, Play Time: {PlayerPrefs.GetInt("Play Time")}, Route Flags: {PlayerPrefs.GetInt("Route Flags")}");
     }
 }
