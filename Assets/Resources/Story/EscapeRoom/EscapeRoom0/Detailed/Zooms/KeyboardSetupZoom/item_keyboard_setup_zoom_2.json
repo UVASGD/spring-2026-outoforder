@@ -1,0 +1,10 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Well, that's definitely a unique way of remembering a passcode.",
+            "endOfScene": true
+        }
+    ]
+}

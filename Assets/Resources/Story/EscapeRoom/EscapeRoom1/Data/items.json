@@ -1,0 +1,16 @@
+{
+   "CaesarDiary": {
+      "name": "Caesar Diary",
+      "detailed": true,
+      "puzzle": true,
+      "collectible": false,
+      "description": ""
+   },
+   "LockedLocker": {
+      "name": "Locked Locker",
+      "detailed": true,
+      "puzzle": true,
+      "collectible": false,
+      "description": ""
+   }
+}

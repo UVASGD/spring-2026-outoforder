@@ -1,0 +1,20 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "The letters are all jumbled up."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "It probably spells out some sort of word."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Maybe if I could rearrange it, the dispenser will be enabled...",
+            "endOfScene": true
+        }
+    ]
+}

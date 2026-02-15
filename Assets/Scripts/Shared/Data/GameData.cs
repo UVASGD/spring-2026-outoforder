@@ -6,6 +6,7 @@ public static class GameData
 {
     // save relevant data
     public static int escapeRoomNumber;
+    public static int visualNovelNumber;
     public static int visualNovelDialogueIndex;
     public static Dictionary<string, bool> routeFlags;
     public static TimeSpan playTime; 
@@ -15,5 +16,9 @@ public static class GameData
     public static Coroutine fadeCoroutine;
 
     // escape room
-    public static EscapeRoomGameplayManagerScript escapeRoomGameplayManagerScript;
+    // change this name convention, to no script
+    public static EscapeRoomGameplay escapeRoomGameplayManagerScript;
+
+    // escape room
+    public static VisualNovelGameplay visualNovelGameplayManagerScript;
 }

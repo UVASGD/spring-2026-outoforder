@@ -13,7 +13,7 @@ public class Puzzle : MonoBehaviour
 
     public void AttemptSolve()
     {
-        // print($"the answer is {new string(answer)} and the guess was {new string(guess)}");
+        print($"the answer is {new string(answer)} and the guess was {new string(guess)}");
         // TODO: VERY TEMPORARY
         if (!solved && answer.SequenceEqual(guess)) 
         {
@@ -29,7 +29,7 @@ public class Puzzle : MonoBehaviour
     {
         if (!solved)
         {
-           GameObject digit = EventSystem.current.currentSelectedGameObject;
+            GameObject digit = EventSystem.current.currentSelectedGameObject;
             TextMeshProUGUI digitTMP = digit.GetComponentInChildren<TextMeshProUGUI>();
             int currentDigit = int.Parse(digitTMP.text);
 
@@ -46,6 +46,27 @@ public class Puzzle : MonoBehaviour
             guess[digit.transform.GetSiblingIndex()] = (char)('0' + currentDigit); 
         }
     }
+    public void IncrementLetter()
+    {
+        if (!solved)
+        {
+            GameObject character = EventSystem.current.currentSelectedGameObject;
+            TextMeshProUGUI letterTMP = character.GetComponentInChildren<TextMeshProUGUI>();
+
+            char currentChar = letterTMP.text[0];
+
+            // Force uppercase
+            if (currentChar < 'A' || currentChar > 'Z')
+            {
+                currentChar = 'A';
+            }
+
+            char nextChar = (char)('A' + (currentChar - 'A' + 1) % 26);
+
+            letterTMP.text = nextChar.ToString();
+            guess[character.transform.GetSiblingIndex()] = nextChar;
+        }
+    }
 
     private void SolvedPuzzle()
     {
@@ -56,7 +77,7 @@ public class Puzzle : MonoBehaviour
 
     private void ErrorPuzzle()
     {
-        print("TODO: ERROR GUESS UI");
+        print($"TODO: ERROR GUESS UI; the guess was {new string(guess)}");
     }
 
     protected virtual void SolvedPuzzleSpecific() {}

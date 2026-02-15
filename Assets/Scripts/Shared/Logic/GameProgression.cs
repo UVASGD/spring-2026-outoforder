@@ -7,10 +7,13 @@ using UnityEngine.UI;
 
 public class GameProgression : MonoBehaviour
 {
+    [Header("DEBUG")]
+    [SerializeField] private int debugEscapeRoomNumber;
+
     [Header("DATA")]
     public static GameProgression GameProgressionInstance;
     public SpriteCache SpriteCache; // move to GameData?
-    public DialogueSystemScript DialogueSystemScript; // move to GameData?
+    public DialogueSystem DialogueSystemScript; // move to GameData?
     public FadeEffect FadeEffect;
     public string currentScene; // TODO: is this needed?
     public HashSet<string> complementedOneTimeEvents = new();
@@ -31,7 +34,7 @@ public class GameProgression : MonoBehaviour
     // BGM
     [SerializeField] private AudioSource audioSourceBGM;
     [SerializeField] private List<AudioClip> audioClipsBGM = new();
-    private int currentBGM = 5;
+    private int currentBGM;
 
     // SFX
     [SerializeField] private AudioSource audioSourceSFX;
@@ -39,6 +42,8 @@ public class GameProgression : MonoBehaviour
 
     void Awake()
     {
+        GameData.escapeRoomNumber = debugEscapeRoomNumber;
+
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
 
@@ -72,15 +77,23 @@ public class GameProgression : MonoBehaviour
     {
         GameData.fadeCoroutine = null;
 
-        DialogueSystemScript = (DialogueSystemScript)FindInChildrenIncludingInactive<DialogueSystemScript>(GameObject.Find("Canvas"));
+        DialogueSystemScript = (DialogueSystem)FindInChildrenIncludingInactive<DialogueSystem>(GameObject.Find("Canvas"));
 
         // TODO: fill out as we go
         switch (currentScene)
         {
             case "Cutscene":
+                // TODO : different for endings
+                StartCoroutine(PlayBGM(0));
+                break;
             case "VisualNovel":
+                break;
             case "EscapeRoom0":
+                StartCoroutine(PlayBGM(1));
+                break;
             case "EscapeRoom1":
+                StartCoroutine(PlayBGM(2));
+                break;
             case "EscapeRoom2":
             case "EscapeRoom3":
                 break;
@@ -104,23 +117,11 @@ public class GameProgression : MonoBehaviour
     }
 
     // Flag
-    public void CheckFlag(string possibleFlag = "")
+    public void SceneTransition(string scene)
     {
         transitioning = true;
 
-        print($"setting flag {possibleFlag}");
-
-        // TODO: fill out as we go
-        switch (currentScene)
-        {
-            case "Cutscene":
-            case "VisualNovel":
-            case "EscapeRoom0":
-            case "EscapeRoom1":
-            case "EscapeRoom2":
-            case "EscapeRoom3":
-                break;
-        }
+        FadeEffect.FadeIn(blackTransition, fadeTime: 2f, scene: scene);
     }
 
     public bool GetFlag(string key)
@@ -151,7 +152,7 @@ public class GameProgression : MonoBehaviour
 
     public IEnumerator PlayBGM(int index, float waitTime = 0.75f, GameObject gameObjectToDeactivate = null, float gameWaitTime = 0f, float fadeSpeed = 0.25f)
     {
-        // print($"switching to music at index {index}");
+        print($"switching to music at index {index}");
         
         float startVolume = audioSourceBGM.volume;
 

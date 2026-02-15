@@ -1,0 +1,15 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "That was easy enough."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Looks like electricity from the circuit recharged the blue core.",
+            "endOfScene": true
+        }
+    ]
+}
