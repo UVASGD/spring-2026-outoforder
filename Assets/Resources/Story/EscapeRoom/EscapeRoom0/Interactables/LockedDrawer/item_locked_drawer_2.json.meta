@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Resources/Story/EscapeRoom/EscapeRoom0/item_locked_drawer_2.json.meta
+guid: 1d47557db927a3b40b18149501471a20
+=======
 guid: 969f4056a7cb3194a83dbcca0cdab66c
+>>>>>>> develop:Assets/Resources/Story/EscapeRoom/EscapeRoom0/Interactables/LockedDrawer/item_locked_drawer_2.json.meta
 TextScriptImporter:
   externalObjects: {}
   userData: 

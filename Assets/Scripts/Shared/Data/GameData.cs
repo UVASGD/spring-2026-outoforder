@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +8,8 @@ public static class GameData
     public static int escapeRoomNumber;
     public static int visualNovelNumber;
     public static int visualNovelDialogueIndex;
-    public static List<string> routeFlags;
+    public static Dictionary<string, bool> routeFlags;
+    public static TimeSpan playTime; 
 
     // shared
     public static bool currentlyTalking;
