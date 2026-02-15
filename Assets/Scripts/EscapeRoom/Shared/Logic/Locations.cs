@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 // TODO: split this into to MovePopUpScript
-public class LocationsScript : MonoBehaviour
+public class Locations : MonoBehaviour
 {
     private GameObject location0;
     private GameObject location1;

@@ -1,10 +1,9 @@
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class EscapeRoomGameplayManagerScript : MonoBehaviour
+public class EscapeRoomGameplay : MonoBehaviour
 {
     public List<string> locationNames;
     public List<GameObject> locations;
