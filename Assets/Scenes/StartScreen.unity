@@ -1196,9 +1196,7 @@ GameObject:
   - component: {fileID: 725075812}
   - component: {fileID: 725075811}
   - component: {fileID: 725075810}
-  - component: {fileID: 725075813}
   - component: {fileID: 725075814}
-  - component: {fileID: 725075815}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -1320,18 +1318,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725075808}
   m_CullTransparentMesh: 1
---- !u!114 &725075813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725075808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37dd4d742b3db8e49bd105feb6b733a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StartNewGameScript
 --- !u!114 &725075814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1344,18 +1330,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9852876cadffa74aae0c96be5895e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartGameScript
---- !u!114 &725075815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725075808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 684ccc77ea85391468f7cf05f2c22011, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SaveDataScript
 --- !u!1 &817372518
 GameObject:
   m_ObjectHideFlags: 0
@@ -2640,8 +2614,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1496360841}
-        m_TargetAssemblyTypeName: SaveDataScript, Assembly-CSharp
-        m_MethodName: SaveData
+        m_TargetAssemblyTypeName: SaveData, Assembly-CSharp
+        m_MethodName: Save
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3943,6 +3917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6c9514f7c714449a2c7a54b4b78a34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameProgression
+  debugEscapeRoomNumber: 0
   SpriteCache: {fileID: 11400000, guid: 2776422836864e544bdbd249bbbc68da, type: 2}
   DialogueSystemScript: {fileID: 0}
   FadeEffect: {fileID: 0}
