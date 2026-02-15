@@ -1,5 +1,7 @@
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class SaveDataScript : MonoBehaviour
@@ -36,13 +38,14 @@ public class SaveDataScript : MonoBehaviour
 
     private void StoreGameDataInPlayerPrefs()
     {
-        JsonSerializer serializer = new JsonSerializer();
+        // GameData.routeFlags = new Dictionary<string, bool>();
+        GameData.routeFlags.Add("Flag 1", true);
         PlayerPrefs.SetInt("Escape Room Number", GameData.escapeRoomNumber);
         PlayerPrefs.SetString("Play Time", GameData.playTime.ToString());
-        PlayerPrefs.SetString("Route Flags", serializer.Serialize(GameData.routeFlags));
+        PlayerPrefs.SetString("Route Flags", JsonUtility.ToJson(GameData.routeFlags));
         Debug.Log("Player Prefs:");
         Debug.Log(PlayerPrefs.GetInt("Escape Room Number"));
         Debug.Log(PlayerPrefs.GetString("Play Time"));
-        // Debug.Log(PlayerPrefs.GetString("Route Flags"));
+        Debug.Log(PlayerPrefs.GetString("Route Flags"));
     }
 }
