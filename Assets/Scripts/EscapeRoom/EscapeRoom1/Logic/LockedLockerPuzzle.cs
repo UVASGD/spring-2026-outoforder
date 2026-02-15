@@ -20,6 +20,9 @@ public class LockedLockerPuzzle : Puzzle
 
         caesarDiary.SetActive(true);
 
+        // TODO: THIS COULD PROBABLY BE A METHOD IN PUZZLE THIS CODE IS REPEATED A LOT
+        GameProgression.GameProgressionInstance.SetFlag("firstInteractionLockedLockerPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedLockedLockerPuzzle", true);
+        gameObject.GetComponent<ManualInteraction>().ItemInteraction();
     }
 }

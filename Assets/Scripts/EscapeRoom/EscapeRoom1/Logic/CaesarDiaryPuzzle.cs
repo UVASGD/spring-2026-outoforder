@@ -18,7 +18,9 @@ public class CaesarDiaryPuzzle : Puzzle
     {
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["UnlockedCaesarDiaryPuzzle"];
 
+        GameProgression.GameProgressionInstance.SetFlag("firstInteractionCaesarDiaryPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedCaesarDiaryPuzzle", true);
+        gameObject.GetComponent<ManualInteraction>().ItemInteraction();
     }
 
     public void ResetPuzzle()

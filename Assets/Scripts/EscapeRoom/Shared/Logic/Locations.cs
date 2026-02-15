@@ -21,6 +21,7 @@ public class Locations : MonoBehaviour
     private Dictionary<string, GameObject> puzzles = new();
     private string currentPuzzle;
     private Button backButton;
+    private int itemsEntered;
 
     void Start()
     {
@@ -95,10 +96,19 @@ public class Locations : MonoBehaviour
     
     public void ExitItem()
     {
+        itemsEntered--;
         GameData.escapeRoomGameplayManagerScript.enteredItem = false;
         puzzles[currentPuzzle].gameObject.SetActive(false);
-        backButton.gameObject.SetActive(false);
-        currentPuzzle = "";
+        if (itemsEntered == 0) 
+        {
+            backButton.gameObject.SetActive(false);
+            currentPuzzle = "";
+        }
+        else
+        {
+            // HIGH PRIORITY TODO: EXTREMELY HARDCODED
+            currentPuzzle = "LockedLockerPuzzle";
+        }
     }
 
     public void ChangeLocation()
@@ -164,6 +174,7 @@ public class Locations : MonoBehaviour
             yield return null;
         }
 
+        itemsEntered++;
         GameData.escapeRoomGameplayManagerScript.enteredItem = true;
         currentPuzzle = itemData.name.Replace(" ", "") + (itemData.puzzle ? "Puzzle" : "Zoom");
         puzzles[currentPuzzle].gameObject.SetActive(true);
