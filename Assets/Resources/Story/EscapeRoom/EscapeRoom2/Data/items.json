@@ -1,0 +1,9 @@
+{
+   "ConveyorBelt": {
+      "name": "Conveyor Belt",
+      "detailed": true,
+      "puzzle": true,
+      "collectible": false,
+      "description": ""
+   }
+}
