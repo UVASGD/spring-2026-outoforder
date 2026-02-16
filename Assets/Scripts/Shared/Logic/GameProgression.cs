@@ -95,6 +95,8 @@ public class GameProgression : MonoBehaviour
                 StartCoroutine(PlayBGM(2));
                 break;
             case "EscapeRoom2":
+                StartCoroutine(PlayBGM(3));
+                break;
             case "EscapeRoom3":
                 break;
         }
