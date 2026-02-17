@@ -6589,7 +6589,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
-  activatingFlags: []
+  activatingFlags:
+  - usedRemote
   triggeringFlags:
   - firstInteractionMonitors
   dialoguesIndex: 0
