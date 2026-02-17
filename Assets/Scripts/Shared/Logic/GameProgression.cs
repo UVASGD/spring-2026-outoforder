@@ -34,7 +34,7 @@ public class GameProgression : MonoBehaviour
     // BGM
     [SerializeField] private AudioSource audioSourceBGM;
     [SerializeField] private List<AudioClip> audioClipsBGM = new();
-    private int currentBGM;
+    private int currentBGM = -1;
 
     // SFX
     [SerializeField] private AudioSource audioSourceSFX;
@@ -82,14 +82,17 @@ public class GameProgression : MonoBehaviour
         // TODO: fill out as we go
         switch (currentScene)
         {
+            case "StartScreen":
+                StartCoroutine(PlayBGM(0));
+                break;
             case "Cutscene":
                 // TODO : different for endings
-                StartCoroutine(PlayBGM(0));
+                StartCoroutine(PlayBGM(1));
                 break;
             case "VisualNovel":
                 break;
             case "EscapeRoom0":
-                StartCoroutine(PlayBGM(1));
+                StartCoroutine(PlayBGM(2));
                 break;
             case "EscapeRoom1":
                 StartCoroutine(PlayBGM(2));
