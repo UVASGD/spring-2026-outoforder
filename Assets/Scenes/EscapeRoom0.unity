@@ -1751,8 +1751,8 @@ MonoBehaviour:
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 7d034fa91ed33414eaf56f9dc7588591, type: 3}
-  - {fileID: 4900000, guid: f579aaed735f2f0438b71cf456dc9cf2, type: 3}
-  - {fileID: 4900000, guid: 969f4056a7cb3194a83dbcca0cdab66c, type: 3}
+  - {fileID: 4900000, guid: fb6206d4f71dc6b44a2efc0c511099c8, type: 3}
+  - {fileID: 4900000, guid: 1d47557db927a3b40b18149501471a20, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -13225,6 +13225,7 @@ MonoBehaviour:
   transitioning: 1
   audioSourceBGM: {fileID: 0}
   audioClipsBGM:
+  - {fileID: 8300000, guid: 300e47d657c371d41999aae18db73daa, type: 3}
   - {fileID: 8300000, guid: c2ac20e6bd5bd0146be4b7d7fc210f22, type: 3}
   - {fileID: 8300000, guid: bcbd68a7f3518fd4abcd19736051ab01, type: 3}
   audioSourceSFX: {fileID: 0}
