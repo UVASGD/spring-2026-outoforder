@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -147,7 +148,7 @@ public class Locations : MonoBehaviour
 
     private void CollectItem(ItemData itemData)
     {
-        if (itemData.collectible && !GameData.escapeRoomGameplayManagerScript.collectedItemsScrollView.ContainsKey(itemData.name))
+        if (!GameProgression.GameProgressionInstance.GetFlag($"used{itemData.name}") && itemData.collectible && !GameData.escapeRoomGameplayManagerScript.collectedItemsScrollView.ContainsKey(itemData.name))
         {
             print($"collecting {itemData.name}");
             GameObject item = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
