@@ -12,5 +12,12 @@
       "puzzle": true,
       "collectible": false,
       "description": ""
+   },
+   "CounterweightSheave": {
+      "name": "Counterweight Sheave",
+      "detailed": true,
+      "puzzle": true,
+      "collectible": false,
+      "description": ""
    }
 }

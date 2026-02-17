@@ -382,7 +382,6 @@ public class DialogueSystem : MonoBehaviour
         // TODO: change this for what the cgs are called
         if (fadeType[1].Equals("HandHold") || fadeType[1].Equals("Hug"))
         {
-            print("this is cg");
             cg = true;
         }
         else if (!string.IsNullOrEmpty(fadeType[1]))

@@ -1,0 +1,10 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "item_counterweight_sheave_puzzle_1",
+            "endOfScene": true
+        }
+    ]
+}
