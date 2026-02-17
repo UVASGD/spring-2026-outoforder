@@ -4862,16 +4862,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
-  eventOffset: 0
+  eventOffset: 1
   activatingFlags:
   - firstInteractionCounterweightSheave
-  - usedKey
   triggeringFlags:
   - firstInteractionCounterweightSheave
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 1a287d6652bdee946bfdda81471e5ecb, type: 3}
-  - {fileID: 4900000, guid: 3aa3de1edf8168747b96b264963444c2, type: 3}
   - {fileID: 4900000, guid: 3aa3de1edf8168747b96b264963444c2, type: 3}
   itemData:
     name: 
@@ -15124,9 +15122,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
-  eventOffset: 0
+  eventOffset: 1
   activatingFlags:
   - firstInteractionCounterweightSheavePuzzle
+  - usedKey
   - solvedCounterweightSheavePuzzle
   triggeringFlags:
   - firstInteractionCounterweightSheavePuzzle
