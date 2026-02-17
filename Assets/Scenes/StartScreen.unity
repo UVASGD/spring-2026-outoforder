@@ -1196,7 +1196,6 @@ GameObject:
   - component: {fileID: 725075812}
   - component: {fileID: 725075811}
   - component: {fileID: 725075810}
-  - component: {fileID: 725075814}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -1318,18 +1317,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725075808}
   m_CullTransparentMesh: 1
---- !u!114 &725075814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 725075808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9852876cadffa74aae0c96be5895e02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StartGameScript
 --- !u!1 &817372518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3928,6 +3915,7 @@ MonoBehaviour:
   transitioning: 1
   audioSourceBGM: {fileID: 0}
   audioClipsBGM:
+  - {fileID: 8300000, guid: 300e47d657c371d41999aae18db73daa, type: 3}
   - {fileID: 8300000, guid: c2ac20e6bd5bd0146be4b7d7fc210f22, type: 3}
   - {fileID: 8300000, guid: bcbd68a7f3518fd4abcd19736051ab01, type: 3}
   audioSourceSFX: {fileID: 0}

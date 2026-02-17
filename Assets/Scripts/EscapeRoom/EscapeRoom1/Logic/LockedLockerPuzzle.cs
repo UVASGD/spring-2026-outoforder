@@ -16,7 +16,7 @@ public class LockedLockerPuzzle : Puzzle
 
     protected override void SolvedPuzzleSpecific()
     {
-        gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["UnlockedLockedLockerPuzzle"];
+        gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["LockedLockerPuzzleSecondary"];
 
         caesarDiary.SetActive(true);
 
