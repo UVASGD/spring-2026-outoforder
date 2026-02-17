@@ -4862,7 +4862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
-  eventOffset: 1
+  eventOffset: 0
   activatingFlags:
   - firstInteractionCounterweightSheave
   triggeringFlags:
@@ -15081,7 +15081,7 @@ GameObject:
   - component: {fileID: 1988432519}
   - component: {fileID: 1988432524}
   - component: {fileID: 1988432523}
-  - component: {fileID: 1988432522}
+  - component: {fileID: 1988432525}
   - component: {fileID: 1988432521}
   - component: {fileID: 1988432520}
   m_Layer: 0
@@ -15122,7 +15122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
-  eventOffset: 1
+  eventOffset: 0
   activatingFlags:
   - firstInteractionCounterweightSheavePuzzle
   - usedKey
@@ -15196,18 +15196,6 @@ MonoBehaviour:
           m_StringArgument: log
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1988432522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988432518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 051c8c52cbaef9141b90207814c1ac42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LockedLockerPuzzle
 --- !u!114 &1988432523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15228,7 +15216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c0a17462ac2c67d4cbdaf54ee7b7f0ec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 094233b32f5d4604c84307930ad907c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15246,6 +15234,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988432518}
   m_CullTransparentMesh: 1
+--- !u!114 &1988432525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988432518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eceb076fc1af0a54096230286553a1e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CounterweightSheavePuzzle
 --- !u!1 &1992620118
 GameObject:
   m_ObjectHideFlags: 0
