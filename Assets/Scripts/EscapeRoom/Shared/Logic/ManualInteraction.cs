@@ -38,15 +38,17 @@ public class ManualInteraction : MonoBehaviour
         }
         
         if (dialoguesIndex < triggeringFlags.Count + eventOffset
-            && ((GameData.escapeRoomNumber == 0 
+            && GameData.escapeRoomNumber == 0 
                 && (gameObject.name.Equals("LightSwitch") 
                 || gameObject.name.Equals("Lever") 
-                || (gameObject.name.Equals("LightSwitchPuzzle") && GameProgression.GameProgressionInstance.GetFlag("usedLever"))))
+                || gameObject.name.Equals("LightSwitchPuzzle") && GameProgression.GameProgressionInstance.GetFlag("usedLever")
+                || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle"))
             || (GameData.escapeRoomNumber == 1)
             || (GameData.escapeRoomNumber == 2)
             || (GameData.escapeRoomNumber == 3)
-            || (GameData.escapeRoomNumber == 4)))
+            || (GameData.escapeRoomNumber == 4))
         {
+            print("yes happen");
             GameProgression.GameProgressionInstance.SetFlag(triggeringFlags[dialoguesIndex - eventOffset], true);
         }
 

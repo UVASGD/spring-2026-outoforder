@@ -9,6 +9,7 @@ public class Monitors : MonoBehaviour
     {
         if (GameData.escapeRoomGameplayManagerScript.interactingWith.Equals("Monitors") && !monitorsOn && GameProgression.GameProgressionInstance.GetFlag("firstInteractionRemote") && GameProgression.GameProgressionInstance.GetFlag("firstInteractionMonitors"))
         {
+            print("YAYYYY");
             monitorsOn = true;
             GameData.escapeRoomGameplayManagerScript.locations[4].GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Location4Secondary"];
         }
