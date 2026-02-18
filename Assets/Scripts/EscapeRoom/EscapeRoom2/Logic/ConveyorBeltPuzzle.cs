@@ -45,7 +45,6 @@ public class ConveyorBeltPuzzle : Puzzle
         foreach (Transform child in transform.GetChild(transform.childCount - 2))
         {
             child.gameObject.SetActive(true);
-            Debug.Log(child.gameObject.activeSelf);
             if (PartCodesAreEqual(child.GetSiblingIndex()))
             {
                 child.gameObject.GetComponent<TextMeshProUGUI>().text = child.name; 
