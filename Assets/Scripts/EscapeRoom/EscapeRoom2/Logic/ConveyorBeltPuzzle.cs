@@ -1,10 +1,15 @@
+using System.Collections;
+using System.Linq;
+using TMPro;
+using Unity.VisualScripting;
+using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ConveyorBeltPuzzle : Puzzle
 {
     public GameObject submit;
-    private bool leverRepaired;
+    private readonly int CODE_LENGTH = 4;
 
     void Awake()
     {
@@ -24,26 +29,73 @@ public class ConveyorBeltPuzzle : Puzzle
 
         submit = transform.Find("Submit").gameObject;
     }
-
-    void Update()
+    protected override void SolvedPuzzleSpecific()
     {
-        if (!leverRepaired && GameProgression.GameProgressionInstance.GetFlag("usedLever"))
+        GameProgression.GameProgressionInstance.SetFlag("firstInteractionConveyorBeltPuzzle", true);
+        GameProgression.GameProgressionInstance.SetFlag("solvedConveyorBeltPuzzle", true);
+        gameObject.GetComponent<ManualInteraction>().ItemInteraction();
+
+        ShowRCCarParts();
+    }
+
+    public void DisplayPartNames()
+    {
+        // Assumes part names are in the second-to-last object.
+        foreach (Transform child in transform.GetChild(transform.childCount - 2))
         {
-            leverRepaired = true;
-            submit.GetComponent<Button>().enabled = true;
-            submit.GetComponent<Image>().enabled = true;
+            child.gameObject.SetActive(true);
+            Debug.Log(child.gameObject.activeSelf);
+            if (PartCodesAreEqual(child.GetSiblingIndex()))
+            {
+                child.gameObject.GetComponent<TextMeshProUGUI>().text = child.name; 
+            }
+            else
+            {
+                child.gameObject.GetComponent<TextMeshProUGUI>().text = "---";
+            }
+        }
+
+        StartCoroutine(StopDisplayingPartNames());
+    }
+
+    private IEnumerator StopDisplayingPartNames()
+    {
+        yield return new WaitForSeconds(3.00f);
+        // Assumes part names are in the second-to-last object.
+        foreach (Transform child in transform.GetChild(transform.childCount - 2))
+        {
+            child.gameObject.SetActive(false);
         }
     }
 
-    protected override void SolvedPuzzleSpecific()
+    private bool PartCodesAreEqual(int partIndex)
     {
-        GameData.escapeRoomGameplayManagerScript.locations.ForEach(location => location.GetComponent<Image>().color = Color.white);
+        int startingIndex = partIndex * CODE_LENGTH;
 
-        gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["UnlockedLightSwitchPuzzle"];
+        char[] answerCode =
+        {
+            answer[startingIndex], answer[startingIndex + 1],
+            answer[startingIndex + 2], answer[startingIndex + 3]
+        };
+        char[] guessCode = {
+            guess[startingIndex], guess[startingIndex + 1],
+            guess[startingIndex + 2], guess[startingIndex + 3]
+        };
 
-        GameProgression.GameProgressionInstance.SetFlag("firstInteractionLightSwitchPuzzle", true);
-        GameProgression.GameProgressionInstance.SetFlag("solvedLightSwitchPuzzle", true);
-        gameObject.GetComponent<ManualInteraction>().ItemInteraction();
-        GameProgression.GameProgressionInstance.SetFlag("lastInteractionLightSwitchPuzzle", true);
+        if (answerCode.SequenceEqual(guessCode))
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    private void ShowRCCarParts()
+    {
+        // Assumes parts are in the last object.
+        foreach (Transform child in transform.GetChild(transform.childCount - 1))
+        {
+            child.gameObject.SetActive(true);
+        }
     }
 }
