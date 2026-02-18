@@ -7203,12 +7203,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
-  eventOffset: 1
-  activatingFlags:
-  - solvedMalfunctionedThermostatPuzzle
-  - firstInteractionConveyorBelt
-  triggeringFlags:
-  - firstInteractionConveyorBelt
+  eventOffset: 0
+  activatingFlags: []
+  triggeringFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 7d034fa91ed33414eaf56f9dc7588591, type: 3}
