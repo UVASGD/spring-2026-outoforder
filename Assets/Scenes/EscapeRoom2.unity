@@ -1263,10 +1263,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionLockedDrawerPuzzle
-  - solvedLockedDrawerPuzzle
+  - firstInteractionConveyorBeltPuzzle
+  - solvedMalfunctionedThermostatPuzzle
   triggeringFlags:
-  - firstInteractionLockedDrawerPuzzle
+  - firstInteractionConveyorBeltPuzzle
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 4c11651a89893d04596fd361670d3744, type: 3}
