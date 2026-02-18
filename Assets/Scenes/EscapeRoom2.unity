@@ -1264,7 +1264,7 @@ MonoBehaviour:
   eventOffset: 0
   activatingFlags:
   - firstInteractionConveyorBeltPuzzle
-  - solvedMalfunctionedThermostatPuzzle
+  - solvedConveyorBeltPuzzle
   triggeringFlags:
   - firstInteractionConveyorBeltPuzzle
   dialoguesIndex: 0
