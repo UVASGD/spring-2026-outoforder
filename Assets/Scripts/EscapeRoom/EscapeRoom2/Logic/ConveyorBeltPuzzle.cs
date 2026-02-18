@@ -8,8 +8,18 @@ public class ConveyorBeltPuzzle : Puzzle
 
     void Awake()
     {
-        answer = new char[] { '9', '0', '6', '0', '1', '2', '0' };
-        guess = new char[] { '0', '0', '0', '0', '0', '0', '0' };
+        answer = new char[][] 
+        { 
+            {'9', '0', '6', '0' },
+            {'','','',''},
+            {'','','',''}
+        };
+        guess = new char[][] 
+        {
+            {'0','0','0','0'},
+            {'0','0','0','0'},
+            {'0','0','0','0'}
+        };
 
         submit = transform.Find("Submit").gameObject;
     }
