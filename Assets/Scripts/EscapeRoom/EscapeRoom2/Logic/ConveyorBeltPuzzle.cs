@@ -40,6 +40,7 @@ public class ConveyorBeltPuzzle : Puzzle
 
     public void DisplayPartNames()
     {
+        bool allPartsAreEqual = true;
         // Assumes part names are in the second-to-last object.
         foreach (Transform child in transform.GetChild(transform.childCount - 2))
         {
@@ -52,10 +53,14 @@ public class ConveyorBeltPuzzle : Puzzle
             else
             {
                 child.gameObject.GetComponent<TextMeshProUGUI>().text = "---";
+                allPartsAreEqual = false;
             }
         }
 
-        StartCoroutine(StopDisplayingPartNames());
+        if (!allPartsAreEqual)
+        {
+            StartCoroutine(StopDisplayingPartNames());
+        }
     }
 
     private IEnumerator StopDisplayingPartNames()
