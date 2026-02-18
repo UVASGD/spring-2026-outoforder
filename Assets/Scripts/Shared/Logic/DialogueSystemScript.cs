@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class DialogueSystemScript : MonoBehaviour
+public class DialogueSystem : MonoBehaviour
 {
     [Header("[DATA]")]
     private TextAsset dialogueStructListJSON;
@@ -382,7 +382,6 @@ public class DialogueSystemScript : MonoBehaviour
         // TODO: change this for what the cgs are called
         if (fadeType[1].Equals("HandHold") || fadeType[1].Equals("Hug"))
         {
-            print("this is cg");
             cg = true;
         }
         else if (!string.IsNullOrEmpty(fadeType[1]))

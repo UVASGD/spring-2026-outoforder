@@ -1,113 +1,22 @@
 {
-   "LightSwitch": {
-      "name": "Light Switch",
+   "CaesarDiary": {
+      "name": "Caesar Diary",
       "detailed": true,
       "puzzle": true,
       "collectible": false,
       "description": ""
    },
-   "AntifreezeDispenser": {
-      "name": "Antifreeze Dispenser",
+   "LockedLocker": {
+      "name": "Locked Locker",
       "detailed": true,
       "puzzle": true,
       "collectible": false,
       "description": ""
    },
-   "ElectricCircuit": {
-      "name": "Electric Circuit",
+   "CounterweightSheave": {
+      "name": "Counterweight Sheave",
       "detailed": true,
       "puzzle": true,
-      "collectible": false,
-      "description": ""
-   },
-   "LockedDrawer": {
-      "name": "Locked Drawer",
-      "detailed": true,
-      "puzzle": true,
-      "collectible": false,
-      "description": ""
-   },
-   "LockedBox": {
-      "name": "Locked Box",
-      "detailed": true,
-      "puzzle": true,
-      "collectible": false,
-      "description": ""
-   },
-   "RedCore": {
-      "name": "Red Core",
-      "detailed": false,
-      "puzzle": false,
-      "collectible": true,
-      "description": "A glowing red core. The light emitting from it is dull."
-   },
-   "GreenCore": {
-      "name": "Green Core",
-      "detailed": false,
-      "puzzle": false,
-      "collectible": true,
-      "description": "A glowing green core. The light emitting from it is dull."
-   },
-   "BlueCore": {
-      "name": "Blue Core",
-      "detailed": false,
-      "puzzle": false,
-      "collectible": true,
-      "description": "A glowing blue core. The light emitting from it is dull."
-   },
-   "Lever": {
-      "name": "Lever",
-      "detailed": false,
-      "puzzle": false,
-      "collectible": true,
-      "description": "A lever. It seems to be disconnected from something. Is there a place in the room where it belongs?"
-   },
-   "Remote": {
-      "name": "Remote",
-      "detailed": false,
-      "puzzle": false,
-      "collectible": true,
-      "description": "A remote with batteries still intact. Pointing it to the right device should turn it on."
-   },
-   "ReplacementRedCore": {
-      "name": "Replacement Red Core",
-      "detailed": false,
-      "puzzle": false,
-      "collectible": true,
-      "description": "A replacement red core."
-   },
-   "TopBox": {
-      "name": "Top Box",
-      "detailed": false,
-      "puzzle": false,
-      "collectible": false,
-      "description": ""
-   },
-   "KeyboardSetup": {
-      "name": "Keyboard Setup",
-      "detailed": true,
-      "puzzle": false,
-      "collectible": false,
-      "description": ""
-   },
-   "Computer": {
-      "name": "Computer",
-      "detailed": false,
-      "puzzle": false,
-      "collectible": false,
-      "description": ""
-   },
-   "CoolantGallons": {
-      "name": "CoolantGallons",
-      "detailed": false,
-      "puzzle": false,
-      "collectible": false,
-      "description": ""
-   },
-   "Monitors": {
-      "name": "Monitors",
-      "detailed": false,
-      "puzzle": false,
       "collectible": false,
       "description": ""
    }
