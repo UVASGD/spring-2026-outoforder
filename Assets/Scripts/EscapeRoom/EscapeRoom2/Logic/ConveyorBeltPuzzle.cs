@@ -1,15 +1,12 @@
 using System.Collections;
 using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.Search;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ConveyorBeltPuzzle : Puzzle
 {
-    public GameObject submit;
-    private readonly int CODE_LENGTH = 4;
+    public GameObject partNames;
+    private GameObject parts;
 
     void Awake()
     {
@@ -27,24 +24,29 @@ public class ConveyorBeltPuzzle : Puzzle
             '0', '0', '0', '0'
         };
 
-        submit = transform.Find("Submit").gameObject;
+        partNames = transform.Find("PartNames").gameObject;
+
+        parts = transform.Find("Parts").gameObject;
+        parts.SetActive(false);
     }
+    
     protected override void SolvedPuzzleSpecific()
     {
+        parts.SetActive(true);
+
         GameProgression.GameProgressionInstance.SetFlag("firstInteractionConveyorBeltPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedConveyorBeltPuzzle", true);
         gameObject.GetComponent<ManualInteraction>().ItemInteraction();
-
-        ShowRCCarParts();
     }
 
     public void DisplayPartNames()
     {
         bool allPartsAreEqual = true;
-        // Assumes part names are in the second-to-last object.
-        foreach (Transform child in transform.GetChild(transform.childCount - 2))
+
+        foreach (Transform child in partNames.transform)
         {
             child.gameObject.SetActive(true);
+
             if (PartCodesAreEqual(child.GetSiblingIndex()))
             {
                 child.gameObject.GetComponent<TextMeshProUGUI>().text = child.name; 
@@ -64,9 +66,9 @@ public class ConveyorBeltPuzzle : Puzzle
 
     private IEnumerator StopDisplayingPartNames()
     {
-        yield return new WaitForSeconds(3.00f);
-        // Assumes part names are in the second-to-last object.
-        foreach (Transform child in transform.GetChild(transform.childCount - 2))
+        yield return new WaitForSeconds(3f);
+        
+        foreach (Transform child in partNames.transform)
         {
             child.gameObject.SetActive(false);
         }
@@ -74,7 +76,7 @@ public class ConveyorBeltPuzzle : Puzzle
 
     private bool PartCodesAreEqual(int partIndex)
     {
-        int startingIndex = partIndex * CODE_LENGTH;
+        int startingIndex = partIndex * 4;
 
         char[] answerCode =
         {
@@ -92,14 +94,5 @@ public class ConveyorBeltPuzzle : Puzzle
         }
 
         return false;
-    }
-
-    private void ShowRCCarParts()
-    {
-        // Assumes parts are in the last object.
-        foreach (Transform child in transform.GetChild(transform.childCount - 1))
-        {
-            child.gameObject.SetActive(true);
-        }
     }
 }

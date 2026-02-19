@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -6,7 +5,6 @@ using UnityEngine.EventSystems;
 
 public class Puzzle : MonoBehaviour
 {
-    protected List<GameObject> combinationSlots;
     protected char[] answer;
     protected char[] guess;
     protected bool solved;
