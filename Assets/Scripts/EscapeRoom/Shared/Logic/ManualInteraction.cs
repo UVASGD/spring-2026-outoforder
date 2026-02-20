@@ -48,8 +48,6 @@ public class ManualInteraction : MonoBehaviour
                     || (GameData.escapeRoomNumber == 3)
                     || (GameData.escapeRoomNumber == 4)))
         {
-            print($"passed this math {dialoguesIndex} < {triggeringFlags.Count} + {eventOffset}");
-            print($"trying to set flag number {dialoguesIndex - eventOffset}");
             GameProgression.GameProgressionInstance.SetFlag(triggeringFlags[dialoguesIndex - eventOffset], true);
         }
 
