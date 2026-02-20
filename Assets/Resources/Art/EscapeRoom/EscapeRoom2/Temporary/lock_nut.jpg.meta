@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 15209b62df8162842a8b2da65e84d5a2
+guid: 69c4ed9d401fdbc4593e301c9a03df2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4284496390314684456
-    second: Location2_0
+      213: -4792186473586783542
+    second: lock_nut_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Location2_0
+      name: lock_nut_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 800
-        height: 600
+        width: 286
+        height: 428
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 820762a44c6957b30800000000000000
-      internalID: 4284496390314684456
+      spriteID: aca8d68dacbbe7db0800000000000000
+      internalID: -4792186473586783542
       vertices: []
       indices: 
       edges: []
@@ -138,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Location2_0: 4284496390314684456
+      lock_nut_0: -4792186473586783542
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
