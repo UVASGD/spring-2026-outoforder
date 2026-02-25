@@ -5,5 +5,12 @@
       "puzzle": true,
       "collectible": false,
       "description": ""
+   },
+   "FreezeSetting": {
+      "name": "Freeze Setting",
+      "detailed": true,
+      "puzzle": true,
+      "collectible": false,
+      "description": ""
    }
 }
