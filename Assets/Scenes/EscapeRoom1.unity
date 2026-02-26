@@ -10355,7 +10355,7 @@ MonoBehaviour:
   triggeringFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 599462ac6d248c14cbfccea925cfb58f, type: 3}
+  - {fileID: 4900000, guid: bd87e30d062e77447896cd331ddb4a96, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -13875,7 +13875,6 @@ GameObject:
   - component: {fileID: 1634948047}
   - component: {fileID: 1634948046}
   - component: {fileID: 1634948049}
-  - component: {fileID: 1634948050}
   - component: {fileID: 1634948051}
   m_Layer: 5
   m_Name: LaptopPasswordPuzzle
@@ -14015,25 +14014,6 @@ MonoBehaviour:
           m_StringArgument: log
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1634948050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634948044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50f8068df1d73e849be4264b23d88b1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemController
-  scrollView: 0
-  itemData:
-    name: 
-    detailed: 0
-    puzzle: 0
-    collectible: 0
-    description: 
 --- !u!114 &1634948051
 MonoBehaviour:
   m_ObjectHideFlags: 0
