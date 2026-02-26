@@ -67,15 +67,16 @@ public class Locations : MonoBehaviour
 
     public void ExamineItem()
     {
-        ManualInteraction manualInteraction = EventSystem.current.currentSelectedGameObject.GetComponent<ManualInteraction>();
+        GameObject currentSelectedGameObject = EventSystem.current.currentSelectedGameObject;
+        ManualInteraction manualInteraction = currentSelectedGameObject.GetComponent<ManualInteraction>();
         InteractItem(manualInteraction);
 
-        ItemController itemController = EventSystem.current.currentSelectedGameObject.GetComponent<ItemController>();
+        ItemController itemController = currentSelectedGameObject.GetComponent<ItemController>();
         if (itemController != null)
         {
             ItemData itemData = itemController.itemData;
             print($"looking at {itemData.name}");
-            CollectItem(itemData);
+            CollectItem(itemData, currentSelectedGameObject);
             // TODO: maybe more specific conditions of not entering an item in later rooms
             if ((GameData.escapeRoomNumber == 0 && (itemData.name.Equals("Light Switch") || GameProgression.GameProgressionInstance.GetFlag("solvedLightSwitchPuzzle")))
                 || GameData.escapeRoomNumber > 0) 
@@ -146,15 +147,18 @@ public class Locations : MonoBehaviour
         manualInteraction.ItemInteraction();
     }
 
-    private void CollectItem(ItemData itemData)
+    private void CollectItem(ItemData itemData, GameObject item)
     {
         if (!GameProgression.GameProgressionInstance.GetFlag($"used{itemData.name}") && itemData.collectible && !GameData.escapeRoomGameplayManagerScript.collectedItemsScrollView.ContainsKey(itemData.name))
         {
             print($"collecting {itemData.name}");
-            GameObject item = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
-            item.name = itemData.name.Replace(" ", "");
-            item.GetComponentInChildren<TextMeshProUGUI>().text = itemData.name;
-            GameData.escapeRoomGameplayManagerScript.collectedItemsScrollView[itemData.name] = item;
+            
+            item.SetActive(false);
+
+            GameObject scrollViewItem = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
+            scrollViewItem.name = itemData.name.Replace(" ", "");
+            scrollViewItem.GetComponentInChildren<TextMeshProUGUI>().text = itemData.name;
+            GameData.escapeRoomGameplayManagerScript.collectedItemsScrollView[itemData.name] = scrollViewItem;
         }
     }
 

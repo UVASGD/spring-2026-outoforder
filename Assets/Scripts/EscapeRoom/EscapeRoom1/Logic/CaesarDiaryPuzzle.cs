@@ -15,14 +15,16 @@ public class CaesarDiaryPuzzle : Puzzle
 
         letters = transform.GetComponentsInChildren<TextMeshProUGUI>();
 
-        flashDrive = GameObject.Find("Interactables").transform.Find("FlashDrive").gameObject;
+        flashDrive = transform.parent.Find("Interactables/FlashDrive").gameObject;
         flashDrive.SetActive(false);
+        print($"flash drive is now {flashDrive.activeSelf}");
     }
 
     protected override void SolvedPuzzleSpecific()
     {
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CaesarDiaryPuzzleSecondary"];
 
+        // TODO: this stays active if you exit out before collecting it
         flashDrive.SetActive(true);
 
         GameProgression.GameProgressionInstance.SetFlag("firstInteractionCaesarDiaryPuzzle", true);
