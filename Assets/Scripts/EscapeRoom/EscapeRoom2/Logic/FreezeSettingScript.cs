@@ -6,12 +6,16 @@ public class FreezeSettingPuzzle : Puzzle
     public GameObject submit;
     private bool leverRepaired;
 
+    public GameObject slider;
+
     void Awake()
     {
         answer = new char[] { '1', '5' };
         guess = new char[] { '0', '0' };
 
         submit = transform.Find("Submit").gameObject;
+        slider.SetActive(false);
+
     }
 
     void Update()
@@ -34,5 +38,19 @@ public class FreezeSettingPuzzle : Puzzle
         GameProgression.GameProgressionInstance.SetFlag("solvedLightSwitchPuzzle", true);
         gameObject.GetComponent<ManualInteraction>().ItemInteraction();
         GameProgression.GameProgressionInstance.SetFlag("lastInteractionLightSwitchPuzzle", true);
+    }
+    
+    public void spawnSlider()
+    {
+        if (slider.activeInHierarchy)
+        {
+            slider.SetActive(false);
+            Debug.Log("Tried to turn off");
+
+        } else
+        {
+            slider.SetActive(true);
+            Debug.Log("Tried to turn on");
+        }
     }
 }
