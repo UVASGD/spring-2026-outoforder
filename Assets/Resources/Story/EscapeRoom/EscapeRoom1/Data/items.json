@@ -19,5 +19,12 @@
       "puzzle": true,
       "collectible": false,
       "description": ""
+   },
+   "LaptopPassword": {
+      "name": "Laptop Password",
+      "detailed": true,
+      "puzzle": true,
+      "collectible": false,
+      "description": ""
    }
 }

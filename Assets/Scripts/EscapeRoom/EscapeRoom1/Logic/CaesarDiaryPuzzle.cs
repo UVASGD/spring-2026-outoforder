@@ -16,7 +16,7 @@ public class CaesarDiaryPuzzle : Puzzle
 
     protected override void SolvedPuzzleSpecific()
     {
-        gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["UnlockedCaesarDiaryPuzzle"];
+        gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CaesarDiaryPuzzleSecondary"];
 
         GameProgression.GameProgressionInstance.SetFlag("firstInteractionCaesarDiaryPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedCaesarDiaryPuzzle", true);
