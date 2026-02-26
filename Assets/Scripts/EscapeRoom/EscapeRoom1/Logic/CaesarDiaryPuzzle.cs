@@ -1,10 +1,12 @@
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class CaesarDiaryPuzzle : Puzzle
 {
     TextMeshProUGUI[] letters;
     char[] resetValue = new char[] { 'C', 'A', 'E', 'S', 'A', 'R' };
+    private GameObject flashDrive;
     
     void Awake()
     {
@@ -12,11 +14,16 @@ public class CaesarDiaryPuzzle : Puzzle
         guess = new char[] { 'C', 'A', 'E', 'S', 'A', 'R' };
 
         letters = transform.GetComponentsInChildren<TextMeshProUGUI>();
+
+        flashDrive = GameObject.Find("Interactables").transform.Find("FlashDrive").gameObject;
+        flashDrive.SetActive(false);
     }
 
     protected override void SolvedPuzzleSpecific()
     {
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CaesarDiaryPuzzleSecondary"];
+
+        flashDrive.SetActive(true);
 
         GameProgression.GameProgressionInstance.SetFlag("firstInteractionCaesarDiaryPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedCaesarDiaryPuzzle", true);

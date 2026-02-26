@@ -26,5 +26,19 @@
       "puzzle": true,
       "collectible": false,
       "description": ""
+   },
+   "PixelShift": {
+      "name": "Pixel Shift",
+      "detailed": true,
+      "puzzle": true,
+      "collectible": false,
+      "description": ""
+   },
+   "FlashDrive": {
+      "name": "Flash Drive",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A flash drive. It may have contents on it."
    }
 }
