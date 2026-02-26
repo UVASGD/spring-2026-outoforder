@@ -8,12 +8,10 @@ public class SliderBrightness : MonoBehaviour
     void Start()
     {
         slider.onValueChanged.AddListener(delegate { ValueChangeCheck();});
-
-        mask = GetComponent<Image>();
         var tempColor = mask.color;
         tempColor.a = 1f;
         mask.color = tempColor;
-        SetImageAlpha(1f);
+        SetImageAlpha(0f); // Start transparent
     }
 
     // Update is called once per frame
@@ -24,9 +22,7 @@ public class SliderBrightness : MonoBehaviour
 
     public void ValueChangeCheck()
     {
-        Debug.Log("Slider value is: " + slider.value);
-        // SetImageAlpha(slider.value); // Change Image opacity
-        // valueText.text = mainSlider.value.ToString(); // Update text here if linked
+        SetImageAlpha(slider.value);
     }
 
     public void SetImageAlpha(float alphaValue)

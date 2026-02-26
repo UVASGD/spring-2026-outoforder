@@ -680,11 +680,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionFreezeSettingPuzzle
+  - firstInteractionFreezeSetting
   triggeringFlags:
-  - firstInteractionFreezeSettingPuzzle
+  - firstInteractionFreezeSetting
   dialoguesIndex: 0
-  characterDialogues: []
+  characterDialogues:
+  - {fileID: 4900000, guid: bfbb63a2960f78b468abde7b2f6476d3, type: 3}
+  - {fileID: 4900000, guid: a96b817c658716043a8a41cd1178b244, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -7194,6 +7196,7 @@ GameObject:
   - component: {fileID: 999548590}
   - component: {fileID: 999548592}
   - component: {fileID: 999548591}
+  - component: {fileID: 999548595}
   m_Layer: 0
   m_Name: FreezeSettingPuzzle
   m_TagString: Untagged
@@ -7368,6 +7371,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999548588}
   m_CullTransparentMesh: 1
+--- !u!114 &999548595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999548588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50e20054da1003c4ea9fd85243a6d4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SliderBrightness
+  mask: {fileID: 1603682254}
+  slider: {fileID: 2015343452}
 --- !u!1 &1017829855
 GameObject:
   m_ObjectHideFlags: 0

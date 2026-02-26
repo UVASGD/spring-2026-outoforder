@@ -1,0 +1,15 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "item_freeze_setting_0"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "I should take a closer look.",
+            "endOfScene": true
+        }
+    ]
+}
