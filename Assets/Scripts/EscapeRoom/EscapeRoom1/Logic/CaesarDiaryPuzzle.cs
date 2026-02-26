@@ -7,6 +7,7 @@ public class CaesarDiaryPuzzle : Puzzle
     TextMeshProUGUI[] letters;
     char[] resetValue = new char[] { 'C', 'A', 'E', 'S', 'A', 'R' };
     private GameObject flashDrive;
+    private bool openedCaesarDiary;
     
     void Awake()
     {
@@ -17,11 +18,22 @@ public class CaesarDiaryPuzzle : Puzzle
 
         flashDrive = transform.parent.Find("Interactables/FlashDrive").gameObject;
         flashDrive.SetActive(false);
-        print($"flash drive is now {flashDrive.activeSelf}");
+    }
+
+    void OnEnable()
+    {
+        if (openedCaesarDiary) flashDrive.SetActive(true);
+    }
+
+    void OnDisable()
+    {
+        if (openedCaesarDiary) flashDrive.SetActive(false);
     }
 
     protected override void SolvedPuzzleSpecific()
     {
+        openedCaesarDiary = true;
+
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CaesarDiaryPuzzleSecondary"];
 
         // TODO: this stays active if you exit out before collecting it
