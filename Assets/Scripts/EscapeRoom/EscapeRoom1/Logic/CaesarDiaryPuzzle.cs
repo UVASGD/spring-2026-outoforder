@@ -1,10 +1,13 @@
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class CaesarDiaryPuzzle : Puzzle
 {
     TextMeshProUGUI[] letters;
     char[] resetValue = new char[] { 'C', 'A', 'E', 'S', 'A', 'R' };
+    private GameObject flashDrive;
+    private bool openedCaesarDiary;
     
     void Awake()
     {
@@ -12,11 +15,29 @@ public class CaesarDiaryPuzzle : Puzzle
         guess = new char[] { 'C', 'A', 'E', 'S', 'A', 'R' };
 
         letters = transform.GetComponentsInChildren<TextMeshProUGUI>();
+
+        flashDrive = transform.parent.Find("Interactables/FlashDrive").gameObject;
+        flashDrive.SetActive(false);
+    }
+
+    void OnEnable()
+    {
+        if (openedCaesarDiary && !GameProgression.GameProgressionInstance.GetFlag("firstInteractionFlashDrive")) flashDrive.SetActive(true);
+    }
+
+    void OnDisable()
+    {
+        if (openedCaesarDiary && !GameProgression.GameProgressionInstance.GetFlag("firstInteractionFlashDrive")) flashDrive.SetActive(false);
     }
 
     protected override void SolvedPuzzleSpecific()
     {
-        gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["UnlockedCaesarDiaryPuzzle"];
+        openedCaesarDiary = true;
+
+        gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CaesarDiaryPuzzleSecondary"];
+
+        // TODO: this stays active if you exit out before collecting it
+        flashDrive.SetActive(true);
 
         GameProgression.GameProgressionInstance.SetFlag("firstInteractionCaesarDiaryPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedCaesarDiaryPuzzle", true);
