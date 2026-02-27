@@ -22,12 +22,12 @@ public class CaesarDiaryPuzzle : Puzzle
 
     void OnEnable()
     {
-        if (openedCaesarDiary) flashDrive.SetActive(true);
+        if (openedCaesarDiary && !GameProgression.GameProgressionInstance.GetFlag("firstInteractionFlashDrive")) flashDrive.SetActive(true);
     }
 
     void OnDisable()
     {
-        if (openedCaesarDiary) flashDrive.SetActive(false);
+        if (openedCaesarDiary && !GameProgression.GameProgressionInstance.GetFlag("firstInteractionFlashDrive")) flashDrive.SetActive(false);
     }
 
     protected override void SolvedPuzzleSpecific()

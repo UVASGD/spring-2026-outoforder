@@ -40,5 +40,12 @@
       "puzzle": false,
       "collectible": true,
       "description": "A flash drive. It may have contents on it."
+   },
+   "Port": {
+      "name": "Port",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
    }
 }
