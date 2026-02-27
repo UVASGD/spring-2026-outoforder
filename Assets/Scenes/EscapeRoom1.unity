@@ -10339,7 +10339,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags: []
-  triggeringFlags: []
+  triggeringFlags:
+  - firstInteractionFlashDrive
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: bd87e30d062e77447896cd331ddb4a96, type: 3}
