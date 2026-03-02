@@ -7381,19 +7381,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 1
   activatingFlags:
-  - usedLever
-  - firstInteractionLightSwitchPuzzle
-  - solvedLightSwitchPuzzle
-  - lastInteractionLightSwitchPuzzle
+  - firstInteractionFreezeSettingPuzzle
+  - solvedFreezeSettingPuzzle
+  - lastInteractionFreezeSettingPuzzle
   triggeringFlags:
-  - firstInteractionLightSwitchPuzzle
+  - firstInteractionFreezeSettingPuzzle
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 38f5bd492de912947afa9e5b2d681efb, type: 3}
-  - {fileID: 4900000, guid: 8492c850600ffef4285a8ef20b90394e, type: 3}
-  - {fileID: 4900000, guid: e87543fe6768eda4583a8f3fc05345b0, type: 3}
-  - {fileID: 4900000, guid: 7203bc77fbb675e42a051b09c6a3c560, type: 3}
-  - {fileID: 4900000, guid: 7df45a02d7ff5794e9377efccab39268, type: 3}
+  - {fileID: 4900000, guid: 65316c0e574cf5a488a2afa348246f2b, type: 3}
+  - {fileID: 4900000, guid: be5518a80637bde4e86f0ec48c4e3b9c, type: 3}
   itemData:
     name: 
     detailed: 0
