@@ -35,11 +35,9 @@ public class EscapeRoomGameplay : MonoBehaviour
 
     public bool UseItem(string directItem, string indirectItem)
     {
-        print($"using {directItem} on {indirectItem}");
         // TODO MAYBE SOME SORT OF USED ITEM SOUND EFFECT
         if (usages.TryGetValue(directItem.Replace(" ", ""), out var value) && value == indirectItem)
         {
-            print("yes used");
             selectedItem = "";
             Destroy(collectedItemsScrollView[directItem]);
             collectedItemsScrollView.Remove(directItem);
