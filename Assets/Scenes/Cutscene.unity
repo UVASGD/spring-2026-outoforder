@@ -1714,6 +1714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6c9514f7c714449a2c7a54b4b78a34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameProgression
+  debugEscapeRoomNumber: 0
   SpriteCache: {fileID: 11400000, guid: 2776422836864e544bdbd249bbbc68da, type: 2}
   DialogueSystemScript: {fileID: 0}
   FadeEffect: {fileID: 0}

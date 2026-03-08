@@ -4695,6 +4695,7 @@ GameObject:
   - component: {fileID: 503921346}
   - component: {fileID: 503921351}
   - component: {fileID: 503921350}
+  - component: {fileID: 503921352}
   - component: {fileID: 503921349}
   - component: {fileID: 503921348}
   m_Layer: 0
@@ -4855,6 +4856,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503921345}
   m_CullTransparentMesh: 1
+--- !u!114 &503921352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503921345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8332f97a1ed80334ea8bd673b8dec785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PixelShiftPuzzle
 --- !u!1 &507662628
 GameObject:
   m_ObjectHideFlags: 0
@@ -13483,7 +13496,6 @@ GameObject:
   - component: {fileID: 1557894846}
   - component: {fileID: 1557894845}
   - component: {fileID: 1557894844}
-  - component: {fileID: 1557894849}
   m_Layer: 0
   m_Name: PixelShift
   m_TagString: Untagged
@@ -13650,18 +13662,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1557894842}
   m_CullTransparentMesh: 1
---- !u!114 &1557894849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557894842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f81fc0d9a292b24f81e5dedf081ca6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PixelShift
 --- !u!1 &1575887274
 GameObject:
   m_ObjectHideFlags: 0
@@ -19296,8 +19296,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ItemPopUpScript, Assembly-CSharp
+      - m_Target: {fileID: 474763559}
+        m_TargetAssemblyTypeName: ItemPopUp, Assembly-CSharp
         m_MethodName: SelectItem
         m_Mode: 1
         m_Arguments:

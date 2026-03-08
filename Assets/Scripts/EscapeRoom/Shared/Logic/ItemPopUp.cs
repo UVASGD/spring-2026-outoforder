@@ -45,6 +45,7 @@ public class ItemPopUp : MonoBehaviour
 
     public void SelectItem()
     {
+        print($"selected {displayedItem}");
         GameData.escapeRoomGameplayManagerScript.selectedItem = displayedItem;
     }
 }
