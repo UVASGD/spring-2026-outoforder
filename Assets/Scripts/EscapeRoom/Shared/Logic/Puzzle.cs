@@ -11,6 +11,8 @@ public class Puzzle : MonoBehaviour
 
     public void AttemptSolve()
     {
+        ConvertGuess();
+        
         print($"the answer is {new string(answer)} and the guess was {new string(guess)}");
         // TODO: VERY TEMPORARY
         if (!solved && answer.SequenceEqual(guess)) 
@@ -77,6 +79,8 @@ public class Puzzle : MonoBehaviour
     {
         print($"TODO: ERROR GUESS UI; the guess was {new string(guess)}");
     }
+
+    protected virtual void ConvertGuess() {}
 
     protected virtual void SolvedPuzzleSpecific() {}
 }

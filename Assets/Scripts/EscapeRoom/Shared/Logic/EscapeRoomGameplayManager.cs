@@ -7,6 +7,8 @@ public class EscapeRoomGameplay : MonoBehaviour
 {
     public List<string> locationNames;
     public List<GameObject> locations;
+
+    public Dictionary<string, GameObject> puzzles = new();
     
     public string selectedItem;
     public Dictionary<string, ItemData> items = new();
@@ -36,12 +38,12 @@ public class EscapeRoomGameplay : MonoBehaviour
     public bool UseItem(string directItem, string indirectItem)
     {
         // TODO MAYBE SOME SORT OF USED ITEM SOUND EFFECT
-        if (usages.TryGetValue(directItem, out var value) && value == indirectItem)
+        if (usages.TryGetValue(directItem.Replace(" ", ""), out var value) && value == indirectItem)
         {
             selectedItem = "";
             Destroy(collectedItemsScrollView[directItem]);
             collectedItemsScrollView.Remove(directItem);
-            GameProgression.GameProgressionInstance.SetFlag($"used{directItem}", true);
+            GameProgression.GameProgressionInstance.SetFlag($"used{directItem.Replace(" ", "")}", true);
             return true;
         }
         return false;

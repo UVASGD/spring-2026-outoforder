@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -19,10 +18,18 @@ public class Locations : MonoBehaviour
     private GameObject currentLocation;
     private TextMeshProUGUI currentLocationTMP;
     private GameObject content;
-    private Dictionary<string, GameObject> puzzles = new();
     private string currentPuzzle;
     private Button backButton;
     private int itemsEntered;
+
+    // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
+    ItemData debugItemData;
+
+    void Awake()
+    {
+        // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
+        // debugItemData = GameObject.Find("Location2/Detailed/LockedLockerPuzzle/Detailed/Interactables/FlashDrive").GetComponent<ItemController>().itemData;
+    }
 
     void Start()
     {
@@ -40,7 +47,7 @@ public class Locations : MonoBehaviour
 
         content = popUpAreas.transform.Find("ItemPopUp").transform.GetComponentInChildren<VerticalLayoutGroup>().gameObject;
 
-        puzzles = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None)
+        GameData.escapeRoomGameplayManagerScript.puzzles = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None)
             .Where(item => 
                 item.gameObject.name.Contains("Zoom", System.StringComparison.OrdinalIgnoreCase) || 
                 item is Puzzle
@@ -51,7 +58,7 @@ public class Locations : MonoBehaviour
                 group => group.First().gameObject
             );
 
-        foreach (GameObject puzzle in puzzles.Values)
+        foreach (GameObject puzzle in GameData.escapeRoomGameplayManagerScript.puzzles.Values)
         {
             puzzle.SetActive(false);
         }
@@ -63,6 +70,12 @@ public class Locations : MonoBehaviour
         location2.SetActive(false);
         location3.SetActive(false);
         location4.SetActive(false);
+        
+        // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
+        // GameObject scrollViewItem = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
+        // scrollViewItem.name = debugItemData.name.Replace(" ", "");
+        // scrollViewItem.GetComponentInChildren<TextMeshProUGUI>().text = debugItemData.name;
+        // GameData.escapeRoomGameplayManagerScript.collectedItemsScrollView[debugItemData.name] = scrollViewItem;
     }
 
     public void ExamineItem()
@@ -100,7 +113,7 @@ public class Locations : MonoBehaviour
     {
         itemsEntered--;
         GameData.escapeRoomGameplayManagerScript.enteredItem = false;
-        puzzles[currentPuzzle].gameObject.SetActive(false);
+        GameData.escapeRoomGameplayManagerScript.puzzles[currentPuzzle].gameObject.SetActive(false);
         if (itemsEntered == 0) 
         {
             backButton.gameObject.SetActive(false);
@@ -182,7 +195,7 @@ public class Locations : MonoBehaviour
         itemsEntered++;
         GameData.escapeRoomGameplayManagerScript.enteredItem = true;
         currentPuzzle = itemData.name.Replace(" ", "") + (itemData.puzzle ? "Puzzle" : "Zoom");
-        puzzles[currentPuzzle].gameObject.SetActive(true);
+        GameData.escapeRoomGameplayManagerScript.puzzles[currentPuzzle].gameObject.SetActive(true);
         backButton.gameObject.SetActive(true);
     }
 }

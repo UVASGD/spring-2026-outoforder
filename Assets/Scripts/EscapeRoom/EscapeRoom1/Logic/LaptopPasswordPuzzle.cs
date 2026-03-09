@@ -7,14 +7,20 @@ public class LaptopPasswordPuzzle : Puzzle
 {
     [SerializeField] TMP_InputField inputField;
 
+    private GameObject keypad;
+
     void Awake()
     {
         answer = new char[] { '4', '2', '1', '2' };
+
+        keypad = GameObject.Find("Keypad");
     }
 
     protected override void SolvedPuzzleSpecific()
     {
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["LaptopPasswordPuzzleSecondary"];
+
+        keypad.SetActive(false);
 
         // // TODO: THIS COULD PROBABLY BE A METHOD IN PUZZLE THIS CODE IS REPEATED A LOT
         GameProgression.GameProgressionInstance.SetFlag("firstInteractionLaptopPasswordPuzzle", true);

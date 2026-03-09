@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d5856d84430b1bd469905657f62d5cd8
+guid: 215356e3543827b42abefc5bc4a04571
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6325321616885444843
-    second: LaptopPasswordPuzzle_0
+      213: 6951667733768627643
+    second: Pixel3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LaptopPasswordPuzzle_0
+      name: Pixel3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2360
-        height: 1640
+        width: 200
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51f817f9081f738a0800000000000000
-      internalID: -6325321616885444843
+      spriteID: bb5e2dbe8f8497060800000000000000
+      internalID: 6951667733768627643
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LaptopPasswordPuzzle_0: -6325321616885444843
+      Pixel3_0: 6951667733768627643
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

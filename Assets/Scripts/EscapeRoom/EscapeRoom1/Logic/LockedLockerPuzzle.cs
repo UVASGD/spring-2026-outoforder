@@ -10,7 +10,7 @@ public class LockedLockerPuzzle : Puzzle
         answer = new char[] { 'R', 'E', 'A', 'D' };
         guess = new char[] { 'A', 'B', 'C', 'D' };
 
-        caesarDiary = transform.Find("Interactables").Find("CaesarDiary").gameObject;
+        caesarDiary = transform.Find("Interactables/CaesarDiary").gameObject;
         caesarDiary.SetActive(false);
     }
 
