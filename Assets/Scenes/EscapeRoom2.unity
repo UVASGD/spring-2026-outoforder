@@ -7331,7 +7331,6 @@ GameObject:
   - component: {fileID: 999548593}
   - component: {fileID: 999548592}
   - component: {fileID: 999548591}
-  - component: {fileID: 999548595}
   - component: {fileID: 999548596}
   m_Layer: 0
   m_Name: FreezeSettingPuzzle
@@ -7490,20 +7489,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999548588}
   m_CullTransparentMesh: 1
---- !u!114 &999548595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999548588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50e20054da1003c4ea9fd85243a6d4a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SliderBrightness
-  mask: {fileID: 1603682254}
-  slider: {fileID: 2015343452}
 --- !u!114 &999548596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7518,6 +7503,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FreezeSettingPuzzle
   submit: {fileID: 0}
   slider: {fileID: 2015343450}
+  mask: {fileID: 1603682254}
+  sliderS: {fileID: 2015343452}
   errorText: {fileID: 131060080}
   errorDuration: 2
 --- !u!1 &1017829855
