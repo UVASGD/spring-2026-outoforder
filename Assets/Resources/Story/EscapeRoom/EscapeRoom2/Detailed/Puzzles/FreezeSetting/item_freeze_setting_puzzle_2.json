@@ -1,0 +1,10 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "solved item_freeze_setting_puzzle_2",
+            "endOfScene": true
+        }
+    ]
+}
