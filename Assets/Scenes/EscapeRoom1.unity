@@ -13525,9 +13525,9 @@ MonoBehaviour:
   eventOffset: 0
   activatingFlags:
   - firstInteractionLaptopPasswordPuzzle
+  - solvedLaptopPasswordPuzzle
   triggeringFlags:
   - firstInteractionLaptopPasswordPuzzle
-  - solvedLaptopPasswordPuzzle
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
