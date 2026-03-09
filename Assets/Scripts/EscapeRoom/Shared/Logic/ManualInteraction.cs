@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ManualInteraction : MonoBehaviour
@@ -7,6 +8,7 @@ public class ManualInteraction : MonoBehaviour
     [SerializeField] private int eventOffset;
     [SerializeField] private List<string> activatingFlags;
     [SerializeField] private List<string> triggeringFlags;
+    [SerializeField] private List<string> waitingFlags;
 
     [Header("[DIALOGUE]")]
     [SerializeField] private int dialoguesIndex;
@@ -26,7 +28,9 @@ public class ManualInteraction : MonoBehaviour
         // TODO: EVERYONE SHOULD HAVE ITEMDATA EVENTUALLY - PUZZLES AND ZOOMS DO NOT ATM
         GameData.escapeRoomGameplayManagerScript.interactingWith = gameObject.name;
 
-        if (!string.IsNullOrEmpty(GameData.escapeRoomGameplayManagerScript.selectedItem) && !string.IsNullOrEmpty(GameData.escapeRoomGameplayManagerScript.interactingWith))
+        if (!string.IsNullOrEmpty(GameData.escapeRoomGameplayManagerScript.selectedItem) 
+            && !string.IsNullOrEmpty(GameData.escapeRoomGameplayManagerScript.interactingWith) 
+            && (waitingFlags.Count == 0 || waitingFlags.All(waitingFlag => GameProgression.GameProgressionInstance.GetFlag(waitingFlag))))
         {
             GameData.escapeRoomGameplayManagerScript.UseItem(GameData.escapeRoomGameplayManagerScript.selectedItem, GameData.escapeRoomGameplayManagerScript.interactingWith);
         }

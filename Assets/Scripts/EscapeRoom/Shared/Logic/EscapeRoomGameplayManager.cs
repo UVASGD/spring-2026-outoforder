@@ -7,6 +7,8 @@ public class EscapeRoomGameplay : MonoBehaviour
 {
     public List<string> locationNames;
     public List<GameObject> locations;
+
+    public Dictionary<string, GameObject> puzzles = new();
     
     public string selectedItem;
     public Dictionary<string, ItemData> items = new();

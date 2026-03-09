@@ -18,7 +18,6 @@ public class Locations : MonoBehaviour
     private GameObject currentLocation;
     private TextMeshProUGUI currentLocationTMP;
     private GameObject content;
-    private Dictionary<string, GameObject> puzzles = new();
     private string currentPuzzle;
     private Button backButton;
     private int itemsEntered;
@@ -48,7 +47,7 @@ public class Locations : MonoBehaviour
 
         content = popUpAreas.transform.Find("ItemPopUp").transform.GetComponentInChildren<VerticalLayoutGroup>().gameObject;
 
-        puzzles = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None)
+        GameData.escapeRoomGameplayManagerScript.puzzles = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None)
             .Where(item => 
                 item.gameObject.name.Contains("Zoom", System.StringComparison.OrdinalIgnoreCase) || 
                 item is Puzzle
@@ -59,7 +58,7 @@ public class Locations : MonoBehaviour
                 group => group.First().gameObject
             );
 
-        foreach (GameObject puzzle in puzzles.Values)
+        foreach (GameObject puzzle in GameData.escapeRoomGameplayManagerScript.puzzles.Values)
         {
             puzzle.SetActive(false);
         }
@@ -114,7 +113,7 @@ public class Locations : MonoBehaviour
     {
         itemsEntered--;
         GameData.escapeRoomGameplayManagerScript.enteredItem = false;
-        puzzles[currentPuzzle].gameObject.SetActive(false);
+        GameData.escapeRoomGameplayManagerScript.puzzles[currentPuzzle].gameObject.SetActive(false);
         if (itemsEntered == 0) 
         {
             backButton.gameObject.SetActive(false);
@@ -196,7 +195,7 @@ public class Locations : MonoBehaviour
         itemsEntered++;
         GameData.escapeRoomGameplayManagerScript.enteredItem = true;
         currentPuzzle = itemData.name.Replace(" ", "") + (itemData.puzzle ? "Puzzle" : "Zoom");
-        puzzles[currentPuzzle].gameObject.SetActive(true);
+        GameData.escapeRoomGameplayManagerScript.puzzles[currentPuzzle].gameObject.SetActive(true);
         backButton.gameObject.SetActive(true);
     }
 }
