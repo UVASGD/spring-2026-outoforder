@@ -4475,9 +4475,9 @@ MonoBehaviour:
   eventOffset: 0
   activatingFlags:
   - firstInteractionPixelShiftPuzzle
+  - solvedPixelShiftPuzzle
   triggeringFlags:
   - firstInteractionPixelShiftPuzzle
-  - solvedPixelShiftPuzzle
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:

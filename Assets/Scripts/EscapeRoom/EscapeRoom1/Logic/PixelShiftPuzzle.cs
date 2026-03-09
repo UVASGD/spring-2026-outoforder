@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PixelShiftPuzzle : Puzzle
 {
@@ -30,6 +31,25 @@ public class PixelShiftPuzzle : Puzzle
         {
             guess[i] = gameObject.transform.GetChild(i).name[^1];
         }
+    }
+
+    protected override void SolvedPuzzleSpecific()
+    {
+        foreach (Transform child in gameObject.transform) 
+        {
+            child.gameObject.SetActive(false);
+        }
+
+        Image image = gameObject.GetComponent<Image>();
+        image.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["PixelShiftPuzzle"];
+        Color c = image.color;
+        c.a = 1f;
+        image.color = c;
+        
+        // TODO: THIS COULD PROBABLY BE A METHOD IN PUZZLE THIS CODE IS REPEATED A LOT
+        GameProgression.GameProgressionInstance.SetFlag("firstInteractionPixelShiftPuzzle", true);
+        GameProgression.GameProgressionInstance.SetFlag("solvedPixelShiftPuzzle", true);
+        gameObject.GetComponent<ManualInteraction>().ItemInteraction();
     }
 
     public void SwapPixel()
