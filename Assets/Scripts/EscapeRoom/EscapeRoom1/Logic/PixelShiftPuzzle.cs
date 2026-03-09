@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PixelShiftPuzzle : Puzzle
 {
@@ -17,27 +18,32 @@ public class PixelShiftPuzzle : Puzzle
             };
         guess = new char[]
             { 
-                '0', '1', '2',
-                'A', 'I', 'Z',
-                'A', 'I', 'Z'
+                '7', '3', '1',
+                '4', '8', '6',
+                '5', '0', '2'
             };
     }
 
-    void Update()
+    protected override void ConvertGuess()
     {
-        
+        for (int i = 0; i < gameObject.transform.childCount - 1; i++)
+        {
+            guess[i] = gameObject.transform.GetChild(i).name[^1];
+        }
     }
 
     public void SwapPixel()
     {
         if (pixelA == null)
         {
-            pixelA = gameObject;
+            print("A!");
+            pixelA = EventSystem.current.currentSelectedGameObject;
             indexA = pixelA.transform.GetSiblingIndex();
         }
         else
         {
-            pixelB = gameObject;
+            print("B and swap!");
+            pixelB = EventSystem.current.currentSelectedGameObject;
             indexB = pixelB.transform.GetSiblingIndex();
             
             Vector2 positionA = pixelA.transform.position;
@@ -46,6 +52,9 @@ public class PixelShiftPuzzle : Puzzle
 
             pixelA.transform.SetSiblingIndex(indexB);
             pixelB.transform.SetSiblingIndex(indexA);
+
+            pixelA = null;
+            pixelB = null;
         }
     }
 }
