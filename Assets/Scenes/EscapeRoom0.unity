@@ -1748,6 +1748,7 @@ MonoBehaviour:
   - firstInteractionLockedDrawer
   triggeringFlags:
   - firstInteractionLockedDrawer
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 7d034fa91ed33414eaf56f9dc7588591, type: 3}
@@ -2643,8 +2644,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.6327, y: -47}
-  m_SizeDelta: {x: 196.9222, y: 50}
+  m_AnchoredPosition: {x: 18.7, y: -102}
+  m_SizeDelta: {x: 259, y: 192}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &392884931
 MonoBehaviour:
@@ -2722,7 +2723,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 59ad0297dac74054ba69c2bb6d45d339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6187a3170326a6f41a6d071552f39bfd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2935,6 +2936,7 @@ MonoBehaviour:
   - firstInteractionLeftBox
   triggeringFlags:
   - firstInteractionLeftBox
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: bcb4e7698e40f874a93cf45d8eb87e5f, type: 3}
@@ -3115,6 +3117,7 @@ MonoBehaviour:
   - firstLightSwitch
   triggeringFlags:
   - firstLightSwitch
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 8640f4486a767a640b1bf3753b6f5104, type: 3}
@@ -4265,6 +4268,7 @@ MonoBehaviour:
   - firstInteractionAntifreezeDispenser
   triggeringFlags:
   - firstInteractionAntifreezeDispenser
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 8640f4486a767a640b1bf3753b6f5104, type: 3}
@@ -4997,6 +5001,7 @@ MonoBehaviour:
   activatingFlags: []
   triggeringFlags:
   - firstInteractionRemote
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: d49167790559fcd459ebf3c765ad212d, type: 3}
@@ -5568,6 +5573,7 @@ MonoBehaviour:
   - solvedLockedDrawerPuzzle
   triggeringFlags:
   - firstInteractionLockedDrawerPuzzle
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 4c11651a89893d04596fd361670d3744, type: 3}
@@ -5996,7 +6002,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faebb57d9e4aa34498060e975f9c433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightSwitchPuzzle
-  submit: {fileID: 0}
 --- !u!114 &747893287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6017,6 +6022,7 @@ MonoBehaviour:
   - lastInteractionLightSwitchPuzzle
   triggeringFlags:
   - firstInteractionLightSwitchPuzzle
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 38f5bd492de912947afa9e5b2d681efb, type: 3}
@@ -6277,6 +6283,7 @@ MonoBehaviour:
   eventOffset: 0
   activatingFlags: []
   triggeringFlags: []
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 7c06620fdc8c34242a735b8565c54780, type: 3}
@@ -6593,6 +6600,7 @@ MonoBehaviour:
   - usedRemote
   triggeringFlags:
   - firstInteractionMonitors
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 812cb7c60c8be904aaeec46deac4e0fa, type: 3}
@@ -6950,6 +6958,7 @@ MonoBehaviour:
   - firstInteractionElectricCircuit
   triggeringFlags:
   - firstInteractionElectricCircuit
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 8640f4486a767a640b1bf3753b6f5104, type: 3}
@@ -7743,6 +7752,7 @@ MonoBehaviour:
   - firstInteractionLever
   triggeringFlags:
   - firstInteractionLever
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 3c3b4f7f1e54e8d4fa57aff0409d08af, type: 3}
@@ -8469,6 +8479,7 @@ MonoBehaviour:
   - solvedLockedBoxPuzzle
   triggeringFlags:
   - firstInteractionLockedBoxPuzzle
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 19eb39ba9a35efe4a9c9895449c91368, type: 3}
@@ -8923,6 +8934,7 @@ MonoBehaviour:
   - firstInteractionComputer
   triggeringFlags:
   - firstInteractionComputer
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: f0f295b4d0e326b4e83195c2a45088e7, type: 3}
@@ -10495,6 +10507,7 @@ MonoBehaviour:
   - firstInteractionKeyboardSetup
   triggeringFlags:
   - firstInteractionKeyboardSetup
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: de693a70889587f4a878a83a7796dfec, type: 3}
@@ -12370,6 +12383,7 @@ MonoBehaviour:
   - solvedElectricCircuitPuzzle
   triggeringFlags:
   - firstInteractionElectricCircuitPuzzle
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 76ec2d7e6b680994ea764c83d81e4cf2, type: 3}
@@ -14250,6 +14264,7 @@ MonoBehaviour:
   eventOffset: 0
   activatingFlags: []
   triggeringFlags: []
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 79fd76782f06ef34f8e47533be0ba402, type: 3}
@@ -14429,6 +14444,7 @@ MonoBehaviour:
   - solvedLightSwitchPuzzle
   triggeringFlags:
   - firstInteractionTopBox
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 97467f04368a460449a242f5c67df23d, type: 3}
@@ -14607,6 +14623,7 @@ MonoBehaviour:
   eventOffset: 0
   activatingFlags: []
   triggeringFlags: []
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 7df18442689d5b947ba846513935fc1a, type: 3}
@@ -14848,6 +14865,7 @@ MonoBehaviour:
   - solvedAntifreezeDispenserPuzzle
   triggeringFlags:
   - firstInteractionAntifreezeDispenserPuzzle
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 0e9f020abc91b46418cd67457bae485f, type: 3}
@@ -15447,6 +15465,7 @@ MonoBehaviour:
   activatingFlags: []
   triggeringFlags:
   - firstInteractionRemote
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: d49167790559fcd459ebf3c765ad212d, type: 3}
@@ -16237,6 +16256,7 @@ MonoBehaviour:
   - firstInteractionCoolantGallons
   triggeringFlags:
   - firstInteractionCoolantGallons
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: e323b1dbd7ee9be4583758f27f7dd0f5, type: 3}
@@ -16418,6 +16438,7 @@ MonoBehaviour:
   - solvedLockedDrawerPuzzle
   triggeringFlags:
   - firstInteractionKeyboardSetupZoom
+  waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 5df178445155fed49ba1bc2b560c9f31, type: 3}

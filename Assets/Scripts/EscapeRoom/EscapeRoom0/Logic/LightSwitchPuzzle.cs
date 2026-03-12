@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class LightSwitchPuzzle : Puzzle
 {
-    public GameObject submit;
+    private GameObject submit;
     private bool leverRepaired;
 
     void Awake()
@@ -29,6 +29,8 @@ public class LightSwitchPuzzle : Puzzle
         GameData.escapeRoomGameplayManagerScript.locations.ForEach(location => location.GetComponent<Image>().color = Color.white);
 
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["UnlockedLightSwitchPuzzle"];
+
+        submit.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["LeverDown"];
 
         GameProgression.GameProgressionInstance.SetFlag("firstInteractionLightSwitchPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedLightSwitchPuzzle", true);
