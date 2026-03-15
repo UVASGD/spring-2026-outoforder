@@ -6,7 +6,7 @@
             "dialogue": "(An antenna.)"
         },
         {
-            "character": "4574",
+            "character": "ASTA",
             "speakerSprite": "AstaEyes",
             "dialogue": "Virgo? Did you find anything of interest?"
         },
@@ -16,7 +16,7 @@
             "dialogue": "Ah, nope, it's nothing."
         },
         {
-            "character": "4574",
+            "character": "ASTA",
             "speakerSprite": "AstaEyes",
             "dialogue": "I see. I thought I may have seen you move something there."
         },

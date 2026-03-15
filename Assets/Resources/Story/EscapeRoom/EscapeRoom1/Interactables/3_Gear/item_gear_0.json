@@ -1,0 +1,35 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "(ASTA seems to be staring intently at these gears. Maybe I should take it?)"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Ah. Were you thinking the same thing, Virgo?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Uh, yeah."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Great. I am glad that we are on the same page."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Riiight. Anyways."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "(That seemed to be the correct answer? She looks pleased.)",
+            "endOfScene": true
+        }
+    ]
+}
