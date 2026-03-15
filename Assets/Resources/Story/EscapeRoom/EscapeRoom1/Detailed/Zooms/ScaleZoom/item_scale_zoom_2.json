@@ -33,7 +33,12 @@
         {
             "character": "ASTA",
             "speakerSprite": "AstaEyes",
-            "dialogue": "That is quite heavy for a human isn't it?"
+            "dialogue": "That is quite heavy for a human, is it not?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "But you did not seem to even break a sweat."
         },
         {
             "character": "Virgo",
@@ -48,7 +53,7 @@
         {
             "character": "ASTA",
             "speakerSprite": "AstaEyes",
-            "dialogue": "Ah! I know."
+            "dialogue": "Aha. I know."
         },
         {
             "character": "Virgo",
