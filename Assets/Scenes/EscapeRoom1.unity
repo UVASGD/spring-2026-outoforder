@@ -1381,10 +1381,9 @@ GameObject:
   - component: {fileID: 141447361}
   - component: {fileID: 141447360}
   - component: {fileID: 141447359}
-  - component: {fileID: 141447358}
   - component: {fileID: 141447357}
   m_Layer: 0
-  m_Name: ScaleZoom
+  m_Name: MirrorZoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1431,25 +1430,6 @@ MonoBehaviour:
   characterDialogues:
   - {fileID: 4900000, guid: 1ecc11727b4db294f9162d36df51292c, type: 3}
   - {fileID: 4900000, guid: de5f56cde38dacc4abffda92c3c6cf4e, type: 3}
-  itemData:
-    name: 
-    detailed: 0
-    puzzle: 0
-    collectible: 0
-    description: 
---- !u!114 &141447358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141447355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50f8068df1d73e849be4264b23d88b1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemController
-  scrollView: 0
   itemData:
     name: 
     detailed: 0
@@ -11276,7 +11256,6 @@ GameObject:
   - component: {fileID: 1035954893}
   - component: {fileID: 1035954892}
   - component: {fileID: 1035954891}
-  - component: {fileID: 1035954890}
   - component: {fileID: 1035954889}
   m_Layer: 0
   m_Name: ScaleZoom
@@ -11326,25 +11305,6 @@ MonoBehaviour:
   characterDialogues:
   - {fileID: 4900000, guid: 1ecc11727b4db294f9162d36df51292c, type: 3}
   - {fileID: 4900000, guid: de5f56cde38dacc4abffda92c3c6cf4e, type: 3}
-  itemData:
-    name: 
-    detailed: 0
-    puzzle: 0
-    collectible: 0
-    description: 
---- !u!114 &1035954890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035954887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50f8068df1d73e849be4264b23d88b1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemController
-  scrollView: 0
   itemData:
     name: 
     detailed: 0
@@ -14202,7 +14162,6 @@ GameObject:
   - component: {fileID: 1461109432}
   - component: {fileID: 1461109431}
   - component: {fileID: 1461109430}
-  - component: {fileID: 1461109429}
   - component: {fileID: 1461109428}
   m_Layer: 0
   m_Name: ArmsZoom
@@ -14252,25 +14211,6 @@ MonoBehaviour:
   characterDialogues:
   - {fileID: 4900000, guid: 1ecc11727b4db294f9162d36df51292c, type: 3}
   - {fileID: 4900000, guid: de5f56cde38dacc4abffda92c3c6cf4e, type: 3}
-  itemData:
-    name: 
-    detailed: 0
-    puzzle: 0
-    collectible: 0
-    description: 
---- !u!114 &1461109429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461109426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50f8068df1d73e849be4264b23d88b1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemController
-  scrollView: 0
   itemData:
     name: 
     detailed: 0
@@ -20936,7 +20876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22351,7 +22291,6 @@ GameObject:
   - component: {fileID: 2098835867}
   - component: {fileID: 2098835866}
   - component: {fileID: 2098835865}
-  - component: {fileID: 2098835864}
   - component: {fileID: 2098835863}
   m_Layer: 0
   m_Name: GearsZoom
@@ -22401,25 +22340,6 @@ MonoBehaviour:
   characterDialogues:
   - {fileID: 4900000, guid: 1ecc11727b4db294f9162d36df51292c, type: 3}
   - {fileID: 4900000, guid: de5f56cde38dacc4abffda92c3c6cf4e, type: 3}
-  itemData:
-    name: 
-    detailed: 0
-    puzzle: 0
-    collectible: 0
-    description: 
---- !u!114 &2098835864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098835861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50f8068df1d73e849be4264b23d88b1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemController
-  scrollView: 0
   itemData:
     name: 
     detailed: 0

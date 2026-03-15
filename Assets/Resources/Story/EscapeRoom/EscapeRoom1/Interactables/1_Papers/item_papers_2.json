@@ -1,8 +1,8 @@
 {
     "dialogues": [
         {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "character": "4574",
+            "speakerSprite": "AstaEyes",
             "dialogue": "Virgo? Are you still looking through those papers?"
         },
         {
@@ -16,8 +16,8 @@
             "dialogue": "Ah!"
         },
         {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "character": "4574",
+            "speakerSprite": "AstaEyes",
             "dialogue": "Did you find something useful?"
         },
         {
@@ -42,7 +42,7 @@
         },
         {
             "character": "Virgo",
-            "speakerSprite": "AstaEyes",
+            "speakerSprite": "VirgoEyes",
             "dialogue": "Yeah. Wow, they've really got you documented here."
         },
         {
@@ -51,9 +51,19 @@
             "dialogue": "Huh. That is true. Some of these statistics are ones I did not even know myself."
         },
         {
-            "character": "Virgo",
+            "character": "4574",
             "speakerSprite": "AstaEyes",
-            "dialogue": "Well..."
+            "dialogue": "..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Ahem, well..."
         },
         {
             "character": "4574",
@@ -68,12 +78,27 @@
         {
             "character": "4574",
             "speakerSprite": "AstaEyes",
-            "dialogue": "Well... may I ask why, though?"
+            "dialogue": "Of course... but may I ask why, though?"
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "Well... ah... agh, I don't know! I mean, it doesn't feel right not to know something about yourself, does it?"
+            "dialogue": "Well..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Ah..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Agh, I don't know! I mean, it doesn't feel right not to know something about yourself, does it?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Jeez."
         },
         {
             "character": "Virgo",
