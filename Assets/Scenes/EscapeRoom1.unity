@@ -5390,6 +5390,14 @@ PrefabInstance:
     - target: {fileID: 613933092502503735, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1906050051}
+    - target: {fileID: 613933092502503735, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 613933092502503735, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Locations, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1017011501358268451, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
       propertyPath: m_Pivot.x
@@ -5474,14 +5482,38 @@ PrefabInstance:
     - target: {fileID: 3601322442316871230, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1906050051}
+    - target: {fileID: 3601322442316871230, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 3601322442316871230, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Locations, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4998666565327358693, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1906050051}
+    - target: {fileID: 4998666565327358693, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998666565327358693, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Locations, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8813127123199220539, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1906050051}
+    - target: {fileID: 8813127123199220539, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813127123199220539, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Locations, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9075013996940727868, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
       propertyPath: m_Name
@@ -8476,13 +8508,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionArms
+  - firstInteractionScaleZoom
   - heavyInteractionScaleZoom
-  - secondInteractionArms
+  - secondInteractionScaleZoom
   triggeringFlags:
-  - firstInteractionArms
+  - firstInteractionScaleZoom
   - 
-  - secondInteractionArms
+  - secondInteractionScaleZoom
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
