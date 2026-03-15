@@ -10,16 +10,16 @@ public class CounterweightSheavePuzzle : Puzzle
     private bool compartmentUnlocked;
     private Dictionary<string, int> gearWeights = new Dictionary<string, int>
     {
-        { "Gear A", 51 },
-        { "Gear B", 12 },
-        { "Gear C", 34 },
-        { "Gear D", 50 },
-        { "Gear E", 43 },
-        { "Gear F", 8 },
-        { "Gear G", 41 },
-        { "Gear H", 200 },
-        { "Gear I", 56 },
-        { "Gear J", 38 }
+        { "GearA", 51 },
+        { "GearB", 12 },
+        { "GearC", 34 },
+        { "GearD", 50 },
+        { "GearE", 43 },
+        { "GearF", 8 },
+        { "GearG", 41 },
+        { "GearH", 200 },
+        { "GearI", 56 },
+        { "GearJ", 38 }
     };
 
     void Awake()
@@ -46,14 +46,14 @@ public class CounterweightSheavePuzzle : Puzzle
     {
         int sum = 0;
 
-        foreach (GameObject gear in gameObject.transform)
+        for (int i = 0; i < transform.childCount - 1; i++)
         {
-            sum += gearWeights[gear.name];
+            sum += gearWeights[transform.GetChild(0).name];
         }
 
         print($"the sum is {sum}");
 
-        answer[0] = (sum == 250) ? '1' : '0';
+        guess[0] = (sum == 250) ? '1' : '0';
     }
 
     protected override void SolvedPuzzleSpecific()
