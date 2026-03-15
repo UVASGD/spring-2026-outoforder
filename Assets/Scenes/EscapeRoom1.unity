@@ -4272,12 +4272,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
-  activatingFlags: []
-  triggeringFlags: []
+  activatingFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
+  triggeringFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 2c75f67c1c697284cbd5b58bd04feec3, type: 3}
+  - {fileID: 4900000, guid: 3b11bad5c4e736d4b8775adf519cf18b, type: 3}
+  - {fileID: 4900000, guid: 21f6f7c147594e24596bd07304fc0bca, type: 3}
+  - {fileID: 4900000, guid: fecb3522eed2c0149b4ed960703661c1, type: 3}
+  - {fileID: 4900000, guid: a7d0aa8be6519b74dbcdf80f3cf86ea8, type: 3}
+  - {fileID: 4900000, guid: cab13c748d918cd499d3fad346f20305, type: 3}
+  - {fileID: 4900000, guid: 3c578e9e47f996b45922e7ff8a7232b4, type: 3}
+  - {fileID: 4900000, guid: a08d34e12580ef3459326634c9e1f75a, type: 3}
+  - {fileID: 4900000, guid: 3de1132aa493a6748a720440ae197537, type: 3}
+  - {fileID: 4900000, guid: 2dcc52f49570fd241aa7966ab6d8f9f5, type: 3}
+  - {fileID: 4900000, guid: c8f6eb81e01adc84c8cbec19452a0a29, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -9406,12 +9433,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
-  activatingFlags: []
-  triggeringFlags: []
+  activatingFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
+  triggeringFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 2c75f67c1c697284cbd5b58bd04feec3, type: 3}
+  - {fileID: 4900000, guid: 3b11bad5c4e736d4b8775adf519cf18b, type: 3}
+  - {fileID: 4900000, guid: 21f6f7c147594e24596bd07304fc0bca, type: 3}
+  - {fileID: 4900000, guid: fecb3522eed2c0149b4ed960703661c1, type: 3}
+  - {fileID: 4900000, guid: a7d0aa8be6519b74dbcdf80f3cf86ea8, type: 3}
+  - {fileID: 4900000, guid: cab13c748d918cd499d3fad346f20305, type: 3}
+  - {fileID: 4900000, guid: 3c578e9e47f996b45922e7ff8a7232b4, type: 3}
+  - {fileID: 4900000, guid: a08d34e12580ef3459326634c9e1f75a, type: 3}
+  - {fileID: 4900000, guid: 3de1132aa493a6748a720440ae197537, type: 3}
+  - {fileID: 4900000, guid: 2dcc52f49570fd241aa7966ab6d8f9f5, type: 3}
+  - {fileID: 4900000, guid: c8f6eb81e01adc84c8cbec19452a0a29, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -13160,12 +13214,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
-  activatingFlags: []
-  triggeringFlags: []
+  activatingFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
+  triggeringFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 2c75f67c1c697284cbd5b58bd04feec3, type: 3}
+  - {fileID: 4900000, guid: 3b11bad5c4e736d4b8775adf519cf18b, type: 3}
+  - {fileID: 4900000, guid: 21f6f7c147594e24596bd07304fc0bca, type: 3}
+  - {fileID: 4900000, guid: fecb3522eed2c0149b4ed960703661c1, type: 3}
+  - {fileID: 4900000, guid: a7d0aa8be6519b74dbcdf80f3cf86ea8, type: 3}
+  - {fileID: 4900000, guid: cab13c748d918cd499d3fad346f20305, type: 3}
+  - {fileID: 4900000, guid: 3c578e9e47f996b45922e7ff8a7232b4, type: 3}
+  - {fileID: 4900000, guid: a08d34e12580ef3459326634c9e1f75a, type: 3}
+  - {fileID: 4900000, guid: 3de1132aa493a6748a720440ae197537, type: 3}
+  - {fileID: 4900000, guid: 2dcc52f49570fd241aa7966ab6d8f9f5, type: 3}
+  - {fileID: 4900000, guid: c8f6eb81e01adc84c8cbec19452a0a29, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -13706,12 +13787,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
-  activatingFlags: []
-  triggeringFlags: []
+  activatingFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
+  triggeringFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 2c75f67c1c697284cbd5b58bd04feec3, type: 3}
+  - {fileID: 4900000, guid: 3b11bad5c4e736d4b8775adf519cf18b, type: 3}
+  - {fileID: 4900000, guid: 21f6f7c147594e24596bd07304fc0bca, type: 3}
+  - {fileID: 4900000, guid: fecb3522eed2c0149b4ed960703661c1, type: 3}
+  - {fileID: 4900000, guid: a7d0aa8be6519b74dbcdf80f3cf86ea8, type: 3}
+  - {fileID: 4900000, guid: cab13c748d918cd499d3fad346f20305, type: 3}
+  - {fileID: 4900000, guid: 3c578e9e47f996b45922e7ff8a7232b4, type: 3}
+  - {fileID: 4900000, guid: a08d34e12580ef3459326634c9e1f75a, type: 3}
+  - {fileID: 4900000, guid: 3de1132aa493a6748a720440ae197537, type: 3}
+  - {fileID: 4900000, guid: 2dcc52f49570fd241aa7966ab6d8f9f5, type: 3}
+  - {fileID: 4900000, guid: c8f6eb81e01adc84c8cbec19452a0a29, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -15094,12 +15202,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
-  activatingFlags: []
-  triggeringFlags: []
+  activatingFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
+  triggeringFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 2c75f67c1c697284cbd5b58bd04feec3, type: 3}
+  - {fileID: 4900000, guid: 3b11bad5c4e736d4b8775adf519cf18b, type: 3}
+  - {fileID: 4900000, guid: 21f6f7c147594e24596bd07304fc0bca, type: 3}
+  - {fileID: 4900000, guid: fecb3522eed2c0149b4ed960703661c1, type: 3}
+  - {fileID: 4900000, guid: a7d0aa8be6519b74dbcdf80f3cf86ea8, type: 3}
+  - {fileID: 4900000, guid: cab13c748d918cd499d3fad346f20305, type: 3}
+  - {fileID: 4900000, guid: 3c578e9e47f996b45922e7ff8a7232b4, type: 3}
+  - {fileID: 4900000, guid: a08d34e12580ef3459326634c9e1f75a, type: 3}
+  - {fileID: 4900000, guid: 3de1132aa493a6748a720440ae197537, type: 3}
+  - {fileID: 4900000, guid: 2dcc52f49570fd241aa7966ab6d8f9f5, type: 3}
+  - {fileID: 4900000, guid: c8f6eb81e01adc84c8cbec19452a0a29, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -17127,12 +17262,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
-  activatingFlags: []
-  triggeringFlags: []
+  activatingFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
+  triggeringFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 2c75f67c1c697284cbd5b58bd04feec3, type: 3}
+  - {fileID: 4900000, guid: 3b11bad5c4e736d4b8775adf519cf18b, type: 3}
+  - {fileID: 4900000, guid: 21f6f7c147594e24596bd07304fc0bca, type: 3}
+  - {fileID: 4900000, guid: fecb3522eed2c0149b4ed960703661c1, type: 3}
+  - {fileID: 4900000, guid: a7d0aa8be6519b74dbcdf80f3cf86ea8, type: 3}
+  - {fileID: 4900000, guid: cab13c748d918cd499d3fad346f20305, type: 3}
+  - {fileID: 4900000, guid: 3c578e9e47f996b45922e7ff8a7232b4, type: 3}
+  - {fileID: 4900000, guid: a08d34e12580ef3459326634c9e1f75a, type: 3}
+  - {fileID: 4900000, guid: 3de1132aa493a6748a720440ae197537, type: 3}
+  - {fileID: 4900000, guid: 2dcc52f49570fd241aa7966ab6d8f9f5, type: 3}
+  - {fileID: 4900000, guid: c8f6eb81e01adc84c8cbec19452a0a29, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -17305,12 +17467,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
-  activatingFlags: []
-  triggeringFlags: []
+  activatingFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
+  triggeringFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 2c75f67c1c697284cbd5b58bd04feec3, type: 3}
+  - {fileID: 4900000, guid: 3b11bad5c4e736d4b8775adf519cf18b, type: 3}
+  - {fileID: 4900000, guid: 21f6f7c147594e24596bd07304fc0bca, type: 3}
+  - {fileID: 4900000, guid: fecb3522eed2c0149b4ed960703661c1, type: 3}
+  - {fileID: 4900000, guid: a7d0aa8be6519b74dbcdf80f3cf86ea8, type: 3}
+  - {fileID: 4900000, guid: cab13c748d918cd499d3fad346f20305, type: 3}
+  - {fileID: 4900000, guid: 3c578e9e47f996b45922e7ff8a7232b4, type: 3}
+  - {fileID: 4900000, guid: a08d34e12580ef3459326634c9e1f75a, type: 3}
+  - {fileID: 4900000, guid: 3de1132aa493a6748a720440ae197537, type: 3}
+  - {fileID: 4900000, guid: 2dcc52f49570fd241aa7966ab6d8f9f5, type: 3}
+  - {fileID: 4900000, guid: c8f6eb81e01adc84c8cbec19452a0a29, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -19971,12 +20160,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
-  activatingFlags: []
-  triggeringFlags: []
+  activatingFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
+  triggeringFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 2c75f67c1c697284cbd5b58bd04feec3, type: 3}
+  - {fileID: 4900000, guid: 3b11bad5c4e736d4b8775adf519cf18b, type: 3}
+  - {fileID: 4900000, guid: 21f6f7c147594e24596bd07304fc0bca, type: 3}
+  - {fileID: 4900000, guid: fecb3522eed2c0149b4ed960703661c1, type: 3}
+  - {fileID: 4900000, guid: a7d0aa8be6519b74dbcdf80f3cf86ea8, type: 3}
+  - {fileID: 4900000, guid: cab13c748d918cd499d3fad346f20305, type: 3}
+  - {fileID: 4900000, guid: 3c578e9e47f996b45922e7ff8a7232b4, type: 3}
+  - {fileID: 4900000, guid: a08d34e12580ef3459326634c9e1f75a, type: 3}
+  - {fileID: 4900000, guid: 3de1132aa493a6748a720440ae197537, type: 3}
+  - {fileID: 4900000, guid: 2dcc52f49570fd241aa7966ab6d8f9f5, type: 3}
+  - {fileID: 4900000, guid: c8f6eb81e01adc84c8cbec19452a0a29, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -20397,12 +20613,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
-  activatingFlags: []
-  triggeringFlags: []
+  activatingFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
+  triggeringFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 2c75f67c1c697284cbd5b58bd04feec3, type: 3}
+  - {fileID: 4900000, guid: 3b11bad5c4e736d4b8775adf519cf18b, type: 3}
+  - {fileID: 4900000, guid: 21f6f7c147594e24596bd07304fc0bca, type: 3}
+  - {fileID: 4900000, guid: fecb3522eed2c0149b4ed960703661c1, type: 3}
+  - {fileID: 4900000, guid: a7d0aa8be6519b74dbcdf80f3cf86ea8, type: 3}
+  - {fileID: 4900000, guid: cab13c748d918cd499d3fad346f20305, type: 3}
+  - {fileID: 4900000, guid: 3c578e9e47f996b45922e7ff8a7232b4, type: 3}
+  - {fileID: 4900000, guid: a08d34e12580ef3459326634c9e1f75a, type: 3}
+  - {fileID: 4900000, guid: 3de1132aa493a6748a720440ae197537, type: 3}
+  - {fileID: 4900000, guid: 2dcc52f49570fd241aa7966ab6d8f9f5, type: 3}
+  - {fileID: 4900000, guid: c8f6eb81e01adc84c8cbec19452a0a29, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -21235,12 +21478,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
-  activatingFlags: []
-  triggeringFlags: []
+  activatingFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
+  triggeringFlags:
+  - firstInteractionGear
+  - secondInteractionGear
+  - thirdInteractionGear
+  - fourthInteractionGear
+  - fifthInteractionGear
+  - sixthInteractionGear
+  - seventhInteractionGear
+  - eighthInteractionGear
+  - ninthInteractionGear
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 2c75f67c1c697284cbd5b58bd04feec3, type: 3}
+  - {fileID: 4900000, guid: 3b11bad5c4e736d4b8775adf519cf18b, type: 3}
+  - {fileID: 4900000, guid: 21f6f7c147594e24596bd07304fc0bca, type: 3}
+  - {fileID: 4900000, guid: fecb3522eed2c0149b4ed960703661c1, type: 3}
+  - {fileID: 4900000, guid: a7d0aa8be6519b74dbcdf80f3cf86ea8, type: 3}
+  - {fileID: 4900000, guid: cab13c748d918cd499d3fad346f20305, type: 3}
+  - {fileID: 4900000, guid: 3c578e9e47f996b45922e7ff8a7232b4, type: 3}
+  - {fileID: 4900000, guid: a08d34e12580ef3459326634c9e1f75a, type: 3}
+  - {fileID: 4900000, guid: 3de1132aa493a6748a720440ae197537, type: 3}
+  - {fileID: 4900000, guid: 2dcc52f49570fd241aa7966ab6d8f9f5, type: 3}
+  - {fileID: 4900000, guid: c8f6eb81e01adc84c8cbec19452a0a29, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -24471,10 +24741,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
