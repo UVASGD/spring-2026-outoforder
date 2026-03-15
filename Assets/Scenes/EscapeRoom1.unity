@@ -309,14 +309,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionLaptopPassword
+  - firstInteractionPapers
   triggeringFlags:
-  - firstInteractionLaptopPassword
+  - firstInteractionPapers
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: b6605cd4d97e50e4680db39d681767dd, type: 3}
-  - {fileID: 4900000, guid: 0ee739aeb63af994cbc6f5999ba407d2, type: 3}
+  - {fileID: 4900000, guid: ff0a7a12c23f40a4693a0f99798febd1, type: 3}
+  - {fileID: 4900000, guid: 6faf04e42234a55438f8fd260eeae404, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -490,14 +490,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionLaptopPassword
+  - firstInteractionCabinets
   triggeringFlags:
-  - firstInteractionLaptopPassword
+  - firstInteractionCabinets
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: b6605cd4d97e50e4680db39d681767dd, type: 3}
-  - {fileID: 4900000, guid: 0ee739aeb63af994cbc6f5999ba407d2, type: 3}
+  - {fileID: 4900000, guid: 5e7e344e97fff7b4bb12796602c9ac92, type: 3}
+  - {fileID: 4900000, guid: e1063b3fd5139f245af3b2dbfd9c9ba7, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -14836,14 +14836,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionLaptopPassword
+  - firstInteractionLamp
   triggeringFlags:
-  - firstInteractionLaptopPassword
+  - firstInteractionLamp
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: b6605cd4d97e50e4680db39d681767dd, type: 3}
-  - {fileID: 4900000, guid: 0ee739aeb63af994cbc6f5999ba407d2, type: 3}
+  - {fileID: 4900000, guid: 1e11176e7902b5642891078d498d6210, type: 3}
+  - {fileID: 4900000, guid: abe72276fe2ab6a4f863487a0d1fbf44, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -17740,14 +17740,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionLaptopPassword
+  - firstInteractionPrinter
   triggeringFlags:
-  - firstInteractionLaptopPassword
+  - firstInteractionPrinter
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: b6605cd4d97e50e4680db39d681767dd, type: 3}
-  - {fileID: 4900000, guid: 0ee739aeb63af994cbc6f5999ba407d2, type: 3}
+  - {fileID: 4900000, guid: bcafc830fdce279499be7c3db75f4145, type: 3}
+  - {fileID: 4900000, guid: 31abb937820c0e640b25a2a1cae83714, type: 3}
   itemData:
     name: 
     detailed: 0
