@@ -1,0 +1,85 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "200 pounds."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Ack!"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Ah, I apologize for frightening you."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "..."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "But 200 pounds, huh."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "That is quite heavy for a human isn't it?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Ah! I know."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "...What is it?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Could you have been hiding from me that you were a body builder back Outside?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "..."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "I have recently downloaded an updated humor module. This is what you call 'teasing,' isn't it?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Please,"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "... don't do that again.",
+            "endOfScene": true
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "dialogues": [
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "What are you doing there, Virgo?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "I found a scale. Maybe we can try weighing something here.",
+            "endOfScene": true
+        }
+    ]
+}
