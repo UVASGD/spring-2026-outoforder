@@ -1,4 +1,14 @@
 {
    "FlashDrive": "Port",
-   "Key": "CounterweightSheavePuzzle"
+   "Key": "CounterweightSheavePuzzle",
+   "GearA": "GearA",
+   "GearB": "GearB",
+   "GearC": "GearC",
+   "GearD": "GearD",
+   "GearE": "GearE",
+   "GearF": "GearF",
+   "GearG": "GearG",
+   "GearH": "GearH",
+   "GearI": "GearI",
+   "GearJ": "GearJ"
 }

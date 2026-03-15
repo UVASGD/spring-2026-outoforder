@@ -15,6 +15,6 @@ public class LocationData : MonoBehaviour
 
     public void UpdateLocationText()
     {
-        GetComponentInChildren<TextMeshProUGUI>().text = GameData.escapeRoomGameplayManagerScript.locationNames[locationIndex];
+        GetComponentInChildren<TextMeshProUGUI>().text = GameData.escapeRoomGameplayManager.locationNames[locationIndex];
     }
 }

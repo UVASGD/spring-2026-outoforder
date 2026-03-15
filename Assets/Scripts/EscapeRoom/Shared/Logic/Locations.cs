@@ -27,8 +27,10 @@ public class Locations : MonoBehaviour
 
     void Awake()
     {
+        GameData.escapeRoomGameplayManager.locations = this;
+        
         // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
-        debugItemData = GameData.escapeRoomGameplayManagerScript.items["Key"];
+        debugItemData = GameData.escapeRoomGameplayManager.items["Key"];
     }
 
     void Start()
@@ -43,11 +45,11 @@ public class Locations : MonoBehaviour
 
         currentLocation = location0;
         currentLocationTMP = popUpAreas.transform.Find("MovePopUp").transform.Find("CurrentLocationText").GetComponent<TextMeshProUGUI>();
-        currentLocationTMP.text = GameData.escapeRoomGameplayManagerScript.locationNames[0];
+        currentLocationTMP.text = GameData.escapeRoomGameplayManager.locationNames[0];
 
         content = popUpAreas.transform.Find("ItemPopUp").transform.GetComponentInChildren<VerticalLayoutGroup>().gameObject;
 
-        GameData.escapeRoomGameplayManagerScript.puzzles = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None)
+        GameData.escapeRoomGameplayManager.puzzles = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None)
             .Where(item => 
                 item.gameObject.name.Contains("Zoom", System.StringComparison.OrdinalIgnoreCase) || 
                 item is Puzzle
@@ -58,7 +60,7 @@ public class Locations : MonoBehaviour
                 group => group.First().gameObject
             );
 
-        foreach (GameObject puzzle in GameData.escapeRoomGameplayManagerScript.puzzles.Values)
+        foreach (GameObject puzzle in GameData.escapeRoomGameplayManager.puzzles.Values)
         {
             puzzle.SetActive(false);
         }
@@ -75,7 +77,7 @@ public class Locations : MonoBehaviour
         GameObject scrollViewItem = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
         scrollViewItem.name = debugItemData.name.Replace(" ", "");
         scrollViewItem.GetComponentInChildren<TextMeshProUGUI>().text = debugItemData.name;
-        GameData.escapeRoomGameplayManagerScript.collectedItemsScrollView[debugItemData.name] = scrollViewItem;
+        GameData.escapeRoomGameplayManager.collectedItemsScrollView[debugItemData.name] = scrollViewItem;
     }
 
     public void ExamineItem()
@@ -100,6 +102,20 @@ public class Locations : MonoBehaviour
     }
 
     // PUBLIC HELPERS
+    public void CollectItem(ItemData itemData, GameObject item)
+    {
+        if (!GameProgression.GameProgressionInstance.GetFlag($"used{itemData.name}") && itemData.collectible && !GameData.escapeRoomGameplayManager.collectedItemsScrollView.ContainsKey(itemData.name))
+        {
+            print($"collecting {itemData.name}");
+            
+            item.SetActive(false);
+
+            GameObject scrollViewItem = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
+            scrollViewItem.name = itemData.name.Replace(" ", "");
+            scrollViewItem.GetComponentInChildren<TextMeshProUGUI>().text = itemData.name;
+            GameData.escapeRoomGameplayManager.collectedItemsScrollView[itemData.name] = scrollViewItem;
+        }
+    }
 
     public void EnterItem(ItemData itemData)
     {
@@ -112,16 +128,16 @@ public class Locations : MonoBehaviour
     public void ExitItem()
     {
         itemsEntered--;
-        GameData.escapeRoomGameplayManagerScript.puzzles[currentPuzzle].gameObject.SetActive(false);
+        GameData.escapeRoomGameplayManager.puzzles[currentPuzzle].gameObject.SetActive(false);
         if (itemsEntered == 0) 
         {
-            GameData.escapeRoomGameplayManagerScript.enteredItem = false;
+            GameData.escapeRoomGameplayManager.enteredItem = false;
             backButton.gameObject.SetActive(false);
             currentPuzzle = "";
         }
         else
         {
-            currentPuzzle = GameData.escapeRoomGameplayManagerScript.puzzles[currentPuzzle].transform.parent.parent.name;
+            currentPuzzle = GameData.escapeRoomGameplayManager.puzzles[currentPuzzle].transform.parent.parent.name;
         }
     }
 
@@ -159,21 +175,6 @@ public class Locations : MonoBehaviour
         manualInteraction.ItemInteraction();
     }
 
-    private void CollectItem(ItemData itemData, GameObject item)
-    {
-        if (!GameProgression.GameProgressionInstance.GetFlag($"used{itemData.name}") && itemData.collectible && !GameData.escapeRoomGameplayManagerScript.collectedItemsScrollView.ContainsKey(itemData.name))
-        {
-            print($"collecting {itemData.name}");
-            
-            item.SetActive(false);
-
-            GameObject scrollViewItem = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
-            scrollViewItem.name = itemData.name.Replace(" ", "");
-            scrollViewItem.GetComponentInChildren<TextMeshProUGUI>().text = itemData.name;
-            GameData.escapeRoomGameplayManagerScript.collectedItemsScrollView[itemData.name] = scrollViewItem;
-        }
-    }
-
     private void ShowLocation(GameObject location, int newLocationIndex)
     {
         currentLocationIndex = newLocationIndex;
@@ -181,7 +182,7 @@ public class Locations : MonoBehaviour
         currentLocation?.SetActive(false);
         location.SetActive(true);
         currentLocation = location;
-        currentLocationTMP.text = GameData.escapeRoomGameplayManagerScript.locationNames[currentLocationIndex];
+        currentLocationTMP.text = GameData.escapeRoomGameplayManager.locationNames[currentLocationIndex];
     }
 
     private IEnumerator WaitToEnterItem(ItemData itemData)
@@ -192,9 +193,9 @@ public class Locations : MonoBehaviour
         }
 
         itemsEntered++;
-        GameData.escapeRoomGameplayManagerScript.enteredItem = true;
+        GameData.escapeRoomGameplayManager.enteredItem = true;
         currentPuzzle = itemData.name.Replace(" ", "") + (itemData.puzzle ? "Puzzle" : "Zoom");
-        GameData.escapeRoomGameplayManagerScript.puzzles[currentPuzzle].gameObject.SetActive(true);
+        GameData.escapeRoomGameplayManager.puzzles[currentPuzzle].gameObject.SetActive(true);
         backButton.gameObject.SetActive(true);
     }
 }

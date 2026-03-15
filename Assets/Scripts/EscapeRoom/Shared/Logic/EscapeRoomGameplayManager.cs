@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class EscapeRoomGameplay : MonoBehaviour
 {
+    public Locations locations;
+
     public List<string> locationNames;
-    public List<GameObject> locations;
+    public List<GameObject> locationGameObjects;
 
     public Dictionary<string, GameObject> puzzles = new();
     
@@ -21,10 +23,10 @@ public class EscapeRoomGameplay : MonoBehaviour
 
     void Awake()
     {
-        GameData.escapeRoomGameplayManagerScript = this;
+        GameData.escapeRoomGameplayManager = this;
         
         locationNames = JsonConvert.DeserializeObject<List<string>>(Resources.Load<TextAsset>($"Story/EscapeRoom/EscapeRoom{GameData.escapeRoomNumber}/Data/locations").text);
-        locations.AddRange(Enumerable.Range(0, 5).Select(i => GameObject.Find($"Location{i}")));
+        locationGameObjects.AddRange(Enumerable.Range(0, 5).Select(i => GameObject.Find($"Location{i}")));
 
         items = JsonConvert.DeserializeObject<Dictionary<string, ItemData>>(Resources.Load<TextAsset>($"Story/EscapeRoom/EscapeRoom{GameData.escapeRoomNumber}/Data/items").text);
         foreach (ItemData item in items.Values)
@@ -37,6 +39,7 @@ public class EscapeRoomGameplay : MonoBehaviour
 
     public bool UseItem(string directItem, string indirectItem)
     {
+        print($"attempt to use item {directItem} on {indirectItem}");
         // TODO MAYBE SOME SORT OF USED ITEM SOUND EFFECT
         if (usages.TryGetValue(directItem.Replace(" ", ""), out var value) && value == indirectItem)
         {

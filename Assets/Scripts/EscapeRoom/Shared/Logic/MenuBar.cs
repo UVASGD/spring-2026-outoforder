@@ -29,7 +29,7 @@ public class MenuBar : MonoBehaviour
 
     void Update()
     {
-        moveButton.interactable = !GameData.escapeRoomGameplayManagerScript.enteredItem;
+        moveButton.interactable = !GameData.escapeRoomGameplayManager.enteredItem;
     } 
 
     public void ChangeState(string newMenuName)

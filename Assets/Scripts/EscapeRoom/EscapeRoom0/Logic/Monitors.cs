@@ -10,7 +10,7 @@ public class Monitors : MonoBehaviour
         if (!monitorsOn && GameProgression.GameProgressionInstance.GetFlag("usedRemote"))
         {
             monitorsOn = true;
-            GameData.escapeRoomGameplayManagerScript.locations[4].GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Location4Secondary"];
+            GameData.escapeRoomGameplayManager.locationGameObjects[4].GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Location4Secondary"];
         }
     }
 }

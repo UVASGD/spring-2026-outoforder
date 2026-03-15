@@ -8,7 +8,12 @@ public class ItemController : MonoBehaviour
 
     void Awake()
     {
-        itemData = GameData.escapeRoomGameplayManagerScript.items[gameObject.name];
+        UpdateItemData();
+    }
+
+    public void UpdateItemData()
+    {
+        itemData = GameData.escapeRoomGameplayManager.items[gameObject.name];
 
         if (scrollView)
         {
