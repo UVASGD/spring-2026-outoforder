@@ -37,27 +37,27 @@
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "AstaEyes",
             "dialogue": "Ah, does it now? That must be from quite some time ago."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "AstaEyes",
             "dialogue": "Yeah. Wow, they've really got you documented here."
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "AstaEyes",
             "dialogue": "Huh. That is true. Some of these statistics are ones I did not even know myself."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "AstaEyes",
             "dialogue": "Well..."
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "AstaEyes",
             "dialogue": "?"
         },
         {
@@ -67,7 +67,7 @@
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "AstaEyes",
             "dialogue": "Well... may I ask why, though?"
         },
         {
@@ -82,7 +82,7 @@
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "AstaEyes",
             "dialogue": "Heh. Thank you, Virgo.",
             "endOfScene": true
         }
