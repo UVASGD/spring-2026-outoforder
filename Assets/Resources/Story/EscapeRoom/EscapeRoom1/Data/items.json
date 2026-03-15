@@ -1,4 +1,18 @@
 {
+   "CounterweightSheave": {
+      "name": "Counterweight Sheave",
+      "detailed": true,
+      "puzzle": true,
+      "collectible": false,
+      "description": ""
+   },
+   "EmptySlot": {
+      "name": "Empty Slot",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
    "CaesarDiary": {
       "name": "Caesar Diary",
       "detailed": true,
@@ -8,13 +22,6 @@
    },
    "LockedLocker": {
       "name": "Locked Locker",
-      "detailed": true,
-      "puzzle": true,
-      "collectible": false,
-      "description": ""
-   },
-   "CounterweightSheave": {
-      "name": "Counterweight Sheave",
       "detailed": true,
       "puzzle": true,
       "collectible": false,

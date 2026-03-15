@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class CounterweightSheavePuzzle : Puzzle
 {
     private GameObject submit;
+    private GameObject lastActiveSlot;
     private bool compartmentUnlocked;
     private Dictionary<string, int> gearWeights = new Dictionary<string, int>
     {
@@ -62,5 +64,35 @@ public class CounterweightSheavePuzzle : Puzzle
         // GameProgression.GameProgressionInstance.SetFlag("firstInteractionLockedLockerPuzzle", true);
         // GameProgression.GameProgressionInstance.SetFlag("solvedLockedLockerPuzzle", true);
         // gameObject.GetComponent<ManualInteraction>().ItemInteraction();
+    }
+
+    public void ModifyGear()
+    {
+        lastActiveSlot = EventSystem.current.currentSelectedGameObject;
+        ItemController itemController = lastActiveSlot.GetComponent<ItemController>();
+        Image image = lastActiveSlot.GetComponent<Image>();
+
+        if (lastActiveSlot.GetComponent<Image>().sprite == null)
+        {
+            if (GameData.escapeRoomGameplayManagerScript.selectedItem.Contains("Gear"))
+            {
+                lastActiveSlot.name = GameData.escapeRoomGameplayManagerScript.selectedItem.Replace(" ", "");
+                image.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Item"];
+                print("place gear");
+            }
+        }
+        else
+        {
+            lastActiveSlot.name = "EmptySlot";
+            image.sprite = null;
+            print("remove gear");
+        }
+
+        itemController.UpdateItemData();
+    }
+
+    public void ActivateGear()
+    {
+        lastActiveSlot.SetActive(true);
     }
 }
