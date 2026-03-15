@@ -48,12 +48,8 @@ public class CounterweightSheavePuzzle : Puzzle
 
         for (int i = 0; i < transform.childCount; i++)
         {
-            string childName = transform.GetChild(0).name;
-            if (childName.Contains("Gear")) 
-            {
-                sum += gearWeights[childName];
-                print($"adding {gearWeights[childName]} to sum which is now {sum}");
-            }
+            string childName = transform.GetChild(i).name;
+            if (childName.Contains("Gear")) sum += gearWeights[childName];
         }
 
         print($"the sum is {sum}");
