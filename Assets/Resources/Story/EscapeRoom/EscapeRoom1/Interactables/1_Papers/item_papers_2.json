@@ -1,0 +1,115 @@
+{
+    "dialogues": [
+        {
+            "character": "4574",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Virgo? Are you still looking through those papers?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Yeah, I just thought they were interesting... I don't know..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Ah!"
+        },
+        {
+            "character": "4574",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Did you find something useful?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Well, I'm not all that sure that it's useful but..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "This is you, right? It says PATROL ROBOT ID 4574."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Wow, it's even got a picture of you before you got all customized."
+        },
+        {
+            "character": "4574",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Ah, does it now? That must be from quite some time ago."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Yeah. Wow, they've really got you documented here."
+        },
+        {
+            "character": "4574",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Huh. That is true. Some of these statistics are ones I did not even know myself."
+        },
+        {
+            "character": "4574",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Ahem, well..."
+        },
+        {
+            "character": "4574",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Here, you can have it."
+        },
+        {
+            "character": "4574",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Of course... but may I ask why, though?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Well..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Ah..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Agh, I don't know! I mean, it doesn't feel right not to know something about yourself, does it?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Jeez."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Just do me a favor and hold on to it."
+        },
+        {
+            "character": "4574",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Heh. Thank you, Virgo.",
+            "endOfScene": true
+        }
+    ]
+}

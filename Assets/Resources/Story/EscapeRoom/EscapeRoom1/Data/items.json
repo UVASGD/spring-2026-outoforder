@@ -47,5 +47,124 @@
       "puzzle": false,
       "collectible": false,
       "description": ""
+   },
+   "Printer": {
+      "name": "Printer",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "Cabinets": {
+      "name": "Cabinets",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "Lamp": {
+      "name": "Lamp",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "Papers": {
+      "name": "Papers",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "Lockers": {
+      "name": "Lockers",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "Antenna": {
+      "name": "Antenna",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": ""
+   },
+   "Screwdriver": {
+      "name": "Screwdriver",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "OperationTable": {
+      "name": "Operation Table",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "Posters": {
+      "name": "Posters",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "DismantledRobots": {
+      "name": "Dismantled Robots",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "OldRadio": {
+      "name": "Old Radio",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "Arms": {
+      "name": "Arms",
+      "detailed": true,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "Scale": {
+      "name": "Scale",
+      "detailed": true,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "Wires": {
+      "name": "Wires",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "Gears": {
+      "name": "Gears",
+      "detailed": true,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "Gate": {
+      "name": "Gate",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
+   "Mirror": {
+      "name": "Mirror",
+      "detailed": true,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
    }
 }

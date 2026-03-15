@@ -8,12 +8,24 @@ public class LaptopPasswordPuzzle : Puzzle
     [SerializeField] TMP_InputField inputField;
 
     private GameObject keypad;
+    private GameObject port;
 
     void Awake()
     {
         answer = new char[] { '4', '2', '1', '2' };
 
         keypad = GameObject.Find("Keypad");
+        port = GameObject.Find("Port");
+    }
+
+    void OnEnable()
+    {
+        port.SetActive(true);
+    }
+
+    void OnDisable()
+    {
+        port.SetActive(false);
     }
 
     protected override void SolvedPuzzleSpecific()

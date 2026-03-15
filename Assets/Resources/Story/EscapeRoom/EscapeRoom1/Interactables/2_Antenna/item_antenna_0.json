@@ -1,0 +1,45 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "(An antenna.)"
+        },
+        {
+            "character": "4574",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Virgo? Did you find anything of interest?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Ah, nope, it's nothing."
+        },
+        {
+            "character": "4574",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "I see. I thought I may have seen you move something there."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Haha. Right."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "(Damn, she's like a hawk.)"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "(Anyways...)"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "(Why the hell did I feel the need to grab this?)",
+            "endOfScene": true
+        }
+    ]
+}
