@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -35,6 +36,10 @@ public class PixelShiftPuzzle : Puzzle
 
     protected override void SolvedPuzzleSpecific()
     {
+        Transform location1 =  transform.parent.parent.parent.parent;
+        location1.Find("Interactables/Printer").gameObject.SetActive(false);
+        location1.Find("Interactables/Key").gameObject.SetActive(true);
+
         foreach (Transform child in gameObject.transform) 
         {
             child.gameObject.SetActive(false);
