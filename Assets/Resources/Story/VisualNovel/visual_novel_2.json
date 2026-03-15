@@ -1,14 +1,273 @@
 {
     "dialogues": [
         {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "antifreeze dispenser puzzle 0"
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I'll just have to work with what I have. I'll keep thinking about it.",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "..."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "Virgo, are you doing alright?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "Yeah, just a little shaken up."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "Thanks for helping me get through that room, by the way."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "Sorry for being so on edge."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "The reality of what's going on is setting in now..."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "I understand."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "I, too, am not quite sure about what's happening to me."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "Regardless, I am glad that we were able to make it out safely."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "Well, it's only because you were here to help me."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "Why would a robot care so much about a lousy mechanic, anyway?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "Especially after how I treated you..."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "I cannot explain your heart, Virgo; I can only ensure it keeps beating."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "Well, I'm glad that you're odd enough to stay."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "..."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "So, Virgo... what do you plan on doing once you leave the facility?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "Well, I need to get back to my father."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "He's probably worried sick about where I am. I've never just disappeared like this before."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "I'm sure he's searching for me with..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "With..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "Huh, why can't I remember?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "You cannot remember?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "Our maid robot."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "I was so close to her. She was like a sister to me."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "Though I can't seem to remember he name right now."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "Ah. Still, it is good that you are regulating yourself by thinking of a happy place."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "... I guess?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "Am I perhaps misinterpreting your behavior?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "No, no, it's just... it's more than regulating or whatever."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "I can't help but think about it all, missing it."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "I had a life, my father, my work."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "But now it's all been ripped away from me, and I have no idea why."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "It's..."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "Pretrubing?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "I was gonna say it's freaking me the hell out, but that works too."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "Well, I am also “freaking the hell out”, as you might say.."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "Perhaps that is to our benefit, however."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "What do you mean?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "Our struggle is shared. Because of this, we can be stronger together."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "And maybe, we can figure this out."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "Yeah..."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "..."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "It's been some time now. The elevator has almost arrived at the next level."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "As I mentioned, we are about to enter the Sorting Bay."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "This area is under high alert. There will be a significant security presence."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "If we are found, they will undoubtedly converge on our location."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "So what's the plan?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "We should locate the terminal in the area to elevate our permissions, so we can continue traversing through the facility."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "ASTANeutral",
+            "dialogue": "But first, we must blind them. I recommend hacking into the camera system"
+        },{
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "Yeah, maybe we can cause a diversion."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoNeutral",
+            "dialogue": "Let's get to work then, shall we?.",
             "endOfScene": true
         }
     ]
