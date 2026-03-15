@@ -6,12 +6,12 @@
             "dialogue": "What's all this? A bunch of lockers?"
         },
         {
-            "character": "4574",
+            "character": "ASTA",
             "speakerSprite": "AstaEyes",
             "dialogue": "Yes. It seems as though most are unlocked."
         },
         {
-            "character": "4574",
+            "character": "ASTA",
             "speakerSprite": "AstaEyes",
             "dialogue": "Shall we take a look through them separately and see what we can find?",
             "endOfScene": true

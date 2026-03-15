@@ -28,7 +28,7 @@ public class Locations : MonoBehaviour
     void Awake()
     {
         // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
-        // debugItemData = GameObject.Find("Location2/Detailed/LockedLockerPuzzle/Detailed/Interactables/FlashDrive").GetComponent<ItemController>().itemData;
+        debugItemData = GameData.escapeRoomGameplayManagerScript.items["Key"];
     }
 
     void Start()
@@ -72,10 +72,10 @@ public class Locations : MonoBehaviour
         location4.SetActive(false);
         
         // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
-        // GameObject scrollViewItem = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
-        // scrollViewItem.name = debugItemData.name.Replace(" ", "");
-        // scrollViewItem.GetComponentInChildren<TextMeshProUGUI>().text = debugItemData.name;
-        // GameData.escapeRoomGameplayManagerScript.collectedItemsScrollView[debugItemData.name] = scrollViewItem;
+        GameObject scrollViewItem = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
+        scrollViewItem.name = debugItemData.name.Replace(" ", "");
+        scrollViewItem.GetComponentInChildren<TextMeshProUGUI>().text = debugItemData.name;
+        GameData.escapeRoomGameplayManagerScript.collectedItemsScrollView[debugItemData.name] = scrollViewItem;
     }
 
     public void ExamineItem()
@@ -112,17 +112,16 @@ public class Locations : MonoBehaviour
     public void ExitItem()
     {
         itemsEntered--;
-        GameData.escapeRoomGameplayManagerScript.enteredItem = false;
         GameData.escapeRoomGameplayManagerScript.puzzles[currentPuzzle].gameObject.SetActive(false);
         if (itemsEntered == 0) 
         {
+            GameData.escapeRoomGameplayManagerScript.enteredItem = false;
             backButton.gameObject.SetActive(false);
             currentPuzzle = "";
         }
         else
         {
-            // HIGH PRIORITY TODO: EXTREMELY HARDCODED
-            currentPuzzle = "LockedLockerPuzzle";
+            currentPuzzle = GameData.escapeRoomGameplayManagerScript.puzzles[currentPuzzle].transform.parent.parent.name;
         }
     }
 

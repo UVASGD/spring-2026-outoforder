@@ -55,6 +55,13 @@
       "collectible": false,
       "description": ""
    },
+   "Key": {
+      "name": "Key",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": ""
+   },
    "Cabinets": {
       "name": "Cabinets",
       "detailed": false,
@@ -152,6 +159,76 @@
       "puzzle": false,
       "collectible": false,
       "description": ""
+   },
+   "GearA": {
+      "name": "Gear A",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A gear."
+   },
+   "GearB": {
+      "name": "Gear B",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A gear."
+   },
+   "GearC": {
+      "name": "Gear C",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A gear."
+   },
+   "GearD": {
+      "name": "Gear D",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A gear."
+   },
+   "GearE": {
+      "name": "Gear E",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A gear."
+   },
+   "GearF": {
+      "name": "Gear F",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A gear."
+   },
+   "GearG": {
+      "name": "Gear G",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A gear."
+   },
+   "GearH": {
+      "name": "Gear H",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A gear."
+   },
+   "GearI": {
+      "name": "Gear I",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A gear."
+   },
+   "GearJ": {
+      "name": "Gear J",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A gear."
    },
    "Gate": {
       "name": "Gate",

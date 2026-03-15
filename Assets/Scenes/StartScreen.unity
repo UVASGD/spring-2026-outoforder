@@ -1267,7 +1267,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1798198328}
         m_TargetAssemblyTypeName: GameProgression, Assembly-CSharp
         m_MethodName: SceneTransition
         m_Mode: 5
