@@ -58,7 +58,7 @@ public class CounterweightSheavePuzzle : Puzzle
 
     protected override void SolvedPuzzleSpecific()
     {
-        gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CounterweightSheaveSecondary"];
+        gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CounterweightSheavePuzzleSecondary"];
 
         // TODO: THIS COULD PROBABLY BE A METHOD IN PUZZLE THIS CODE IS REPEATED A LOT
         GameProgression.GameProgressionInstance.SetFlag("secondInteractionCounterweightSheavePuzzle", true);
