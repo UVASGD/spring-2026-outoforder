@@ -46,9 +46,14 @@ public class CounterweightSheavePuzzle : Puzzle
     {
         int sum = 0;
 
-        for (int i = 0; i < transform.childCount - 1; i++)
+        for (int i = 0; i < transform.childCount; i++)
         {
-            sum += gearWeights[transform.GetChild(0).name];
+            string childName = transform.GetChild(0).name;
+            if (childName.Contains("Gear")) 
+            {
+                sum += gearWeights[childName];
+                print($"adding {gearWeights[childName]} to sum which is now {sum}");
+            }
         }
 
         print($"the sum is {sum}");
@@ -91,10 +96,6 @@ public class CounterweightSheavePuzzle : Puzzle
         }
 
         itemController.UpdateItemData();
+        lastActiveSlot.SetActive(true);
     }
-
-    // public void ActivateGear()
-    // {
-    //     lastActiveSlot.SetActive(true);
-    // }
 }
