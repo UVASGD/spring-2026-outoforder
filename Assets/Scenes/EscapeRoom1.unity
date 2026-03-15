@@ -310,13 +310,19 @@ MonoBehaviour:
   eventOffset: 0
   activatingFlags:
   - firstInteractionPapers
+  - secondInteractionPapers
+  - thirdInteractionPapers
   triggeringFlags:
   - firstInteractionPapers
+  - secondInteractionPapers
+  - thirdInteractionPapers
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: ff0a7a12c23f40a4693a0f99798febd1, type: 3}
   - {fileID: 4900000, guid: 6faf04e42234a55438f8fd260eeae404, type: 3}
+  - {fileID: 4900000, guid: 740d89a0d89c4794e9d96f6baec2162d, type: 3}
+  - {fileID: 4900000, guid: 5c9aaf41fa80f784ebaaf1c8551c56a5, type: 3}
   itemData:
     name: 
     detailed: 0
