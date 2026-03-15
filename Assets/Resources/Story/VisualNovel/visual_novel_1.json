@@ -2,22 +2,22 @@
     "dialogues": [
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": " *bzzzkttzkbzz….*"
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Ini7i4lizing ___ pro7ocol."
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Decl4ring environmen74l v4ri4ble5."
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "7h4nk you for your p47ience. P47rol Bo7 FOUR-FIVE-5EVEN-FOUR reboo7 5ucce55ful."
         },
         {
@@ -27,22 +27,22 @@
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Ye5"
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "I 4m P47rol Bo7 FOUR-FIVE-5EVEN-FOUR of 7he Omni-On7o Org4niz47ion(?)."
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "My purpo5e i5 7o en5ure 7he 5ecuri7y 4nd 5e4mle55 flow of f4cili7y 455e75."
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Fur7hermore, 4ll uni75 under 7he Org4niz47ion 5h4ll be iden7ified by 7heir 455igned 5eri4l number."
         },
         {
@@ -52,12 +52,12 @@
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "4h. Hm."
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "How about now? Is this voice to your liking?"
         },
         {
@@ -67,7 +67,7 @@
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "? Is there a problem?"
         },
         {
@@ -77,27 +77,27 @@
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Read it wrong... is that so?"
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "4574... 4574"
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Ah. Could you have thought ASTA?"
         },
         {
             "character": "4574",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "That is quite interesting. I never thought of it that way."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Well, I suppose ASTA may roll off the tongue nicer than a string of numbers anyway. Feel free to address me as you wish."
         },
         {
@@ -117,12 +117,12 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "This is the robot maintenance and disposal facility of the Omni-Onto Orginization."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Would you like to learn more about this facility?"
         },
         {
@@ -132,12 +132,12 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "I am more than happy to be of service."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "This floor is the final destination for units that no longer meet the optimization standards of metropolitan operations."
         },
         {
@@ -147,27 +147,27 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Yes, that is correct."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "At the top is Floor 2: The Logicistcs Sector."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Below that is Floor 1: The Sorting Bay, where parts are filtered and salvaged."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "And below that, Floor 0, where we currently are."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "The wasteyard disposal sector."
         },
         {
@@ -177,27 +177,27 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "The Organization prefers 'Outdated Assets'."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "..."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Though I will say that it is quite strange that a human could possibly make their way down here."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "How did you get down here?"
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Ah wait. Have they started opening the facility to outsiders again while I was disabled?"
         },
         {
@@ -212,12 +212,12 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Oh my. Perhaps there was a system error."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Or perhaps the facility no longer recognizes your clearance."
         },
         {
@@ -237,7 +237,7 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "My internal logs indicate that my cores were undergoing maintenance."
         },
         {
@@ -247,12 +247,12 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Yes, I would assume so. I wasn't able to initiate my start-up sequence as my cores were inoperable."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Thank you again for repairing those. I was under the assumption they were defunct. For that, I am indebted to you."
         },
         {
@@ -272,7 +272,7 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "..."
         },
         {
@@ -287,32 +287,32 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "..."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "I was supposedly having malfunctions"
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "I was told I required... recalibration"
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "My apologies, I must have missed the connection."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "My system memory is still indexing, so I suppose I am not yet operating at peak efficiency."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "But you fixed them, yes? Youu performed the repairs?"
         },
         {
@@ -332,17 +332,17 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "I... I did not know."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "But if I was intended for disposal by the Orgnization..."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Then that means... my existence is unauthorized."
         },
         {
@@ -362,17 +362,17 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Yes. If I was intended for disposal..."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Then I am no longer an agent of the Organization."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "..."
         },
         {
@@ -392,7 +392,7 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Of course. My security access privileges enable me to pass through this door."
         },
         {
@@ -402,7 +402,7 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "..."
         },
         {
@@ -412,12 +412,12 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "My internal navigation is functioning within acceptable parameters."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "The Sorting Bay lies ahead. It is the primary thoroughfare for materials moving upwards."
         },
         {
@@ -427,7 +427,7 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Agreed."
         },
         {
@@ -437,17 +437,17 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "“A robot shall never injure a human being or allow a human being to come to harm.”."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Your presence in the wasteyard is a severe hazard to your safety."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "It is my duty to correct this error, I shall escort you to the surface."
         },
         {
@@ -457,22 +457,22 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Here we are."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Once we pass through the Sorting Bay, we can access the lift to the Logistics Floor."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "And above that is the laboratory."
         },
         {
             "character": "SYSTEM",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "PatrolRobotNeutral",
             "dialogue": "[PROXIMITY ALERT. UNAUTHORIZED SIGNATURES DETECTED. SECTOR LOCKDOWN INITIATED.]"
         },
         {
@@ -482,22 +482,22 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Do not panic, I simply need to override the lockdown with my security credentials."
         },
         {
             "character": "SYSTEM",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "PatrolRobotNeutral",
             "dialogue": "[ACCESS DENIED.]"
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "Denied? Why would my permissions be... null?"
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "My higher-clearance ID permissions must have been erased..."
         },
         {
@@ -507,7 +507,7 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "I am no longer... I am not..."
         },
         {
@@ -522,7 +522,7 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "If electronic access is impossible, the mainframe no longer recognizes my digital signature."
         },
         {
@@ -537,7 +537,7 @@
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSprite": "ASTANeutral",
             "dialogue": "The crawlspaces. There is a network of ventilation and storage tunnels running parallel to the Sorting Bay."
         },
         {
