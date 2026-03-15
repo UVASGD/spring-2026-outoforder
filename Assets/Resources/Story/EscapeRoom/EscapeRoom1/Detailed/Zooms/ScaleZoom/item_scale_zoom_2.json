@@ -8,12 +8,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "?"
+            "dialogue": "...Huh?"
         },
         {
             "character": "ASTA",
             "speakerSprite": "AstaEyes",
-            "dialogue": "200 pounds."
+            "dialogue": "200 pounds?"
         },
         {
             "character": "Virgo",
@@ -26,11 +26,6 @@
             "dialogue": "Ah, I apologize for frightening you."
         },
         {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "..."
-        },
-        {
             "character": "ASTA",
             "speakerSprite": "AstaEyes",
             "dialogue": "But 200 pounds, huh."
@@ -39,6 +34,16 @@
             "character": "ASTA",
             "speakerSprite": "AstaEyes",
             "dialogue": "That is quite heavy for a human isn't it?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "I mean... it didn't feel all that heavy to me?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Could this scale be a bit off?"
         },
         {
             "character": "ASTA",
