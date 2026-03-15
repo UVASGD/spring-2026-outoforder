@@ -55,6 +55,13 @@
       "collectible": false,
       "description": ""
    },
+   "Key": {
+      "name": "Key",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": ""
+   },
    "Cabinets": {
       "name": "Cabinets",
       "detailed": false,
