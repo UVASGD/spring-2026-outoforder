@@ -112,17 +112,16 @@ public class Locations : MonoBehaviour
     public void ExitItem()
     {
         itemsEntered--;
-        GameData.escapeRoomGameplayManagerScript.enteredItem = false;
         GameData.escapeRoomGameplayManagerScript.puzzles[currentPuzzle].gameObject.SetActive(false);
         if (itemsEntered == 0) 
         {
+            GameData.escapeRoomGameplayManagerScript.enteredItem = false;
             backButton.gameObject.SetActive(false);
             currentPuzzle = "";
         }
         else
         {
-            // HIGH PRIORITY TODO: EXTREMELY HARDCODED
-            currentPuzzle = "LockedLockerPuzzle";
+            currentPuzzle = GameData.escapeRoomGameplayManagerScript.puzzles[currentPuzzle].transform.parent.parent.name;
         }
     }
 
