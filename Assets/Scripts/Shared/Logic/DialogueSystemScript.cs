@@ -230,6 +230,21 @@ public class DialogueSystem : MonoBehaviour
     {
         dialogueOnDisplay = currentDialogue.dialogue;
 
+        // set dialogue box image color
+        switch (currentDialogue.character)
+        {
+            case "Virgo":
+                dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["VirgoTextbox"];
+                break;
+            case "4574":
+            case "ASTA":
+                dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["AstaTextbox"];
+                break;
+            default:
+                dialogueBoxImage.sprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites["Textbox"];
+                break;
+        }
+
         // set character name
         nameTMP.text = currentDialogue.character;
 
