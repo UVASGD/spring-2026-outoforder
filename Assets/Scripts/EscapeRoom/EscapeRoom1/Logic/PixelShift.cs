@@ -23,7 +23,7 @@ public class PixelShift : MonoBehaviour
 
     public void OpenFile()
     {
-        GameObject pixelShiftPuzzle = GameData.escapeRoomGameplayManagerScript.puzzles["PixelShiftPuzzle"];
+        GameObject pixelShiftPuzzle = GameData.escapeRoomGameplayManager.puzzles["PixelShiftPuzzle"];
         pixelShiftPuzzle.SetActive(true);
         pixelShiftPuzzle.GetComponent<ManualInteraction>().ItemInteraction();
         gameObject.SetActive(false);

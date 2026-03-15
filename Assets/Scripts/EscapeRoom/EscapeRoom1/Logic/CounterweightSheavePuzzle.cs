@@ -51,19 +51,19 @@ public class CounterweightSheavePuzzle : Puzzle
             sum += gearWeights[gear.name];
         }
 
+        print($"the sum is {sum}");
+
         answer[0] = (sum == 250) ? '1' : '0';
     }
 
     protected override void SolvedPuzzleSpecific()
     {
-        // gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["UnlockedLockedLockerPuzzle"];
+        gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CounterweightSheaveSecondary"];
 
-        // caesarDiary.SetActive(true);
-
-        // // TODO: THIS COULD PROBABLY BE A METHOD IN PUZZLE THIS CODE IS REPEATED A LOT
-        // GameProgression.GameProgressionInstance.SetFlag("firstInteractionLockedLockerPuzzle", true);
-        // GameProgression.GameProgressionInstance.SetFlag("solvedLockedLockerPuzzle", true);
-        // gameObject.GetComponent<ManualInteraction>().ItemInteraction();
+        // TODO: THIS COULD PROBABLY BE A METHOD IN PUZZLE THIS CODE IS REPEATED A LOT
+        GameProgression.GameProgressionInstance.SetFlag("secondInteractionCounterweightSheavePuzzle", true);
+        GameProgression.GameProgressionInstance.SetFlag("solvedCounterweightSheavePuzzle", true);
+        gameObject.GetComponent<ManualInteraction>().ItemInteraction();
     }
 
     public void ModifyGear()
@@ -71,13 +71,14 @@ public class CounterweightSheavePuzzle : Puzzle
         lastActiveSlot = EventSystem.current.currentSelectedGameObject;
         ItemController itemController = lastActiveSlot.GetComponent<ItemController>();
         Image image = lastActiveSlot.GetComponent<Image>();
-
+        
         if (lastActiveSlot.GetComponent<Image>().sprite == null)
         {
-            if (GameData.escapeRoomGameplayManagerScript.selectedItem.Contains("Gear"))
+            if (GameData.escapeRoomGameplayManager.selectedItem.Contains("Gear"))
             {
-                lastActiveSlot.name = GameData.escapeRoomGameplayManagerScript.selectedItem.Replace(" ", "");
+                lastActiveSlot.name = GameData.escapeRoomGameplayManager.selectedItem.Replace(" ", "");
                 image.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Item"];
+                GameData.escapeRoomGameplayManager.UseItem(GameData.escapeRoomGameplayManager.selectedItem, lastActiveSlot.name);
                 print("place gear");
             }
         }
@@ -85,6 +86,7 @@ public class CounterweightSheavePuzzle : Puzzle
         {
             lastActiveSlot.name = "EmptySlot";
             image.sprite = null;
+            GameData.escapeRoomGameplayManager.locations.CollectItem(itemController.itemData, lastActiveSlot);
             print("remove gear");
         }
 

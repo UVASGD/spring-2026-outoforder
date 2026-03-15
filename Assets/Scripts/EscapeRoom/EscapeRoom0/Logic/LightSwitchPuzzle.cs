@@ -26,7 +26,7 @@ public class LightSwitchPuzzle : Puzzle
 
     protected override void SolvedPuzzleSpecific()
     {
-        GameData.escapeRoomGameplayManagerScript.locations.ForEach(location => location.GetComponent<Image>().color = Color.white);
+        GameData.escapeRoomGameplayManager.locationGameObjects.ForEach(location => location.GetComponent<Image>().color = Color.white);
 
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["UnlockedLightSwitchPuzzle"];
 

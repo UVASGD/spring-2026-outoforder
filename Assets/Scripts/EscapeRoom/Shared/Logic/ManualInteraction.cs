@@ -26,13 +26,13 @@ public class ManualInteraction : MonoBehaviour
     public void ItemInteraction()
     {
         // TODO: EVERYONE SHOULD HAVE ITEMDATA EVENTUALLY - PUZZLES AND ZOOMS DO NOT ATM
-        GameData.escapeRoomGameplayManagerScript.interactingWith = gameObject.name;
+        GameData.escapeRoomGameplayManager.interactingWith = gameObject.name;
 
-        if (!string.IsNullOrEmpty(GameData.escapeRoomGameplayManagerScript.selectedItem) 
-            && !string.IsNullOrEmpty(GameData.escapeRoomGameplayManagerScript.interactingWith) 
+        if (!string.IsNullOrEmpty(GameData.escapeRoomGameplayManager.selectedItem) 
+            && !string.IsNullOrEmpty(GameData.escapeRoomGameplayManager.interactingWith) 
             && (waitingFlags.Count == 0 || waitingFlags.All(waitingFlag => GameProgression.GameProgressionInstance.GetFlag(waitingFlag))))
         {
-            GameData.escapeRoomGameplayManagerScript.UseItem(GameData.escapeRoomGameplayManagerScript.selectedItem, GameData.escapeRoomGameplayManagerScript.interactingWith);
+            GameData.escapeRoomGameplayManager.UseItem(GameData.escapeRoomGameplayManager.selectedItem, GameData.escapeRoomGameplayManager.interactingWith);
         }
 
         // flag check: if the current flag is true, update dialogue to be the next one possible

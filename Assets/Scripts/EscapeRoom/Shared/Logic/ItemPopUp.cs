@@ -23,7 +23,7 @@ public class ItemPopUp : MonoBehaviour
 
     void OnEnable()
     {
-        if (GameData.escapeRoomGameplayManagerScript.collectedItemsScrollView.Count > 0)
+        if (GameData.escapeRoomGameplayManager.collectedItemsScrollView.Count > 0)
         {
             ShowItem(content.transform.GetChild(0).GetComponent<ItemController>().itemData);
             selectButton.gameObject.SetActive(true);
@@ -45,6 +45,6 @@ public class ItemPopUp : MonoBehaviour
 
     public void SelectItem()
     {
-        GameData.escapeRoomGameplayManagerScript.selectedItem = displayedItem;
+        GameData.escapeRoomGameplayManager.selectedItem = displayedItem;
     }
 }

@@ -13,7 +13,7 @@ public class ItemController : MonoBehaviour
 
     public void UpdateItemData()
     {
-        itemData = GameData.escapeRoomGameplayManagerScript.items[gameObject.name];
+        itemData = GameData.escapeRoomGameplayManager.items[gameObject.name];
 
         if (scrollView)
         {
