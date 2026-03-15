@@ -840,18 +840,6 @@ MonoBehaviour:
           m_StringArgument: log
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1988432525}
-        m_TargetAssemblyTypeName: CounterweightSheavePuzzle, Assembly-CSharp
-        m_MethodName: ActivateGear
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &85405685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18200,7 +18188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6c9514f7c714449a2c7a54b4b78a34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameProgression
-  debugEscapeRoomNumber: 0
+  debugEscapeRoomNumber: 1
   SpriteCache: {fileID: 11400000, guid: 2776422836864e544bdbd249bbbc68da, type: 2}
   DialogueSystemScript: {fileID: 0}
   FadeEffect: {fileID: 0}

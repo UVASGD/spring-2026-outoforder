@@ -93,8 +93,8 @@ public class CounterweightSheavePuzzle : Puzzle
         itemController.UpdateItemData();
     }
 
-    public void ActivateGear()
-    {
-        lastActiveSlot.SetActive(true);
-    }
+    // public void ActivateGear()
+    // {
+    //     lastActiveSlot.SetActive(true);
+    // }
 }
