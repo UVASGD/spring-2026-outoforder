@@ -87,7 +87,7 @@
       "name": "Antenna",
       "detailed": false,
       "puzzle": false,
-      "collectible": false,
+      "collectible": true,
       "description": ""
    },
    "Screwdriver": {

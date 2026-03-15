@@ -1,0 +1,26 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "What's all this? A bunch of lockers?"
+        },
+        {
+            "character": "4574",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Yes. It seems as though most are unlocked."
+        },
+        {
+            "character": "4574",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Shall we take a look through them separately and see what we can find?",
+            "endOfScene": true
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "I suppose so.",
+            "endOfScene": true
+        }
+    ]
+}

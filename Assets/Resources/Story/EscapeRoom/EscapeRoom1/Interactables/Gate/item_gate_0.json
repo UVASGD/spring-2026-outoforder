@@ -1,0 +1,15 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "item_gate_0"
+        },
+        {
+            "character": "4574",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Yes. It seems as though most are unlocked.",
+            "endOfScene": true
+        }
+    ]
+}

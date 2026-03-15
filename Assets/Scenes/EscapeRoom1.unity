@@ -1913,14 +1913,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionLockedLocker
+  - firstInteractionMirror
   triggeringFlags:
-  - firstInteractionLockedLocker
+  - firstInteractionMirror
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 25b26739e6a981544a3e262cd093b4ab, type: 3}
-  - {fileID: 4900000, guid: 2e7dce1c155f0e844be70a70bfee044e, type: 3}
+  - {fileID: 4900000, guid: 61c032af02988d34e8d2b174f48b8886, type: 3}
+  - {fileID: 4900000, guid: 20110200273af4d4989dd22cdad93ef2, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -9063,14 +9063,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionLockedLocker
+  - firstInteractionScrewdriver
   triggeringFlags:
-  - firstInteractionLockedLocker
+  - firstInteractionScrewdriver
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 25b26739e6a981544a3e262cd093b4ab, type: 3}
-  - {fileID: 4900000, guid: 2e7dce1c155f0e844be70a70bfee044e, type: 3}
+  - {fileID: 4900000, guid: c48ec0260cb5a9248ab7e92eca25a647, type: 3}
+  - {fileID: 4900000, guid: 76479e5f6afaf4642bd835a893a5787b, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -14491,14 +14491,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionLockedLocker
+  - firstInteractionLockers
   triggeringFlags:
-  - firstInteractionLockedLocker
+  - firstInteractionLockers
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 25b26739e6a981544a3e262cd093b4ab, type: 3}
-  - {fileID: 4900000, guid: 2e7dce1c155f0e844be70a70bfee044e, type: 3}
+  - {fileID: 4900000, guid: 3c931e93dc2d7c94f8d72e4a052d0423, type: 3}
+  - {fileID: 4900000, guid: 26dc2553ec5fd2c439ec38abe11d0ed0, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -18968,14 +18968,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionLockedLocker
+  - firstInteractionGate
   triggeringFlags:
-  - firstInteractionLockedLocker
+  - firstInteractionGate
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 25b26739e6a981544a3e262cd093b4ab, type: 3}
-  - {fileID: 4900000, guid: 2e7dce1c155f0e844be70a70bfee044e, type: 3}
+  - {fileID: 4900000, guid: 358b88e50e3900042967233c9cd17acf, type: 3}
+  - {fileID: 4900000, guid: cc6acb4ac17144d4cb8fddf691723ddf, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -19469,14 +19469,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionLockedLocker
+  - firstInteractionOperationTable
   triggeringFlags:
-  - firstInteractionLockedLocker
+  - firstInteractionOperationTable
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 25b26739e6a981544a3e262cd093b4ab, type: 3}
-  - {fileID: 4900000, guid: 2e7dce1c155f0e844be70a70bfee044e, type: 3}
+  - {fileID: 4900000, guid: 7434d42a59278e04093833df8cf58533, type: 3}
+  - {fileID: 4900000, guid: 61f7a5ca900a16a4ebb741f115f668c0, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -20082,15 +20082,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
-  activatingFlags:
-  - firstInteractionLockedLocker
-  triggeringFlags:
-  - firstInteractionLockedLocker
+  activatingFlags: []
+  triggeringFlags: []
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 25b26739e6a981544a3e262cd093b4ab, type: 3}
-  - {fileID: 4900000, guid: 2e7dce1c155f0e844be70a70bfee044e, type: 3}
+  - {fileID: 4900000, guid: 65cf09d8533c529428ff93c0a4f1fe88, type: 3}
   itemData:
     name: 
     detailed: 0
