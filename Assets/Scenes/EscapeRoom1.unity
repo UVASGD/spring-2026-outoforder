@@ -1175,14 +1175,18 @@ MonoBehaviour:
   activatingFlags:
   - firstInteractionMirrorZoom
   - usedAntenna
+  - hiddenInteractionMirrorZoom
   triggeringFlags:
   - firstInteractionMirrorZoom
+  - 
+  - hiddenInteractionMirrorZoom
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 2d19f702e5ec0ee4d832384a1b292031, type: 3}
   - {fileID: 4900000, guid: 67bc025e6a81d9242b5cebf69d655f42, type: 3}
   - {fileID: 4900000, guid: 064c369977a9ac8418d73d5b415a981f, type: 3}
+  - {fileID: 4900000, guid: 67899ccab89ca4448ba78bd66f8d2bfb, type: 3}
   itemData:
     name: 
     detailed: 0
