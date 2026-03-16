@@ -1643,7 +1643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6960336214199659771, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
       propertyPath: m_Name
-      value: GameProgressionManager (1)
+      value: 'GameProgressionManager '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
