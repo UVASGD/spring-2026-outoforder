@@ -1172,14 +1172,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionArms
+  - firstInteractionMirrorZoom
+  - firstInteractionAntenna
+  - hiddenInteractionMirrorZoom
   triggeringFlags:
-  - firstInteractionArms
+  - firstInteractionMirrorZoom
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 1ecc11727b4db294f9162d36df51292c, type: 3}
-  - {fileID: 4900000, guid: de5f56cde38dacc4abffda92c3c6cf4e, type: 3}
+  - {fileID: 4900000, guid: 2d19f702e5ec0ee4d832384a1b292031, type: 3}
+  - {fileID: 4900000, guid: 67bc025e6a81d9242b5cebf69d655f42, type: 3}
+  - {fileID: 4900000, guid: 064c369977a9ac8418d73d5b415a981f, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -1650,7 +1653,6 @@ MonoBehaviour:
   eventOffset: 0
   activatingFlags:
   - firstInteractionMirror
-  - firstInteractionAntenna
   triggeringFlags:
   - firstInteractionMirror
   waitingFlags: []
@@ -11469,9 +11471,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionArms
+  - firstInteractionArmsZoom
   triggeringFlags:
-  - firstInteractionArms
+  - firstInteractionArmsZoom
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
@@ -18852,9 +18854,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionArms
+  - firstInteractionGears
   triggeringFlags:
-  - firstInteractionArms
+  - firstInteractionGears
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
