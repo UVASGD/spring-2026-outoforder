@@ -6,7 +6,6 @@ public static class GameData
 {
     // save relevant data
     public static int escapeRoomNumber;
-    public static int visualNovelNumber;
     public static int visualNovelDialogueIndex;
     public static Dictionary<string, bool> routeFlags = new();
     public static TimeSpan playTime; 
