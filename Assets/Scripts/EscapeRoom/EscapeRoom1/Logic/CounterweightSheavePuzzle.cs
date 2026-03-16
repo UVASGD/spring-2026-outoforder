@@ -46,9 +46,10 @@ public class CounterweightSheavePuzzle : Puzzle
     {
         int sum = 0;
 
-        for (int i = 0; i < transform.childCount - 1; i++)
+        for (int i = 0; i < transform.childCount; i++)
         {
-            sum += gearWeights[transform.GetChild(0).name];
+            string childName = transform.GetChild(i).name;
+            if (childName.Contains("Gear")) sum += gearWeights[childName];
         }
 
         print($"the sum is {sum}");
@@ -68,33 +69,32 @@ public class CounterweightSheavePuzzle : Puzzle
 
     public void ModifyGear()
     {
-        lastActiveSlot = EventSystem.current.currentSelectedGameObject;
-        ItemController itemController = lastActiveSlot.GetComponent<ItemController>();
-        Image image = lastActiveSlot.GetComponent<Image>();
-        
-        if (lastActiveSlot.GetComponent<Image>().sprite == null)
+        if (!string.IsNullOrEmpty(GameData.escapeRoomGameplayManager.selectedItem))
         {
-            if (GameData.escapeRoomGameplayManager.selectedItem.Contains("Gear"))
+            lastActiveSlot = EventSystem.current.currentSelectedGameObject;
+            ItemController itemController = lastActiveSlot.GetComponent<ItemController>();
+            Image image = lastActiveSlot.GetComponent<Image>();
+            
+            if (lastActiveSlot.GetComponent<Image>().sprite == null)
             {
-                lastActiveSlot.name = GameData.escapeRoomGameplayManager.selectedItem.Replace(" ", "");
-                image.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Item"];
-                GameData.escapeRoomGameplayManager.UseItem(GameData.escapeRoomGameplayManager.selectedItem, lastActiveSlot.name);
-                print("place gear");
+                if (GameData.escapeRoomGameplayManager.selectedItem.Contains("Gear"))
+                {
+                    lastActiveSlot.name = GameData.escapeRoomGameplayManager.selectedItem.Replace(" ", "");
+                    image.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Item"];
+                    GameData.escapeRoomGameplayManager.UseItem(GameData.escapeRoomGameplayManager.selectedItem, lastActiveSlot.name);
+                    print("place gear");
+                }
             }
-        }
-        else
-        {
-            lastActiveSlot.name = "EmptySlot";
-            image.sprite = null;
-            GameData.escapeRoomGameplayManager.locations.CollectItem(itemController.itemData, lastActiveSlot);
-            print("remove gear");
-        }
+            else
+            {
+                lastActiveSlot.name = "EmptySlot";
+                image.sprite = null;
+                GameData.escapeRoomGameplayManager.locations.CollectItem(itemController.itemData, lastActiveSlot);
+                print("remove gear");
+            }
 
-        itemController.UpdateItemData();
-    }
-
-    public void ActivateGear()
-    {
-        lastActiveSlot.SetActive(true);
+            itemController.UpdateItemData();
+            lastActiveSlot.SetActive(true);
+        } 
     }
 }

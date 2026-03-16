@@ -1,0 +1,95 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "...Huh?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "200 pounds?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Ack!"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Ah, I apologize for frightening you."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "But 200 pounds, huh."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "That is quite heavy for a human, is it not?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "But you did not seem to even break a sweat."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "I mean... it didn't feel all that heavy to me?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Could this scale be a bit off?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Aha. I know."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "...What is it?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "Could you have been hiding from me that you were a body builder back Outside?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "..."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "AstaEyes",
+            "dialogue": "I have recently downloaded an updated humor module. This is what you call 'teasing,' isn't it?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Please,"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "... don't do that again.",
+            "endOfScene": true
+        }
+    ]
+}
