@@ -7,7 +7,7 @@ public class VisualNovelGameplay : MonoBehaviour
 
     void Awake()
     {
-        visualNovelJSONFile = Resources.Load<TextAsset>($"Story/VisualNovel/visual_novel_{GameData.visualNovelNumber}");
+        visualNovelJSONFile = Resources.Load<TextAsset>($"Story/VisualNovel/visual_novel_{GameData.escapeRoomNumber}");
     }
 
     void Start()

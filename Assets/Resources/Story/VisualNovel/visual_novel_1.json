@@ -543,8 +543,11 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoNeutral",
-            "dialogue": "Alright. Let's find out how to get through there, then.",
-            "endOfScene": true
+            "dialogue": "Alright. Let's find out how to get through there, then."
+        },
+        {
+            "hideUI": true,
+            "flag": "EscapeRoom0"
         }
     ]
 }
