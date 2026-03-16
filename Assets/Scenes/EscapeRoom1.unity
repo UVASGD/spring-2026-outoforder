@@ -311,11 +311,11 @@ MonoBehaviour:
   activatingFlags:
   - firstInteractionPapers
   - secondInteractionPapers
-  - thirdInteractionPapers
+  - hiddenInteractionPapers
   triggeringFlags:
   - firstInteractionPapers
   - secondInteractionPapers
-  - thirdInteractionPapers
+  - hiddenInteractionPapers
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
@@ -14489,6 +14489,12 @@ MonoBehaviour:
   DialogueSystemScript: {fileID: 0}
   FadeEffect: {fileID: 0}
   currentScene: 
+  hiddenInteractions:
+  - hiddenInteractionManual
+  - hiddenInteractionPapers
+  - hiddenInteractionMirror
+  - hiddenInteractionEscapeRoom2A
+  - hiddenInteractionEscapeRoom2B
   blackTransition: {fileID: 0}
   cgTransition: {fileID: 0}
   blackTransitionRectTransform: {fileID: 0}
