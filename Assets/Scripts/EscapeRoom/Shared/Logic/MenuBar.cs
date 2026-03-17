@@ -64,6 +64,7 @@ public class MenuBar : MonoBehaviour
         currentPopUp.SetActive(false);
         currentPopUp = null;
         interactionBlocker.SetActive(false);
+        GameProgression.GameProgressionInstance.PlaySFX(1);
     }
 
     private void ShowPopUp(GameObject popUp, string newMenuName)
@@ -73,5 +74,6 @@ public class MenuBar : MonoBehaviour
         popUp.SetActive(true);
         currentPopUp = popUp;
         interactionBlocker.SetActive(true);
+        GameProgression.GameProgressionInstance.PlaySFX(0);
     }
 }

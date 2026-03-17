@@ -42,7 +42,7 @@ public class DialogueSystem : MonoBehaviour
     private Coroutine automaticFadeCoroutine;
 
     [Header("[VOICES]")]
-    [SerializeField] private AudioClip voiceSample;
+    [SerializeField] private List<AudioClip> voiceSamples;
     private AudioSource voiceAudioSource;
 
     void Awake()
@@ -304,15 +304,19 @@ public class DialogueSystem : MonoBehaviour
         float textSpeed = !end
             ? GetTextSpeed()
             : 0.05f;
+
+        AudioClip voiceSample = voiceSamples[0];
             
         switch (character)
         {
             case "Virgo":
                 voiceAudioSource.pitch = 1.4f;
+                voiceSample = voiceSamples[0];
                 break;
-            case "4574":
             case "ASTA":
-                voiceAudioSource.pitch = 1.15f;
+                voiceAudioSource.pitch = 0.95f;
+                print("asta speaking");
+                voiceSample = voiceSamples[UnityEngine.Random.Range(1, 4)];
                 break;
             default:
                 voiceAudioSource.pitch = 1.1f;
@@ -323,6 +327,7 @@ public class DialogueSystem : MonoBehaviour
         {
             tmp.text = dialogue[..i];
 
+            if (character.Equals("ASTA")) voiceSample = voiceSamples[UnityEngine.Random.Range(1, 4)];
             if (!dialogue.Equals("(...)")) voiceAudioSource.PlayOneShot(voiceSample);
 
             yield return new WaitForSeconds(textSpeed); // make diff speeds

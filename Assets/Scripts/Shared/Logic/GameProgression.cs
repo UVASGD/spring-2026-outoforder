@@ -17,6 +17,14 @@ public class GameProgression : MonoBehaviour
     public FadeEffect FadeEffect;
     public string currentScene; // TODO: is this needed?
     public HashSet<string> complementedOneTimeEvents = new();
+    public List<string> hiddenInteractions = new()
+    {
+        { "hiddenInteractionManual" },
+        { "hiddenInteractionPapers" },
+        { "hiddenInteractionMirror" },
+        { "hiddenInteractionEscapeRoom2A" },
+        { "hiddenInteractionEscapeRoom2B" }
+    };
 
     [Header("UI")]
     public GameObject blackTransition;

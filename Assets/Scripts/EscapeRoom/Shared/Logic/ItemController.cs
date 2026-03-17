@@ -6,7 +6,7 @@ public class ItemController : MonoBehaviour
     public bool scrollView;
     public ItemData itemData;
 
-    void Awake()
+    void Start()
     {
         UpdateItemData();
     }
