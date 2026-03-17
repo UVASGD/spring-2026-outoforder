@@ -13,6 +13,11 @@ public class MenuBar : MonoBehaviour
     private GameObject infoPopUp;
     private Button moveButton;
 
+    void Awake()
+    {
+        GameData.escapeRoomGameplayManager.menuBar = this;
+    }
+
     void Start()
     {
         interactionBlocker = transform.Find("InteractionBlocker").gameObject;
@@ -30,6 +35,8 @@ public class MenuBar : MonoBehaviour
     void Update()
     {
         moveButton.interactable = !GameData.escapeRoomGameplayManager.enteredItem;
+
+        if (Input.GetMouseButtonDown(1) && !currentMenuName.Equals("none")) HidePopUp();
     } 
 
     public void ChangeState(string newMenuName)

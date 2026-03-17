@@ -48,7 +48,7 @@ public class ScaleZoom : MonoBehaviour
                 }
 
                 emptyGear.name = GameData.escapeRoomGameplayManager.selectedItem.Replace(" ", "");
-                image.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Item"];
+                image.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[$"{emptyGear.name}"];
                 image.color = white;
                 GameData.escapeRoomGameplayManager.UseItem(GameData.escapeRoomGameplayManager.selectedItem, emptyGear.name);
                 print("place gear");

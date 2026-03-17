@@ -89,15 +89,19 @@ public class CounterweightSheavePuzzle : Puzzle
                 if (GameData.escapeRoomGameplayManager.selectedItem.Contains("Gear"))
                 {
                     lastActiveSlot.name = GameData.escapeRoomGameplayManager.selectedItem.Replace(" ", "");
-                    image.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Item"];
+                    image.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[$"{lastActiveSlot.name}"];
                     GameData.escapeRoomGameplayManager.UseItem(GameData.escapeRoomGameplayManager.selectedItem, lastActiveSlot.name);
 
-                    GameObject newActiveSlot = Instantiate(Resources.Load<GameObject>("Prefabs/EmptySlot"), transform);
-                    newActiveSlot.name = "EmptySlot";
-                    newActiveSlot.GetComponent<ItemController>().enabled = true;
-                    newActiveSlot.transform.position = new Vector3(lastActiveSlot.transform.position.x, lastActiveSlot.transform.position.y + 60, lastActiveSlot.transform.position.z);
-                    newActiveSlot.transform.SetAsLastSibling();
-                    newActiveSlot.GetComponent<Button>().onClick.AddListener(ModifyGear);
+                    // TODO: but the last one shouldn't be visible unless the count were to drop down to 9 gears on display
+                    if (transform.childCount <= 11)
+                    {
+                        GameObject newActiveSlot = Instantiate(Resources.Load<GameObject>("Prefabs/EmptySlot"), transform);
+                        newActiveSlot.name = "EmptySlot";
+                        newActiveSlot.GetComponent<ItemController>().enabled = true;
+                        newActiveSlot.transform.position = new Vector3(lastActiveSlot.transform.position.x, lastActiveSlot.transform.position.y + 60, lastActiveSlot.transform.position.z);
+                        newActiveSlot.transform.SetAsLastSibling();
+                        newActiveSlot.GetComponent<Button>().onClick.AddListener(ModifyGear);
+                    }
 
                     print("place gear");
                 }
