@@ -33,6 +33,18 @@ public class ItemPopUp : MonoBehaviour
             displayedItem = nameText.text = descriptionText.text = "";
             selectButton.gameObject.SetActive(false);
         }
+
+        float totalContentHeight = content.transform.childCount * 50;
+
+        RectTransform contentRect = content.GetComponent<RectTransform>();
+        contentRect.sizeDelta = new Vector2(contentRect.sizeDelta.x, totalContentHeight);
+
+        VerticalLayoutGroup layout = content.GetComponent<VerticalLayoutGroup>();
+
+        layout.childControlHeight = false;
+        layout.childForceExpandHeight = false;
+        layout.spacing = 0; 
+        layout.padding = new RectOffset(0, 0, 0, 0);
     }
 
     public void ShowItem(ItemData itemData = null)
