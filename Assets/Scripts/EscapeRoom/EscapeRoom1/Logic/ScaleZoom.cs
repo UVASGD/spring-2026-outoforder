@@ -21,6 +21,8 @@ public class ScaleZoom : MonoBehaviour
         { "GearI", "056" },
         { "GearJ", "038" }
     };
+    private Color white = new Color(1, 1, 1, 1);
+    private Color transparentWhite = new Color(1, 1, 1, 0);
 
     void Awake()
     {
@@ -47,15 +49,20 @@ public class ScaleZoom : MonoBehaviour
 
                 emptyGear.name = GameData.escapeRoomGameplayManager.selectedItem.Replace(" ", "");
                 image.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Item"];
+                image.color = white;
                 GameData.escapeRoomGameplayManager.UseItem(GameData.escapeRoomGameplayManager.selectedItem, emptyGear.name);
                 print("place gear");
+
+                GameData.escapeRoomGameplayManager.locations.ExamineItem();
             }
         }
         else
         {
-            print(emptyGear.name);
+            scaleText.text = "000";
             emptyGear.name = "EmptyGear";
-            image.sprite = null;
+            // TODO: make an image that is just white or something
+            image.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Textbox"];
+            image.color = transparentWhite;
             GameData.escapeRoomGameplayManager.locations.CollectItem(itemController.itemData, emptyGear);
             print("remove gear");
         }
