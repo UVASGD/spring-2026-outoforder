@@ -74,12 +74,12 @@ public class CounterweightSheavePuzzle : Puzzle
 
     public void ModifyGear()
     {
+        lastActiveSlot = EventSystem.current.currentSelectedGameObject;
+        itemController = lastActiveSlot.GetComponent<ItemController>();
+        image = lastActiveSlot.GetComponent<Image>();
+
         if (!string.IsNullOrEmpty(GameData.escapeRoomGameplayManager.selectedItem))
-        {
-            lastActiveSlot = EventSystem.current.currentSelectedGameObject;
-            itemController = lastActiveSlot.GetComponent<ItemController>();
-            image = lastActiveSlot.GetComponent<Image>();
-            
+        {   
             if (image.sprite == null)
             {
                 if (GameData.escapeRoomGameplayManager.selectedItem.Contains("Gear"))
@@ -88,6 +88,13 @@ public class CounterweightSheavePuzzle : Puzzle
                     image.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Item"];
                     GameData.escapeRoomGameplayManager.UseItem(GameData.escapeRoomGameplayManager.selectedItem, lastActiveSlot.name);
                     print("place gear");
+
+                    GameObject newActiveSlot = Instantiate(Resources.Load<GameObject>("Prefabs/EmptySlot"), transform);
+                    newActiveSlot.name = "EmptySlot";
+                    newActiveSlot.GetComponent<ItemController>().enabled = true;
+                    newActiveSlot.transform.position = new Vector3(lastActiveSlot.transform.position.x, lastActiveSlot.transform.position.y + 60, lastActiveSlot.transform.position.z);
+                    newActiveSlot.transform.SetAsFirstSibling();
+                    newActiveSlot.GetComponent<Button>().onClick.AddListener(ModifyGear);
                 }
             }
         }
@@ -98,6 +105,7 @@ public class CounterweightSheavePuzzle : Puzzle
                 image.sprite = null;
                 GameData.escapeRoomGameplayManager.locations.CollectItem(itemController.itemData, lastActiveSlot);
                 print("remove gear");
+                Destroy(lastActiveSlot);
             }  
         }
 
