@@ -147,6 +147,8 @@ public class Locations : MonoBehaviour
 
     public void ChangeLocation()
     {
+        GameProgression.GameProgressionInstance.PlaySFX(4);
+
         GameObject currentSelectedLocation = EventSystem.current.currentSelectedGameObject;
         
         LocationData currentLocationData = currentSelectedLocation.GetComponent<LocationData>();
