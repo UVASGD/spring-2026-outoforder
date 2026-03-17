@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class LockedDrawerPuzzle : Puzzle
 {
+    private GameObject digits;
+    private GameObject digitsSecondary;
     private GameObject remote;
 
     void Awake()
@@ -10,7 +12,11 @@ public class LockedDrawerPuzzle : Puzzle
         answer = new char[] { '2', '3', '5', '7' };
         guess = new char[] { '0', '0', '0', '0' };
 
+        digits = transform.Find("Digits").gameObject;
+        digitsSecondary = transform.Find("DigitsSecondary").gameObject;
         remote = transform.Find("Remote").gameObject;
+
+        digitsSecondary.SetActive(false);
         remote.SetActive(false);
     }
 
@@ -18,10 +24,9 @@ public class LockedDrawerPuzzle : Puzzle
     {
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["LockedDrawerPuzzleSecondary"];
         
-        foreach (Transform child in transform)
-        {
-            child.gameObject.SetActive(false);
-        }
+        digits.SetActive(false);
+        
+        digitsSecondary.SetActive(true);
         remote.SetActive(true);
 
         GameProgression.GameProgressionInstance.SetFlag("firstInteractionLockedDrawerPuzzle", true);
