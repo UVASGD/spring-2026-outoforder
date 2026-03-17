@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class CounterweightSheavePuzzle : Puzzle
 {
-    private GameObject submit;
     private GameObject lastActiveSlot;
+    private ItemController itemController;
+    private Image image;
+    private GameObject submit;
     private bool compartmentUnlocked;
     private Dictionary<string, int> gearWeights = new Dictionary<string, int>
     {
@@ -28,6 +30,9 @@ public class CounterweightSheavePuzzle : Puzzle
         guess = new char[] { '0' };
 
         submit = transform.Find("Submit").gameObject;
+        lastActiveSlot = transform.Find("EmptySlot").gameObject;
+        itemController = lastActiveSlot.GetComponent<ItemController>();
+        image = lastActiveSlot.GetComponent<Image>();
     }
 
     void Update()
@@ -72,10 +77,10 @@ public class CounterweightSheavePuzzle : Puzzle
         if (!string.IsNullOrEmpty(GameData.escapeRoomGameplayManager.selectedItem))
         {
             lastActiveSlot = EventSystem.current.currentSelectedGameObject;
-            ItemController itemController = lastActiveSlot.GetComponent<ItemController>();
-            Image image = lastActiveSlot.GetComponent<Image>();
+            itemController = lastActiveSlot.GetComponent<ItemController>();
+            image = lastActiveSlot.GetComponent<Image>();
             
-            if (lastActiveSlot.GetComponent<Image>().sprite == null)
+            if (image.sprite == null)
             {
                 if (GameData.escapeRoomGameplayManager.selectedItem.Contains("Gear"))
                 {
@@ -85,16 +90,18 @@ public class CounterweightSheavePuzzle : Puzzle
                     print("place gear");
                 }
             }
-            else
+        }
+        else
+        {
+            if (!lastActiveSlot.name.Equals("EmptySlot"))
             {
-                lastActiveSlot.name = "EmptySlot";
                 image.sprite = null;
                 GameData.escapeRoomGameplayManager.locations.CollectItem(itemController.itemData, lastActiveSlot);
                 print("remove gear");
-            }
+            }  
+        }
 
-            itemController.UpdateItemData();
-            lastActiveSlot.SetActive(true);
-        } 
+        itemController.UpdateItemData();
+        lastActiveSlot.SetActive(true);
     }
 }

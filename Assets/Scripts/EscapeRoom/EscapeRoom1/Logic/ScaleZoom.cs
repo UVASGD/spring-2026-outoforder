@@ -1,8 +1,12 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 public class ScaleZoom : MonoBehaviour
 {
+    private GameObject emptyGear;
+    private ItemController itemController;
+    private Image image;
     private TextMeshProUGUI scaleText;
     private Dictionary<string, string> gearWeights = new Dictionary<string, string>
     {
@@ -21,19 +25,46 @@ public class ScaleZoom : MonoBehaviour
     void Awake()
     {
         scaleText = GetComponentInChildren<TextMeshProUGUI>();
+
+        emptyGear = transform.Find("EmptyGear").gameObject;
+        itemController = emptyGear.GetComponent<ItemController>();
+        image = emptyGear.GetComponent<Image>();
     }
 
     public void AttemptPlaceGear()
     {
-        if (GameData.escapeRoomGameplayManager.selectedItem.Contains("Gear"))
+        if (!string.IsNullOrEmpty(GameData.escapeRoomGameplayManager.selectedItem) && emptyGear.name.Equals("EmptyGear"))
         {
-            print("display weight");
-            scaleText.text = $"{gearWeights[GameData.escapeRoomGameplayManager.selectedItem.Replace(" ", "")]}";
-            if (scaleText.text.Equals("200"))
+            if (GameData.escapeRoomGameplayManager.selectedItem.Contains("Gear"))
             {
-                GameProgression.GameProgressionInstance.SetFlag("firstInteractionScaleZoom", true);
-                GameProgression.GameProgressionInstance.SetFlag("heavyInteractionScaleZoom", true);
+                print("display weight");
+                scaleText.text = $"{gearWeights[GameData.escapeRoomGameplayManager.selectedItem.Replace(" ", "")]}";
+                if (scaleText.text.Equals("200"))
+                {
+                    GameProgression.GameProgressionInstance.SetFlag("firstInteractionScaleZoom", true);
+                    GameProgression.GameProgressionInstance.SetFlag("heavyInteractionScaleZoom", true);
+                }
+
+                emptyGear.name = GameData.escapeRoomGameplayManager.selectedItem.Replace(" ", "");
+                image.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Item"];
+                GameData.escapeRoomGameplayManager.UseItem(GameData.escapeRoomGameplayManager.selectedItem, emptyGear.name);
+                print("place gear");
             }
         }
+        else
+        {
+            print(emptyGear.name);
+            emptyGear.name = "EmptyGear";
+            image.sprite = null;
+            GameData.escapeRoomGameplayManager.locations.CollectItem(itemController.itemData, emptyGear);
+            print("remove gear");
+        }
+
+        itemController.UpdateItemData();
+    }
+
+    public void DisplayPlacedGear()
+    {
+        emptyGear.SetActive(true);
     }
 }

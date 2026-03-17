@@ -153,6 +153,13 @@
       "collectible": false,
       "description": ""
    },
+   "EmptyGear": {
+      "name": "Empty Gear",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
    "Wires": {
       "name": "Wires",
       "detailed": false,
