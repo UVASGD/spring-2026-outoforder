@@ -56,7 +56,7 @@ public class ScaleZoom : MonoBehaviour
                 GameData.escapeRoomGameplayManager.locations.ExamineItem();
             }
         }
-        else
+        else if (itemController.itemData.collectible)
         {
             scaleText.text = "000";
             emptyGear.name = "EmptyGear";
