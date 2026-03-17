@@ -23,6 +23,7 @@ public class Locations : MonoBehaviour
     private int itemsEntered;
 
     // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
+    [SerializeField] List<string> debugItemNames = new();
     List<ItemData> debugItemList = new();
 
     void Awake()
@@ -30,17 +31,7 @@ public class Locations : MonoBehaviour
         GameData.escapeRoomGameplayManager.locations = this;
         
         // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
-        debugItemList.Add(GameData.escapeRoomGameplayManager.items["Key"]);
-        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearA"]);
-        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearB"]);
-        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearC"]);
-        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearD"]);
-        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearE"]);
-        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearF"]);
-        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearG"]);
-        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearH"]);
-        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearI"]);
-        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearJ"]);
+        debugItemNames.ForEach(name => debugItemList.Add(GameData.escapeRoomGameplayManager.items[name]));
     }
 
     void Start()
