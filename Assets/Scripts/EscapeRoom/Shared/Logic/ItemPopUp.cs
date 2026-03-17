@@ -46,5 +46,6 @@ public class ItemPopUp : MonoBehaviour
     public void SelectItem()
     {
         GameData.escapeRoomGameplayManager.selectedItem = displayedItem;
+        GameData.escapeRoomGameplayManager.menuBar.HidePopUp();
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine;
 public class EscapeRoomGameplay : MonoBehaviour
 {
     public Locations locations;
+    public MenuBar menuBar;
 
     public List<string> locationNames;
     public List<GameObject> locationGameObjects;

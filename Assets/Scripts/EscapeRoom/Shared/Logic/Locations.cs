@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -22,14 +23,24 @@ public class Locations : MonoBehaviour
     private int itemsEntered;
 
     // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
-    ItemData debugItemData;
+    List<ItemData> debugItemList = new();
 
     void Awake()
     {
         GameData.escapeRoomGameplayManager.locations = this;
         
         // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
-        debugItemData = GameData.escapeRoomGameplayManager.items["Key"];
+        debugItemList.Add(GameData.escapeRoomGameplayManager.items["Key"]);
+        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearA"]);
+        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearB"]);
+        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearC"]);
+        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearD"]);
+        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearE"]);
+        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearF"]);
+        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearG"]);
+        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearH"]);
+        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearI"]);
+        debugItemList.Add(GameData.escapeRoomGameplayManager.items["GearJ"]);
     }
 
     void Start()
@@ -73,10 +84,13 @@ public class Locations : MonoBehaviour
         location4.SetActive(false);
         
         // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
-        GameObject scrollViewItem = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
-        scrollViewItem.name = debugItemData.name.Replace(" ", "");
-        scrollViewItem.GetComponentInChildren<TextMeshProUGUI>().text = debugItemData.name;
-        GameData.escapeRoomGameplayManager.collectedItemsScrollView[debugItemData.name] = scrollViewItem;
+        foreach (ItemData debugItem in debugItemList)
+        {
+            GameObject scrollViewItem = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
+            scrollViewItem.name = debugItem.name.Replace(" ", "");
+            scrollViewItem.GetComponentInChildren<TextMeshProUGUI>().text = debugItem.name;
+            GameData.escapeRoomGameplayManager.collectedItemsScrollView[debugItem.name] = scrollViewItem;
+        }
     }
 
     public void ExamineItem()
