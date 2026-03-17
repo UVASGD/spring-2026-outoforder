@@ -30,7 +30,7 @@ public class Locations : MonoBehaviour
         GameData.escapeRoomGameplayManager.locations = this;
         
         // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
-        // debugItemData = GameData.escapeRoomGameplayManager.items["Key"];
+        debugItemData = GameData.escapeRoomGameplayManager.items["Key"];
     }
 
     void Start()
@@ -74,10 +74,10 @@ public class Locations : MonoBehaviour
         location4.SetActive(false);
         
         // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
-        // GameObject scrollViewItem = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
-        // scrollViewItem.name = debugItemData.name.Replace(" ", "");
-        // scrollViewItem.GetComponentInChildren<TextMeshProUGUI>().text = debugItemData.name;
-        // GameData.escapeRoomGameplayManager.collectedItemsScrollView[debugItemData.name] = scrollViewItem;
+        GameObject scrollViewItem = Instantiate(Resources.Load<GameObject>("Prefabs/ScrollViewItem"), content.transform);
+        scrollViewItem.name = debugItemData.name.Replace(" ", "");
+        scrollViewItem.GetComponentInChildren<TextMeshProUGUI>().text = debugItemData.name;
+        GameData.escapeRoomGameplayManager.collectedItemsScrollView[debugItemData.name] = scrollViewItem;
     }
 
     public void ExamineItem()
