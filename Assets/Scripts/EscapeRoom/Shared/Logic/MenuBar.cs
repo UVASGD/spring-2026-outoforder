@@ -30,6 +30,8 @@ public class MenuBar : MonoBehaviour
     void Update()
     {
         moveButton.interactable = !GameData.escapeRoomGameplayManager.enteredItem;
+
+        if (Input.GetMouseButtonDown(1) && !currentMenuName.Equals("none")) HidePopUp();
     } 
 
     public void ChangeState(string newMenuName)
