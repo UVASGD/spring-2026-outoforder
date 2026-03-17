@@ -13,7 +13,7 @@ public class CounterweightSheavePuzzle : Puzzle
     private Dictionary<string, int> gearWeights = new Dictionary<string, int>
     {
         { "GearA", 51 },
-        { "GearB", 12 },
+        { "GearB", 22 },
         { "GearC", 34 },
         { "GearD", 50 },
         { "GearE", 43 },
@@ -33,6 +33,8 @@ public class CounterweightSheavePuzzle : Puzzle
         lastActiveSlot = transform.Find("EmptySlot").gameObject;
         itemController = lastActiveSlot.GetComponent<ItemController>();
         image = lastActiveSlot.GetComponent<Image>();
+
+        lastActiveSlot.SetActive(false);
     }
 
     void Update()
@@ -42,6 +44,8 @@ public class CounterweightSheavePuzzle : Puzzle
             compartmentUnlocked = true;
             submit.GetComponent<Button>().enabled = true;
             submit.GetComponent<Image>().enabled = true;
+
+            lastActiveSlot.SetActive(true);
 
             GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CounterweightSheavePuzzleSecondary"];
         }
@@ -87,14 +91,15 @@ public class CounterweightSheavePuzzle : Puzzle
                     lastActiveSlot.name = GameData.escapeRoomGameplayManager.selectedItem.Replace(" ", "");
                     image.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Item"];
                     GameData.escapeRoomGameplayManager.UseItem(GameData.escapeRoomGameplayManager.selectedItem, lastActiveSlot.name);
-                    print("place gear");
 
                     GameObject newActiveSlot = Instantiate(Resources.Load<GameObject>("Prefabs/EmptySlot"), transform);
                     newActiveSlot.name = "EmptySlot";
                     newActiveSlot.GetComponent<ItemController>().enabled = true;
                     newActiveSlot.transform.position = new Vector3(lastActiveSlot.transform.position.x, lastActiveSlot.transform.position.y + 60, lastActiveSlot.transform.position.z);
-                    newActiveSlot.transform.SetAsFirstSibling();
+                    newActiveSlot.transform.SetAsLastSibling();
                     newActiveSlot.GetComponent<Button>().onClick.AddListener(ModifyGear);
+
+                    print("place gear");
                 }
             }
         }
@@ -104,8 +109,16 @@ public class CounterweightSheavePuzzle : Puzzle
             {
                 image.sprite = null;
                 GameData.escapeRoomGameplayManager.locations.CollectItem(itemController.itemData, lastActiveSlot);
-                print("remove gear");
+                
+                for (int i = lastActiveSlot.transform.GetSiblingIndex(); i < transform.childCount; i++)
+                {
+                    Vector3 childPosition = transform.GetChild(i).transform.position;
+                    transform.GetChild(i).transform.position = new Vector3(childPosition.x, childPosition.y - 60, childPosition.z);
+                }
+
                 Destroy(lastActiveSlot);
+
+                print("remove gear");
             }  
         }
 
