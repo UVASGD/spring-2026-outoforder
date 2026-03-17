@@ -25,6 +25,8 @@ public class ManualInteraction : MonoBehaviour
 
     public void ItemInteraction()
     {
+        GameProgression.GameProgressionInstance.PlaySFX(3);
+
         // TODO: EVERYONE SHOULD HAVE ITEMDATA EVENTUALLY - PUZZLES AND ZOOMS DO NOT ATM
         GameData.escapeRoomGameplayManager.interactingWith = gameObject.name;
 
