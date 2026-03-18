@@ -91,14 +91,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 37f4d144ecb79014284379b38c12ce0b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2d6e1b26b893d14428c75e6f56576a90, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -176,7 +176,7 @@ MonoBehaviour:
   voiceSamples:
   - {fileID: 8300000, guid: a560e449928fa754db16f8978d691532, type: 3}
   - {fileID: 8300000, guid: 26b29f6b3650b6045b7ce423c3693235, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: c15aafb43ab88254bb2e39214229656f, type: 3}
   - {fileID: 8300000, guid: c15aafb43ab88254bb2e39214229656f, type: 3}
 --- !u!82 &5591377975896012020
 AudioSource:
