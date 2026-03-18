@@ -5939,7 +5939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4909960198697251773, guid: d468b7d29eb721e4c83d5c1db4d87001, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -12.5
       objectReference: {fileID: 0}
     - target: {fileID: 4909960198697251773, guid: d468b7d29eb721e4c83d5c1db4d87001, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14849,6 +14849,10 @@ PrefabInstance:
     - target: {fileID: 8336436112825983538, guid: cfd87597ccacc864bbe25226fe855972, type: 3}
       propertyPath: m_Name
       value: BackButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336436112825983538, guid: cfd87597ccacc864bbe25226fe855972, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
