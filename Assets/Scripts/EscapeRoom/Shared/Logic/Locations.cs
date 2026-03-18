@@ -2,9 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Animations;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -125,6 +123,8 @@ public class Locations : MonoBehaviour
     
     public void ExitItem()
     {
+        GameProgression.GameProgressionInstance.PlaySFX(2);
+
         itemsEntered--;
         GameData.escapeRoomGameplayManager.puzzles[currentPuzzle].gameObject.SetActive(false);
         if (itemsEntered == 0) 
