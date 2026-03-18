@@ -52,7 +52,8 @@ public class ManualInteraction : MonoBehaviour
                     || (GameData.escapeRoomNumber == 1)
                     || (GameData.escapeRoomNumber == 2)
                     || (GameData.escapeRoomNumber == 3)
-                    || (GameData.escapeRoomNumber == 4)))
+                    || (GameData.escapeRoomNumber == 4)
+                    || gameObject.name.Equals("Action")))
         {
             GameProgression.GameProgressionInstance.SetFlag(triggeringFlags[dialoguesIndex - eventOffset], true);
         }

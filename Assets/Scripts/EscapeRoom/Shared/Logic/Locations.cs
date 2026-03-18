@@ -2,18 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 // TODO: split this into to MovePopUpScript
 public class Locations : MonoBehaviour
 {
-    private GameObject location0;
-    private GameObject location1;
-    private GameObject location2;
-    private GameObject location3;
-    private GameObject location4;
+    private ManualInteraction action;
+    private List<GameObject> locations;
     private int currentLocationIndex;
     private GameObject currentLocation;
     private TextMeshProUGUI currentLocationTMP;
@@ -29,22 +28,20 @@ public class Locations : MonoBehaviour
     void Awake()
     {
         GameData.escapeRoomGameplayManager.locations = this;
-        
+
+        action = GameObject.Find("Action").GetComponent<ManualInteraction>();
+
         // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
         debugItemNames.ForEach(name => debugItemList.Add(GameData.escapeRoomGameplayManager.items[name]));
     }
 
     void Start()
     {
-        location0 = transform.Find("Location0").gameObject;
-        location1 = transform.Find("Location1").gameObject;
-        location2 = transform.Find("Location2").gameObject;
-        location3 = transform.Find("Location3").gameObject;
-        location4 = transform.Find("Location4").gameObject;
+        locations = Enumerable.Range(0, 5).Select(i => transform.Find($"Location{i}").gameObject).ToList();
 
         GameObject popUpAreas = transform.parent.transform.Find("MenuBar").transform.Find("PopUpAreas").gameObject;
 
-        currentLocation = location0;
+        currentLocation = locations[0];
         currentLocationTMP = popUpAreas.transform.Find("MovePopUp").transform.Find("CurrentLocationText").GetComponent<TextMeshProUGUI>();
         currentLocationTMP.text = GameData.escapeRoomGameplayManager.locationNames[0];
 
@@ -69,10 +66,7 @@ public class Locations : MonoBehaviour
         backButton = transform.parent.transform.Find("BackButton").GetComponent<Button>();
         backButton.gameObject.SetActive(false);
 
-        location1.SetActive(false);
-        location2.SetActive(false);
-        location3.SetActive(false);
-        location4.SetActive(false);
+        locations.Skip(1).ToList().ForEach(loc => loc.SetActive(false));
         
         // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
         foreach (ItemData debugItem in debugItemList)
@@ -145,39 +139,41 @@ public class Locations : MonoBehaviour
         }
     }
 
-    public void ChangeLocation()
+    public void ChangeLocation(string overrideLocation = null)
     {
-        GameProgression.GameProgressionInstance.PlaySFX(4);
+        GameObject currentSelectedLocation = string.IsNullOrEmpty(overrideLocation)
+            ? EventSystem.current.currentSelectedGameObject
+            : transform.parent.GetComponentsInChildren<TextMeshProUGUI>(true).FirstOrDefault(t => t.text.Equals(overrideLocation))?.transform.parent.gameObject;
 
-        GameObject currentSelectedLocation = EventSystem.current.currentSelectedGameObject;
-        
         LocationData currentLocationData = currentSelectedLocation.GetComponent<LocationData>();
+
         int newLocationIndex = currentLocationData.locationIndex;
-        
+
         switch (newLocationIndex)
         {
             case 0:
-                ShowLocation(location0, newLocationIndex, currentLocationData);
+                ShowLocation(locations[0], newLocationIndex, currentLocationData);
                 break;
             case 1:
-                ShowLocation(location1, newLocationIndex, currentLocationData);
+                ShowLocation(locations[1], newLocationIndex, currentLocationData);
                 break;
             case 2:
-                ShowLocation(location2, newLocationIndex, currentLocationData);
+                ShowLocation(locations[2], newLocationIndex, currentLocationData);
                 break;
             case 3:
-                if (!(GameData.escapeRoomNumber == 0 && !GameProgression.GameProgressionInstance.GetFlag("firstInteractionRobot")))
+                if ((GameData.escapeRoomNumber == 0 && GameProgression.GameProgressionInstance.GetFlag("firstInteractionRobot"))
+                    || GameData.escapeRoomNumber > 0)
                 {
-                    ShowLocation(location3, newLocationIndex, currentLocationData);   
+                    ShowLocation(locations[3], newLocationIndex, currentLocationData);   
                 }
                 else
                 {
-                    Debug.Log("It's too dark there...");
+                    action.ItemInteraction();
                     return;
                 }
                 break;
             case 4:
-                ShowLocation(location4, newLocationIndex, currentLocationData);
+                ShowLocation(locations[4], newLocationIndex, currentLocationData);
                 break;
         }
         
@@ -192,6 +188,8 @@ public class Locations : MonoBehaviour
 
     private void ShowLocation(GameObject location, int newLocationIndex, LocationData currentLocationData)
     {
+        GameProgression.GameProgressionInstance.PlaySFX(4);
+
         currentLocationData.locationIndex = currentLocationIndex;
         currentLocationIndex = newLocationIndex;
         // TODO: make this into an animation with coroutine

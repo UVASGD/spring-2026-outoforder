@@ -1,0 +1,10 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Okay, storage time.",
+            "endOfScene": true
+        }
+    ]
+}

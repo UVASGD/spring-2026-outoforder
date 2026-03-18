@@ -63,7 +63,7 @@
 
         {
             "hideUI": true,
-            "flag": "VisualNovel"
+            "scene": "VisualNovel"
         }
     ]
 }

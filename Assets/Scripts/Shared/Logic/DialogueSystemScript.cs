@@ -168,8 +168,14 @@ public class DialogueSystem : MonoBehaviour
             SetFade();
 
             // set Flag (if any)
-            SetFlag();
+            SetScene();
+
+            // set Action (if any)
+            SetMethod();
         }
+
+        // set flag (if any)
+        SetFlag();
 
         // set BGM (if any)
         SetBGM();
@@ -343,6 +349,11 @@ public class DialogueSystem : MonoBehaviour
         advanceDisabled = false;
     }
 
+    private void SetFlag()
+    {
+        if (currentDialogue.flag != null) GameProgression.GameProgressionInstance.SetFlag(currentDialogue.flag, true);
+    }
+
     private void SetBGM()
     {
         if (currentDialogue.playBGM != null) StartCoroutine(GameProgression.GameProgressionInstance.PlayBGM(int.Parse(currentDialogue.playBGM)));
@@ -419,9 +430,25 @@ public class DialogueSystem : MonoBehaviour
         automaticFadeCoroutine = null;
     }
     
-    private void SetFlag()
+    private void SetScene()
     {
-        if (!string.IsNullOrEmpty(currentDialogue.flag)) GameProgression.GameProgressionInstance.SceneTransition(currentDialogue.flag);
+        if (!string.IsNullOrEmpty(currentDialogue.scene)) GameProgression.GameProgressionInstance.SceneTransition(currentDialogue.scene);
+    }
+
+    private void SetMethod()
+    {
+        if (!string.IsNullOrEmpty(currentDialogue.method)) 
+        {
+            string[] method = currentDialogue.method.Split(',');
+            if (method.Length > 1) 
+            {
+                GameData.escapeRoomGameplayManager.locations.SendMessage(method[0], method[1]);
+            }
+            else 
+            {
+                GameData.escapeRoomGameplayManager.locations.SendMessage(method[0]);        
+            }
+        }
     }
 
     private IEnumerator DisableAdvance()
