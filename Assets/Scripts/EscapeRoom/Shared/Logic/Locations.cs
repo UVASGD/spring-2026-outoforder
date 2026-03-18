@@ -29,7 +29,7 @@ public class Locations : MonoBehaviour
     {
         GameData.escapeRoomGameplayManager.locations = this;
 
-        action = GameObject.Find("Action").GetComponent<ManualInteraction>();
+        action = GameObject.Find("Action")?.GetComponent<ManualInteraction>();
 
         // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
         debugItemNames.ForEach(name => debugItemList.Add(GameData.escapeRoomGameplayManager.items[name]));
