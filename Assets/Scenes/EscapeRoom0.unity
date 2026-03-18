@@ -14747,9 +14747,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 161766981}
     m_Modifications:
     - target: {fileID: 613933092502503735, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 613933092502503735, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 613933092502503735, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 301522157}
+    - target: {fileID: 613933092502503735, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MenuBar, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1017011501358268451, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -14831,17 +14843,53 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3601322442316871230, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3601322442316871230, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3601322442316871230, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 301522157}
+    - target: {fileID: 3601322442316871230, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MenuBar, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998666565327358693, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998666565327358693, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4998666565327358693, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 301522157}
+    - target: {fileID: 4998666565327358693, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MenuBar, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813127123199220539, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813127123199220539, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8813127123199220539, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 301522157}
+    - target: {fileID: 8813127123199220539, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MenuBar, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 9075013996940727868, guid: 5e8b84120c7d0c14ba361fbf77cba80c, type: 3}
       propertyPath: m_Name
       value: MenuBar

@@ -153,26 +153,35 @@ public class Locations : MonoBehaviour
         
         LocationData currentLocationData = currentSelectedLocation.GetComponent<LocationData>();
         int newLocationIndex = currentLocationData.locationIndex;
-        currentLocationData.locationIndex = currentLocationIndex;
         
         switch (newLocationIndex)
         {
             case 0:
-                ShowLocation(location0, newLocationIndex);
+                ShowLocation(location0, newLocationIndex, currentLocationData);
                 break;
             case 1:
-                ShowLocation(location1, newLocationIndex);
+                ShowLocation(location1, newLocationIndex, currentLocationData);
                 break;
             case 2:
-                ShowLocation(location2, newLocationIndex);
+                ShowLocation(location2, newLocationIndex, currentLocationData);
                 break;
             case 3:
-                ShowLocation(location3, newLocationIndex);
+                if (!(GameData.escapeRoomNumber == 0 && !GameProgression.GameProgressionInstance.GetFlag("firstInteractionRobot")))
+                {
+                    ShowLocation(location3, newLocationIndex, currentLocationData);   
+                }
+                else
+                {
+                    Debug.Log("It's too dark there...");
+                    return;
+                }
                 break;
             case 4:
-                ShowLocation(location4, newLocationIndex);
+                ShowLocation(location4, newLocationIndex, currentLocationData);
                 break;
         }
+        
+        currentLocationData.UpdateLocationText();
     }
 
     // PRIVATE HELPERS
@@ -181,8 +190,9 @@ public class Locations : MonoBehaviour
         manualInteraction.ItemInteraction();
     }
 
-    private void ShowLocation(GameObject location, int newLocationIndex)
+    private void ShowLocation(GameObject location, int newLocationIndex, LocationData currentLocationData)
     {
+        currentLocationData.locationIndex = currentLocationIndex;
         currentLocationIndex = newLocationIndex;
         // TODO: make this into an animation with coroutine
         currentLocation?.SetActive(false);
