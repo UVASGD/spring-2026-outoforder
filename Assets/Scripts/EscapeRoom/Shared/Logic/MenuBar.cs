@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class MenuBar : MonoBehaviour
@@ -65,13 +66,13 @@ public class MenuBar : MonoBehaviour
         }   
     }
 
-    public void HidePopUp()
+    public void HidePopUp(bool playSfx = true)
     {
         currentMenuName = "none";
         currentPopUp.SetActive(false);
         currentPopUp = null;
         interactionBlocker.SetActive(false);
-        GameProgression.GameProgressionInstance.PlaySFX(1);
+        if (playSfx) GameProgression.GameProgressionInstance.PlaySFX(2);
     }
 
     private void ShowPopUp(GameObject popUp, string newMenuName)
@@ -81,6 +82,6 @@ public class MenuBar : MonoBehaviour
         popUp.SetActive(true);
         currentPopUp = popUp;
         interactionBlocker.SetActive(true);
-        GameProgression.GameProgressionInstance.PlaySFX(0);
+        GameProgression.GameProgressionInstance.PlaySFX(1);
     }
 }

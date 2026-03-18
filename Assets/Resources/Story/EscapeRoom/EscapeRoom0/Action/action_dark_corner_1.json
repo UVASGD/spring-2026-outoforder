@@ -1,0 +1,10 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "There's a strange corner here, but it's way too hard to see anything. I can come back later.",
+            "endOfScene": true
+        }
+    ]
+}

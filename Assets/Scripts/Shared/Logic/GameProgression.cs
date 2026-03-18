@@ -132,6 +132,8 @@ public class GameProgression : MonoBehaviour
     // Flag
     public void SceneTransition(string scene)
     {
+        if (currentScene.Equals("StartScreen")) PlaySFX(0);
+
         transitioning = true;
 
         FadeEffect.FadeIn(blackTransition, fadeTime: 2f, scene: scene);

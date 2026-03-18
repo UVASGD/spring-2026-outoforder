@@ -1,0 +1,15 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "The corner?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "No, I can't go there. It's too dark.",
+            "endOfScene": true
+        }
+    ]
+}

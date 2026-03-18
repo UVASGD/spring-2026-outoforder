@@ -547,7 +547,7 @@
         },
         {
             "hideUI": true,
-            "flag": "EscapeRoom0"
+            "scene": "EscapeRoom1"
         }
     ]
 }
