@@ -1,5 +1,6 @@
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using UnityEngine;
 
@@ -22,6 +23,8 @@ public class EscapeRoomGameplay : MonoBehaviour
     public string interactingWith;
     public bool enteredItem;
 
+    public HashSet<string> eventTracker = new();
+
     void Awake()
     {
         GameData.escapeRoomGameplayManager = this;
@@ -38,6 +41,11 @@ public class EscapeRoomGameplay : MonoBehaviour
         usages = JsonConvert.DeserializeObject<Dictionary<string, string>>(Resources.Load<TextAsset>($"Story/EscapeRoom/EscapeRoom{GameData.escapeRoomNumber}/Data/usages").text);
     }
 
+    void Update()
+    {
+        CheckForEvents(GameData.escapeRoomNumber);
+    }
+
     public bool UseItem(string directItem, string indirectItem)
     {
         print($"attempt to use item {directItem} on {indirectItem}");
@@ -51,5 +59,24 @@ public class EscapeRoomGameplay : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    private void CheckForEvents(int escapeRoomNumber)
+    {
+        switch (escapeRoomNumber)
+        {
+            case 0:
+                // music starts again after finishing interaction with ASTA for the first time
+                if (!eventTracker.Contains("firstInteractionRobot") && !GameData.currentlyTalking && GameProgression.GameProgressionInstance.GetFlag("firstInteractionRobot"))
+                {
+                    Debug.Log("only once");
+                    eventTracker.Add("firstInteractionRobot");
+                    StartCoroutine(GameProgression.GameProgressionInstance.PlayBGM(2));
+                }
+
+                break;
+            default:
+                break;
+        }
     }
 }

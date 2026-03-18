@@ -9955,17 +9955,13 @@ MonoBehaviour:
   eventOffset: 0
   activatingFlags:
   - actionDarkCorner0
-  - findRobot0
   triggeringFlags:
   - actionDarkCorner0
-  - 
-  - firstInteractionRobot
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 062cb5ab8d2b92d428fc17bbadb42ae5, type: 3}
   - {fileID: 4900000, guid: 3d6a04b5d6536864db0c200a86e8226d, type: 3}
-  - {fileID: 4900000, guid: 22649807b5fa827418422d643ae9d19d, type: 3}
   itemData:
     name: 
     detailed: 0
