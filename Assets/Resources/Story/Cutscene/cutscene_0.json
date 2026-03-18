@@ -3,64 +3,75 @@
         {
             "character": "",
             "cgSprite": "VirgoNeutral",
-            "dialogue": "In this world, there exists humans and the robots that serve them. With today's advanced technology, robots are able to attend to all the needs a human may have."
+            "dialogue": "In this world, there exists humans and the robots that serve them. With today's advanced technology, robots are able to attend to all the needs a human may have.",
+            "textSpeed": 0.075
         },
         {
             "character": "",
-            "dialogue": "Robots can be housmaids, firefighters, doctors... the possiblities are endless! However, all robots have Three Laws they must abide by."
+            "dialogue": "Robots can be housmaids, firefighters, doctors... the possiblities are endless. However, all robots have Three Laws they must abide by.",
+            "textSpeed": 0.075
         },
         {
             "character": "",
             "cgSprite": "VirgoEyes",
-            "dialogue": "First, a robot shall never injure a human being or allow a human being to come to harm;"
+            "dialogue": "First, a robot shall never injure a human being or allow a human being to come to harm;",
+            "textSpeed": 0.075
         },
         {
             "character": "",
             "cgSprite": "ASTANeutral",
-            "dialogue": "Second, unless they conflict with the First Law, a robot must obey their human's orders;"
+            "dialogue": "Second, unless they conflict with the First Law, a robot must obey their human's orders;",
+            "textSpeed": 0.075
         },
         {
             "character": "",
             "cgSprite": "ASTANeutral",
-            "dialogue": "Huh...?"
+            "dialogue": "(Huh...?)",
+            "textSpeed": 0.05
         },
         {
             "character": "",
             "cgSprite": "ASTANeutral",
-            "dialogue": "And finally, so long as there is no conflict with the First or Second Law, a robot must protect its own existence."
+            "dialogue": "And finally, so long as there is no conflict with the First or Second Law, a robot must protect its own existence.",
+            "textSpeed": 0.075
         },
 
         {
             "character": "",
             "cgSprite": "ASTANeutral",
-            "dialogue": "The Three Laws? Of course, I know those. I'm a mechanic, after all. But... why...?"
+            "dialogue": "(The Three Laws? Of course, I know those. I'm a mechanic, after all. But... why...?)",
+            "textSpeed": 0.05
         },
         {
             "character": "",
             "cgSprite": "ASTANeutral",
-            "dialogue": "Error is not error. "
+            "dialogue": "Error is not error.",
+            "textSpeed": 0.075
         },
         {
             "character": "",
             "cgSprite": "ASTANeutral",
-            "dialogue": "Error."
+            "dialogue": "Error.",
+            "textSpeed": 0.095
         },
         {
             "character": "",
             "cgSprite": "ASTANeutral",
-            "dialogue": "Error."
+            "dialogue": "Error.",
+            "textSpeed": 0.1
         },
         {
             "character": "",
             "cgSprite": "ASTANeutral",
-            "dialogue": "Error...? Wait--"
+            "dialogue": "(Error...? Wait--)",
+            "textSpeed": 0.05
         },
         {
             "character": "",
             "cgSprite": "ASTANeutral",
-            "dialogue": "Error. Error. Error. Errrrrr"
+            "dialogue": "Error. Error. Error. Errrrrr",
+            "textSpeed": 0.125
         },
-
         {
             "hideUI": true,
             "scene": "VisualNovel"
