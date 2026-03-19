@@ -188,7 +188,7 @@ public class Locations : MonoBehaviour
 
     private void ShowLocation(GameObject location, int newLocationIndex, LocationData currentLocationData)
     {
-        GameProgression.GameProgressionInstance.PlaySFX(4);
+        GameProgression.GameProgressionInstance.PlaySFX(3);
 
         currentLocationData.locationIndex = currentLocationIndex;
         currentLocationIndex = newLocationIndex;

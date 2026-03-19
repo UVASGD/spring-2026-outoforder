@@ -6,7 +6,6 @@ using TMPro;
 public class ElectricCircuitPuzzle : Puzzle
 {
     private TMP_InputField inputField;
-    private Image finalLight;
     private Image firstSlotImage;
     private Image secondSlotImage;
     private Image currentSlotImage;
@@ -35,7 +34,6 @@ public class ElectricCircuitPuzzle : Puzzle
         guess = new char[] { '7', '7' };
 
         inputField = GameObject.Find("InputField").gameObject.GetComponent<TMP_InputField>();
-        finalLight = GameObject.Find("FinalLight").gameObject.GetComponent<Image>();
         firstSlotImage = GameObject.Find("FirstSlot").gameObject.GetComponent<Image>();
         secondSlotImage = GameObject.Find("SecondSlot").gameObject.GetComponent<Image>();
         firstSlot = GameObject.Find("FirstSlot").gameObject.GetComponent<Button>();
@@ -43,7 +41,6 @@ public class ElectricCircuitPuzzle : Puzzle
 
         inputField.gameObject.SetActive(false);
         inputField.onSubmit.AddListener(OnTextEntered);
-        finalLight.enabled = false;
     }
 
     public void OnFirstSlotClicked()
@@ -115,8 +112,6 @@ public class ElectricCircuitPuzzle : Puzzle
         bool finalResult = secondGate(secondGateCode.Value, firstResult);
 
         print($"First gate {firstResult}, Final result {finalResult}");
-
-        finalLight.enabled = finalResult;
     }
 
     private bool firstGate(char gate, bool a, bool b)
@@ -140,6 +135,8 @@ public class ElectricCircuitPuzzle : Puzzle
 
     protected override void SolvedPuzzleSpecific()
     {
+        gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["ElectricCircuitPuzzleSecondary"];
+
         GameProgression.GameProgressionInstance.SetFlag("firstInteractionElectricCircuitPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedElectricCircuitPuzzle", true);
         gameObject.GetComponent<ManualInteraction>().ItemInteraction();
