@@ -29,7 +29,7 @@ public class Puzzle : MonoBehaviour
     {
         if (!solved)
         {
-            GameProgression.GameProgressionInstance.PlaySFX(6);
+            GameProgression.GameProgressionInstance.PlaySFX(5);
 
             GameObject digit = EventSystem.current.currentSelectedGameObject;
             TextMeshProUGUI digitTMP = digit.GetComponentInChildren<TextMeshProUGUI>();
@@ -53,7 +53,7 @@ public class Puzzle : MonoBehaviour
     {
         if (!solved)
         {
-            GameProgression.GameProgressionInstance.PlaySFX(7);
+            GameProgression.GameProgressionInstance.PlaySFX(6);
         }
     }
 
@@ -61,7 +61,7 @@ public class Puzzle : MonoBehaviour
     {
         if (!solved)
         {
-            GameProgression.GameProgressionInstance.PlaySFX(6);
+            GameProgression.GameProgressionInstance.PlaySFX(5);
 
             GameObject character = EventSystem.current.currentSelectedGameObject;
             TextMeshProUGUI letterTMP = character.GetComponentInChildren<TextMeshProUGUI>();
@@ -85,7 +85,7 @@ public class Puzzle : MonoBehaviour
     {
         if (!solved)
         {
-            GameProgression.GameProgressionInstance.PlaySFX(7);
+            GameProgression.GameProgressionInstance.PlaySFX(6);
         } 
     }
 
