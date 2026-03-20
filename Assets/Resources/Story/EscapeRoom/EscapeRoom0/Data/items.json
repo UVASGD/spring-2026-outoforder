@@ -55,6 +55,13 @@
       "collectible": true,
       "description": "A cyan core. The light emitting from it is dull."
    },
+   "GlowingCyanCore": {
+      "name": "Glowing Cyan Core",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A cyan core. It is glowing now."
+   },
    "BrokenMagentaCore": {
       "name": "Broken Magenta Core",
       "detailed": false,
@@ -62,12 +69,26 @@
       "collectible": true,
       "description": "A magenta core. The light emitting from it is dull."
    },
+   "GlowingMagentaCore": {
+      "name": "Glowing Magenta Core",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A magenta core. It is glowing."
+   },
    "DullYellowCore": {
       "name": "Dull Yellow Core",
       "detailed": false,
       "puzzle": false,
       "collectible": true,
       "description": "A yellow core. The light emitting from it is dull."
+   },
+   "GlowingYellowCore": {
+      "name": "Glowing Yellow Core",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A yellow core. It is glowing now."
    },
    "Lever": {
       "name": "Lever",

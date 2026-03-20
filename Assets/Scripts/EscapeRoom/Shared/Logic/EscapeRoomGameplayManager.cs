@@ -17,6 +17,7 @@ public class EscapeRoomGameplay : MonoBehaviour
     public string selectedItem;
     public Dictionary<string, ItemData> items = new();
     public Dictionary<string, GameObject> collectedItemsScrollView = new();
+    // TODO: delete?
     public Dictionary<string, string> itemDescriptions = new();
     public Dictionary<string, string> usages = new();
     

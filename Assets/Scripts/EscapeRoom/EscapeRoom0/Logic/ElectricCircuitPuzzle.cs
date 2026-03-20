@@ -2,10 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
+using System.Linq;
 
 public class ElectricCircuitPuzzle : Puzzle
 {
-    private bool placedCyanCoreDull;
+    private bool placedDullCyanCore;
     private TMP_InputField inputField;
     private Image firstSlotImage;
     private Image secondSlotImage;
@@ -35,22 +37,27 @@ public class ElectricCircuitPuzzle : Puzzle
         answer = new char[] { '2', '6' };
         guess = new char[] { '7', '7' };
 
-        inputField = transform.Find("InputField").gameObject.GetComponent<TMP_InputField>();
-        firstSlotImage = transform.Find("FirstSlot").gameObject.GetComponent<Image>();
-        secondSlotImage = transform.Find("SecondSlot").gameObject.GetComponent<Image>();
-        firstSlotButton = transform.Find("FirstSlot").gameObject.GetComponent<Button>();
-        secondSlotButton = transform.Find("SecondSlot").gameObject.GetComponent<Button>();
-        cyanCoreImage =  transform.Find("CyanCore").gameObject.GetComponent<Image>();
+        inputField = transform.Find("InputField").GetComponent<TMP_InputField>();
+        firstSlotImage = transform.Find("FirstSlot").GetComponent<Image>();
+        secondSlotImage = transform.Find("SecondSlot").GetComponent<Image>();
+        firstSlotButton = transform.Find("FirstSlot").GetComponent<Button>();
+        secondSlotButton = transform.Find("SecondSlot").GetComponent<Button>();
+        cyanCoreImage = transform.Find("DullCyanCore").GetComponent<Image>();
 
         inputField.gameObject.SetActive(false);
         inputField.onSubmit.AddListener(OnTextEntered);
     }
 
+    void OnEnable()
+    {
+        if (GameData.escapeRoomGameplayManager.items["DullCyanCore"].collectible && GameData.escapeRoomGameplayManager.collectedItemsScrollView.Keys.Contains("Dull Cyan Core")) GameData.escapeRoomGameplayManager.items["DullCyanCore"].collectible = false;
+    }
+
     void Update()
     {
-        if (!placedCyanCoreDull && GameProgression.GameProgressionInstance.GetFlag("usedDullCyanCore"))
+        if (!placedDullCyanCore && GameProgression.GameProgressionInstance.GetFlag("usedDullCyanCore"))
         {
-            placedCyanCoreDull = true;
+            placedDullCyanCore = true;
             cyanCoreImage.enabled = true;
             cyanCoreImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CyanCore"];
         }
@@ -58,7 +65,7 @@ public class ElectricCircuitPuzzle : Puzzle
 
     public void OnFirstSlotClicked()
     {
-        if (placedCyanCoreDull && !solved)
+        if (placedDullCyanCore && !solved)
         {
             if (currentSlotImage != null) currentSlotImage.color = Color.white;
             currentSlotImage = firstSlotImage;
@@ -68,7 +75,7 @@ public class ElectricCircuitPuzzle : Puzzle
 
     public void OnSecondSlotClicked()
     {
-        if (placedCyanCoreDull && !solved)
+        if (placedDullCyanCore && !solved)
         {
             if (currentSlotImage != null) currentSlotImage.color = Color.white;
             currentSlotImage = secondSlotImage;
@@ -157,7 +164,10 @@ public class ElectricCircuitPuzzle : Puzzle
     protected override void SolvedPuzzleSpecific()
     {
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["ElectricCircuitPuzzleSecondary"];
+       
         cyanCoreImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CyanCoreSecondary"];
+        cyanCoreImage.gameObject.name = "GlowingCyanCore";
+        cyanCoreImage.gameObject.GetComponent<ItemController>().itemData = GameData.escapeRoomGameplayManager.items["GlowingCyanCore"];
 
         GameProgression.GameProgressionInstance.SetFlag("firstInteractionElectricCircuitPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedElectricCircuitPuzzle", true);

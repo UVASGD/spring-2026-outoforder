@@ -928,14 +928,16 @@ MonoBehaviour:
   eventOffset: 0
   activatingFlags:
   - usedDullCyanCore
+  - solvedElectricCircuitPuzzle
   triggeringFlags: []
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
   - {fileID: 4900000, guid: 4a10d0f9632f9174397ac2ad2bdc20c2, type: 3}
   - {fileID: 4900000, guid: 00d5b5138514b2843a070394b1c10d8c, type: 3}
+  - {fileID: 4900000, guid: bc6a7dac463b2c74383b044e978d4424, type: 3}
   itemData:
-    name: ChargingDock
+    name: 
     detailed: 0
     puzzle: 0
     collectible: 0
@@ -2155,7 +2157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4327da9cc17bd4489b65135dbf8a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LocationsScript
-  debugItemNames: []
+  debugItemNames:
+  - Lever
 --- !u!1 &339593510
 GameObject:
   m_ObjectHideFlags: 0
@@ -8848,7 +8851,7 @@ GameObject:
   - component: {fileID: 1266794726}
   - component: {fileID: 1266794725}
   m_Layer: 0
-  m_Name: CyanCore
+  m_Name: DullCyanCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8887,15 +8890,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - usedDullCyanCore
+  - solvedElectricCircuitPuzzle
   triggeringFlags: []
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 4a10d0f9632f9174397ac2ad2bdc20c2, type: 3}
-  - {fileID: 4900000, guid: 00d5b5138514b2843a070394b1c10d8c, type: 3}
+  - {fileID: 4900000, guid: d23a2bbb117e4e2429150eb7d199c87e, type: 3}
+  - {fileID: 4900000, guid: bf2da8943ab2765458f5bf255e039d82, type: 3}
   itemData:
-    name: ChargingDock
+    name: 
     detailed: 0
     puzzle: 0
     collectible: 0
@@ -9455,8 +9458,8 @@ RectTransform:
   - {fileID: 1056524508}
   - {fileID: 1929601947}
   - {fileID: 1223913569}
-  - {fileID: 1266794724}
   - {fileID: 119427113}
+  - {fileID: 1266794724}
   - {fileID: 1447161876}
   m_Father: {fileID: 828550686}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
