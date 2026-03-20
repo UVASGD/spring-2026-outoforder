@@ -8848,7 +8848,7 @@ GameObject:
   - component: {fileID: 1266794726}
   - component: {fileID: 1266794725}
   m_Layer: 0
-  m_Name: CyanCoreWIP
+  m_Name: CyanCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8863,15 +8863,15 @@ RectTransform:
   m_GameObject: {fileID: 1266794723}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1388625912}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 270, y: -5}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 273, y: -5}
+  m_SizeDelta: {x: 246, y: 246}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1266794725
 MonoBehaviour:
@@ -8982,7 +8982,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266794723}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -8995,7 +8995,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 59ad0297dac74054ba69c2bb6d45d339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1b1886a6dbe7aa443bb0310a0b992146, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

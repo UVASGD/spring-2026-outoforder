@@ -10,9 +10,10 @@ public class ElectricCircuitPuzzle : Puzzle
     private Image firstSlotImage;
     private Image secondSlotImage;
     private Image currentSlotImage;
-    private Button firstSlot;
-    private Button secondSlot;
+    private Button firstSlotButton;
+    private Button secondSlotButton;
     private Button currentSlot;
+    private Image cyanCoreImage;
     private char? firstGateCode = null;
     private char? secondGateCode = null;
     private Dictionary<string, char> firstSlotValidGate = new Dictionary<string, char>
@@ -34,11 +35,12 @@ public class ElectricCircuitPuzzle : Puzzle
         answer = new char[] { '2', '6' };
         guess = new char[] { '7', '7' };
 
-        inputField = GameObject.Find("InputField").gameObject.GetComponent<TMP_InputField>();
-        firstSlotImage = GameObject.Find("FirstSlot").gameObject.GetComponent<Image>();
-        secondSlotImage = GameObject.Find("SecondSlot").gameObject.GetComponent<Image>();
-        firstSlot = GameObject.Find("FirstSlot").gameObject.GetComponent<Button>();
-        secondSlot = GameObject.Find("SecondSlot").gameObject.GetComponent<Button>();
+        inputField = transform.Find("InputField").gameObject.GetComponent<TMP_InputField>();
+        firstSlotImage = transform.Find("FirstSlot").gameObject.GetComponent<Image>();
+        secondSlotImage = transform.Find("SecondSlot").gameObject.GetComponent<Image>();
+        firstSlotButton = transform.Find("FirstSlot").gameObject.GetComponent<Button>();
+        secondSlotButton = transform.Find("SecondSlot").gameObject.GetComponent<Button>();
+        cyanCoreImage =  transform.Find("CyanCore").gameObject.GetComponent<Image>();
 
         inputField.gameObject.SetActive(false);
         inputField.onSubmit.AddListener(OnTextEntered);
@@ -49,6 +51,8 @@ public class ElectricCircuitPuzzle : Puzzle
         if (!placedCyanCoreDull && GameProgression.GameProgressionInstance.GetFlag("usedDullCyanCore"))
         {
             placedCyanCoreDull = true;
+            cyanCoreImage.enabled = true;
+            cyanCoreImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CyanCore"];
         }
     }
 
@@ -58,7 +62,7 @@ public class ElectricCircuitPuzzle : Puzzle
         {
             if (currentSlotImage != null) currentSlotImage.color = Color.white;
             currentSlotImage = firstSlotImage;
-            OpenInputField(firstSlot);
+            OpenInputField(firstSlotButton);
         }
     }
 
@@ -68,7 +72,7 @@ public class ElectricCircuitPuzzle : Puzzle
         {
             if (currentSlotImage != null) currentSlotImage.color = Color.white;
             currentSlotImage = secondSlotImage;
-            OpenInputField(secondSlot);
+            OpenInputField(secondSlotButton);
         }   
     }
 
@@ -89,14 +93,14 @@ public class ElectricCircuitPuzzle : Puzzle
         text = text.Trim().ToUpper();
         print("Input " + text);
 
-        if (!((currentSlot == firstSlot) ? firstSlotValidGate : secondSlotValidGate).ContainsKey(text))
+        if (!((currentSlot == firstSlotButton) ? firstSlotValidGate : secondSlotValidGate).ContainsKey(text))
         {
             print("TODO: ERROR UI");
             inputField.text = "";
             return;
         }
 
-        if (currentSlot == firstSlot) 
+        if (currentSlot == firstSlotButton) 
         {
             firstGateCode = firstSlotValidGate[text]; 
             guess[0] = firstGateCode.Value;
@@ -153,6 +157,7 @@ public class ElectricCircuitPuzzle : Puzzle
     protected override void SolvedPuzzleSpecific()
     {
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["ElectricCircuitPuzzleSecondary"];
+        cyanCoreImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CyanCoreSecondary"];
 
         GameProgression.GameProgressionInstance.SetFlag("firstInteractionElectricCircuitPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedElectricCircuitPuzzle", true);
