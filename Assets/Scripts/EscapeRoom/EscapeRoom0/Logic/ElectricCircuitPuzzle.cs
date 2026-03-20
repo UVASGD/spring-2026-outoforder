@@ -5,6 +5,7 @@ using TMPro;
 
 public class ElectricCircuitPuzzle : Puzzle
 {
+    private bool placedCyanCoreDull;
     private TMP_InputField inputField;
     private Image firstSlotImage;
     private Image secondSlotImage;
@@ -43,18 +44,32 @@ public class ElectricCircuitPuzzle : Puzzle
         inputField.onSubmit.AddListener(OnTextEntered);
     }
 
+    void Update()
+    {
+        if (!placedCyanCoreDull && GameProgression.GameProgressionInstance.GetFlag("usedDullCyanCore"))
+        {
+            placedCyanCoreDull = true;
+        }
+    }
+
     public void OnFirstSlotClicked()
     {
-        if (currentSlotImage != null) currentSlotImage.color = Color.white;
-        currentSlotImage = firstSlotImage;
-        OpenInputField(firstSlot);
+        if (placedCyanCoreDull && !solved)
+        {
+            if (currentSlotImage != null) currentSlotImage.color = Color.white;
+            currentSlotImage = firstSlotImage;
+            OpenInputField(firstSlot);
+        }
     }
 
     public void OnSecondSlotClicked()
     {
-        if (currentSlotImage != null) currentSlotImage.color = Color.white;
-        currentSlotImage = secondSlotImage;
-        OpenInputField(secondSlot);
+        if (placedCyanCoreDull && !solved)
+        {
+            if (currentSlotImage != null) currentSlotImage.color = Color.white;
+            currentSlotImage = secondSlotImage;
+            OpenInputField(secondSlot);
+        }   
     }
 
     private void OpenInputField(Button slotButton)

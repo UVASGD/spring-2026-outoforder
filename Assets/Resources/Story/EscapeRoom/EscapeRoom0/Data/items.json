@@ -13,10 +13,24 @@
       "collectible": false,
       "description": ""
    },
+   "Tray": {
+      "name": "Tray",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": false,
+      "description": ""
+   },
    "ElectricCircuit": {
       "name": "Electric Circuit",
       "detailed": true,
       "puzzle": true,
+      "collectible": false,
+      "description": ""
+   },
+   "ChargingDock": {
+      "name": "Charging Dock",
+      "detailed": false,
+      "puzzle": false,
       "collectible": false,
       "description": ""
    },
@@ -34,26 +48,26 @@
       "collectible": false,
       "description": ""
    },
-   "RedCore": {
-      "name": "Red Core",
+   "DullCyanCore": {
+      "name": "Dull Cyan Core",
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": "A glowing red core. The light emitting from it is dull."
+      "description": "A cyan core. The light emitting from it is dull."
    },
-   "GreenCore": {
-      "name": "Green Core",
+   "BrokenMagentaCore": {
+      "name": "Broken Magenta Core",
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": "A glowing green core. The light emitting from it is dull."
+      "description": "A magenta core. The light emitting from it is dull."
    },
-   "BlueCore": {
-      "name": "Blue Core",
+   "DullYellowCore": {
+      "name": "Dull Yellow Core",
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": "A glowing blue core. The light emitting from it is dull."
+      "description": "A yellow core. The light emitting from it is dull."
    },
    "Lever": {
       "name": "Lever",
@@ -75,13 +89,6 @@
       "puzzle": false,
       "collectible": true,
       "description": "A replacement red core."
-   },
-   "TopBox": {
-      "name": "Top Box",
-      "detailed": false,
-      "puzzle": false,
-      "collectible": false,
-      "description": ""
    },
    "KeyboardSetup": {
       "name": "Keyboard Setup",
