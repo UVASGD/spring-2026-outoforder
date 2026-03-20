@@ -108,13 +108,15 @@ public class ElectricCircuitPuzzle : Puzzle
             return;
         }
 
-        bool firstResult = firstGate(firstGateCode.Value, true, true);
-        bool finalResult = secondGate(secondGateCode.Value, firstResult);
+        print($"gate values are 1 {guess[0]} and 2 {guess[1]}");
+
+        bool firstResult = FirstGate(firstGateCode.Value, true, true);
+        bool finalResult = SecondGate(secondGateCode.Value, firstResult);
 
         print($"First gate {firstResult}, Final result {finalResult}");
     }
 
-    private bool firstGate(char gate, bool a, bool b)
+    private bool FirstGate(char gate, bool a, bool b)
     {
         return gate switch
         {
@@ -128,7 +130,7 @@ public class ElectricCircuitPuzzle : Puzzle
         };
     }
 
-    private bool secondGate(char gate, bool a)
+    private bool SecondGate(char gate, bool a)
     {
         return gate == '6' ? !a : false;
     }
