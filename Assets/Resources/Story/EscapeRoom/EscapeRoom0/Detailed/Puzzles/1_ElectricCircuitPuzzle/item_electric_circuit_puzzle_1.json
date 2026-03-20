@@ -3,17 +3,17 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "The first slot for the gate takes two inputs, the two lights."
+            "dialogue": "Oh god, it's a circuit."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "So the second slot for the gate must take one."
+            "dialogue": "The two lights on the left are on, on the one on the right is off."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "What combination of gates could that be...",
+            "dialogue": "I'm assuming that I'd just have to place the correct logic gates so that the last light is switched on as well.",
             "endOfScene": true
         }
     ]

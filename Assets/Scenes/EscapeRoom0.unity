@@ -9585,16 +9585,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
+  - usedDullCyanCore
   - firstInteractionElectricCircuitPuzzle
   - solvedElectricCircuitPuzzle
   triggeringFlags:
+  - 
   - firstInteractionElectricCircuitPuzzle
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 76ec2d7e6b680994ea764c83d81e4cf2, type: 3}
+  - {fileID: 4900000, guid: d44970305adc0d6449d787d36f8f6df9, type: 3}
   - {fileID: 4900000, guid: f41d1f59e4b0b6f41afc20626caf2cb2, type: 3}
   - {fileID: 4900000, guid: 1024806e5f7c561449951c315235c675, type: 3}
+  - {fileID: 4900000, guid: ce30974ff02e4164986eaa41cfa99c36, type: 3}
   itemData:
     name: 
     detailed: 0

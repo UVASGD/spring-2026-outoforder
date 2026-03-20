@@ -3,17 +3,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "Oh god, it's a circuit."
+            "dialogue": "could this be for charging the cyan core? there is a dock here, and its cyan."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "The two lights on the left are on, on the one on the right is off."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I'm assuming that I'd just have to place the correct logic gates so that the last light is switched on as well.",
+            "dialogue": "Let's see if i can put that on first.",
             "endOfScene": true
         }
     ]
