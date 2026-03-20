@@ -17,7 +17,8 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "Now, where was I?"
+            "dialogue": "Now, where was I?",
+            "playBGM": "-1"
         },
         {
             "hideUI": true,
@@ -27,6 +28,12 @@
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
             "dialogue": "Wait... what is that?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "...!?",
+            "playSFX": "4"
         },
         {
             "character": "Virgo",

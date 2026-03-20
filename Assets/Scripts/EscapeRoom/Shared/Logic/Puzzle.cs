@@ -29,6 +29,8 @@ public class Puzzle : MonoBehaviour
     {
         if (!solved)
         {
+            GameProgression.GameProgressionInstance.PlaySFX(5);
+
             GameObject digit = EventSystem.current.currentSelectedGameObject;
             TextMeshProUGUI digitTMP = digit.GetComponentInChildren<TextMeshProUGUI>();
             int currentDigit = int.Parse(digitTMP.text);
@@ -46,10 +48,21 @@ public class Puzzle : MonoBehaviour
             guess[digit.transform.GetSiblingIndex()] = (char)('0' + currentDigit); 
         }
     }
+
+    public void DecrementDigit()
+    {
+        if (!solved)
+        {
+            GameProgression.GameProgressionInstance.PlaySFX(6);
+        }
+    }
+
     public void IncrementLetter()
     {
         if (!solved)
         {
+            GameProgression.GameProgressionInstance.PlaySFX(5);
+
             GameObject character = EventSystem.current.currentSelectedGameObject;
             TextMeshProUGUI letterTMP = character.GetComponentInChildren<TextMeshProUGUI>();
 
@@ -66,6 +79,14 @@ public class Puzzle : MonoBehaviour
             letterTMP.text = nextChar.ToString();
             guess[character.transform.GetSiblingIndex()] = nextChar;
         }
+    }
+
+    public void DecrementLetter()
+    {
+        if (!solved)
+        {
+            GameProgression.GameProgressionInstance.PlaySFX(6);
+        } 
     }
 
     private void SolvedPuzzle()

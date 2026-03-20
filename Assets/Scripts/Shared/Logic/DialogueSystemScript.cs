@@ -14,16 +14,16 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private List<DialogueStruct> dialogueStructList = new();
 
     [Header("[UI]")]
-    [SerializeField] private Image dialogueBoxImage;
-    [SerializeField] private GameObject oldCG;
-    [SerializeField] private GameObject activeCG;
-    [SerializeField] private Image oldCGImage;
-    [SerializeField] private Image activeCGImage;
-    [SerializeField] private Image speakerSpriteImage;
-    [SerializeField] private TextMeshProUGUI nameTMP;
-    [SerializeField] private TextMeshProUGUI dialogueTMP;
-    [SerializeField] private TextMeshProUGUI narrationTMP;
-    [SerializeField] private GameObject advanceDialogueButton;
+    private Image dialogueBoxImage;
+    private GameObject oldCG;
+    private GameObject activeCG;
+    private Image oldCGImage;
+    private Image activeCGImage;
+    private Image speakerSpriteImage;
+    private TextMeshProUGUI nameTMP;
+    private TextMeshProUGUI dialogueTMP;
+    TextMeshProUGUI narrationTMP;
+    private GameObject advanceDialogueButton;
 
     [Header("[LOGIC]")]
     public bool advanceDialogueButtonPressed;
@@ -65,11 +65,7 @@ public class DialogueSystem : MonoBehaviour
 
     void OnEnable() 
     {
-        if (SceneManager.GetActiveScene().name.Equals("Cutscene"))
-        {    
-            dialogueBoxImage.gameObject.SetActive(false);
-        }
-        else
+        if (!SceneManager.GetActiveScene().name.Equals("Cutscene"))
         {
             oldCG?.gameObject.SetActive(false);
             activeCG?.gameObject.SetActive(false);
@@ -236,20 +232,23 @@ public class DialogueSystem : MonoBehaviour
     {
         dialogueOnDisplay = currentDialogue.dialogue;
 
-        // set dialogue box image color
-        switch (currentDialogue.character)
+        if (!GameProgression.GameProgressionInstance.currentScene.Equals("Cutscene"))
         {
-            case "Virgo":
-                dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["VirgoTextbox"];
-                break;
-            case "4574":
-            case "ASTA":
-                dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["AstaTextbox"];
-                break;
-            default:
-                dialogueBoxImage.sprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites["Textbox"];
-                break;
-        }
+            // set dialogue box image color
+            switch (currentDialogue.character)
+            {
+                case "Virgo":
+                    dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["VirgoTextbox"];
+                    break;
+                case "4574":
+                case "ASTA":
+                    dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["AstaTextbox"];
+                    break;
+                default:
+                    dialogueBoxImage.sprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites["Textbox"];
+                    break;
+            }
+        }        
 
         // set character name
         nameTMP.text = currentDialogue.character;

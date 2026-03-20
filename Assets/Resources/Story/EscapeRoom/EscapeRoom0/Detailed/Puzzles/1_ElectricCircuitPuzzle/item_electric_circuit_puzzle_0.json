@@ -1,0 +1,15 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "could this be for charging the cyan core? there is a dock here, and its cyan."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Let's see if i can put that on first.",
+            "endOfScene": true
+        }
+    ]
+}

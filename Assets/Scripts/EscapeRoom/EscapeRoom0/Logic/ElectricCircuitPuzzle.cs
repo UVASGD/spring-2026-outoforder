@@ -2,17 +2,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
+using System.Linq;
 
 public class ElectricCircuitPuzzle : Puzzle
 {
+    private bool placedDullCyanCore;
     private TMP_InputField inputField;
-    private Image finalLight;
     private Image firstSlotImage;
     private Image secondSlotImage;
     private Image currentSlotImage;
-    private Button firstSlot;
-    private Button secondSlot;
+    private Button firstSlotButton;
+    private Button secondSlotButton;
     private Button currentSlot;
+    private Image cyanCoreImage;
     private char? firstGateCode = null;
     private char? secondGateCode = null;
     private Dictionary<string, char> firstSlotValidGate = new Dictionary<string, char>
@@ -34,30 +37,50 @@ public class ElectricCircuitPuzzle : Puzzle
         answer = new char[] { '2', '6' };
         guess = new char[] { '7', '7' };
 
-        inputField = GameObject.Find("InputField").gameObject.GetComponent<TMP_InputField>();
-        finalLight = GameObject.Find("FinalLight").gameObject.GetComponent<Image>();
-        firstSlotImage = GameObject.Find("FirstSlot").gameObject.GetComponent<Image>();
-        secondSlotImage = GameObject.Find("SecondSlot").gameObject.GetComponent<Image>();
-        firstSlot = GameObject.Find("FirstSlot").gameObject.GetComponent<Button>();
-        secondSlot = GameObject.Find("SecondSlot").gameObject.GetComponent<Button>();
+        inputField = transform.Find("InputField").GetComponent<TMP_InputField>();
+        firstSlotImage = transform.Find("FirstSlot").GetComponent<Image>();
+        secondSlotImage = transform.Find("SecondSlot").GetComponent<Image>();
+        firstSlotButton = transform.Find("FirstSlot").GetComponent<Button>();
+        secondSlotButton = transform.Find("SecondSlot").GetComponent<Button>();
+        cyanCoreImage = transform.Find("DullCyanCore").GetComponent<Image>();
 
         inputField.gameObject.SetActive(false);
         inputField.onSubmit.AddListener(OnTextEntered);
-        finalLight.enabled = false;
+    }
+
+    void OnEnable()
+    {
+        if (GameData.escapeRoomGameplayManager.items["DullCyanCore"].collectible && GameData.escapeRoomGameplayManager.collectedItemsScrollView.Keys.Contains("Dull Cyan Core")) GameData.escapeRoomGameplayManager.items["DullCyanCore"].collectible = false;
+    }
+
+    void Update()
+    {
+        if (!placedDullCyanCore && GameProgression.GameProgressionInstance.GetFlag("usedDullCyanCore"))
+        {
+            placedDullCyanCore = true;
+            cyanCoreImage.enabled = true;
+            cyanCoreImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CyanCore"];
+        }
     }
 
     public void OnFirstSlotClicked()
     {
-        if (currentSlotImage != null) currentSlotImage.color = Color.white;
-        currentSlotImage = firstSlotImage;
-        OpenInputField(firstSlot);
+        if (placedDullCyanCore && !solved)
+        {
+            if (currentSlotImage != null) currentSlotImage.color = Color.white;
+            currentSlotImage = firstSlotImage;
+            OpenInputField(firstSlotButton);
+        }
     }
 
     public void OnSecondSlotClicked()
     {
-        if (currentSlotImage != null) currentSlotImage.color = Color.white;
-        currentSlotImage = secondSlotImage;
-        OpenInputField(secondSlot);
+        if (placedDullCyanCore && !solved)
+        {
+            if (currentSlotImage != null) currentSlotImage.color = Color.white;
+            currentSlotImage = secondSlotImage;
+            OpenInputField(secondSlotButton);
+        }   
     }
 
     private void OpenInputField(Button slotButton)
@@ -77,14 +100,14 @@ public class ElectricCircuitPuzzle : Puzzle
         text = text.Trim().ToUpper();
         print("Input " + text);
 
-        if (!((currentSlot == firstSlot) ? firstSlotValidGate : secondSlotValidGate).ContainsKey(text))
+        if (!((currentSlot == firstSlotButton) ? firstSlotValidGate : secondSlotValidGate).ContainsKey(text))
         {
             print("TODO: ERROR UI");
             inputField.text = "";
             return;
         }
 
-        if (currentSlot == firstSlot) 
+        if (currentSlot == firstSlotButton) 
         {
             firstGateCode = firstSlotValidGate[text]; 
             guess[0] = firstGateCode.Value;
@@ -111,15 +134,15 @@ public class ElectricCircuitPuzzle : Puzzle
             return;
         }
 
-        bool firstResult = firstGate(firstGateCode.Value, true, true);
-        bool finalResult = secondGate(secondGateCode.Value, firstResult);
+        print($"gate values are 1 {guess[0]} and 2 {guess[1]}");
+
+        bool firstResult = FirstGate(firstGateCode.Value, true, true);
+        bool finalResult = SecondGate(secondGateCode.Value, firstResult);
 
         print($"First gate {firstResult}, Final result {finalResult}");
-
-        finalLight.enabled = finalResult;
     }
 
-    private bool firstGate(char gate, bool a, bool b)
+    private bool FirstGate(char gate, bool a, bool b)
     {
         return gate switch
         {
@@ -133,13 +156,19 @@ public class ElectricCircuitPuzzle : Puzzle
         };
     }
 
-    private bool secondGate(char gate, bool a)
+    private bool SecondGate(char gate, bool a)
     {
         return gate == '6' ? !a : false;
     }
 
     protected override void SolvedPuzzleSpecific()
     {
+        gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["ElectricCircuitPuzzleSecondary"];
+       
+        cyanCoreImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CyanCoreSecondary"];
+        cyanCoreImage.gameObject.name = "GlowingCyanCore";
+        cyanCoreImage.gameObject.GetComponent<ItemController>().itemData = GameData.escapeRoomGameplayManager.items["GlowingCyanCore"];
+
         GameProgression.GameProgressionInstance.SetFlag("firstInteractionElectricCircuitPuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedElectricCircuitPuzzle", true);
         gameObject.GetComponent<ManualInteraction>().ItemInteraction();

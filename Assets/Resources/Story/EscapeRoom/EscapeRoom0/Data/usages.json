@@ -1,4 +1,6 @@
 {
    "Lever": "LightSwitchPuzzle",
-   "Remote": "Monitors"
+   "Remote": "Monitors",
+   "DullYellowCore": "Tray",
+   "DullCyanCore": "ChargingDock"
 }
