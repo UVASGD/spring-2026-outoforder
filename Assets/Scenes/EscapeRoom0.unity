@@ -9612,7 +9612,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -12675,7 +12675,7 @@ GameObject:
   - component: {fileID: 1757756524}
   - component: {fileID: 1757756523}
   m_Layer: 0
-  m_Name: GlowingRedCore
+  m_Name: GlowingMagentaCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

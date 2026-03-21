@@ -20,7 +20,7 @@ public class LockedBoxPuzzle : Puzzle
         answer = new char[] { '0', '1', '2', '1', '0' };
         guess = new char[] { '1', '1', '1', '1', '1' };
 
-        replacementRedCore = transform.Find("ReplacementRedCore").gameObject;
+        replacementRedCore = transform.Find("GlowingMagentaCore").gameObject;
 
         GetComponentsInChildren<Image>()
             .Where(color => color.name.Contains("Color"))
