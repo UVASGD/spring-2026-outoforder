@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -20,6 +21,12 @@ public class LockedBoxPuzzle : Puzzle
         guess = new char[] { '1', '1', '1', '1', '1' };
 
         replacementRedCore = transform.Find("ReplacementRedCore").gameObject;
+
+        GetComponentsInChildren<Image>()
+            .Where(color => color.name.Contains("Color"))
+            .ToList()
+            .ForEach(color => color.alphaHitTestMinimumThreshold = 0.1f);
+
         replacementRedCore.SetActive(false);
     }
 

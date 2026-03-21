@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 08c050f894cf917428f3b8ed0f4e7304
+guid: f6ccbba01f8a3a5448802f90c322b8d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -209326579508930247
-    second: LockedDrawerPuzzle_0
+      213: 286811784193142690
+    second: LockedBoxSlot3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LockedDrawerPuzzle_0
+      name: LockedBoxSlot3_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 936
-        height: 637
+        x: 500
+        y: 273
+        width: 80
+        height: 77
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9399252c592581df0800000000000000
-      internalID: -209326579508930247
+      spriteID: 2af6a325cc5faf300800000000000000
+      internalID: 286811784193142690
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      LockedDrawerPuzzle_0: -209326579508930247
+      LockedBoxSlot3_0: 286811784193142690
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
