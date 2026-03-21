@@ -1,0 +1,15 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "TRAY BEFORE solving puzzle and didnt put core in yet"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Looks like electricity from the circuit recharged the blue core.",
+            "endOfScene": true
+        }
+    ]
+}

@@ -27,6 +27,13 @@
       "collectible": false,
       "description": ""
    },
+   "Manual": {
+      "name": "Manual",
+      "detailed": false,
+      "puzzle": false,
+      "collectible": true,
+      "description": "A manual for the standard robots in this facility. It covers topics of functionality and what to do in case of malfunction."
+   },
    "ChargingDock": {
       "name": "Charging Dock",
       "detailed": false,
