@@ -3,12 +3,17 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "I don't think there's any way for me to get up there actually."
+            "dialogue": "item_electric_circuit_0"
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "Well, it's best to just keep moving. I should focus on something else.",
+            "dialogue": "How convenient."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "I should take a closer look.",
             "endOfScene": true
         }
     ]
