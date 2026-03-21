@@ -1,51 +1,41 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using Unity.VisualScripting;
 using System.Linq;
+using UnityEngine.EventSystems;
 
 public class ElectricCircuitPuzzle : Puzzle
 {
     private bool placedDullCyanCore;
-    private TMP_InputField inputField;
     private Image firstSlotImage;
     private Image secondSlotImage;
-    private Image currentSlotImage;
-    private Button firstSlotButton;
-    private Button secondSlotButton;
-    private Button currentSlot;
     private Image cyanCoreImage;
-    private char? firstGateCode = null;
-    private char? secondGateCode = null;
-    private Dictionary<string, char> firstSlotValidGate = new Dictionary<string, char>
+    private SortedDictionary<int, string> firstSlotValidGates = new()
     {
-        { "AND",  '0' },
-        { "OR",   '1' },
-        { "NAND", '2' },
-        { "NOR",  '3' },
-        { "XOR",  '4' },
-        { "XNOR", '5' }
+        { 0, "GateAnd" },
+        { 1, "GateOr" },
+        { 2, "GateNand" },
+        { 3, "GateNor" },
+        { 4, "GateXor" },
+        { 5, "GateXnor" },
+        { 6, "Transparent" }
     };
-    private Dictionary<string, char> secondSlotValidGate = new Dictionary<string, char>
+    private SortedDictionary<int, string> secondSlotValidGates = new()
     {
-        { "NOT", '6' }
+        { 6, "GateNot" },
+        { 7, "Transparent" }
     };
 
     void Awake()
     {
+        // TODO: XOR AND NOT IS ALSO CORRECT
         answer = new char[] { '2', '6' };
-        guess = new char[] { '7', '7' };
+        guess = new char[] { '6', '7' };
 
-        inputField = transform.Find("InputField").GetComponent<TMP_InputField>();
         firstSlotImage = transform.Find("FirstSlot").GetComponent<Image>();
         secondSlotImage = transform.Find("SecondSlot").GetComponent<Image>();
-        firstSlotButton = transform.Find("FirstSlot").GetComponent<Button>();
-        secondSlotButton = transform.Find("SecondSlot").GetComponent<Button>();
         cyanCoreImage = transform.Find("DullCyanCore").GetComponent<Image>();
-
-        inputField.gameObject.SetActive(false);
-        inputField.onSubmit.AddListener(OnTextEntered);
     }
 
     void OnEnable()
@@ -63,102 +53,31 @@ public class ElectricCircuitPuzzle : Puzzle
         }
     }
 
-    public void OnFirstSlotClicked()
+    public void AdjustGate(int direction)
     {
-        if (placedDullCyanCore && !solved)
-        {
-            if (currentSlotImage != null) currentSlotImage.color = Color.white;
-            currentSlotImage = firstSlotImage;
-            OpenInputField(firstSlotButton);
-        }
-    }
+        if (!placedDullCyanCore || solved) return;
 
-    public void OnSecondSlotClicked()
-    {
-        if (placedDullCyanCore && !solved)
-        {
-            if (currentSlotImage != null) currentSlotImage.color = Color.white;
-            currentSlotImage = secondSlotImage;
-            OpenInputField(secondSlotButton);
-        }   
-    }
+        GameProgression.GameProgressionInstance.PlaySFX(direction == 1 ? 5 : 6);
 
-    private void OpenInputField(Button slotButton)
-    {
-        currentSlotImage.color = Color.yellow;
-        currentSlot = slotButton;
-        inputField.text = "";
-        inputField.gameObject.SetActive(true);
-        inputField.ActivateInputField();
-        inputField.placeholder.GetComponent<TMP_Text>().text = "LOGIC GATE TYPE";
-    }
-
-    private void OnTextEntered(string text)
-    {
-        currentSlotImage.color = Color.white;
-
-        text = text.Trim().ToUpper();
-        print("Input " + text);
-
-        if (!((currentSlot == firstSlotButton) ? firstSlotValidGate : secondSlotValidGate).ContainsKey(text))
-        {
-            print("TODO: ERROR UI");
-            inputField.text = "";
-            return;
-        }
-
-        if (currentSlot == firstSlotButton) 
-        {
-            firstGateCode = firstSlotValidGate[text]; 
-            guess[0] = firstGateCode.Value;
-        }
-        else 
-        {
-            secondGateCode = secondSlotValidGate[text];
-            guess[1] = secondGateCode.Value;
-        }
-
-        inputField.gameObject.SetActive(false);
-        currentSlot = null;
-
-        EvaluateCircuit();
-    }
-
-    private void EvaluateCircuit()
-    {
-        print("evaluating");
+        string buttonName = EventSystem.current.currentSelectedGameObject.name;
         
-        if (firstGateCode == null || secondGateCode == null)
-        {
-            print("One or more gates aren't set");
-            return;
-        }
+        bool isFirst = buttonName.Contains("First");
+        int index = isFirst ? 0 : 1;
+        
+        int min = isFirst ? 0 : 6;
+        int max = isFirst ? 6 : 7;
 
-        print($"gate values are 1 {guess[0]} and 2 {guess[1]}");
+        int val = (int)char.GetNumericValue(guess[index]);
+        val += direction;
 
-        bool firstResult = FirstGate(firstGateCode.Value, true, true);
-        bool finalResult = SecondGate(secondGateCode.Value, firstResult);
+        if (val > max) val = min;
+        else if (val < min) val = max;
 
-        print($"First gate {firstResult}, Final result {finalResult}");
-    }
+        var slotImage = isFirst ? firstSlotImage : secondSlotImage;
+        var validGates = isFirst ? firstSlotValidGates : secondSlotValidGates;
 
-    private bool FirstGate(char gate, bool a, bool b)
-    {
-        return gate switch
-        {
-            '0' => a & b,
-            '1' => a | b,
-            '2' => !(a & b),
-            '3' => !(a | b),
-            '4' => a ^ b,
-            '5' => !(a ^ b),
-            _ => false
-        };
-    }
-
-    private bool SecondGate(char gate, bool a)
-    {
-        return gate == '6' ? !a : false;
+        slotImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[validGates[val]];
+        guess[index] = (char)(val + '0');
     }
 
     protected override void SolvedPuzzleSpecific()

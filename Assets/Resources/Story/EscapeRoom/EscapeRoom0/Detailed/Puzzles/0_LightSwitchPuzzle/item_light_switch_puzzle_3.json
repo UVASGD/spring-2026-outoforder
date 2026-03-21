@@ -83,7 +83,8 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "Ah..."
+            "dialogue": "Ah...",
+            "playSFX": "7"
         },
         {
             "character": "Virgo",
