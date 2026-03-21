@@ -12675,7 +12675,7 @@ GameObject:
   - component: {fileID: 1757756524}
   - component: {fileID: 1757756523}
   m_Layer: 0
-  m_Name: ReplacementRedCore
+  m_Name: GlowingRedCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
