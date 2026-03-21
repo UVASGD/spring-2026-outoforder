@@ -4,12 +4,15 @@ using UnityEngine.UI;
 using Unity.VisualScripting;
 using System.Linq;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class ElectricCircuitPuzzle : Puzzle
 {
     private bool placedDullCyanCore;
     private Image firstSlotImage;
+    private TextMeshProUGUI firstSlotGateNameText;
     private Image secondSlotImage;
+    private TextMeshProUGUI secondSlotGateNameText;
     private Image cyanCoreImage;
     private SortedDictionary<int, string> firstSlotValidGates = new()
     {
@@ -19,12 +22,12 @@ public class ElectricCircuitPuzzle : Puzzle
         { 3, "GateNor" },
         { 4, "GateXor" },
         { 5, "GateXnor" },
-        { 6, "Transparent" }
+        { 6, "None" }
     };
     private SortedDictionary<int, string> secondSlotValidGates = new()
     {
         { 6, "GateNot" },
-        { 7, "Transparent" }
+        { 7, "None" }
     };
 
     void Awake()
@@ -34,7 +37,9 @@ public class ElectricCircuitPuzzle : Puzzle
         guess = new char[] { '6', '7' };
 
         firstSlotImage = transform.Find("FirstSlot").GetComponent<Image>();
+        firstSlotGateNameText = firstSlotImage.gameObject.GetComponentInChildren<TextMeshProUGUI>();
         secondSlotImage = transform.Find("SecondSlot").GetComponent<Image>();
+        secondSlotGateNameText = secondSlotImage.gameObject.GetComponentInChildren<TextMeshProUGUI>();
         cyanCoreImage = transform.Find("DullCyanCore").GetComponent<Image>();
     }
 
@@ -76,7 +81,13 @@ public class ElectricCircuitPuzzle : Puzzle
         var slotImage = isFirst ? firstSlotImage : secondSlotImage;
         var validGates = isFirst ? firstSlotValidGates : secondSlotValidGates;
 
-        slotImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[validGates[val]];
+        string validGate = validGates[val];
+        slotImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[validGate];
+
+        validGate = validGate.ToUpper();
+        if (isFirst) firstSlotGateNameText.text = $"[{(validGate.Equals("NONE") ? validGate : validGate.Substring(4))}]";
+        else secondSlotGateNameText.text = $"[{(validGate.Equals("NONE") ? validGate : validGate.Substring(4))}]";
+
         guess[index] = (char)(val + '0');
     }
 
