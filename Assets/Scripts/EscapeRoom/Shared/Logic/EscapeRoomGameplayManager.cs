@@ -1,6 +1,5 @@
 using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.ComponentModel.Design;
 using System.Linq;
 using UnityEngine;
 
@@ -72,7 +71,7 @@ public class EscapeRoomGameplay : MonoBehaviour
                 {
                     Debug.Log("only once");
                     eventTracker.Add("firstInteractionRobot");
-                    StartCoroutine(GameProgression.GameProgressionInstance.PlayBGM(2));
+                    StartCoroutine(GameProgression.GameProgressionInstance.PlayBGM(3));
                 }
 
                 break;

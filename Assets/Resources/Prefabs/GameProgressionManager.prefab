@@ -293,6 +293,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 300e47d657c371d41999aae18db73daa, type: 3}
   - {fileID: 8300000, guid: c2ac20e6bd5bd0146be4b7d7fc210f22, type: 3}
   - {fileID: 8300000, guid: 5864556407174fe42867fbfef0c45fc0, type: 3}
+  - {fileID: 8300000, guid: ea18ee6bafcdf07469adf811bc06301d, type: 3}
   - {fileID: 8300000, guid: 63f25fd04cd5e764e8ce26ee327b9399, type: 3}
   - {fileID: 8300000, guid: bcbd68a7f3518fd4abcd19736051ab01, type: 3}
   audioSourceSFX: {fileID: 0}
