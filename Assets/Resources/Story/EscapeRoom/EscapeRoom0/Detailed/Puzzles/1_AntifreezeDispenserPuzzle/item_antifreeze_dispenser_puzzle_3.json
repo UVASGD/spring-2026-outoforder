@@ -1,0 +1,10 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "Using this device filled the yellow core with antifreeze.",
+            "endOfScene": true
+        }
+    ]
+}

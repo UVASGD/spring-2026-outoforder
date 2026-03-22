@@ -69,9 +69,14 @@ public class EscapeRoomGameplay : MonoBehaviour
                 // music starts again after finishing interaction with ASTA for the first time
                 if (!eventTracker.Contains("firstInteractionRobot") && !GameData.currentlyTalking && GameProgression.GameProgressionInstance.GetFlag("firstInteractionRobot"))
                 {
-                    Debug.Log("only once");
                     eventTracker.Add("firstInteractionRobot");
                     StartCoroutine(GameProgression.GameProgressionInstance.PlayBGM(3));
+                }
+
+                if (!eventTracker.Contains("filledDullYellowCore") && GameProgression.GameProgressionInstance.GetFlag("filledDullYellowCore"))
+                {
+                    eventTracker.Add("filledDullYellowCore");
+                    StartCoroutine(FindFirstObjectByType<AntifreezeDispenserPuzzle>().ActivateAntifreezeDispenser());
                 }
 
                 break;
