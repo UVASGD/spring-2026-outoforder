@@ -91,6 +91,7 @@ public class AntifreezeDispenserPuzzle : Puzzle
     {
         Debug.Log("play filling core animation");
         stream.SetActive(true);
+        GameProgression.GameProgressionInstance.PlaySFX(9);
 
         yield return new WaitForSeconds(2);
 
