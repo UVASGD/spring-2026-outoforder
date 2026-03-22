@@ -1,5 +1,4 @@
 using Newtonsoft.Json;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -134,40 +133,47 @@ public class DialogueSystem : MonoBehaviour
 
         currentDialogue = dialogueStructList[dialogueIndex];
 
-        if (disableAdvanceCoroutine != null) StopCoroutine(DisableAdvance());
-        disableAdvanceCoroutine = StartCoroutine(DisableAdvance());
-
-        automaticFadeComplete = false;
-
-        if (!currentDialogue.hideUI)
+        if (currentDialogue.wait != 0)
         {
-            ShowUI();
-
-            // TODO: do some sort of one other the other thing here
-            // set cg
-            if (!SceneManager.GetActiveScene().name.Contains("EscapeRoom")) SetCG();
-
-            // set sprite
-            if (!SceneManager.GetActiveScene().name.Equals("Cutscene")) SetSprite();
-
-            // set dialogue
-            SetDialogue();
+            StartCoroutine(SetWait(currentDialogue.wait));
         }
         else
         {
-            HideUI();
+            if (disableAdvanceCoroutine != null) StopCoroutine(DisableAdvance());
+            disableAdvanceCoroutine = StartCoroutine(DisableAdvance());
 
-            // set Narration (if any)
-            SetNarration();
+            automaticFadeComplete = false;
+            
+            if (!currentDialogue.hideUI)
+            {
+                ShowUI();
 
-            // set Fade (if any)
-            SetFade();
+                // TODO: do some sort of one other the other thing here
+                // set cg
+                if (!SceneManager.GetActiveScene().name.Contains("EscapeRoom")) SetCG();
 
-            // set Flag (if any)
-            SetScene();
+                // set sprite
+                if (!SceneManager.GetActiveScene().name.Equals("Cutscene")) SetSprite();
 
-            // set Action (if any)
-            SetMethod();
+                // set dialogue
+                SetDialogue();
+            }
+            else
+            {
+                HideUI();
+
+                // set Narration (if any)
+                SetNarration();
+
+                // set Fade (if any)
+                SetFade();
+
+                // set Flag (if any)
+                SetScene();
+
+                // set Action (if any)
+                SetMethod();
+            }
         }
 
         // set flag (if any)
@@ -207,7 +213,19 @@ public class DialogueSystem : MonoBehaviour
         dialogueTMP.enabled = false;
     }
 
-        public void SetCG()
+    private IEnumerator SetWait(float waitTime)
+    {
+        HideUI();
+        advanceDisabled = true;
+
+        yield return new WaitForSeconds(waitTime);
+
+        advanceDisabled = false;
+        advanceDialogueButtonPressed = true;
+        ShowUI();
+    }
+
+    public void SetCG()
     {
         if (currentDialogue.cgSprite != null)
         {

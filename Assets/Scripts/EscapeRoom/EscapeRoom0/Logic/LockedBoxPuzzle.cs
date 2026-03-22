@@ -30,7 +30,10 @@ public class LockedBoxPuzzle : Puzzle
         replacementRedCore.SetActive(false);
     }
 
-    public void IncrementColor() {
+    public void IncrementColor() 
+    {
+        GameProgression.GameProgressionInstance.PlaySFX(5);
+
         GameObject color = EventSystem.current.currentSelectedGameObject;
         Image colorImage = color.GetComponentInChildren<Image>();
         

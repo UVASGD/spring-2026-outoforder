@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -13,6 +14,7 @@ public class AntifreezeDispenserPuzzle : Puzzle
     }
     private State currentState = State.Idle;
     private int selectedLetterIndex = -1;
+    private GameObject stream;
     private Image yellowCoreImage;
     
     void Awake()
@@ -27,7 +29,10 @@ public class AntifreezeDispenserPuzzle : Puzzle
             text.text = guess[i].ToString();
         }
         
+        stream = transform.Find("Stream").gameObject;
         yellowCoreImage = transform.Find("DullYellowCore").GetComponent<Image>();
+
+        stream.SetActive(false);
     }
 
     void OnEnable()
@@ -82,9 +87,19 @@ public class AntifreezeDispenserPuzzle : Puzzle
         }
     }
 
+    public IEnumerator ActivateAntifreezeDispenser()
+    {
+        Debug.Log("play filling core animation");
+        stream.SetActive(true);
+
+        yield return new WaitForSeconds(2);
+
+        stream.SetActive(false);
+        yellowCoreImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["YellowCoreSecondary"];
+    }
+
     protected override void SolvedPuzzleSpecific()
     {
-        yellowCoreImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["YellowCoreSecondary"];
         yellowCoreImage.gameObject.name = "GlowingYellowCore";
         yellowCoreImage.gameObject.GetComponent<ItemController>().itemData = GameData.escapeRoomGameplayManager.items["GlowingYellowCore"];
 

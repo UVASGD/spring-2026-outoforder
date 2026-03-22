@@ -1,6 +1,10 @@
 {
     "dialogues": [
         {
+            "wait": 3,
+            "flag": "filledDullYellowCore"
+        },
+        {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
             "dialogue": "So it was antifreeze."
@@ -8,7 +12,7 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "The green core is filled now.",
+            "dialogue": "The yellow core is filled now.",
             "endOfScene": true
         }
     ]
