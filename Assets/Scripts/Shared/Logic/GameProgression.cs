@@ -165,7 +165,7 @@ public class GameProgression : MonoBehaviour
         // TODO maybe check based on location for music?
     }
 
-    public IEnumerator PlayBGM(int index, float waitTime = 0.75f, GameObject gameObjectToDeactivate = null, float gameWaitTime = 0f, float fadeSpeed = 0.25f)
+    public IEnumerator PlayBGM(int index, float waitTime = 0.75f, GameObject gameObjectToDeactivate = null, float gameWaitTime = 0f, float fadeSpeed = 0.25f, bool immediateStart = false)
     {
         print($"switching to music at index {index}");
         
@@ -187,7 +187,7 @@ public class GameProgression : MonoBehaviour
         audioSourceBGM.volume = 0;
         audioSourceBGM.Stop();
 
-        yield return new WaitForSeconds(waitTime);
+        yield return new WaitForSeconds(!immediateStart ? waitTime : 0f);
 
         if (gameObjectToDeactivate)
         {
@@ -196,11 +196,15 @@ public class GameProgression : MonoBehaviour
 
         if (index != -1)
         {
-            for (float t = 0; t < fadeSpeed; t += Time.deltaTime)
+            if (!immediateStart)
             {
-                audioSourceBGM.volume = Mathf.Lerp(0, 1, t / fadeSpeed);
-                yield return null;
+                for (float t = 0; t < fadeSpeed; t += Time.deltaTime)
+                {
+                    audioSourceBGM.volume = Mathf.Lerp(0, 1, t / fadeSpeed);
+                    yield return null;
+                }
             }
+
             audioSourceBGM.volume = 1f;
 
             if (index == 5 || index != currentBGM)

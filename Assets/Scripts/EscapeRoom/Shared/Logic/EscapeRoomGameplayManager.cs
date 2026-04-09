@@ -70,7 +70,7 @@ public class EscapeRoomGameplay : MonoBehaviour
                 if (!eventTracker.Contains("firstInteractionRobot") && !GameData.currentlyTalking && GameProgression.GameProgressionInstance.GetFlag("firstInteractionRobot"))
                 {
                     eventTracker.Add("firstInteractionRobot");
-                    StartCoroutine(GameProgression.GameProgressionInstance.PlayBGM(3));
+                    StartCoroutine(GameProgression.GameProgressionInstance.PlayBGM(3, immediateStart: true));
                 }
 
                 if (!eventTracker.Contains("filledDullYellowCore") && GameProgression.GameProgressionInstance.GetFlag("filledDullYellowCore"))
