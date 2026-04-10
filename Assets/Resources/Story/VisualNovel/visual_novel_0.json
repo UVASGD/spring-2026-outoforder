@@ -2,57 +2,57 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoShocked",
             "dialogue": "What is this...?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoCurious",
             "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoPensive",
             "dialogue": "How did I get here?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoPensive",
             "dialogue": "Did someone...?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoCurious",
             "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoPensive",
             "dialogue": "Junkyard? I thought I was-"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoPensive",
             "dialogue": "No... No, no no, this isn't right."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoCurious",
             "dialogue": "I was..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoSchocked",
             "dialogue": "Is someone there?!"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoShocked",
             "dialogue": "Hello?! I need help!"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoAngry",
             "dialogue": "Hey! Come on, get me out of here..."
         },
         {
@@ -62,32 +62,32 @@
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoSchocked",
             "dialogue": "Reset...? Wait, I'm not - !"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoDetermined",
             "dialogue": "(Damn, I need to get out of here...)"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoFrustrated",
             "dialogue": "What the hell was that about? What kind of place is this?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoDetermined",
             "dialogue": "I can't stay here. If that thing finds another way in, I'm done for."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoCurious",
             "dialogue": "Can barely see my own hands... I need to get the lights back on."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoNeutral",
+            "speakerSpriteVirgo": "VirgoPensive",
             "dialogue": "And something to get that door open."
         },
         {
