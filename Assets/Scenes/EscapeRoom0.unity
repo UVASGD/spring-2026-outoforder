@@ -7370,9 +7370,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 161766981}
     m_Modifications:
+    - target: {fileID: 1289657702939003012, guid: d468b7d29eb721e4c83d5c1db4d87001, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 170.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2163451720310869801, guid: d468b7d29eb721e4c83d5c1db4d87001, type: 3}
       propertyPath: m_Name
       value: EscapeRoomDialogueSystemManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4266820897201454954, guid: d468b7d29eb721e4c83d5c1db4d87001, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 170.5
       objectReference: {fileID: 0}
     - target: {fileID: 4909960198697251773, guid: d468b7d29eb721e4c83d5c1db4d87001, type: 3}
       propertyPath: m_LocalPosition.x
