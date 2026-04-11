@@ -13,7 +13,9 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private List<DialogueStruct> dialogueStructList = new();
 
     [Header("[UI]")]
-    private Image dialogueBoxImage;
+    public Image dialogueBoxBackgroundImage;
+    public Image dialogueBoxBorderImage;
+    public Image dialogueBoxOverlayImage;
     private GameObject oldCG;
     private GameObject activeCG;
     private Image oldCGImage;
@@ -53,7 +55,9 @@ public class DialogueSystem : MonoBehaviour
     void Awake()
     {
         // UI
-        dialogueBoxImage = transform.Find("DialogueBox").GetComponent<Image>();
+        dialogueBoxBackgroundImage = transform.Find("DialogueBox/DialogueBoxBackground").GetComponent<Image>();
+        dialogueBoxBorderImage = transform.Find("DialogueBox/DialogueBoxBorder").GetComponent<Image>();
+        dialogueBoxOverlayImage = transform.Find("DialogueBox/DialogueBoxOverlay").GetComponent<Image>();
 
         oldCG = transform.Find("OldCG")?.gameObject;
         activeCG = transform.Find("ActiveCG")?.gameObject;
@@ -61,13 +65,13 @@ public class DialogueSystem : MonoBehaviour
         oldCGImage = oldCG?.GetComponent<Image>();
         activeCGImage = activeCG?.GetComponent<Image>();
 
-        speakerSpriteImageActive = transform.Find("SpeakerSpriteActive")?.GetComponent<Image>();
-        speakerSpriteImageOld = transform.Find("SpeakerSpriteOld")?.GetComponent<Image>();
+        speakerSpriteImageActive = transform.Find("DialogueBox/SpeakerSprite/SpeakerSpriteActive")?.GetComponent<Image>();
+        speakerSpriteImageOld = transform.Find("DialogueBox/SpeakerSprite/SpeakerSpriteOld")?.GetComponent<Image>();
 
-        speakerSpriteAstaImageActive = transform.Find("SpeakerSpriteAstaActive")?.GetComponent<Image>();
-        speakerSpriteAstaImageOld = transform.Find("SpeakerSpriteAstaOld")?.GetComponent<Image>();
-        speakerSpriteVirgoImageActive = transform.Find("SpeakerSpriteVirgoActive")?.GetComponent<Image>();
-        speakerSpriteVirgoImageOld = transform.Find("SpeakerSpriteVirgoOld")?.GetComponent<Image>();
+        speakerSpriteAstaImageActive = transform.Find("DialogueBox/SpeakerSprite/SpeakerSpriteAstaActive")?.GetComponent<Image>();
+        speakerSpriteAstaImageOld = transform.Find("DialogueBox/SpeakerSprite/SpeakerSpriteAstaOld")?.GetComponent<Image>();
+        speakerSpriteVirgoImageActive = transform.Find("DialogueBox/SpeakerSprite/SpeakerSpriteVirgoActive")?.GetComponent<Image>();
+        speakerSpriteVirgoImageOld = transform.Find("DialogueBox/SpeakerSprite/SpeakerSpriteVirgoOld")?.GetComponent<Image>();
 
         locationTMP = transform.Find("Text/LocationText")?.GetComponent<TextMeshProUGUI>();
         nameTMP = transform.Find("Text/NameText").GetComponent<TextMeshProUGUI>();
@@ -215,7 +219,9 @@ public class DialogueSystem : MonoBehaviour
     {
         if (!SceneManager.GetActiveScene().name.Equals("Cutscene"))
         {
-            dialogueBoxImage.enabled = true;
+            dialogueBoxBackgroundImage.enabled = true;
+            dialogueBoxBorderImage.enabled = true;
+            dialogueBoxOverlayImage.enabled = true;
             if (SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
             {
                 speakerSpriteImageActive.enabled = true;
@@ -234,7 +240,9 @@ public class DialogueSystem : MonoBehaviour
     {
         if (!SceneManager.GetActiveScene().name.Equals("Cutscene"))
         {
-            dialogueBoxImage.enabled = false;
+            dialogueBoxBackgroundImage.enabled = false;
+            dialogueBoxBorderImage.enabled = false;
+            dialogueBoxOverlayImage.enabled = false;
             if (SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
             {
                 speakerSpriteImageActive.enabled = false;
@@ -315,14 +323,22 @@ public class DialogueSystem : MonoBehaviour
             switch (currentDialogue.character)
             {
                 case "Virgo":
-                    dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxVirgo"];
+                    dialogueBoxBackgroundImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxVirgoBackground"];
+                    dialogueBoxBorderImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxVirgoBorder"];
+                    dialogueBoxOverlayImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxVirgoOverlay"];
                     break;
+                case "???":
+                case "4574?":
                 case "4574":
                 case "ASTA":
-                    dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxAsta"];
+                    dialogueBoxBackgroundImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxAstaBackground"];
+                    dialogueBoxBorderImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxAstaBorder"];
+                    dialogueBoxOverlayImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxAstaOverlay"];
                     break;
                 default:
-                    dialogueBoxImage.sprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites["Textbox"];
+                    dialogueBoxBackgroundImage.sprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxNeutralBackground"];
+                    dialogueBoxBorderImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
+                    dialogueBoxOverlayImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
                     break;
             }
         }        
