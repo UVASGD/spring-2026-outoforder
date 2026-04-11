@@ -565,7 +565,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2016656638472462059, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
       propertyPath: debugEscapeRoomNumber
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4961446670045982556, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1116,6 +1116,30 @@ PrefabInstance:
     - target: {fileID: 7117539883287146671, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_Name
       value: VisualNovelDialogueSystemManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491541410990710113, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: advanceDisabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491541410990710113, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: voiceSamples.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7491541410990710113, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: 'voiceSamples.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: aaa4300c775334040b2096b428f91ebc, type: 3}
+    - target: {fileID: 7491541410990710113, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: 'voiceSamples.Array.data[5]'
+      value: 
+      objectReference: {fileID: 8300000, guid: a6dae5dfeb294a743a712408577fb619, type: 3}
+    - target: {fileID: 7491541410990710113, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: 'voiceSamples.Array.data[6]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 8dda5276082dbfc4c959cf7dc7875cf8, type: 3}
+    - target: {fileID: 7625774271568736687, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 530
       objectReference: {fileID: 0}
     - target: {fileID: 7625774271568736687, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_AnchoredPosition.y

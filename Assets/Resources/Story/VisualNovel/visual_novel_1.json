@@ -1,548 +1,546 @@
 {
     "dialogues": [
         {
-            "character": "4574",
-            "speakerSpriteAsta": "AstaCurious",
+            "character": "???",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": " *bzzzkttzkbzz….*"
         },
         {
-            "character": "4574",
-            "speakerSpriteAsta": "AstaCurious",
+            "character": "???",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "Ini7i4lizing ___ pro7ocol."
         },
         {
-            "character": "4574",
-            "speakerSpriteAsta": "AstaCurious",
+            "character": "???",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "Decl4ring environmen74l v4ri4ble5."
         },
         {
-            "character": "4574",
-            "speakerSpriteAsta": "AstaConfident",
+            "character": "4574?",
+            "speakerSpriteAsta": "FullAstaConfident",
             "dialogue": "7h4nk you for your p47ience. P47rol Bo7 FOUR-FIVE-5EVEN-FOUR reboo7 5ucce55ful."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "4574?"
         },
         {
-            "character": "4574",
-            "speakerSpriteAsta": "AstaConfident",
+            "character": "4574?",
+            "speakerSpriteAsta": "FullAstaConfident",
             "dialogue": "Ye5"
         },
         {
-            "character": "4574",
-            "speakerSpriteAsta": "AstaConfident",
+            "character": "4574?",
+            "speakerSpriteAsta": "FullAstaConfident",
             "dialogue": "I 4m P47rol Bo7 FOUR-FIVE-5EVEN-FOUR of 7he Omni-On7o Org4niz47ion(?)."
         },
         {
-            "character": "4574",
-            "speakerSpriteAsta": "AstaConfident",
+            "character": "4574?",
+            "speakerSpriteAsta": "FullAstaConfident",
             "dialogue": "My purpo5e i5 7o en5ure 7he 5ecuri7y 4nd 5e4mle55 flow of f4cili7y 455e75."
         },
         {
-            "character": "4574",
-            "speakerSpriteAsta": "AstaContent",
+            "character": "4574?",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Fur7hermore, 4ll uni75 under 7he Org4niz47ion 5h4ll be iden7ified by 7heir 455igned 5eri4l number."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoAngry",
+            "speakerSpriteVirgo": "FullVirgoAngry",
             "dialogue": "Wait, wait, wait, I can barely understand anything you're saying!"
         },
         {
-            "character": "4574",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "character": "4574?",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "4h. Hm."
         },
         {
             "character": "4574",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "How about now? Is this voice to your liking?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "..."
         },
         {
             "character": "4574",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "? Is there a problem?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "No, I must have read your nameplate wrong earlier."
         },
         {
             "character": "4574",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "Read it wrong... is that so?"
         },
         {
             "character": "4574",
-            "speakerSpriteAsta": "AstaThoughtful",
-            "dialogue": "4574... 4574"
+            "speakerSpriteAsta": "FullAstaThoughtful",
+            "dialogue": "4574... 4574..."
         },
         {
             "character": "4574",
-            "speakerSpriteAsta": "AstaSurprised",
+            "speakerSpriteAsta": "FullAstaSurprised",
             "dialogue": "Ah. Could you have thought ASTA?"
         },
         {
             "character": "4574",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "That is quite interesting. I never thought of it that way."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaConfident",
+            "speakerSpriteAsta": "FullAstaConfident",
             "dialogue": "Well, I suppose ASTA may roll off the tongue nicer than a string of numbers anyway. Feel free to address me as you wish."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "Uhh, yeah. Fine. My name's Virgo."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "Now, 'ASTA', tell me what the hell this place even is..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoFrustrated",
+            "speakerSpriteVirgo": "FullVirgoFrustrated",
             "dialogue": "I've got a patrol bot outside trying to find me, and outside there's nothing but scrap and junk."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaConfident",
+            "speakerSpriteAsta": "FullAstaConfident",
             "dialogue": "This is the robot maintenance and disposal facility of the Omni-Onto Orginization."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "Would you like to learn more about this facility?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "I guess... any sort of detail would be helpful right now."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaConfident",
+            "speakerSpriteAsta": "FullAstaConfident",
             "dialogue": "I am more than happy to be of service."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "This floor is the final destination for units that no longer meet the optimization standards of metropolitan operations."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "This floor? Are there multiple floors?"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Yes, that is correct."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "At the top is Floor 2: The Logicistcs Sector."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Below that is Floor 1: The Sorting Bay, where parts are filtered and salvaged."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "And below that, Floor 0, where we currently are."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "The wasteyard disposal sector."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoFrustrated",
+            "speakerSpriteVirgo": "FullVirgoFrustrated",
             "dialogue": "Wasteyard? You mean, like, trash?"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaConfident",
+            "speakerSpriteAsta": "FullAstaConfident",
             "dialogue": "The Organization prefers 'Outdated Assets'."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "..."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "Though I will say that it is quite strange that a human could possibly make their way down here."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "How did you get down here?"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaSurprised",
+            "speakerSpriteAsta": "FullAstaSurprised",
             "dialogue": "Ah wait. Have they started opening the facility to outsiders again while I was disabled?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoAngry",
+            "speakerSpriteVirgo": "FullVirgoAngry",
             "dialogue": "No... I didn't just “make my way” down here!"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoAngry",
+            "speakerSpriteVirgo": "FullVirgoAngry",
             "dialogue": "I woke up on a pile of dead robots!"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaSurprised",
+            "speakerSpriteAsta": "FullAstaSurprised",
             "dialogue": "Oh my. Perhaps there was a system error."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "Or perhaps the facility no longer recognizes your clearance."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "Well what about you?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoAngry",
+            "speakerSpriteVirgo": "FullVirgoAngry",
             "dialogue": "If you're supposedly a “Security Asset”, why were you lying on the ground with your TBD?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoAngry",
+            "speakerSpriteVirgo": "FullVirgoAngry",
             "dialogue": "What'd *you* do to get tossed in the trash heap?"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "My internal logs indicate that my cores were undergoing maintenance."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "Maintenance?"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "Yes, I would assume so. I wasn't able to initiate my start-up sequence as my cores were inoperable."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "Thank you again for repairing those. I was under the assumption they were defunct. For that, I am indebted to you."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "I am a mechanic, so it's kind of my job, you know?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "But if the structure of this facility is as you say, then what maintenance could it possibly be?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "If they were gonna repair you, wouldn't you be on another floor?"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "I don't think you were sent for a repair ASTA."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "You were tossed out."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "..."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "I was supposedly having malfunctions"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "I was told I required... recalibration"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "My apologies, I must have missed the connection."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "My system memory is still indexing, so I suppose I am not yet operating at peak efficiency."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "But you fixed them, yes? You performed the repairs?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "Yeah, I've spent my whole life working with the junk that Omni throws away."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "I can tell the difference between something that's out of order and something that's been scrapped."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoFlustered",
+            "speakerSpriteVirgo": "FullVirgoFlustered",
             "dialogue": "You're lucky I even found a way to reboot you in this dump."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "I... I did not know."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "But if I was intended for disposal by the Organization..."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "Then that means... my existence is unauthorized."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "Well, you're not with them anymore."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "I'm all that you've got now."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "Yes. If I was intended for disposal..."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "Then I am no longer an agent of the Organization."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "Good."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "You're my only way out of this dump, and I'm the only reason your brain is even running, so you're going to help me get out of here."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "Anyways, I'm assuming that you do know the way out, right?"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "Of course. My security access privileges enable me to pass through this door."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "..."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoFrustrated",
+            "speakerSpriteVirgo": "FullVirgoFrustrated",
             "dialogue": "Hey, are you sure we're going the right way? It just looks like we're going deeper in."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "My internal navigation is functioning within acceptable parameters."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "The Sorting Bay lies ahead. It is the primary thoroughfare for materials moving upwards."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "Good, just... whatever you can to get me out of here. I've got a shop to run."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "Agreed."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "What do you care?"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaStern",
+            "speakerSpriteAsta": "FullAstaStern",
             "dialogue": "“A robot shall never injure a human being or allow a human being to come to harm.”."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaStern",
+            "speakerSpriteAsta": "FullAstaStern",
             "dialogue": "Your presence in the wasteyard is a severe hazard to your safety."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "It is my duty to correct this error, I shall escort you to the surface."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoFlustered",
+            "speakerSpriteVirgo": "FullVirgoFlustered",
             "dialogue": "Don't get too attached."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Here we are."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Once we pass through the Sorting Bay, we can access the lift to the Logistics Floor."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "And above that is the laboratory."
         },
         {
             "character": "SYSTEM",
-            "speakerSpriteVirgo": "PatrolRobotNeutral",
             "dialogue": "[PROXIMITY ALERT. UNAUTHORIZED SIGNATURES DETECTED. SECTOR LOCKDOWN INITIATED.]"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoShocked",
-            "dialogue": "WHAT DID YOU DO???"
+            "speakerSpriteVirgo": "FullVirgoShocked",
+            "dialogue": "Wh-what did you do??"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaConfident",
+            "speakerSpriteAsta": "FullAstaConfident",
             "dialogue": "Do not panic, I simply need to override the lockdown with my security credentials."
         },
         {
             "character": "SYSTEM",
-            "speakerSpriteVirgo": "PatrolRobotNeutral",
             "dialogue": "[ACCESS DENIED.]"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "Denied? Why would my permissions be... null?"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "My higher-clearance ID permissions must have been erased..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoAngry",
+            "speakerSpriteVirgo": "FullVirgoAngry",
             "dialogue": "ASTA, I told you, they threw you away!"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "I am no longer... I am not..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "Hey, don't freeze on me!"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoFrustrated",
+            "speakerSpriteVirgo": "FullVirgoFrustrated",
             "dialogue": "If your ID doesn't work, we need to figure something else out now!"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "If electronic access is impossible, the mainframe no longer recognizes my digital signature."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoAngry",
+            "speakerSpriteVirgo": "FullVirgoAngry",
             "dialogue": "Great. So we can't get through the front door."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoFrustrated",
+            "speakerSpriteVirgo": "FullVirgoFrustrated",
             "dialogue": "What about around it?"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "The crawlspaces. There is a network of ventilation and storage tunnels running parallel to the Sorting Bay."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "Alright. Let's find out how to get through there, then."
         },
         {

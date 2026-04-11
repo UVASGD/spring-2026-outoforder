@@ -367,10 +367,13 @@ public class DialogueSystem : MonoBehaviour
                 voiceAudioSource.pitch = 1.4f;
                 voiceSample = voiceSamples[0];
                 break;
+            case "???":
+            case "4574?":
+                voiceAudioSource.pitch = 0.85f;
+                break;
+            case "4574":
             case "ASTA":
                 voiceAudioSource.pitch = 0.95f;
-                print("asta speaking");
-                voiceSample = voiceSamples[UnityEngine.Random.Range(1, 4)];
                 break;
             default:
                 voiceAudioSource.pitch = 1.1f;
@@ -381,7 +384,8 @@ public class DialogueSystem : MonoBehaviour
         {
             tmp.text = dialogue[..i];
 
-            if (character.Equals("ASTA")) voiceSample = voiceSamples[UnityEngine.Random.Range(1, 4)];
+            if (character.Equals("???") || character.Equals("4574?")) voiceSample = voiceSamples[Random.Range(4, 7)];
+            if (character.Equals("4574") || character.Equals("ASTA")) voiceSample = voiceSamples[Random.Range(1, 4)];
             if (!dialogue.Equals("(...)")) voiceAudioSource.PlayOneShot(voiceSample);
 
             yield return new WaitForSeconds(textSpeed); // make diff speeds
