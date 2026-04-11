@@ -269,11 +269,11 @@
         {
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoDetermined",
-            "dialogue": "Let's get to work then, shall we?."
+            "dialogue": "Let's get to work then, shall we?"
         },
         {
             "hideUI": true,
-            "scene": "EscapeRoom1"
+            "scene": "EscapeRoom2"
         }
     ]
 }
