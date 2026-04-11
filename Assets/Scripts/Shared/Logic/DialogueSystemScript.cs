@@ -18,6 +18,7 @@ public class DialogueSystem : MonoBehaviour
     private GameObject activeCG;
     private Image oldCGImage;
     private Image activeCGImage;
+    private TextMeshProUGUI locationTMP;
     private Image speakerSpriteImage;
     private Image speakerSpriteAstaImage;
     private Image speakerSpriteVirgoImage;
@@ -57,6 +58,7 @@ public class DialogueSystem : MonoBehaviour
         speakerSpriteImage = transform.Find("SpeakerSprite")?.GetComponent<Image>();
         speakerSpriteAstaImage = transform.Find("SpeakerSpriteAsta")?.GetComponent<Image>();
         speakerSpriteVirgoImage = transform.Find("SpeakerSpriteVirgo")?.GetComponent<Image>();
+        locationTMP = transform.Find("Text/LocationText")?.GetComponent<TextMeshProUGUI>();
         nameTMP = transform.Find("Text/NameText").GetComponent<TextMeshProUGUI>();
         dialogueTMP = transform.Find("Text/DialogueText").GetComponent<TextMeshProUGUI>();
         narrationTMP = transform.parent.transform.Find("NarrationText").GetComponent<TextMeshProUGUI>();
@@ -152,6 +154,8 @@ public class DialogueSystem : MonoBehaviour
             {
                 ShowUI();
 
+                SetLocation();
+
                 // TODO: do some sort of one other the other thing here
                 // set cg
                 SetCG();
@@ -243,6 +247,11 @@ public class DialogueSystem : MonoBehaviour
         advanceDisabled = false;
         advanceDialogueButtonPressed = true;
         ShowUI();
+    }
+
+    public void SetLocation()
+    {
+        if (currentDialogue.location != null) locationTMP.text = currentDialogue.location;
     }
 
     public void SetCG()

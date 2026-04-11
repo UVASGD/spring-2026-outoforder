@@ -1,6 +1,7 @@
 {
     "dialogues": [
         {
+            "location": "locked room",
             "character": "???",
             "speakerSpriteAsta": "FullAstaCurious",
             "speakerSpriteVirgo": "FullVirgoShocked",
@@ -204,7 +205,7 @@
         {
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoAngry",
-            "dialogue": "No... I didn't just “make my way” down here!"
+            "dialogue": "No... I didn't just 'make my way' down here!"
         },
         {
             "character": "Virgo",
@@ -229,7 +230,7 @@
         {
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoAngry",
-            "dialogue": "If you're supposedly a “Security Asset”, why were you lying on the ground with your TBD?"
+            "dialogue": "If you're supposedly a 'Security Asset', why were you lying on the ground with your TBD?"
         },
         {
             "character": "Virgo",
@@ -397,6 +398,7 @@
             "dialogue": "Of course. My security access privileges enable me to pass through this door."
         },
         {
+            "location": "corridor",
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "..."
@@ -439,7 +441,7 @@
         {
             "character": "ASTA",
             "speakerSpriteAsta": "FullAstaStern",
-            "dialogue": "“A robot shall never injure a human being or allow a human being to come to harm.”."
+            "dialogue": "'A robot shall never injure a human being or allow a human being to come to harm.'"
         },
         {
             "character": "ASTA",

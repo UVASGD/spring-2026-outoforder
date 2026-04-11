@@ -3,6 +3,7 @@ using System;
 [Serializable]
 public class DialogueStruct
 {
+    public string location;
     public int wait;
     public string character;
     public string cgSprite;

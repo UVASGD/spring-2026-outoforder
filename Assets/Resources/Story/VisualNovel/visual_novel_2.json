@@ -1,6 +1,7 @@
 {
     "dialogues": [
         {
+            "location": "lift",
             "character": "ASTA",
             "speakerSpriteAsta": "FullAstaCurious",
             "speakerSpriteVirgo": "FullVirgoPensive",
@@ -189,7 +190,7 @@
         {
             "character": "ASTA",
             "speakerSpriteAsta": "FullAstaConfident",
-            "dialogue": "Well, I am also “freaking the hell out”, as you might say.."
+            "dialogue": "Well, I am also 'freaking the hell out', as you might say..."
         },
         {
             "character": "ASTA",
@@ -267,6 +268,7 @@
             "dialogue": "Yeah, maybe we can cause a diversion."
         },
         {
+            "location": "sorting bay",
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "Let's get to work then, shall we?"

@@ -1,6 +1,7 @@
 {
     "dialogues": [
         {
+            "location": "???",
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoShocked",
             "dialogue": "What is this...?"
@@ -70,6 +71,7 @@
             "dialogue": "(Damn, I need to get out of here...)"
         },
         {
+            "location": "locked room",
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoFrustrated",
             "dialogue": "What the hell was that about? What kind of place is this?"
