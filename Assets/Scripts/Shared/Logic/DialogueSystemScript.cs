@@ -273,7 +273,14 @@ public class DialogueSystem : MonoBehaviour
         else if (SceneManager.GetActiveScene().name.Equals("VisualNovel"))
         {
             if (currentDialogue.speakerSpriteAsta != null) speakerSpriteAstaImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.speakerSpriteAsta];
+            speakerSpriteAstaImage.color = currentDialogue.character.Equals("???") || currentDialogue.character.Contains("4574") || currentDialogue.character.Equals("ASTA") 
+                ? Color.white
+                : Color.gray;
+
             if (currentDialogue.speakerSpriteVirgo != null) speakerSpriteVirgoImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.speakerSpriteVirgo];
+            speakerSpriteVirgoImage.color = currentDialogue.character.Equals("Virgo")
+                ? Color.white
+                : Color.gray;
         }
     }
 
