@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e75f3bdcf56e64e82bf239a46583aba1
+guid: 2ef6e40ba5b888445b211bd4131cb3ac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4111471653915644208
-    second: VirgoNeutral_0
+      213: -5029946964575170638
+    second: AstaSurprised_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,6 +97,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -113,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VirgoNeutral_0
+      name: AstaSurprised_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 41
-        width: 917
-        height: 1523
+        x: 0
+        y: 0
+        width: 300
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 031dabb8fa1ee0930800000000000000
-      internalID: 4111471653915644208
+      spriteID: 2bf4171b2e9023ab0800000000000000
+      internalID: -5029946964575170638
       vertices: []
       indices: 
       edges: []
@@ -148,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      VirgoNeutral_0: 4111471653915644208
+      AstaSurprised_0: -5029946964575170638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

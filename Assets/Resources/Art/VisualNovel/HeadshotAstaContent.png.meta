@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: c5e98082b17d0cd4ab990f1f00f961b6
+guid: 75d87ec1c5290604db7fe294f1f0730e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7940902818467558530
-    second: AstaNeutral1_0
-  - first:
-      213: 928391093155919151
-    second: AstaNeutral1_1
+      213: -4904479500031186300
+    second: AstaEyes_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AstaNeutral1_0
+      name: AstaEyes_0
       rect:
         serializedVersion: 2
-        x: 57
-        y: 96
-        width: 659
-        height: 2031
+        x: 89
+        y: 0
+        width: 2311
+        height: 1350
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7bc75595fe3cc190800000000000000
-      internalID: -7940902818467558530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AstaNeutral1_1
-      rect:
-        serializedVersion: 2
-        x: 344
-        y: 37
-        width: 182
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f25f138c7ce42ec00800000000000000
-      internalID: 928391093155919151
+      spriteID: 48aa47831e9cfebb0800000000000000
+      internalID: -4904479500031186300
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      AstaNeutral1_0: -7940902818467558530
-      AstaNeutral1_1: 928391093155919151
+      AstaEyes_0: -4904479500031186300
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

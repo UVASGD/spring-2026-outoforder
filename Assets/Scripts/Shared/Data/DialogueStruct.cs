@@ -3,10 +3,13 @@ using System;
 [Serializable]
 public class DialogueStruct
 {
+    public string location;
     public int wait;
     public string character;
     public string cgSprite;
     public string speakerSprite;
+    public string speakerSpriteAsta;
+    public string speakerSpriteVirgo;
     public string dialogue;
     public float textSpeed;
     public bool hideUI;

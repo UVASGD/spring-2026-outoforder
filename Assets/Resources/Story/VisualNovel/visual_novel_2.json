@@ -1,274 +1,281 @@
 {
     "dialogues": [
         {
+            "location": "lift",
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "..."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "Virgo, are you doing alright?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "Yeah, just a little shaken up."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoFlustered",
+            "speakerSpriteVirgo": "FullVirgoFlustered",
             "dialogue": "Thanks for helping me get through that room, by the way."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoFlustered",
+            "speakerSpriteVirgo": "FullVirgoFlustered",
             "dialogue": "Sorry for being so on edge."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "The reality of what's going on is setting in now..."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "I understand."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "I, too, am not quite sure about what's happening to me."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Regardless, I am glad that we were able to make it out safely."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "Well, it's only because you were here to help me."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "Why would a robot care so much about a lousy mechanic, anyway?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "Especially after how I treated you..."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "I cannot explain your heart, Virgo; I can only ensure it keeps beating."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoFlustered",
+            "speakerSpriteVirgo": "FullVirgoFlustered",
             "dialogue": "Well, I'm glad that you're odd enough to stay."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoFlustered",
+            "speakerSpriteVirgo": "FullVirgoFlustered",
             "dialogue": "..."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "So, Virgo... what do you plan on doing once you leave the facility?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "Well, I need to get back to my father."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "He's probably worried sick about where I am. I've never just disappeared like this before."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "I'm sure he's searching for me with..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "With..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoFrustrated",
+            "speakerSpriteVirgo": "FullVirgoFrustrated",
             "dialogue": "Huh, why can't I remember?"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "You cannot remember?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "Our maid robot."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "I was so close to her. She was like a sister to me."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "Though I can't seem to remember he name right now."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Ah. Still, it is good that you are regulating yourself by thinking of a happy place."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "... I guess?"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaCurious",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "Am I perhaps misinterpreting your behavior?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "No, no, it's just... it's more than regulating or whatever."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "I can't help but think about it all, missing it."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "I had a life, my father, my work."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoAngry",
+            "speakerSpriteVirgo": "FullVirgoAngry",
             "dialogue": "But now it's all been ripped away from me, and I have no idea why."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "It's..."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "ASTANeutral",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "Pretrubing?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoShocked",
+            "speakerSpriteVirgo": "FullVirgoShocked",
             "dialogue": "I was gonna say it's freaking me the hell out, but that works too."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaConfident",
-            "dialogue": "Well, I am also “freaking the hell out”, as you might say.."
+            "speakerSpriteAsta": "FullAstaConfident",
+            "dialogue": "Well, I am also 'freaking the hell out', as you might say..."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Perhaps that is to our benefit, however."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "What do you mean?"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "Our struggle is shared. Because of this, we can be stronger together."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaStern",
+            "speakerSpriteAsta": "FullAstaStern",
             "dialogue": "And maybe, we can figure this out."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "Yeah..."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "..."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "It's been some time now. The elevator has almost arrived at the next level."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaContent",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "As I mentioned, we are about to enter the Sorting Bay."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "This area is under high alert. There will be a significant security presence."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "If we are found, they will undoubtedly converge on our location."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "So what's the plan?"
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaThoughtful",
+            "speakerSpriteAsta": "FullAstaThoughtful",
             "dialogue": "We should locate the terminal in the area to elevate our permissions, so we can continue traversing through the facility."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "AstaConfident",
-            "dialogue": "But first, we must blind them. I recommend hacking into the camera system"
-        },{
-            "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
-            "dialogue": "Yeah, maybe we can cause a diversion."
+            "speakerSpriteAsta": "FullAstaConfident",
+            "dialogue": "But first, we must blind them. I recommend hacking into the camera system."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
-            "dialogue": "Let's get to work then, shall we?.",
-            "endOfScene": true
+            "speakerSpriteVirgo": "FullVirgoCurious",
+            "dialogue": "Yeah, maybe we can cause a diversion."
+        },
+        {
+            "location": "sorting bay",
+            "character": "Virgo",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
+            "dialogue": "Let's get to work then, shall we?"
+        },
+        {
+            "hideUI": true,
+            "scene": "EscapeRoom2"
         }
     ]
 }

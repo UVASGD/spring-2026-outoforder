@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2203bb3ef8bd3e645a289d7130b73311
+guid: ed1a523f42b34ab4fb01008c68ee8b7e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4698600402995417950
-    second: Transparent_0
+      213: -6040562572323546541
+    second: VirgoFlustered_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -110,7 +110,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Transparent_0
+      name: VirgoFlustered_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2400
-        height: 1350
+        width: 300
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ac63f5e3d73bceb0800000000000000
-      internalID: -4698600402995417950
+      spriteID: 35a9221485c9b2ca0800000000000000
+      internalID: -6040562572323546541
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Transparent_0: -4698600402995417950
+      VirgoFlustered_0: -6040562572323546541
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
