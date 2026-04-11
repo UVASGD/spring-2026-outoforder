@@ -2,92 +2,91 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoShocked",
+            "speakerSpriteVirgo": "FullVirgoShocked",
             "dialogue": "What is this...?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "How did I get here?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "Did someone...?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "Junkyard? I thought I was-"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "No... No, no no, this isn't right."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "I was..."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoSchocked",
+            "speakerSpriteVirgo": "FullVirgoShocked",
             "dialogue": "Is someone there?!"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoShocked",
+            "speakerSpriteVirgo": "FullVirgoShocked",
             "dialogue": "Hello?! I need help!"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoAngry",
+            "speakerSpriteVirgo": "FullVirgoAngry",
             "dialogue": "Hey! Come on, get me out of here..."
         },
         {
             "character": "Patrol Robot",
-            "speakerSprite": "PatrolRobotNeutral",
             "dialogue": "UNAUTHORIZED PRESENCE DETECTED. INITIATING RESET PROTOCOL."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoSchocked",
+            "speakerSpriteVirgo": "FullVirgoShocked",
             "dialogue": "Reset...? Wait, I'm not - !"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "(Damn, I need to get out of here...)"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoFrustrated",
+            "speakerSpriteVirgo": "FullVirgoFrustrated",
             "dialogue": "What the hell was that about? What kind of place is this?"
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoDetermined",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
             "dialogue": "I can't stay here. If that thing finds another way in, I'm done for."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoCurious",
+            "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "Can barely see my own hands... I need to get the lights back on."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "VirgoPensive",
+            "speakerSpriteVirgo": "FullVirgoPensive",
             "dialogue": "And something to get that door open."
         },
         {

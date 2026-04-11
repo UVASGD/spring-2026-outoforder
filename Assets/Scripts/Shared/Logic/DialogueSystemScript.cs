@@ -19,6 +19,8 @@ public class DialogueSystem : MonoBehaviour
     private Image oldCGImage;
     private Image activeCGImage;
     private Image speakerSpriteImage;
+    private Image speakerSpriteAstaImage;
+    private Image speakerSpriteVirgoImage;
     private TextMeshProUGUI nameTMP;
     private TextMeshProUGUI dialogueTMP;
     TextMeshProUGUI narrationTMP;
@@ -53,6 +55,8 @@ public class DialogueSystem : MonoBehaviour
         oldCGImage = oldCG?.GetComponent<Image>();
         activeCGImage = activeCG?.GetComponent<Image>();
         speakerSpriteImage = transform.Find("SpeakerSprite")?.GetComponent<Image>();
+        speakerSpriteAstaImage = transform.Find("SpeakerSpriteAsta")?.GetComponent<Image>();
+        speakerSpriteVirgoImage = transform.Find("SpeakerSpriteVirgo")?.GetComponent<Image>();
         nameTMP = transform.Find("Text/NameText").GetComponent<TextMeshProUGUI>();
         dialogueTMP = transform.Find("Text/DialogueText").GetComponent<TextMeshProUGUI>();
         narrationTMP = transform.parent.transform.Find("NarrationText").GetComponent<TextMeshProUGUI>();
@@ -150,10 +154,10 @@ public class DialogueSystem : MonoBehaviour
 
                 // TODO: do some sort of one other the other thing here
                 // set cg
-                if (!SceneManager.GetActiveScene().name.Contains("EscapeRoom")) SetCG();
+                SetCG();
 
                 // set sprite
-                if (!SceneManager.GetActiveScene().name.Equals("Cutscene")) SetSprite();
+                SetSprite();
 
                 // set dialogue
                 SetDialogue();
@@ -196,7 +200,15 @@ public class DialogueSystem : MonoBehaviour
         if (!SceneManager.GetActiveScene().name.Equals("Cutscene"))
         {
             dialogueBoxImage.enabled = true;
-            speakerSpriteImage.enabled = true;
+            if (SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
+            {
+                speakerSpriteImage.enabled = true;
+            }
+            else if (SceneManager.GetActiveScene().name.Equals("VisualNovel"))
+            {
+                speakerSpriteAstaImage.enabled = true;
+                speakerSpriteVirgoImage.enabled = true;
+            }
         }
         nameTMP.enabled = true;
         dialogueTMP.enabled = true;
@@ -207,7 +219,15 @@ public class DialogueSystem : MonoBehaviour
         if (!SceneManager.GetActiveScene().name.Equals("Cutscene"))
         {
             dialogueBoxImage.enabled = false;
-            speakerSpriteImage.enabled = false;
+            if (SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
+            {
+                speakerSpriteImage.enabled = false;
+            }
+            else if (SceneManager.GetActiveScene().name.Equals("VisualNovel"))
+            {
+                speakerSpriteAstaImage.enabled = false;
+                speakerSpriteVirgoImage.enabled = false;
+            }
         }
         nameTMP.enabled = false;
         dialogueTMP.enabled = false;
@@ -227,23 +247,34 @@ public class DialogueSystem : MonoBehaviour
 
     public void SetCG()
     {
-        if (currentDialogue.cgSprite != null)
+        if (!SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
         {
-            Sprite oldCGSprite = oldCGImage.sprite;
-            Sprite newCGSprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.cgSprite];
-
-            if (!oldCGSprite.ToString().Equals(newCGSprite.ToString())) 
+            if (currentDialogue.cgSprite != null)
             {
-                oldCGImage.sprite = activeCGImage.sprite;
-                GameProgression.GameProgressionInstance.FadeEffect.FadeInCGSprite(activeCG, newCGSprite);
-                GameProgression.GameProgressionInstance.FadeEffect.FadeOutCGSprite(oldCG, oldCGSprite);
-            }
-        } 
+                Sprite oldCGSprite = oldCGImage.sprite;
+                Sprite newCGSprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.cgSprite];
+
+                if (!oldCGSprite.ToString().Equals(newCGSprite.ToString())) 
+                {
+                    oldCGImage.sprite = activeCGImage.sprite;
+                    GameProgression.GameProgressionInstance.FadeEffect.FadeInCGSprite(activeCG, newCGSprite);
+                    GameProgression.GameProgressionInstance.FadeEffect.FadeOutCGSprite(oldCG, oldCGSprite);
+                }
+            }    
+        }
     }
     
     public void SetSprite()
     {
-        speakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.speakerSprite];
+        if (SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
+        {
+            if (currentDialogue.speakerSprite != null) speakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.speakerSprite];
+        }
+        else if (SceneManager.GetActiveScene().name.Equals("VisualNovel"))
+        {
+            if (currentDialogue.speakerSpriteAsta != null) speakerSpriteAstaImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.speakerSpriteAsta];
+            if (currentDialogue.speakerSpriteVirgo != null) speakerSpriteVirgoImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.speakerSpriteVirgo];
+        }
     }
 
     public void SetDialogue() 
@@ -256,11 +287,11 @@ public class DialogueSystem : MonoBehaviour
             switch (currentDialogue.character)
             {
                 case "Virgo":
-                    dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["VirgoTextbox"];
+                    dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxVirgo"];
                     break;
                 case "4574":
                 case "ASTA":
-                    dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["AstaTextbox"];
+                    dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxAsta"];
                     break;
                 default:
                     dialogueBoxImage.sprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites["Textbox"];
