@@ -7426,6 +7426,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8435829044367444079, guid: d468b7d29eb721e4c83d5c1db4d87001, type: 3}
+      propertyPath: m_Name
+      value: SpeakerSpriteActive
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
