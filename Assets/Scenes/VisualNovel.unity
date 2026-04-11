@@ -565,7 +565,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2016656638472462059, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
       propertyPath: debugEscapeRoomNumber
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4961446670045982556, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1041,9 +1041,21 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1605718203444973569, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -155
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779269254559322228, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: m_Name
+      value: DialogueBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784026436303785415, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 1818273957940348668, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_Name
-      value: SpeakerSpriteVirgo
+      value: SpeakerSpriteVirgoActive
       objectReference: {fileID: 0}
     - target: {fileID: 1836367479308369876, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1112,6 +1124,18 @@ PrefabInstance:
     - target: {fileID: 3336369633582465041, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4309090426856261661, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: m_Name
+      value: SpeakerSpriteAstaActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842151826250586825, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104046946914916958, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7117539883287146671, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_Name

@@ -13,15 +13,20 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private List<DialogueStruct> dialogueStructList = new();
 
     [Header("[UI]")]
-    private Image dialogueBoxImage;
+    public Image dialogueBoxBackgroundImage;
+    public Image dialogueBoxBorderImage;
+    public Image dialogueBoxOverlayImage;
     private GameObject oldCG;
     private GameObject activeCG;
     private Image oldCGImage;
     private Image activeCGImage;
     private TextMeshProUGUI locationTMP;
-    private Image speakerSpriteImage;
-    private Image speakerSpriteAstaImage;
-    private Image speakerSpriteVirgoImage;
+    private Image speakerSpriteImageActive;
+    private Image speakerSpriteImageOld;
+    private Image speakerSpriteAstaImageActive;
+    private Image speakerSpriteAstaImageOld;
+    private Image speakerSpriteVirgoImageActive;
+    private Image speakerSpriteVirgoImageOld;
     private TextMeshProUGUI nameTMP;
     private TextMeshProUGUI dialogueTMP;
     TextMeshProUGUI narrationTMP;
@@ -50,18 +55,29 @@ public class DialogueSystem : MonoBehaviour
     void Awake()
     {
         // UI
-        dialogueBoxImage = transform.Find("DialogueBox").GetComponent<Image>();
+        dialogueBoxBackgroundImage = transform.Find("DialogueBox/DialogueBoxBackground").GetComponent<Image>();
+        dialogueBoxBorderImage = transform.Find("DialogueBox/DialogueBoxBorder").GetComponent<Image>();
+        dialogueBoxOverlayImage = transform.Find("DialogueBox/DialogueBoxOverlay").GetComponent<Image>();
+
         oldCG = transform.Find("OldCG")?.gameObject;
         activeCG = transform.Find("ActiveCG")?.gameObject;
+
         oldCGImage = oldCG?.GetComponent<Image>();
         activeCGImage = activeCG?.GetComponent<Image>();
-        speakerSpriteImage = transform.Find("SpeakerSprite")?.GetComponent<Image>();
-        speakerSpriteAstaImage = transform.Find("SpeakerSpriteAsta")?.GetComponent<Image>();
-        speakerSpriteVirgoImage = transform.Find("SpeakerSpriteVirgo")?.GetComponent<Image>();
+
+        speakerSpriteImageActive = transform.Find("DialogueBox/SpeakerSprite/SpeakerSpriteActive")?.GetComponent<Image>();
+        speakerSpriteImageOld = transform.Find("DialogueBox/SpeakerSprite/SpeakerSpriteOld")?.GetComponent<Image>();
+
+        speakerSpriteAstaImageActive = transform.Find("DialogueBox/SpeakerSprite/SpeakerSpriteAstaActive")?.GetComponent<Image>();
+        speakerSpriteAstaImageOld = transform.Find("DialogueBox/SpeakerSprite/SpeakerSpriteAstaOld")?.GetComponent<Image>();
+        speakerSpriteVirgoImageActive = transform.Find("DialogueBox/SpeakerSprite/SpeakerSpriteVirgoActive")?.GetComponent<Image>();
+        speakerSpriteVirgoImageOld = transform.Find("DialogueBox/SpeakerSprite/SpeakerSpriteVirgoOld")?.GetComponent<Image>();
+
         locationTMP = transform.Find("Text/LocationText")?.GetComponent<TextMeshProUGUI>();
         nameTMP = transform.Find("Text/NameText").GetComponent<TextMeshProUGUI>();
         dialogueTMP = transform.Find("Text/DialogueText").GetComponent<TextMeshProUGUI>();
         narrationTMP = transform.parent.transform.Find("NarrationText").GetComponent<TextMeshProUGUI>();
+
         advanceDialogueButton = transform.parent.transform.Find("AdvanceDialogueButton").gameObject;
 
         // Audio
@@ -99,7 +115,7 @@ public class DialogueSystem : MonoBehaviour
                 dialogueIndex = -1;
                 enabled = false;
 
-                speakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
+                speakerSpriteImageActive.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
                 gameObject.SetActive(false);
 
                 if (GameData.escapeRoomGameplayManager != null) GameData.escapeRoomGameplayManager.interactingWith = "";
@@ -203,15 +219,17 @@ public class DialogueSystem : MonoBehaviour
     {
         if (!SceneManager.GetActiveScene().name.Equals("Cutscene"))
         {
-            dialogueBoxImage.enabled = true;
+            dialogueBoxBackgroundImage.enabled = true;
+            dialogueBoxBorderImage.enabled = true;
+            dialogueBoxOverlayImage.enabled = true;
             if (SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
             {
-                speakerSpriteImage.enabled = true;
+                speakerSpriteImageActive.enabled = true;
             }
             else if (SceneManager.GetActiveScene().name.Equals("VisualNovel"))
             {
-                speakerSpriteAstaImage.enabled = true;
-                speakerSpriteVirgoImage.enabled = true;
+                speakerSpriteAstaImageActive.enabled = true;
+                speakerSpriteVirgoImageActive.enabled = true;
             }
         }
         nameTMP.enabled = true;
@@ -222,15 +240,17 @@ public class DialogueSystem : MonoBehaviour
     {
         if (!SceneManager.GetActiveScene().name.Equals("Cutscene"))
         {
-            dialogueBoxImage.enabled = false;
+            dialogueBoxBackgroundImage.enabled = false;
+            dialogueBoxBorderImage.enabled = false;
+            dialogueBoxOverlayImage.enabled = false;
             if (SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
             {
-                speakerSpriteImage.enabled = false;
+                speakerSpriteImageActive.enabled = false;
             }
             else if (SceneManager.GetActiveScene().name.Equals("VisualNovel"))
             {
-                speakerSpriteAstaImage.enabled = false;
-                speakerSpriteVirgoImage.enabled = false;
+                speakerSpriteAstaImageActive.enabled = false;
+                speakerSpriteVirgoImageActive.enabled = false;
             }
         }
         nameTMP.enabled = false;
@@ -277,19 +297,19 @@ public class DialogueSystem : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
         {
-            if (currentDialogue.speakerSprite != null) speakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.speakerSprite];
+            CheckFadeSpeakerSprite(speakerSpriteImageOld, speakerSpriteImageActive, currentDialogue.speakerSprite);
         }
         else if (SceneManager.GetActiveScene().name.Equals("VisualNovel"))
         {
-            if (currentDialogue.speakerSpriteAsta != null) speakerSpriteAstaImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.speakerSpriteAsta];
-            speakerSpriteAstaImage.color = currentDialogue.character.Equals("???") || currentDialogue.character.Contains("4574") || currentDialogue.character.Equals("ASTA") 
+            speakerSpriteAstaImageActive.color = currentDialogue.character.Equals("???") || currentDialogue.character.Contains("4574") || currentDialogue.character.Equals("ASTA") 
                 ? Color.white
                 : Color.gray;
-
-            if (currentDialogue.speakerSpriteVirgo != null) speakerSpriteVirgoImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.speakerSpriteVirgo];
-            speakerSpriteVirgoImage.color = currentDialogue.character.Equals("Virgo")
+            CheckFadeSpeakerSprite(speakerSpriteAstaImageOld, speakerSpriteAstaImageActive, currentDialogue.speakerSpriteAsta);
+            
+            speakerSpriteVirgoImageActive.color = currentDialogue.character.Equals("Virgo")
                 ? Color.white
                 : Color.gray;
+            CheckFadeSpeakerSprite(speakerSpriteVirgoImageOld, speakerSpriteVirgoImageActive, currentDialogue.speakerSpriteVirgo);
         }
     }
 
@@ -303,14 +323,22 @@ public class DialogueSystem : MonoBehaviour
             switch (currentDialogue.character)
             {
                 case "Virgo":
-                    dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxVirgo"];
+                    dialogueBoxBackgroundImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxVirgoBackground"];
+                    dialogueBoxBorderImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxVirgoBorder"];
+                    dialogueBoxOverlayImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxVirgoOverlay"];
                     break;
+                case "???":
+                case "4574?":
                 case "4574":
                 case "ASTA":
-                    dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxAsta"];
+                    dialogueBoxBackgroundImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxAstaBackground"];
+                    dialogueBoxBorderImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxAstaBorder"];
+                    dialogueBoxOverlayImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxAstaOverlay"];
                     break;
                 default:
-                    dialogueBoxImage.sprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites["Textbox"];
+                    dialogueBoxBackgroundImage.sprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxNeutralBackground"];
+                    dialogueBoxBorderImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
+                    dialogueBoxOverlayImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
                     break;
             }
         }        
@@ -340,6 +368,20 @@ public class DialogueSystem : MonoBehaviour
             return 0.02f;
         }
         return 0.005f; // default
+    }
+
+    private void CheckFadeSpeakerSprite(Image imageOld, Image imageActive, string speakerSprite)
+    {
+        imageOld.sprite = imageActive.sprite;
+        Sprite tempImageActive = GameProgression.GameProgressionInstance.SpriteCache.sprites[(!string.IsNullOrEmpty(speakerSprite)) ? speakerSprite : "Transparent"];
+
+        if (speakerSprite != null && !imageOld.sprite.ToString().Equals(tempImageActive.ToString())) 
+        {
+            imageOld.GetComponent<Image>().sprite = imageActive.GetComponent<Image>().sprite;
+            imageActive.GetComponent<Image>().sprite = tempImageActive;
+            StartCoroutine(GameProgression.GameProgressionInstance.FadeEffect.FadeSpeakerSprite(imageActive.gameObject, imageActive.sprite, 0, 1));
+            StartCoroutine(GameProgression.GameProgressionInstance.FadeEffect.FadeSpeakerSprite(imageOld.gameObject, imageOld.sprite, 1, -1));
+        }
     }
 
     private IEnumerator TypewriterEffect(string character, string dialogue, bool narration = false, bool end = false)

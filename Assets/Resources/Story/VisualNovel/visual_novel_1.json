@@ -20,7 +20,7 @@
         {
             "character": "4574?",
             "speakerSpriteAsta": "FullAstaConfident",
-            "dialogue": "7h4nk you for your p47ience. P47rol Bo7 FOUR-FIVE-5EVEN-FOUR reboo7 5ucce55ful."
+            "dialogue": "7h4nk you for your p47ience. P47rol roBo7 FOUR-FIVE-5EVEN-FOUR reboo7 5ucce55ful."
         },
         {
             "character": "Virgo",
@@ -30,12 +30,12 @@
         {
             "character": "4574?",
             "speakerSpriteAsta": "FullAstaConfident",
-            "dialogue": "Ye5"
+            "dialogue": "Ye5."
         },
         {
             "character": "4574?",
             "speakerSpriteAsta": "FullAstaConfident",
-            "dialogue": "I 4m P47rol Bo7 FOUR-FIVE-5EVEN-FOUR of 7he Omni-On7o Org4niz47ion(?)."
+            "dialogue": "I 4m P47rol roBo7 FOUR-FIVE-5EVEN-FOUR of 7he Omni-On7o Org4niz47ion(?)."
         },
         {
             "character": "4574?",
@@ -120,7 +120,7 @@
         {
             "character": "ASTA",
             "speakerSpriteAsta": "FullAstaConfident",
-            "dialogue": "This is the robot maintenance and disposal facility of the Omni-Onto Orginization."
+            "dialogue": "This is the robot maintenance and disposal facility of the Omni-Onto Organization."
         },
         {
             "character": "ASTA",
@@ -155,7 +155,7 @@
         {
             "character": "ASTA",
             "speakerSpriteAsta": "FullAstaContent",
-            "dialogue": "At the top is Floor 2: The Logicistcs Sector."
+            "dialogue": "At the top is Floor 2: The Logistics Sector."
         },
         {
             "character": "ASTA",
@@ -180,7 +180,7 @@
         {
             "character": "ASTA",
             "speakerSpriteAsta": "FullAstaConfident",
-            "dialogue": "The Organization prefers 'Outdated Assets'."
+            "dialogue": "The Organization prefers 'Outdated Assets.'"
         },
         {
             "character": "ASTA",
@@ -230,7 +230,7 @@
         {
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoAngry",
-            "dialogue": "If you're supposedly a 'Security Asset', why were you lying on the ground with your TBD?"
+            "dialogue": "If you're supposedly a 'Security Asset,' why were you lying on the ground with your TBD?"
         },
         {
             "character": "Virgo",
