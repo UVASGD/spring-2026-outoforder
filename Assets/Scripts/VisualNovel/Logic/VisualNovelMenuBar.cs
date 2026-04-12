@@ -1,43 +1,54 @@
+using System.Collections.Generic;
+using System.Linq;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class MenuBar : MonoBehaviour
+public class VisualNovelMenuBar : MonoBehaviour
 {
     [SerializeField] private string currentMenuName = "none";
     private GameObject currentPopUp;
     private GameObject interactionBlocker;
+    private List<TextMeshProUGUI> autoButtonTMPs;
     private GameObject popUpAreas;
     private GameObject logPopUp;
-    private GameObject movePopUp;
-    private GameObject itemPopUp;
-    private GameObject infoPopUp;
-    private Button moveButton;
-
-    void Awake()
-    {
-        GameData.escapeRoomGameplayManager.menuBar = this;
-    }
+    private GameObject savePopUp;
+    private GameObject loadPopUp;
 
     void Start()
     {
         interactionBlocker = transform.Find("InteractionBlocker").gameObject;
         interactionBlocker.SetActive(false);
 
+        autoButtonTMPs = GameObject.FindGameObjectsWithTag("AutoButton")
+            .Select(obj => obj.GetComponentInChildren<TextMeshProUGUI>())
+            .Where(tmp => tmp != null)
+            .ToList();
+            
         popUpAreas = transform.Find("PopUpAreas").gameObject;
         logPopUp = popUpAreas.transform.Find("LogPopUp").gameObject;
-        movePopUp = popUpAreas.transform.Find("MovePopUp").gameObject;
-        itemPopUp = popUpAreas.transform.Find("ItemPopUp").gameObject;
-        infoPopUp = popUpAreas.transform.Find("InfoPopUp").gameObject;
-
-        moveButton = transform.Find("MenuBarButtons").Find("MoveButton").GetComponent<Button>();
+        savePopUp = popUpAreas.transform.Find("SavePopUp").gameObject;
+        loadPopUp = popUpAreas.transform.Find("LoadPopUp").gameObject;
     }
 
-    void Update()
+    public void ExecuteAuto()
     {
-        moveButton.interactable = !GameData.escapeRoomGameplayManager.enteredItem;
+        print("auto");
+        GameData.autoDialogueProgression = !GameData.autoDialogueProgression;
+        autoButtonTMPs.ForEach(tmp => tmp.text = tmp.text == "auto" ? "manual" : "auto");
+    }
 
-        if (Input.GetMouseButtonDown(1) && !currentMenuName.Equals("none")) HidePopUp();
-    } 
+    public void ExecuteSave()
+    {
+        
+    }
+
+
+    public void ExecuteLoad()
+    {
+        
+    }
 
     public void ChangeState(string newMenuName)
     {
@@ -47,19 +58,21 @@ public class MenuBar : MonoBehaviour
         }
         else
         {
+            if (!newMenuName.Equals("auto") && GameData.autoDialogueProgression) ExecuteAuto();
+
             switch (newMenuName)
             {
                 case "log":
                     ShowPopUp(logPopUp, newMenuName);
                     break;
-                case "move":
-                    ShowPopUp(movePopUp, newMenuName);
+                case "auto":
+                    HidePopUp();
                     break;
-                case "item":
-                    ShowPopUp(itemPopUp, newMenuName);
+                case "save":
+                    ShowPopUp(savePopUp, newMenuName);
                     break;
-                case "info":
-                    ShowPopUp(infoPopUp, newMenuName);
+                case "load":
+                    ShowPopUp(loadPopUp, newMenuName);
                     break;
             }  
         }   
@@ -68,7 +81,7 @@ public class MenuBar : MonoBehaviour
     public void HidePopUp(bool playSfx = true)
     {
         currentMenuName = "none";
-        currentPopUp.SetActive(false);
+        currentPopUp?.SetActive(false);
         currentPopUp = null;
         interactionBlocker.SetActive(false);
         if (playSfx) GameProgression.GameProgressionInstance.PlaySFX(2);
