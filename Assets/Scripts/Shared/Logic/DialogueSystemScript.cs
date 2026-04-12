@@ -102,7 +102,9 @@ public class DialogueSystem : MonoBehaviour
 
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Return) || advanceDialogueButtonPressed || automaticFadeComplete) && !typeWriterInEffect && automaticFadeCoroutine == null && !advanceDisabled)
+        if (GameData.autoDialogueProgression 
+            || (!GameData.autoDialogueProgression && (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Return) || advanceDialogueButtonPressed || automaticFadeComplete))
+            && !typeWriterInEffect && automaticFadeCoroutine == null && !advanceDisabled)
         {
             advanceDialogueButtonPressed = false;
 
@@ -449,12 +451,12 @@ public class DialogueSystem : MonoBehaviour
             yield return new WaitForSeconds(textSpeed); // make diff speeds
         }
 
-        typeWriterInEffect = false;
-
-        if (narration)
+        if (GameData.autoDialogueProgression)
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(2f);
         }
+
+        typeWriterInEffect = false;
 
         advanceDisabled = false;
     }
