@@ -170,6 +170,13 @@ public class DialogueSystem : MonoBehaviour
         
             newLogItem.transform.Find("NameText").GetComponent<TextMeshProUGUI>().text = currentDialogue.character;
             newLogItem.transform.Find("DialogueText").GetComponent<TextMeshProUGUI>().text = currentDialogue.dialogue;
+
+            Canvas.ForceUpdateCanvases();
+            ScrollRect scrollRect = content.GetComponentInParent<ScrollRect>();
+            if (scrollRect != null)
+            {
+                scrollRect.verticalNormalizedPosition = 0f;
+            }
         }
 
         if (currentDialogue.wait != 0)
