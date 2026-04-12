@@ -14,6 +14,9 @@ public static class GameData
     public static bool currentlyTalking;
     public static Coroutine fadeCoroutine;
 
+    // visual novel
+    public static bool autoDialogueProgression;
+
     // escape room
     // change this name convention, to no script
     public static EscapeRoomGameplay escapeRoomGameplayManager;

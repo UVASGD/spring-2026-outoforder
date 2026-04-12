@@ -1,6 +1,7 @@
 using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -31,6 +32,7 @@ public class DialogueSystem : MonoBehaviour
     private TextMeshProUGUI dialogueTMP;
     TextMeshProUGUI narrationTMP;
     private GameObject advanceDialogueButton;
+    public GameObject content;
 
     [Header("[LOGIC]")]
     public bool advanceDialogueButtonPressed;
@@ -80,6 +82,10 @@ public class DialogueSystem : MonoBehaviour
 
         advanceDialogueButton = transform.parent.transform.Find("AdvanceDialogueButton").gameObject;
 
+        // Log
+        content = Resources.FindObjectsOfTypeAll<GameObject>()
+            .FirstOrDefault(obj => obj.CompareTag("Content") && obj.scene.isLoaded);
+
         // Audio
         voiceAudioSource = GetComponent<AudioSource>(); 
     }
@@ -102,7 +108,9 @@ public class DialogueSystem : MonoBehaviour
 
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Return) || advanceDialogueButtonPressed || automaticFadeComplete) && !typeWriterInEffect && automaticFadeCoroutine == null && !advanceDisabled)
+        if (GameData.autoDialogueProgression 
+            || (!GameData.autoDialogueProgression && (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Return) || advanceDialogueButtonPressed || automaticFadeComplete))
+            && !typeWriterInEffect && automaticFadeCoroutine == null && !advanceDisabled)
         {
             advanceDialogueButtonPressed = false;
 
@@ -154,6 +162,20 @@ public class DialogueSystem : MonoBehaviour
         dialogueIndex++;
 
         currentDialogue = dialogueStructList[dialogueIndex];
+
+        // TODO: support this in EscapeRoom soon as well
+        if (GameProgression.GameProgressionInstance.currentScene.Equals("VisualNovel"))
+        {
+            GameObject newLogItem = Instantiate(Resources.Load<GameObject>("Prefabs/LogItem"), content.transform);
+        
+            newLogItem.transform.Find("NameText").GetComponent<TextMeshProUGUI>().text = currentDialogue.character;
+            newLogItem.transform.Find("DialogueText").GetComponent<TextMeshProUGUI>().text = currentDialogue.dialogue;
+
+            RectTransform contentRT = content.GetComponent<RectTransform>();
+            float newHeight = content.transform.childCount * 100f - 400;
+            contentRT.sizeDelta = new Vector2(contentRT.sizeDelta.x, newHeight);
+            contentRT.anchoredPosition = new Vector2(contentRT.anchoredPosition.x, newHeight);
+        }
 
         if (currentDialogue.wait != 0)
         {
@@ -449,12 +471,12 @@ public class DialogueSystem : MonoBehaviour
             yield return new WaitForSeconds(textSpeed); // make diff speeds
         }
 
-        typeWriterInEffect = false;
-
-        if (narration)
+        if (GameData.autoDialogueProgression)
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(2f);
         }
+
+        typeWriterInEffect = false;
 
         advanceDisabled = false;
     }
