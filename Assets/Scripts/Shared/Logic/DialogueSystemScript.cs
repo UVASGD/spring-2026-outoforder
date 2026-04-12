@@ -1,6 +1,7 @@
 using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -31,6 +32,7 @@ public class DialogueSystem : MonoBehaviour
     private TextMeshProUGUI dialogueTMP;
     TextMeshProUGUI narrationTMP;
     private GameObject advanceDialogueButton;
+    public GameObject content;
 
     [Header("[LOGIC]")]
     public bool advanceDialogueButtonPressed;
@@ -79,6 +81,10 @@ public class DialogueSystem : MonoBehaviour
         narrationTMP = transform.parent.transform.Find("NarrationText").GetComponent<TextMeshProUGUI>();
 
         advanceDialogueButton = transform.parent.transform.Find("AdvanceDialogueButton").gameObject;
+
+        // Log
+        content = Resources.FindObjectsOfTypeAll<GameObject>()
+            .FirstOrDefault(obj => obj.CompareTag("Content") && obj.scene.isLoaded);
 
         // Audio
         voiceAudioSource = GetComponent<AudioSource>(); 
@@ -156,6 +162,15 @@ public class DialogueSystem : MonoBehaviour
         dialogueIndex++;
 
         currentDialogue = dialogueStructList[dialogueIndex];
+
+        // TODO: support this in EscapeRoom soon as well
+        if (GameProgression.GameProgressionInstance.currentScene.Equals("VisualNovel"))
+        {
+            GameObject newLogItem = Instantiate(Resources.Load<GameObject>("Prefabs/LogItem"), content.transform);
+        
+            newLogItem.transform.Find("NameText").GetComponent<TextMeshProUGUI>().text = currentDialogue.character;
+            newLogItem.transform.Find("DialogueText").GetComponent<TextMeshProUGUI>().text = currentDialogue.dialogue;
+        }
 
         if (currentDialogue.wait != 0)
         {

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - AutoButton
+  - Content
   layers:
   - Default
   - TransparentFX
