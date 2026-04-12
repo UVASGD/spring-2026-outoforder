@@ -34,9 +34,11 @@ public class VisualNovelMenuBar : MonoBehaviour
 
     public void ExecuteAuto()
     {
-        print("auto");
-        GameData.autoDialogueProgression = !GameData.autoDialogueProgression;
-        autoButtonTMPs.ForEach(tmp => tmp.text = tmp.text == "auto" ? "manual" : "auto");
+        if (!GameProgression.GameProgressionInstance.transitioning)
+        {
+            GameData.autoDialogueProgression = !GameData.autoDialogueProgression;
+            autoButtonTMPs.ForEach(tmp => tmp.text = tmp.text == "auto" ? "manual" : "auto");   
+        }
     }
 
     public void ExecuteSave()
@@ -52,30 +54,33 @@ public class VisualNovelMenuBar : MonoBehaviour
 
     public void ChangeState(string newMenuName)
     {
-        if (currentMenuName == newMenuName)
+        if (!GameProgression.GameProgressionInstance.transitioning)
         {
-            HidePopUp();   
-        }
-        else
-        {
-            if (!newMenuName.Equals("auto") && GameData.autoDialogueProgression) ExecuteAuto();
-
-            switch (newMenuName)
+            if (currentMenuName == newMenuName)
             {
-                case "log":
-                    ShowPopUp(logPopUp, newMenuName);
-                    break;
-                case "auto":
-                    HidePopUp();
-                    break;
-                case "save":
-                    ShowPopUp(savePopUp, newMenuName);
-                    break;
-                case "load":
-                    ShowPopUp(loadPopUp, newMenuName);
-                    break;
-            }  
-        }   
+                HidePopUp();   
+            }
+            else
+            {
+                if (!newMenuName.Equals("auto") && GameData.autoDialogueProgression) ExecuteAuto();
+
+                switch (newMenuName)
+                {
+                    case "log":
+                        ShowPopUp(logPopUp, newMenuName);
+                        break;
+                    case "auto":
+                        HidePopUp();
+                        break;
+                    case "save":
+                        ShowPopUp(savePopUp, newMenuName);
+                        break;
+                    case "load":
+                        ShowPopUp(loadPopUp, newMenuName);
+                        break;
+                }  
+            }   
+        }
     }
 
     public void HidePopUp(bool playSfx = true)
