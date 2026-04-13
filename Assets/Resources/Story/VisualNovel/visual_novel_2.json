@@ -98,6 +98,21 @@
             "dialogue": "Well, I need to get back to my father."
         },
         {
+            "character": "ASTA",
+            "speakerSpriteAsta": "FullAstaCurious",
+            "dialogue": "Ah, your father. What is he like?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSpriteVirgo": "FullVirgoCurious",
+            "dialogue": "Uh... he's..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSpriteVirgo": "FullVirgoCurious",
+            "dialogue": "He... worries a lot!"
+        },
+        {
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoCurious",
             "dialogue": "He's probably worried sick about where I am. I've never just disappeared like this before."
@@ -125,17 +140,47 @@
         {
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoPensive",
-            "dialogue": "Our maid robot."
+            "dialogue": "Our assistant robot's name."
         },
         {
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoPensive",
-            "dialogue": "I was so close to her. She was like a sister to me."
+            "dialogue": "I was so close to her; she was like a sister to me."
         },
         {
             "character": "Virgo",
-            "speakerSpriteVirgo": "FullVirgoCurious",
-            "dialogue": "Though I can't seem to remember he name right now."
+            "speakerSpriteVirgo": "FullVirgoPensive",
+            "dialogue": "She must be worried too... I remember how twitchy she would get when she was nervous."
+        },
+        {
+            "character": "ASTA",
+            "speakerSpriteAsta": "FullAstaCurious",
+            "dialogue": "Ah. She must take after you strongly, then."
+        },
+        {
+            "character": "Virgo",
+            "speakerSpriteVirgo": "FullVirgoFlustered",
+            "dialogue": "Huh...? What do you mean?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSpriteAsta": "FullAstaCurious",
+            "dialogue": "Well, scratching at your palms, for instance."
+        },
+        {
+            "character": "ASTA",
+            "speakerSpriteAsta": "FullAstaCurious",
+            "dialogue": "You do that quite often, too, correct?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSpriteVirgo": "FullVirgoPensive",
+            "dialogue": "That's... she learned it from me, of course, yeah."
+        },
+        {
+            "character": "Virgo",
+            "speakerSpriteVirgo": "FullVirgoPensive",
+            "dialogue": "Sorry, it's kind of hard to think about that right now."
         },
         {
             "character": "ASTA",
@@ -170,7 +215,7 @@
         {
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoAngry",
-            "dialogue": "But now it's all been ripped away from me, and I have no idea why."
+            "dialogue": "But now, it's all been ripped away from me, and I have no idea why."
         },
         {
             "character": "Virgo",
@@ -180,7 +225,7 @@
         {
             "character": "ASTA",
             "speakerSpriteAsta": "FullAstaCurious",
-            "dialogue": "Pretrubing?"
+            "dialogue": "Perturbing?"
         },
         {
             "character": "Virgo",
@@ -230,7 +275,7 @@
         {
             "character": "ASTA",
             "speakerSpriteAsta": "FullAstaContent",
-            "dialogue": "It's been some time now. The elevator has almost arrived at the next level."
+            "dialogue": "It's been some time now. The lift has almost arrived at the next level."
         },
         {
             "character": "ASTA",

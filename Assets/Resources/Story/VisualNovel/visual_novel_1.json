@@ -10,7 +10,7 @@
         {
             "character": "???",
             "speakerSpriteAsta": "FullAstaCurious",
-            "dialogue": "Ini7i4lizing ___ pro7ocol."
+            "dialogue": "Ini7i4lizing 574r7up pro7ocol."
         },
         {
             "character": "???",
@@ -35,7 +35,7 @@
         {
             "character": "4574?",
             "speakerSpriteAsta": "FullAstaConfident",
-            "dialogue": "I 4m P47rol roBo7 FOUR-FIVE-5EVEN-FOUR of 7he Omni-On7o Org4niz47ion(?)."
+            "dialogue": "I 4m P47rol roBo7 FOUR-FIVE-5EVEN-FOUR of 7he Omni-On7o Org4niz47ion."
         },
         {
             "character": "4574?",
@@ -115,12 +115,12 @@
         {
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoFrustrated",
-            "dialogue": "I've got a patrol bot outside trying to find me, and outside there's nothing but scrap and junk."
+            "dialogue": "I've got a patrol bot outside trying to find me... and outside, there's nothing but scrap and junk."
         },
         {
             "character": "ASTA",
             "speakerSpriteAsta": "FullAstaConfident",
-            "dialogue": "This is the robot maintenance and disposal facility of the Omni-Onto Organization."
+            "dialogue": "This is the robot maintenance and disposal facility of the Omni-Ontological-Organization."
         },
         {
             "character": "ASTA",
@@ -190,7 +190,7 @@
         {
             "character": "ASTA",
             "speakerSpriteAsta": "FullAstaCurious",
-            "dialogue": "Though I will say that it is quite strange that a human could possibly make their way down here."
+            "dialogue": "Though I will say... it is quite strange that a human could possibly make their way down here."
         },
         {
             "character": "ASTA",
@@ -230,7 +230,7 @@
         {
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoAngry",
-            "dialogue": "If you're supposedly a 'Security Asset,' why were you lying on the ground with your TBD?"
+            "dialogue": "If you're supposedly an 'Organization Asset,' why were you lying on the ground with an empty chassis?"
         },
         {
             "character": "Virgo",
@@ -258,9 +258,29 @@
             "dialogue": "Thank you again for repairing those. I was under the assumption they were defunct. For that, I am indebted to you."
         },
         {
+            "character": "ASTA",
+            "speakerSpriteAsta": "FullAstaThoughtful",
+            "dialogue": "How *were* you so proficient in your repairs? Especially under quite unconventional circumstances."
+        },
+        {
+            "character": "ASTA",
+            "speakerSpriteAsta": "FullAstaThoughtful",
+            "dialogue": "How *were* you so proficient in your repairs? Especially under quite unconventional circumstances."
+        },
+        {
+            "character": "ASTA",
+            "speakerSpriteAsta": "FullAstaThoughtful",
+            "dialogue": "You must be quite knowledgeable of robotic anatomy..."
+        },
+        {
             "character": "Virgo",
             "speakerSpriteVirgo": "FullVirgoDetermined",
-            "dialogue": "I am a mechanic, so it's kind of my job, you know?"
+            "dialogue": "Well..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSpriteVirgo": "FullVirgoDetermined",
+            "dialogue": "I *am* a mechanic, so it's kind of my job, you know?"
         },
         {
             "character": "Virgo",
@@ -295,12 +315,12 @@
         {
             "character": "ASTA",
             "speakerSpriteAsta": "FullAstaThoughtful",
-            "dialogue": "I was supposedly having malfunctions"
+            "dialogue": "I was supposedly having malfunctions..."
         },
         {
             "character": "ASTA",
             "speakerSpriteAsta": "FullAstaCurious",
-            "dialogue": "I was told I required... recalibration"
+            "dialogue": "I was told I required... recalibration."
         },
         {
             "character": "ASTA",
