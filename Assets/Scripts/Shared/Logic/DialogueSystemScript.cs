@@ -209,7 +209,7 @@ public class DialogueSystem : MonoBehaviour
                 HideUI();
 
                 // set Narration (if any)
-                SetNarration();
+                // SetNarration();
 
                 // set Fade (if any)
                 SetFade();
@@ -389,7 +389,7 @@ public class DialogueSystem : MonoBehaviour
         {
             return 0.02f;
         }
-        return 0.005f; // default
+        return 0.025f; // default
     }
 
     private void CheckFadeSpeakerSprite(Image imageOld, Image imageActive, string speakerSprite)
@@ -435,9 +435,11 @@ public class DialogueSystem : MonoBehaviour
             }
         }
        
-        float textSpeed = !end
-            ? GetTextSpeed()
-            : 0.05f;
+        // float textSpeed = !end
+        //     ? GetTextSpeed()
+        //     : 0.05f;
+
+        float textSpeed = GetTextSpeed();
 
         AudioClip voiceSample = voiceSamples[0];
             
@@ -496,38 +498,38 @@ public class DialogueSystem : MonoBehaviour
         if (currentDialogue.playSFX != null) GameProgression.GameProgressionInstance.PlaySFX(int.Parse(currentDialogue.playSFX));
     }
 
-    public void SetNarration()
-    {
-        if (currentDialogue.narration != null)
-        {
-            narrationTMP.enabled |= true;
+    // public void SetNarration()
+    // {
+    //     if (currentDialogue.narration != null)
+    //     {
+    //         narrationTMP.enabled |= true;
 
-            string[] narrationType = currentDialogue.narration.Split("|");
+    //         string[] narrationType = currentDialogue.narration.Split("|");
 
-            if (narrationType.Length < 2) narrationType = new[] { narrationType[0], "" };
+    //         if (narrationType.Length < 2) narrationType = new[] { narrationType[0], "" };
 
-            dialogueOnDisplay = currentDialogue.narration;
+    //         dialogueOnDisplay = currentDialogue.narration;
 
-            // set narration
-            if (narrationType[1].Equals("end"))
-            {
-                StartCoroutine(TypewriterEffect("", narrationType[0], narration: true, end: true));
+    //         // set narration
+    //         if (narrationType[1].Equals("end"))
+    //         {
+    //             StartCoroutine(TypewriterEffect("", narrationType[0], narration: true, end: true));
 
-            }
-            else if (!string.IsNullOrEmpty(narrationType[1]))
-            {
-                typewriterCoroutine = StartCoroutine(TypewriterEffect(narrationType[1], narrationType[0], narration: true));
-            }
-            else
-            {
-                typewriterCoroutine = StartCoroutine(TypewriterEffect("", currentDialogue.narration, narration: true));
-            }
-        }
-        else
-        {
-            narrationTMP.enabled &= false;
-        }
-    }
+    //         }
+    //         else if (!string.IsNullOrEmpty(narrationType[1]))
+    //         {
+    //             typewriterCoroutine = StartCoroutine(TypewriterEffect(narrationType[1], narrationType[0], narration: true));
+    //         }
+    //         else
+    //         {
+    //             typewriterCoroutine = StartCoroutine(TypewriterEffect("", currentDialogue.narration, narration: true));
+    //         }
+    //     }
+    //     else
+    //     {
+    //         narrationTMP.enabled &= false;
+    //     }
+    // }
 
     public void SetFade()
     {
