@@ -18673,8 +18673,8 @@ MonoBehaviour:
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 1ecc11727b4db294f9162d36df51292c, type: 3}
-  - {fileID: 4900000, guid: de5f56cde38dacc4abffda92c3c6cf4e, type: 3}
+  - {fileID: 4900000, guid: 2c75f67c1c697284cbd5b58bd04feec3, type: 3}
+  - {fileID: 4900000, guid: 7a98ef9c4138be84b84bcf48fbb1db9a, type: 3}
   itemData:
     name: 
     detailed: 0
