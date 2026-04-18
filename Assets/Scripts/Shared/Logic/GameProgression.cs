@@ -37,9 +37,7 @@ public class GameProgression : MonoBehaviour
     public bool transitioning = true;
 
     // Flags
-    private Dictionary<string, bool> flags = new Dictionary<string, bool> {
-        
-    };
+    private Dictionary<string, bool> flags = new();
 
     // BGM
     [SerializeField] private AudioSource audioSourceBGM;
@@ -49,6 +47,9 @@ public class GameProgression : MonoBehaviour
     // SFX
     [SerializeField] private AudioSource audioSourceSFX;
     [SerializeField] private List<AudioClip> audioClipsSFX = new();
+
+    // Save/Load
+    private int loadedSave = -1;
 
     void Awake()
     {
@@ -100,6 +101,14 @@ public class GameProgression : MonoBehaviour
                 StartCoroutine(PlayBGM(1));
                 break;
             case "VisualNovel":
+                if (loadedSave != -1)
+                {
+                    DialogueSystem.dialogueIndex = PlayerPrefs.GetInt($"{loadedSave}_dialogueIndex");
+
+                    print($"mira mira {DialogueSystem.dialogueIndex}");
+
+                    loadedSave = -1;
+                }
                 break;
             case "EscapeRoom0":
                 StartCoroutine(PlayBGM(2));
@@ -299,9 +308,7 @@ public class GameProgression : MonoBehaviour
 
         SceneTransition("VisualNovel");
 
-        DialogueSystem.dialogueIndex = PlayerPrefs.GetInt($"{loadFromSlotNumber}_dialogueIndex");
-
-        print($"mira mira {DialogueSystem.dialogueIndex}");
+        loadedSave = loadFromSlotNumber;
 
         print($"done loading from {loadFromSlotNumber}; need to figure out other parameters though");
     }
