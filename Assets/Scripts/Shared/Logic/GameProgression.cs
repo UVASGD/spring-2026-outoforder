@@ -252,6 +252,8 @@ public class GameProgression : MonoBehaviour
 
         PlayerPrefs.SetInt($"{saveToSlotNumber}_dialogueIndex", DialogueSystem.dialogueIndex - 1);
 
+        PlayerPrefs.SetString($"{saveToSlotNumber}_locationTMP", DialogueSystem.locationTMP.text);
+
         PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageActive", DialogueSystem.speakerSpriteAstaImageActive.sprite.name);
         PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageOld", DialogueSystem.speakerSpriteAstaImageOld.sprite.name);
         PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageActive", DialogueSystem.speakerSpriteVirgoImageActive.sprite.name);

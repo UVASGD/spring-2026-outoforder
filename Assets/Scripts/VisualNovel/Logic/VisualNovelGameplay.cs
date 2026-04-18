@@ -13,6 +13,8 @@ public class VisualNovelGameplay : MonoBehaviour
 
         if (GameData.loadedSave != -1)
         {
+            GameProgression.GameProgressionInstance.DialogueSystem.locationTMP.text = PlayerPrefs.GetString($"{GameData.loadedSave}_locationTMP");
+
             GameProgression.GameProgressionInstance.DialogueSystem.speakerSpriteAstaImageActive.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[PlayerPrefs.GetString($"{GameData.loadedSave}_speakerSpriteAstaImageActive")];
             GameProgression.GameProgressionInstance.DialogueSystem.speakerSpriteAstaImageOld.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[PlayerPrefs.GetString($"{GameData.loadedSave}_speakerSpriteAstaImageOld")];
             GameProgression.GameProgressionInstance.DialogueSystem.speakerSpriteVirgoImageActive.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[PlayerPrefs.GetString($"{GameData.loadedSave}_speakerSpriteVirgoImageActive")];

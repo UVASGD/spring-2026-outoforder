@@ -21,7 +21,7 @@ public class DialogueSystem : MonoBehaviour
     private GameObject activeCG;
     private Image oldCGImage;
     private Image activeCGImage;
-    private TextMeshProUGUI locationTMP;
+    public TextMeshProUGUI locationTMP;
     private Image speakerSpriteImageActive;
     private Image speakerSpriteImageOld;
     public Image speakerSpriteAstaImageActive;
