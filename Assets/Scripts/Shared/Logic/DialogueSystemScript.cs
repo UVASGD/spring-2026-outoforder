@@ -21,13 +21,13 @@ public class DialogueSystem : MonoBehaviour
     private GameObject activeCG;
     private Image oldCGImage;
     private Image activeCGImage;
-    private TextMeshProUGUI locationTMP;
+    public TextMeshProUGUI locationTMP;
     private Image speakerSpriteImageActive;
     private Image speakerSpriteImageOld;
-    private Image speakerSpriteAstaImageActive;
-    private Image speakerSpriteAstaImageOld;
-    private Image speakerSpriteVirgoImageActive;
-    private Image speakerSpriteVirgoImageOld;
+    public Image speakerSpriteAstaImageActive;
+    public Image speakerSpriteAstaImageOld;
+    public Image speakerSpriteVirgoImageActive;
+    public Image speakerSpriteVirgoImageOld;
     private TextMeshProUGUI nameTMP;
     private TextMeshProUGUI dialogueTMP;
     TextMeshProUGUI narrationTMP;
@@ -43,7 +43,7 @@ public class DialogueSystem : MonoBehaviour
     private DialogueStruct currentDialogue;
     [SerializeField] private bool typeWriterInEffect;
     private Coroutine typewriterCoroutine;
-    private int dialogueIndex = -1;
+    public int dialogueIndex = -1;
     private string dialogueOnDisplay;
 
     // FADE
@@ -209,7 +209,7 @@ public class DialogueSystem : MonoBehaviour
                 HideUI();
 
                 // set Narration (if any)
-                SetNarration();
+                // SetNarration();
 
                 // set Fade (if any)
                 SetFade();
@@ -321,17 +321,27 @@ public class DialogueSystem : MonoBehaviour
         {
             CheckFadeSpeakerSprite(speakerSpriteImageOld, speakerSpriteImageActive, currentDialogue.speakerSprite);
         }
-        else if (SceneManager.GetActiveScene().name.Equals("VisualNovel"))
+        else if (SceneManager.GetActiveScene().name.Equals("VisualNovel") || GameData.loadedSave != -1)
         {
             speakerSpriteAstaImageActive.color = currentDialogue.character.Equals("???") || currentDialogue.character.Contains("4574") || currentDialogue.character.Equals("ASTA") 
                 ? Color.white
                 : Color.gray;
-            CheckFadeSpeakerSprite(speakerSpriteAstaImageOld, speakerSpriteAstaImageActive, currentDialogue.speakerSpriteAsta);
-            
             speakerSpriteVirgoImageActive.color = currentDialogue.character.Equals("Virgo")
                 ? Color.white
                 : Color.gray;
-            CheckFadeSpeakerSprite(speakerSpriteVirgoImageOld, speakerSpriteVirgoImageActive, currentDialogue.speakerSpriteVirgo);
+            
+            if (SceneManager.GetActiveScene().name.Equals("VisualNovel"))
+            {
+                CheckFadeSpeakerSprite(speakerSpriteAstaImageOld, speakerSpriteAstaImageActive, currentDialogue.speakerSpriteAsta);
+                CheckFadeSpeakerSprite(speakerSpriteVirgoImageOld, speakerSpriteVirgoImageActive, currentDialogue.speakerSpriteVirgo);   
+            }
+            else if (GameData.loadedSave != -1)
+            {
+                // TODO NOT REACHABLE. AND NEED IT TO DO THIS TO MAKE NON SPEAKING CHARACTER GRAYED OUT WHEN SAVE LOADS.
+                print("abc");
+                speakerSpriteAstaImageOld.color = new Color(speakerSpriteAstaImageOld.color.r, speakerSpriteAstaImageOld.color.g, speakerSpriteAstaImageOld.color.b, 0);
+                speakerSpriteVirgoImageOld.color = new Color(speakerSpriteVirgoImageOld.color.r, speakerSpriteVirgoImageOld.color.g, speakerSpriteVirgoImageOld.color.b, 0);
+            }
         }
     }
 
@@ -389,7 +399,7 @@ public class DialogueSystem : MonoBehaviour
         {
             return 0.02f;
         }
-        return 0.005f; // default
+        return 0.025f; // default
     }
 
     private void CheckFadeSpeakerSprite(Image imageOld, Image imageActive, string speakerSprite)
@@ -435,9 +445,11 @@ public class DialogueSystem : MonoBehaviour
             }
         }
        
-        float textSpeed = !end
-            ? GetTextSpeed()
-            : 0.05f;
+        // float textSpeed = !end
+        //     ? GetTextSpeed()
+        //     : 0.05f;
+
+        float textSpeed = GetTextSpeed();
 
         AudioClip voiceSample = voiceSamples[0];
             
@@ -496,38 +508,38 @@ public class DialogueSystem : MonoBehaviour
         if (currentDialogue.playSFX != null) GameProgression.GameProgressionInstance.PlaySFX(int.Parse(currentDialogue.playSFX));
     }
 
-    public void SetNarration()
-    {
-        if (currentDialogue.narration != null)
-        {
-            narrationTMP.enabled |= true;
+    // public void SetNarration()
+    // {
+    //     if (currentDialogue.narration != null)
+    //     {
+    //         narrationTMP.enabled |= true;
 
-            string[] narrationType = currentDialogue.narration.Split("|");
+    //         string[] narrationType = currentDialogue.narration.Split("|");
 
-            if (narrationType.Length < 2) narrationType = new[] { narrationType[0], "" };
+    //         if (narrationType.Length < 2) narrationType = new[] { narrationType[0], "" };
 
-            dialogueOnDisplay = currentDialogue.narration;
+    //         dialogueOnDisplay = currentDialogue.narration;
 
-            // set narration
-            if (narrationType[1].Equals("end"))
-            {
-                StartCoroutine(TypewriterEffect("", narrationType[0], narration: true, end: true));
+    //         // set narration
+    //         if (narrationType[1].Equals("end"))
+    //         {
+    //             StartCoroutine(TypewriterEffect("", narrationType[0], narration: true, end: true));
 
-            }
-            else if (!string.IsNullOrEmpty(narrationType[1]))
-            {
-                typewriterCoroutine = StartCoroutine(TypewriterEffect(narrationType[1], narrationType[0], narration: true));
-            }
-            else
-            {
-                typewriterCoroutine = StartCoroutine(TypewriterEffect("", currentDialogue.narration, narration: true));
-            }
-        }
-        else
-        {
-            narrationTMP.enabled &= false;
-        }
-    }
+    //         }
+    //         else if (!string.IsNullOrEmpty(narrationType[1]))
+    //         {
+    //             typewriterCoroutine = StartCoroutine(TypewriterEffect(narrationType[1], narrationType[0], narration: true));
+    //         }
+    //         else
+    //         {
+    //             typewriterCoroutine = StartCoroutine(TypewriterEffect("", currentDialogue.narration, narration: true));
+    //         }
+    //     }
+    //     else
+    //     {
+    //         narrationTMP.enabled &= false;
+    //     }
+    // }
 
     public void SetFade()
     {

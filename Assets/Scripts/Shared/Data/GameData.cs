@@ -5,6 +5,7 @@ using UnityEngine;
 public static class GameData
 {
     // save relevant data
+    public static int loadedSave = -1;
     public static int escapeRoomNumber;
     public static int visualNovelDialogueIndex;
     public static Dictionary<string, bool> routeFlags = new();

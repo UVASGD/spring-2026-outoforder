@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ public class GameProgression : MonoBehaviour
     [Header("DATA")]
     public static GameProgression GameProgressionInstance;
     public SpriteCache SpriteCache; // move to GameData?
-    public DialogueSystem DialogueSystemScript; // move to GameData?
+    public DialogueSystem DialogueSystem; // move to GameData?
     public FadeEffect FadeEffect;
     public string currentScene; // TODO: is this needed?
     public HashSet<string> complementedOneTimeEvents = new();
@@ -35,9 +36,7 @@ public class GameProgression : MonoBehaviour
     public bool transitioning = true;
 
     // Flags
-    private Dictionary<string, bool> flags = new Dictionary<string, bool> {
-        
-    };
+    private Dictionary<string, bool> flags = new();
 
     // BGM
     [SerializeField] private AudioSource audioSourceBGM;
@@ -50,8 +49,6 @@ public class GameProgression : MonoBehaviour
 
     void Awake()
     {
-        GameData.escapeRoomNumber = debugEscapeRoomNumber;
-
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
 
@@ -70,6 +67,10 @@ public class GameProgression : MonoBehaviour
             Destroy(gameObject);
         }
 
+        GameData.escapeRoomNumber = (GameData.loadedSave != -1)
+            ? PlayerPrefs.GetInt($"{GameData.loadedSave}_escapeRoomNumber")
+            : debugEscapeRoomNumber;
+
         audioSourceBGM = GetComponent<AudioSource>();
         audioSourceSFX = transform.GetChild(0).GetComponent<AudioSource>();
     }
@@ -85,7 +86,7 @@ public class GameProgression : MonoBehaviour
     {
         GameData.fadeCoroutine = null;
 
-        DialogueSystemScript = (DialogueSystem)FindInChildrenIncludingInactive<DialogueSystem>(GameObject.Find("Canvas"));
+        DialogueSystem = (DialogueSystem)FindInChildrenIncludingInactive<DialogueSystem>(GameObject.Find("Canvas"));
 
         // TODO: fill out as we go
         switch (currentScene)
@@ -124,9 +125,9 @@ public class GameProgression : MonoBehaviour
     // Dialogue
     public void ShowDialogue(TextAsset dialogue)
     {
-        DialogueSystemScript.SetVisualNovelJSONFile(dialogue);
-        DialogueSystemScript.enabled = true;
-        DialogueSystemScript.gameObject.SetActive(true);
+        DialogueSystem.SetVisualNovelJSONFile(dialogue);
+        DialogueSystem.enabled = true;
+        DialogueSystem.gameObject.SetActive(true);
     }
 
     // Flag
@@ -148,15 +149,6 @@ public class GameProgression : MonoBehaviour
     {
         flags[key] = value;
         Debug.Log($"SetFlag: {key} = {value}");
-    }
-
-    public void CheckFlagsSet()
-    {
-        // TODO FUTURE IMPLEMTATION, SUPER HARDCODED
-        // if (GetFlag("TODO"))
-        // {
-        //     GameObject.Find("POST TODO")?.SetActive(false);
-        // }   
     }
 
     // BGM
@@ -239,13 +231,69 @@ public class GameProgression : MonoBehaviour
             else FadeEffect.FadeOut(!cg ? blackTransition : cgTransition, 0.5f);
     }
 
+    // Other - OUTDATED
+
     public Component FindInChildrenIncludingInactive<T>(GameObject parent) where T : Component
     {
         return parent.GetComponentsInChildren<T>(true).FirstOrDefault();
     }
 
-    private void GetFPS()
+    // Save/Load
+    [Serializable]
+    public class FlagsData
     {
-        Debug.Log("FPS: " + (1.0f / Time.deltaTime));
+        public List<string> keys = new List<string>();
+        public List<bool> values = new List<bool>();
+    }
+    
+    public void Save(int saveToSlotNumber)
+    {
+        PlayerPrefs.SetInt($"{saveToSlotNumber}_escapeRoomNumber", GameData.escapeRoomNumber);
+
+        PlayerPrefs.SetInt($"{saveToSlotNumber}_dialogueIndex", DialogueSystem.dialogueIndex - 1);
+
+        PlayerPrefs.SetString($"{saveToSlotNumber}_locationTMP", DialogueSystem.locationTMP.text);
+
+        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageActive", DialogueSystem.speakerSpriteAstaImageActive.sprite.name);
+        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageOld", DialogueSystem.speakerSpriteAstaImageOld.sprite.name);
+        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageActive", DialogueSystem.speakerSpriteVirgoImageActive.sprite.name);
+        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageOld", DialogueSystem.speakerSpriteVirgoImageOld.sprite.name);
+
+        PlayerPrefs.SetInt($"{saveToSlotNumber}_currentBGM", currentBGM);
+        
+        FlagsData wrapper = new();
+        
+        foreach (var kvp in flags)
+        {
+            wrapper.keys.Add(kvp.Key);
+            wrapper.values.Add(kvp.Value);
+        }
+
+        string json = JsonUtility.ToJson(wrapper);
+        PlayerPrefs.SetString($"{saveToSlotNumber}_flags", json);
+        
+        PlayerPrefs.Save();
+
+        print($"done saving to {saveToSlotNumber}");
+    }
+
+    public void Load(int loadFromSlotNumber)
+    {
+        GameData.escapeRoomNumber = PlayerPrefs.GetInt($"{loadFromSlotNumber}_escapeRoomNumber");
+        
+        string json = PlayerPrefs.GetString($"{loadFromSlotNumber}_flags");
+        FlagsData wrapper = JsonUtility.FromJson<FlagsData>(json);
+        
+        Dictionary<string, bool> restoredFlags = new Dictionary<string, bool>();
+        for (int i = 0; i < wrapper.keys.Count; i++)
+        {
+            restoredFlags.Add(wrapper.keys[i], wrapper.values[i]);
+        }
+        
+        flags = restoredFlags;
+
+        SceneTransition("VisualNovel");
+
+        GameData.loadedSave = loadFromSlotNumber;
     }
 }
