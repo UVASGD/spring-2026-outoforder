@@ -48,9 +48,6 @@ public class GameProgression : MonoBehaviour
     [SerializeField] private AudioSource audioSourceSFX;
     [SerializeField] private List<AudioClip> audioClipsSFX = new();
 
-    // Save/Load
-    private int loadedSave = -1;
-
     void Awake()
     {
         QualitySettings.vSyncCount = 0;
@@ -71,17 +68,9 @@ public class GameProgression : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (GameData.loadedSave != -1)
-        {
-            GameData.escapeRoomNumber = PlayerPrefs.GetInt($"{GameData.loadedSave}_escapeRoomNumber");
-            print($"awake a = {GameData.escapeRoomNumber}");
-        }
-        else
-        {
-            GameData.escapeRoomNumber = debugEscapeRoomNumber;
-            print($"awake b == {GameData.escapeRoomNumber}");
-        }
-
+        GameData.escapeRoomNumber = (GameData.loadedSave != -1)
+            ? PlayerPrefs.GetInt($"{GameData.loadedSave}_escapeRoomNumber")
+            : debugEscapeRoomNumber;
 
         audioSourceBGM = GetComponent<AudioSource>();
         audioSourceSFX = transform.GetChild(0).GetComponent<AudioSource>();
@@ -111,7 +100,7 @@ public class GameProgression : MonoBehaviour
                 StartCoroutine(PlayBGM(1));
                 break;
             case "VisualNovel":
-                if (loadedSave != -1)
+                if (GameData.loadedSave != -1)
                 {
                     // PlayerPrefs.SetInt($"{saveToSlotNumber}_dialogueIndex", DialogueSystem.dialogueIndex);
                     // PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageActive", DialogueSystem.speakerSpriteAstaImageActive.name);
@@ -120,11 +109,9 @@ public class GameProgression : MonoBehaviour
                     // PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageOld", DialogueSystem.speakerSpriteVirgoImageOld.name);
                     // PlayerPrefs.SetInt($"{saveToSlotNumber}_currentBGM", currentBGM);
 
-                    DialogueSystem.dialogueIndex = PlayerPrefs.GetInt($"{loadedSave}_dialogueIndex");
+                    DialogueSystem.dialogueIndex = PlayerPrefs.GetInt($"{GameData.loadedSave}_dialogueIndex");
 
-                    print($"mira mira {DialogueSystem.dialogueIndex}");
-
-                    loadedSave = -1;
+                    GameData.loadedSave = -1;
                 }
                 break;
             case "EscapeRoom0":
@@ -285,7 +272,7 @@ public class GameProgression : MonoBehaviour
     public void Save(int saveToSlotNumber)
     {
         PlayerPrefs.SetInt($"{saveToSlotNumber}_escapeRoomNumber", GameData.escapeRoomNumber);
-        PlayerPrefs.SetInt($"{saveToSlotNumber}_dialogueIndex", DialogueSystem.dialogueIndex);
+        PlayerPrefs.SetInt($"{saveToSlotNumber}_dialogueIndex", DialogueSystem.dialogueIndex - 1);
         PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageActive", DialogueSystem.speakerSpriteAstaImageActive.name);
         PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageOld", DialogueSystem.speakerSpriteAstaImageOld.name);
         PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageActive", DialogueSystem.speakerSpriteVirgoImageActive.name);
@@ -311,9 +298,6 @@ public class GameProgression : MonoBehaviour
     public void Load(int loadFromSlotNumber)
     {
         GameData.escapeRoomNumber = PlayerPrefs.GetInt($"{loadFromSlotNumber}_escapeRoomNumber");
-        debugEscapeRoomNumber = PlayerPrefs.GetInt($"{loadFromSlotNumber}_escapeRoomNumber");
-
-        print($"now it is escapme romnumber {GameData.escapeRoomNumber} and debuescap room number {debugEscapeRoomNumber}");
         
         string json = PlayerPrefs.GetString($"{loadFromSlotNumber}_flags");
         FlagsData wrapper = JsonUtility.FromJson<FlagsData>(json);
@@ -329,7 +313,5 @@ public class GameProgression : MonoBehaviour
         SceneTransition("VisualNovel");
 
         GameData.loadedSave = loadFromSlotNumber;
-
-        print($"done loading from {loadFromSlotNumber}; need to figure out other parameters though");
     }
 }

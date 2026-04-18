@@ -5,11 +5,6 @@ public class SavePopUp : MonoBehaviour
     private GameObject confirmationPopUp;
     private int saveToSlotNumber;
 
-    void Start()
-    {
-        
-    }
-
     void OnEnable()
     {
         if (confirmationPopUp == null)

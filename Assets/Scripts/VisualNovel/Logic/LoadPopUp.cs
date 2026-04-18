@@ -5,11 +5,6 @@ public class LoadPopUp : MonoBehaviour
     private GameObject confirmationPopUp;
     private int loadFromSlotNumber;
 
-    void Start()
-    {
-        
-    }
-
     void OnEnable()
     {
         if (confirmationPopUp == null)
