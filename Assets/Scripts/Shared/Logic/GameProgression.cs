@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -13,7 +15,7 @@ public class GameProgression : MonoBehaviour
     [Header("DATA")]
     public static GameProgression GameProgressionInstance;
     public SpriteCache SpriteCache; // move to GameData?
-    public DialogueSystem DialogueSystemScript; // move to GameData?
+    public DialogueSystem DialogueSystem; // move to GameData?
     public FadeEffect FadeEffect;
     public string currentScene; // TODO: is this needed?
     public HashSet<string> complementedOneTimeEvents = new();
@@ -85,7 +87,7 @@ public class GameProgression : MonoBehaviour
     {
         GameData.fadeCoroutine = null;
 
-        DialogueSystemScript = (DialogueSystem)FindInChildrenIncludingInactive<DialogueSystem>(GameObject.Find("Canvas"));
+        DialogueSystem = (DialogueSystem)FindInChildrenIncludingInactive<DialogueSystem>(GameObject.Find("Canvas"));
 
         // TODO: fill out as we go
         switch (currentScene)
@@ -124,9 +126,9 @@ public class GameProgression : MonoBehaviour
     // Dialogue
     public void ShowDialogue(TextAsset dialogue)
     {
-        DialogueSystemScript.SetVisualNovelJSONFile(dialogue);
-        DialogueSystemScript.enabled = true;
-        DialogueSystemScript.gameObject.SetActive(true);
+        DialogueSystem.SetVisualNovelJSONFile(dialogue);
+        DialogueSystem.enabled = true;
+        DialogueSystem.gameObject.SetActive(true);
     }
 
     // Flag
@@ -239,13 +241,64 @@ public class GameProgression : MonoBehaviour
             else FadeEffect.FadeOut(!cg ? blackTransition : cgTransition, 0.5f);
     }
 
+    // Other - OUTDATED
+
     public Component FindInChildrenIncludingInactive<T>(GameObject parent) where T : Component
     {
         return parent.GetComponentsInChildren<T>(true).FirstOrDefault();
     }
 
-    private void GetFPS()
+    // Save/Load
+    [Serializable]
+    public class FlagsData
     {
-        Debug.Log("FPS: " + (1.0f / Time.deltaTime));
+        public List<string> keys = new List<string>();
+        public List<bool> values = new List<bool>();
+    }
+    
+    public void Save(int saveToSlotNumber)
+    {
+        PlayerPrefs.SetInt($"{saveToSlotNumber}_escapeRoomNumber", GameData.escapeRoomNumber);
+        PlayerPrefs.SetInt($"{saveToSlotNumber}_dialogueIndex", DialogueSystem.dialogueIndex);
+        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageActive", DialogueSystem.speakerSpriteAstaImageActive.name);
+        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageOld", DialogueSystem.speakerSpriteAstaImageOld.name);
+        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageActive", DialogueSystem.speakerSpriteVirgoImageActive.name);
+        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageOld", DialogueSystem.speakerSpriteVirgoImageOld.name);
+        PlayerPrefs.SetInt($"{saveToSlotNumber}_currentBGM", currentBGM);
+        
+        FlagsData wrapper = new();
+        
+        foreach (var kvp in flags)
+        {
+            wrapper.keys.Add(kvp.Key);
+            wrapper.values.Add(kvp.Value);
+        }
+
+        string json = JsonUtility.ToJson(wrapper);
+        PlayerPrefs.SetString($"{saveToSlotNumber}_flags", json);
+        
+        PlayerPrefs.Save();
+
+        print($"done saving to {saveToSlotNumber}");
+    }
+
+    public void Load(int loadFromSlotNumber)
+    {
+        GameData.escapeRoomNumber = PlayerPrefs.GetInt($"{loadFromSlotNumber}_escapeRoomNumber");
+        
+        string json = PlayerPrefs.GetString($"{loadFromSlotNumber}_flags");
+        FlagsData wrapper = JsonUtility.FromJson<FlagsData>(json);
+        
+        Dictionary<string, bool> restoredFlags = new Dictionary<string, bool>();
+        for (int i = 0; i < wrapper.keys.Count; i++)
+        {
+            restoredFlags.Add(wrapper.keys[i], wrapper.values[i]);
+        }
+        
+        flags = restoredFlags;
+
+        SceneTransition("VisualNovel");
+
+        print($"done loading from {loadFromSlotNumber}; need to figure out other parameters though");
     }
 }

@@ -36,6 +36,9 @@ public class SavePopUp : MonoBehaviour
     public void Save()
     {
         print($"saved to {saveToSlotNumber}");
+
+        GameProgression.GameProgressionInstance.Save(saveToSlotNumber);
+
         confirmationPopUp.SetActive(false);
     }
 }

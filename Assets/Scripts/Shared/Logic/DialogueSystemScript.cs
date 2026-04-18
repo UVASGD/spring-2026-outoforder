@@ -24,10 +24,10 @@ public class DialogueSystem : MonoBehaviour
     private TextMeshProUGUI locationTMP;
     private Image speakerSpriteImageActive;
     private Image speakerSpriteImageOld;
-    private Image speakerSpriteAstaImageActive;
-    private Image speakerSpriteAstaImageOld;
-    private Image speakerSpriteVirgoImageActive;
-    private Image speakerSpriteVirgoImageOld;
+    public Image speakerSpriteAstaImageActive;
+    public Image speakerSpriteAstaImageOld;
+    public Image speakerSpriteVirgoImageActive;
+    public Image speakerSpriteVirgoImageOld;
     private TextMeshProUGUI nameTMP;
     private TextMeshProUGUI dialogueTMP;
     TextMeshProUGUI narrationTMP;
@@ -43,7 +43,7 @@ public class DialogueSystem : MonoBehaviour
     private DialogueStruct currentDialogue;
     [SerializeField] private bool typeWriterInEffect;
     private Coroutine typewriterCoroutine;
-    private int dialogueIndex = -1;
+    public int dialogueIndex = -1;
     private string dialogueOnDisplay;
 
     // FADE
