@@ -299,6 +299,10 @@ public class GameProgression : MonoBehaviour
 
         SceneTransition("VisualNovel");
 
+        DialogueSystem.dialogueIndex = PlayerPrefs.GetInt($"{loadFromSlotNumber}_dialogueIndex");
+
+        print($"mira mira {DialogueSystem.dialogueIndex}");
+
         print($"done loading from {loadFromSlotNumber}; need to figure out other parameters though");
     }
 }
