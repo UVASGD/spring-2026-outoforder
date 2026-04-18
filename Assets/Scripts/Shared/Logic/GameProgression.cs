@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -100,19 +99,6 @@ public class GameProgression : MonoBehaviour
                 StartCoroutine(PlayBGM(1));
                 break;
             case "VisualNovel":
-                if (GameData.loadedSave != -1)
-                {
-                    DialogueSystem.dialogueIndex = PlayerPrefs.GetInt($"{GameData.loadedSave}_dialogueIndex");
-
-                    DialogueSystem.speakerSpriteAstaImageActive.sprite = SpriteCache.sprites[PlayerPrefs.GetString($"{GameData.loadedSave}_speakerSpriteAstaImageActive")];
-                    DialogueSystem.speakerSpriteAstaImageOld.sprite = SpriteCache.sprites[PlayerPrefs.GetString($"{GameData.loadedSave}_speakerSpriteAstaImageOld")];
-                    DialogueSystem.speakerSpriteVirgoImageActive.sprite = SpriteCache.sprites[PlayerPrefs.GetString($"{GameData.loadedSave}_speakerSpriteVirgoImageActive")];
-                    DialogueSystem.speakerSpriteVirgoImageOld.sprite = SpriteCache.sprites[PlayerPrefs.GetString($"{GameData.loadedSave}_speakerSpriteVirgoImageOld")];
-
-                    StartCoroutine(PlayBGM(PlayerPrefs.GetInt($"{GameData.loadedSave}_currentBGM")));
-
-                    GameData.loadedSave = -1;
-                }
                 break;
             case "EscapeRoom0":
                 StartCoroutine(PlayBGM(2));
@@ -163,15 +149,6 @@ public class GameProgression : MonoBehaviour
     {
         flags[key] = value;
         Debug.Log($"SetFlag: {key} = {value}");
-    }
-
-    public void CheckFlagsSet()
-    {
-        // TODO FUTURE IMPLEMTATION, SUPER HARDCODED
-        // if (GetFlag("TODO"))
-        // {
-        //     GameObject.Find("POST TODO")?.SetActive(false);
-        // }   
     }
 
     // BGM
