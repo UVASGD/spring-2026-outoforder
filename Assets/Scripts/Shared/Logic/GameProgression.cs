@@ -53,8 +53,6 @@ public class GameProgression : MonoBehaviour
 
     void Awake()
     {
-        GameData.escapeRoomNumber = debugEscapeRoomNumber;
-
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
 
@@ -72,6 +70,18 @@ public class GameProgression : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (GameData.loadedSave != -1)
+        {
+            GameData.escapeRoomNumber = PlayerPrefs.GetInt($"{GameData.loadedSave}_escapeRoomNumber");
+            print($"awake a = {GameData.escapeRoomNumber}");
+        }
+        else
+        {
+            GameData.escapeRoomNumber = debugEscapeRoomNumber;
+            print($"awake b == {GameData.escapeRoomNumber}");
+        }
+
 
         audioSourceBGM = GetComponent<AudioSource>();
         audioSourceSFX = transform.GetChild(0).GetComponent<AudioSource>();
@@ -103,6 +113,13 @@ public class GameProgression : MonoBehaviour
             case "VisualNovel":
                 if (loadedSave != -1)
                 {
+                    // PlayerPrefs.SetInt($"{saveToSlotNumber}_dialogueIndex", DialogueSystem.dialogueIndex);
+                    // PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageActive", DialogueSystem.speakerSpriteAstaImageActive.name);
+                    // PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageOld", DialogueSystem.speakerSpriteAstaImageOld.name);
+                    // PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageActive", DialogueSystem.speakerSpriteVirgoImageActive.name);
+                    // PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageOld", DialogueSystem.speakerSpriteVirgoImageOld.name);
+                    // PlayerPrefs.SetInt($"{saveToSlotNumber}_currentBGM", currentBGM);
+
                     DialogueSystem.dialogueIndex = PlayerPrefs.GetInt($"{loadedSave}_dialogueIndex");
 
                     print($"mira mira {DialogueSystem.dialogueIndex}");
@@ -294,6 +311,9 @@ public class GameProgression : MonoBehaviour
     public void Load(int loadFromSlotNumber)
     {
         GameData.escapeRoomNumber = PlayerPrefs.GetInt($"{loadFromSlotNumber}_escapeRoomNumber");
+        debugEscapeRoomNumber = PlayerPrefs.GetInt($"{loadFromSlotNumber}_escapeRoomNumber");
+
+        print($"now it is escapme romnumber {GameData.escapeRoomNumber} and debuescap room number {debugEscapeRoomNumber}");
         
         string json = PlayerPrefs.GetString($"{loadFromSlotNumber}_flags");
         FlagsData wrapper = JsonUtility.FromJson<FlagsData>(json);
@@ -308,7 +328,7 @@ public class GameProgression : MonoBehaviour
 
         SceneTransition("VisualNovel");
 
-        loadedSave = loadFromSlotNumber;
+        GameData.loadedSave = loadFromSlotNumber;
 
         print($"done loading from {loadFromSlotNumber}; need to figure out other parameters though");
     }

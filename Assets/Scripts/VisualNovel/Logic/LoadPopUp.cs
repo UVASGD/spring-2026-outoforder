@@ -12,7 +12,6 @@ public class LoadPopUp : MonoBehaviour
 
     void OnEnable()
     {
-        print("save is enabled");
         if (confirmationPopUp == null)
         {
             confirmationPopUp = transform.Find("ConfirmationPopUp").gameObject;
@@ -22,14 +21,12 @@ public class LoadPopUp : MonoBehaviour
 
     public void LoadFromSlot(int slotNumber)
     {
-        print($"trying to load from slot number {slotNumber}");
         loadFromSlotNumber = slotNumber;
         confirmationPopUp.SetActive(true);
     }
 
     public void Cancel()
     {
-        print("cancelled");
         confirmationPopUp.SetActive(false);
     }
 
