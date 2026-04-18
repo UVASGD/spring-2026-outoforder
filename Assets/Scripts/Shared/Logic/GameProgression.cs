@@ -102,14 +102,14 @@ public class GameProgression : MonoBehaviour
             case "VisualNovel":
                 if (GameData.loadedSave != -1)
                 {
-                    // PlayerPrefs.SetInt($"{saveToSlotNumber}_dialogueIndex", DialogueSystem.dialogueIndex);
-                    // PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageActive", DialogueSystem.speakerSpriteAstaImageActive.name);
-                    // PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageOld", DialogueSystem.speakerSpriteAstaImageOld.name);
-                    // PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageActive", DialogueSystem.speakerSpriteVirgoImageActive.name);
-                    // PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageOld", DialogueSystem.speakerSpriteVirgoImageOld.name);
-                    // PlayerPrefs.SetInt($"{saveToSlotNumber}_currentBGM", currentBGM);
-
                     DialogueSystem.dialogueIndex = PlayerPrefs.GetInt($"{GameData.loadedSave}_dialogueIndex");
+
+                    DialogueSystem.speakerSpriteAstaImageActive.sprite = SpriteCache.sprites[PlayerPrefs.GetString($"{GameData.loadedSave}_speakerSpriteAstaImageActive")];
+                    DialogueSystem.speakerSpriteAstaImageOld.sprite = SpriteCache.sprites[PlayerPrefs.GetString($"{GameData.loadedSave}_speakerSpriteAstaImageOld")];
+                    DialogueSystem.speakerSpriteVirgoImageActive.sprite = SpriteCache.sprites[PlayerPrefs.GetString($"{GameData.loadedSave}_speakerSpriteVirgoImageActive")];
+                    DialogueSystem.speakerSpriteVirgoImageOld.sprite = SpriteCache.sprites[PlayerPrefs.GetString($"{GameData.loadedSave}_speakerSpriteVirgoImageOld")];
+
+                    StartCoroutine(PlayBGM(PlayerPrefs.GetInt($"{GameData.loadedSave}_currentBGM")));
 
                     GameData.loadedSave = -1;
                 }
@@ -272,11 +272,14 @@ public class GameProgression : MonoBehaviour
     public void Save(int saveToSlotNumber)
     {
         PlayerPrefs.SetInt($"{saveToSlotNumber}_escapeRoomNumber", GameData.escapeRoomNumber);
+
         PlayerPrefs.SetInt($"{saveToSlotNumber}_dialogueIndex", DialogueSystem.dialogueIndex - 1);
-        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageActive", DialogueSystem.speakerSpriteAstaImageActive.name);
-        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageOld", DialogueSystem.speakerSpriteAstaImageOld.name);
-        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageActive", DialogueSystem.speakerSpriteVirgoImageActive.name);
-        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageOld", DialogueSystem.speakerSpriteVirgoImageOld.name);
+
+        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageActive", DialogueSystem.speakerSpriteAstaImageActive.sprite.name);
+        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteAstaImageOld", DialogueSystem.speakerSpriteAstaImageOld.sprite.name);
+        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageActive", DialogueSystem.speakerSpriteVirgoImageActive.sprite.name);
+        PlayerPrefs.SetString($"{saveToSlotNumber}_speakerSpriteVirgoImageOld", DialogueSystem.speakerSpriteVirgoImageOld.sprite.name);
+
         PlayerPrefs.SetInt($"{saveToSlotNumber}_currentBGM", currentBGM);
         
         FlagsData wrapper = new();
