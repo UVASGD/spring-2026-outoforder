@@ -1,15 +1,24 @@
 using System.Collections;
 using UnityEngine;
 
-public class SlidingMenu : MonoBehaviour
+public class Menu : MonoBehaviour
 {
+    private GameObject titleMenu;
+
+    void Awake()
+    {
+        titleMenu = GameObject.Find("TitleMenu").gameObject;
+    }
+
     public void MoveLeft()
     {
+        titleMenu.SetActive(false);
         StartCoroutine(Move(-400f));
     }
 
     public void MoveRight()
     {
+        titleMenu.SetActive(true);
         StartCoroutine(Move(0f));
     }
 

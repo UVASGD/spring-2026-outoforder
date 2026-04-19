@@ -4068,7 +4068,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2016656638472462059, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
       propertyPath: debugEscapeRoomNumber
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4961446670045982556, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6341,7 +6341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1383237928
 RectTransform:
   m_ObjectHideFlags: 0
