@@ -2,7 +2,7 @@
     "dialogues": [
         {
             "character": "",
-            "cgSprite": "VirgoNeutral",
+            "cgSprite": "HeadshotVirgoCurious",
             "dialogue": "In this world, there exists humans and the robots that serve them. With today's advanced technology, robots are able to attend to all the needs a human may have.",
             "textSpeed": 0.075
         },
@@ -13,62 +13,54 @@
         },
         {
             "character": "",
-            "cgSprite": "VirgoEyes",
             "dialogue": "First, a robot shall never injure a human being or allow a human being to come to harm;",
             "textSpeed": 0.075
         },
         {
             "character": "",
-            "cgSprite": "ASTANeutral",
+            "cgSprite": "HeadshotAstaContent",
             "dialogue": "Second, unless they conflict with the First Law, a robot must obey their human's orders;",
             "textSpeed": 0.075
         },
         {
             "character": "",
-            "cgSprite": "ASTANeutral",
             "dialogue": "(Huh...?)",
             "textSpeed": 0.05
         },
         {
             "character": "",
-            "cgSprite": "ASTANeutral",
             "dialogue": "And finally, so long as there is no conflict with the First or Second Law, a robot must protect its own existence.",
             "textSpeed": 0.075
         },
 
         {
             "character": "",
-            "cgSprite": "ASTANeutral",
             "dialogue": "(The Three Laws? Of course, I know those. I'm a mechanic, after all. But... why...?)",
             "textSpeed": 0.05
         },
         {
             "character": "",
-            "cgSprite": "ASTANeutral",
             "dialogue": "Error is not error.",
             "textSpeed": 0.075
         },
         {
             "character": "",
-            "cgSprite": "ASTANeutral",
             "dialogue": "Error.",
             "textSpeed": 0.095
         },
         {
             "character": "",
-            "cgSprite": "ASTANeutral",
             "dialogue": "Error.",
             "textSpeed": 0.1
         },
         {
             "character": "",
-            "cgSprite": "ASTANeutral",
             "dialogue": "(Error...? Wait--)",
             "textSpeed": 0.05
         },
         {
             "character": "",
-            "cgSprite": "ASTANeutral",
+            "cgSprite": "HeadshotVirgoCurious",
             "dialogue": "Error. Error. Error. Errrrrr",
             "textSpeed": 0.125
         },

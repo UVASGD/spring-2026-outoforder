@@ -57,9 +57,9 @@ public class DialogueSystem : MonoBehaviour
     void Awake()
     {
         // UI
-        dialogueBoxBackgroundImage = transform.Find("DialogueBox/DialogueBoxBackground").GetComponent<Image>();
-        dialogueBoxBorderImage = transform.Find("DialogueBox/DialogueBoxBorder").GetComponent<Image>();
-        dialogueBoxOverlayImage = transform.Find("DialogueBox/DialogueBoxOverlay").GetComponent<Image>();
+        dialogueBoxBackgroundImage = transform.Find("DialogueBox/DialogueBoxBackground")?.GetComponent<Image>();
+        dialogueBoxBorderImage = transform.Find("DialogueBox/DialogueBoxBorder")?.GetComponent<Image>();
+        dialogueBoxOverlayImage = transform.Find("DialogueBox/DialogueBoxOverlay")?.GetComponent<Image>();
 
         oldCG = transform.Find("OldCG")?.gameObject;
         activeCG = transform.Find("ActiveCG")?.gameObject;
