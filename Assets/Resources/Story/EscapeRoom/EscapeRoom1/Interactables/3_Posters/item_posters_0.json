@@ -2,8 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_posters_0"
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "What are these posters?"
         },
         {
             "character": "ASTA",

@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_arms_1"
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "The way these arms are posed... it's weird."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "There must be something they are telling us. But what?",
             "endOfScene": true
         }
     ]

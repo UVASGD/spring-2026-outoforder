@@ -3,17 +3,17 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "item_caesar_diary_puzzle_0"
+            "dialogue": "A diary? Who the hell is Caesar?"
         },
         {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaConfident",
+            "dialogue": "pyseth note to self should i have ASTA explain how caesar cipher works"
         },
         {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaConfident",
+            "dialogue": "Do you think anything around here could help us find the shift value?",
             "endOfScene": true
         }
     ]

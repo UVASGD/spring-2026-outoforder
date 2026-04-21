@@ -2,18 +2,28 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_counterweight_sheave_0"
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "Hmm... what's this?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaConfident",
+            "dialogue": "This looks like the lift's counterweight sheave."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "Counterweight sheave?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaConfident",
+            "dialogue": "Yes. The purpose of the counterweight sheave is to help the lift operate by applying a force opposing a load."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "",
             "endOfScene": true
         }
     ]

@@ -2,8 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "we solved it item_locked_locker_puzzle_2",
+            "speakerSprite": "HeadshotVirgoExcited",
+            "dialogue": "That worked!",
             "endOfScene": true
         }
     ]
