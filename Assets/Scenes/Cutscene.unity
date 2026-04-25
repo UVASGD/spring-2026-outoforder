@@ -1601,9 +1601,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSystemScript
   dialogueStructList:
-  - character: 
+  - location: 
+    wait: 0
+    character: 
     cgSprite: VirgoNeutral
     speakerSprite: 
+    speakerSpriteAsta: 
+    speakerSpriteVirgo: 
     dialogue: In this world, there exists humans and the robots that serve them.
       With today's advanced technology, robots are able to attend to all the needs
       a human may have.
@@ -1618,9 +1622,13 @@ MonoBehaviour:
     endOfScene: 0
     scene: 
     flag: 
-  - character: 
+  - location: 
+    wait: 0
+    character: 
     cgSprite: 
     speakerSprite: 
+    speakerSpriteAsta: 
+    speakerSpriteVirgo: 
     dialogue: Robots can be housmaids, firefighters, doctors... the possiblities
       are endless! However, all robots have Three Laws they must abide by.
     textSpeed: 0
@@ -1634,9 +1642,13 @@ MonoBehaviour:
     endOfScene: 0
     scene: 
     flag: 
-  - character: 
+  - location: 
+    wait: 0
+    character: 
     cgSprite: VirgoEyes
     speakerSprite: 
+    speakerSpriteAsta: 
+    speakerSpriteVirgo: 
     dialogue: First, a robot shall never injure a human being or allow a human being
       to come to harm;
     textSpeed: 0
@@ -1650,9 +1662,13 @@ MonoBehaviour:
     endOfScene: 0
     scene: 
     flag: 
-  - character: 
+  - location: 
+    wait: 0
+    character: 
     cgSprite: ASTANeutral
     speakerSprite: 
+    speakerSpriteAsta: 
+    speakerSpriteVirgo: 
     dialogue: Second, unless they conflict with the First Law, a robot must obey
       their human's orders;
     textSpeed: 0
@@ -1666,9 +1682,13 @@ MonoBehaviour:
     endOfScene: 0
     scene: 
     flag: 
-  - character: 
+  - location: 
+    wait: 0
+    character: 
     cgSprite: ASTANeutral
     speakerSprite: 
+    speakerSpriteAsta: 
+    speakerSpriteVirgo: 
     dialogue: Huh...?
     textSpeed: 0
     hideUI: 0
@@ -1681,9 +1701,13 @@ MonoBehaviour:
     endOfScene: 0
     scene: 
     flag: 
-  - character: 
+  - location: 
+    wait: 0
+    character: 
     cgSprite: ASTANeutral
     speakerSprite: 
+    speakerSpriteAsta: 
+    speakerSpriteVirgo: 
     dialogue: And finally, so long as there is no conflict with the First or Second
       Law, a robot must protect its own existence.
     textSpeed: 0
@@ -1697,9 +1721,13 @@ MonoBehaviour:
     endOfScene: 0
     scene: 
     flag: 
-  - character: 
+  - location: 
+    wait: 0
+    character: 
     cgSprite: ASTANeutral
     speakerSprite: 
+    speakerSpriteAsta: 
+    speakerSpriteVirgo: 
     dialogue: The Three Laws? Of course, I know those. I'm a mechanic, after all.
       But... why...?
     textSpeed: 0
@@ -1713,9 +1741,13 @@ MonoBehaviour:
     endOfScene: 0
     scene: 
     flag: 
-  - character: 
+  - location: 
+    wait: 0
+    character: 
     cgSprite: ASTANeutral
     speakerSprite: 
+    speakerSpriteAsta: 
+    speakerSpriteVirgo: 
     dialogue: 'Error is not error. '
     textSpeed: 0
     hideUI: 0
@@ -1728,9 +1760,13 @@ MonoBehaviour:
     endOfScene: 0
     scene: 
     flag: 
-  - character: 
+  - location: 
+    wait: 0
+    character: 
     cgSprite: ASTANeutral
     speakerSprite: 
+    speakerSpriteAsta: 
+    speakerSpriteVirgo: 
     dialogue: Error.
     textSpeed: 0
     hideUI: 0
@@ -1743,9 +1779,13 @@ MonoBehaviour:
     endOfScene: 0
     scene: 
     flag: 
-  - character: 
+  - location: 
+    wait: 0
+    character: 
     cgSprite: ASTANeutral
     speakerSprite: 
+    speakerSpriteAsta: 
+    speakerSpriteVirgo: 
     dialogue: Error.
     textSpeed: 0
     hideUI: 0
@@ -1758,9 +1798,13 @@ MonoBehaviour:
     endOfScene: 0
     scene: 
     flag: 
-  - character: 
+  - location: 
+    wait: 0
+    character: 
     cgSprite: ASTANeutral
     speakerSprite: 
+    speakerSpriteAsta: 
+    speakerSpriteVirgo: 
     dialogue: Error...? Wait--
     textSpeed: 0
     hideUI: 0
@@ -1773,9 +1817,13 @@ MonoBehaviour:
     endOfScene: 0
     scene: 
     flag: 
-  - character: 
+  - location: 
+    wait: 0
+    character: 
     cgSprite: ASTANeutral
     speakerSprite: 
+    speakerSpriteAsta: 
+    speakerSpriteVirgo: 
     dialogue: Error. Error. Error. Errrrrr
     textSpeed: 0
     hideUI: 0
@@ -1788,9 +1836,13 @@ MonoBehaviour:
     endOfScene: 0
     scene: 
     flag: 
-  - character: 
+  - location: 
+    wait: 0
+    character: 
     cgSprite: 
     speakerSprite: 
+    speakerSpriteAsta: 
+    speakerSpriteVirgo: 
     dialogue: 
     textSpeed: 0
     hideUI: 1
@@ -1803,11 +1855,21 @@ MonoBehaviour:
     endOfScene: 0
     scene: VisualNovel
     flag: 
+  dialogueBoxBackgroundImage: {fileID: 0}
+  dialogueBoxBorderImage: {fileID: 0}
+  dialogueBoxOverlayImage: {fileID: 0}
+  locationTMP: {fileID: 0}
+  speakerSpriteAstaImageActive: {fileID: 0}
+  speakerSpriteAstaImageOld: {fileID: 0}
+  speakerSpriteVirgoImageActive: {fileID: 0}
+  speakerSpriteVirgoImageOld: {fileID: 0}
+  content: {fileID: 0}
   advanceDialogueButtonPressed: 0
   transitioningScene: 0
   finishedDialogue: 0
   advanceDisabled: 0
   typeWriterInEffect: 0
+  dialogueIndex: -1
   voiceSamples:
   - {fileID: 8300000, guid: a560e449928fa754db16f8978d691532, type: 3}
   - {fileID: 8300000, guid: 26b29f6b3650b6045b7ce423c3693235, type: 3}
