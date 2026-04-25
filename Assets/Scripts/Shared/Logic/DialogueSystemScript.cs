@@ -80,7 +80,7 @@ public class DialogueSystem : MonoBehaviour
         dialogueTMP = transform.Find("Text/DialogueText").GetComponent<TextMeshProUGUI>();
         narrationTMP = transform.parent.transform.Find("NarrationText").GetComponent<TextMeshProUGUI>();
 
-        advanceDialogueButton = transform.parent.transform.Find("AdvanceDialogueButton").gameObject;
+        advanceDialogueButton = transform.parent.transform.Find("AdvanceDialogueButton")?.gameObject;
 
         // Log
         content = Resources.FindObjectsOfTypeAll<GameObject>()
@@ -98,7 +98,7 @@ public class DialogueSystem : MonoBehaviour
             activeCG?.gameObject.SetActive(false);
         }
         narrationTMP.gameObject.SetActive(false);
-        advanceDialogueButton.SetActive(true);
+        advanceDialogueButton?.SetActive(true);
 
         LoadVisualNovelJSONFile();
         ProgressMainVNSequence();
@@ -116,7 +116,7 @@ public class DialogueSystem : MonoBehaviour
 
             if (currentDialogue.endOfScene)
             {
-                advanceDialogueButton.SetActive(false);
+                advanceDialogueButton?.SetActive(false);
 
                 GameData.currentlyTalking = false;
                 finishedDialogue = false;
