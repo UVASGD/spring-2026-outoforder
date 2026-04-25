@@ -2,13 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "solved item_pixel_shift_puzzle_2"
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
+            "speakerSprite": "HeadshotVirgoShocked",
+            "dialogue": "It's a lift key!"
         },
         {
             "character": "Virgo",

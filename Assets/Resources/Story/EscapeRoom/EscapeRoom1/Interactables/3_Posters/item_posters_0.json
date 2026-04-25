@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_posters_0"
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "Safety first, huh?"
         },
         {
             "character": "ASTA",
             "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "dialogue": "Yes. It seems that some areas of the facility would be quite hazardous to traverse.",
             "endOfScene": true
         }
     ]

@@ -2,13 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_wires_0"
-        },
-        {
-            "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "speakerSprite": "HeadshotVirgoShocked",
+            "dialogue": "Ack! I almost tripped on these wires! I guess no one really paid attention to those safety posters.",
             "endOfScene": true
         }
     ]

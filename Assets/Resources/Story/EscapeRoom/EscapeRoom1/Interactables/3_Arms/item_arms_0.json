@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_arms_0"
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "These arms... they look a little familiar."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "Hmm. Something seems off about them, though. It is strange that their hands are posed like that.",
             "endOfScene": true
         }
     ]

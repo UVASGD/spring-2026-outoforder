@@ -2,18 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_caesar_diary_puzzle_1"
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "All that's interesting, but what does that have to do with any of this?"
         },
         {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "I wonder if there's anything near to help us figure that out.",
             "endOfScene": true
         }
     ]

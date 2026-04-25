@@ -3,12 +3,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "item_posters_1"
+            "dialogue": "It's a safety first poster."
         },
         {
             "character": "ASTA",
             "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "dialogue": "Yes. This facility may be hazardous to your biology.",
             "endOfScene": true
         }
     ]

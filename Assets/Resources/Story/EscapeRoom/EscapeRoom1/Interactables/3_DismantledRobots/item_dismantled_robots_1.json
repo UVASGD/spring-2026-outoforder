@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_dismantled_robots_1"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "(It's a pile of dismantled robots.)"
         },
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "Why are you staring so hard, Virgo?",
             "endOfScene": true
         }
     ]

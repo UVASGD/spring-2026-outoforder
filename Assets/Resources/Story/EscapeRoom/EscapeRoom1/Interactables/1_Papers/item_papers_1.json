@@ -2,18 +2,18 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_papers_1"
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "(...)"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "(These drawings...)"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "(This one... 4574...)",
             "endOfScene": true
         }
     ]

@@ -89,7 +89,7 @@
         },
         {
             "character": "4574",
-            "speakerSpriteAsta": "FullAstaSurprised",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "Ah. Could you have thought ASTA?"
         },
         {
@@ -199,7 +199,7 @@
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "FullAstaSurprised",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "Ah wait. Have they started opening the facility to outsiders again while I was disabled?"
         },
         {
@@ -214,7 +214,7 @@
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "FullAstaSurprised",
+            "speakerSpriteAsta": "FullAstaCurious",
             "dialogue": "Oh my. Perhaps there was a system error."
         },
         {

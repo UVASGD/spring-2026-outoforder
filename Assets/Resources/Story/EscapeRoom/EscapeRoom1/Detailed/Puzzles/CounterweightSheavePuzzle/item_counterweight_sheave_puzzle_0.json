@@ -2,18 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_counterweight_sheave_puzzle_0"
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "Huh, it's not moving..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "Are we holding anything that might be useful here?",
             "endOfScene": true
         }
     ]

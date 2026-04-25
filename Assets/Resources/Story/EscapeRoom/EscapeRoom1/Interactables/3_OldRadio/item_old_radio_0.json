@@ -2,13 +2,33 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_old_radio_0"
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "ASTA, do you hear that? It's playing static."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "Ah. Maybe you could tune it to that marked frequency?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "Alright, let's see..."
+        },
+        {
+            "character": "Radio",
+            "speakerSprite": "Radio",
+            "dialogue": "beep. beepbeep. beep. beep.  bzzzk. bzzzk. beep beep. ... ?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "What do you think it's trying to say?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "It must be a code for something. Maybe we could find something to help us decipher.",
             "endOfScene": true
         }
     ]

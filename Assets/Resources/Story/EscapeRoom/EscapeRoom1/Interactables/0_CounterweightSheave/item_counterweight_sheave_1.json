@@ -2,17 +2,17 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_counterweight_sheave_1"
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "It's the counterweight sheave."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "Maybe we can fix it from here."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "I should take a closer look.",
             "endOfScene": true
         }

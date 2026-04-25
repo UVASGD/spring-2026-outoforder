@@ -2,12 +2,12 @@
     "dialogues": [
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
+            "speakerSprite": "HeadshotAstaCurious",
             "dialogue": "What are you doing there, Virgo?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "I found a scale. Maybe we can try weighing something here.",
             "endOfScene": true
         }

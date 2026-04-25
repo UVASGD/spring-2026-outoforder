@@ -2,18 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_pixel_shift_puzzle_1"
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "It's a distorted image of something... but what?"
         },
         {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaStern",
+            "dialogue": "Maybe we should try rearranging the grid to see what it is.",
             "endOfScene": true
         }
     ]
