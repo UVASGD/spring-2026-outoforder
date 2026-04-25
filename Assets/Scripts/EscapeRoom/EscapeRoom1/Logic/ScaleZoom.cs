@@ -66,6 +66,10 @@ public class ScaleZoom : MonoBehaviour
             GameData.escapeRoomGameplayManager.locations.CollectItem(itemController.itemData, emptyGear);
             print("remove gear");
         }
+        else
+        {
+            GameData.escapeRoomGameplayManager.locations.ExamineItem();
+        }
 
         itemController.UpdateItemData();
     }

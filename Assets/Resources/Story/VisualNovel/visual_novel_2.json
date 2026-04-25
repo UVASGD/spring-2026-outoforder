@@ -5,7 +5,8 @@
             "character": "ASTA",
             "speakerSpriteAsta": "FullAstaCurious",
             "speakerSpriteVirgo": "FullVirgoPensive",
-            "dialogue": "..."
+            "dialogue": "...",
+            "playBGM": 7
         },
         {
             "character": "Virgo",

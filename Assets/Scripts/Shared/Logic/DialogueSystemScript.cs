@@ -14,6 +14,7 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private List<DialogueStruct> dialogueStructList = new();
 
     [Header("[UI]")]
+    public Image dialogueBox;
     public Image dialogueBoxBackgroundImage;
     public Image dialogueBoxBorderImage;
     public Image dialogueBoxOverlayImage;
@@ -63,6 +64,8 @@ public class DialogueSystem : MonoBehaviour
     void Awake()
     {
         // UI
+        dialogueBox = transform.Find("DialogueBox")?.GetComponent<Image>();
+
         dialogueBoxBackgroundImage = transform.Find("DialogueBox/DialogueBoxBackground")?.GetComponent<Image>();
         dialogueBoxBorderImage = transform.Find("DialogueBox/DialogueBoxBorder")?.GetComponent<Image>();
         dialogueBoxOverlayImage = transform.Find("DialogueBox/DialogueBoxOverlay")?.GetComponent<Image>();
@@ -86,7 +89,7 @@ public class DialogueSystem : MonoBehaviour
         dialogueTMP = transform.Find("Text/DialogueText").GetComponent<TextMeshProUGUI>();
         narrationTMP = transform.parent.transform.Find("NarrationText").GetComponent<TextMeshProUGUI>();
 
-        advanceDialogueButton = transform.parent.transform.Find("AdvanceDialogueButton").gameObject;
+        advanceDialogueButton = transform.parent.transform.Find("AdvanceDialogueButton")?.gameObject;
 
         // Log
         content = Resources.FindObjectsOfTypeAll<GameObject>()
@@ -104,7 +107,7 @@ public class DialogueSystem : MonoBehaviour
             activeCG?.gameObject.SetActive(false);
         }
         narrationTMP.gameObject.SetActive(false);
-        advanceDialogueButton.SetActive(true);
+        advanceDialogueButton?.SetActive(true);
 
         LoadVisualNovelJSONFile();
         ProgressMainVNSequence();
@@ -122,7 +125,7 @@ public class DialogueSystem : MonoBehaviour
 
             if (currentDialogue.endOfScene)
             {
-                advanceDialogueButton.SetActive(false);
+                advanceDialogueButton?.SetActive(false);
 
                 GameData.currentlyTalking = false;
                 finishedDialogue = false;
@@ -280,6 +283,10 @@ public class DialogueSystem : MonoBehaviour
                 speakerSpriteAstaImageActive.enabled = false;
                 speakerSpriteVirgoImageActive.enabled = false;
             }
+        }
+        else
+        {
+            dialogueBox.enabled = false;
         }
         nameTMP.enabled = false;
         dialogueTMP.enabled = false;

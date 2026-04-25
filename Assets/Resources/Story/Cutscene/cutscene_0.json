@@ -2,13 +2,22 @@
     "dialogues": [
         {
             "character": "",
-            "cgSprite": "HeadshotVirgoCurious",
-            "dialogue": "In this world, there exists humans and the robots that serve them. With today's advanced technology, robots are able to attend to all the needs a human may have.",
+            "dialogue": "In this world, there exists humans and the robots that serve them.",
             "textSpeed": 0.075
         },
         {
             "character": "",
-            "dialogue": "Robots can be housmaids, firefighters, doctors... the possiblities are endless. However, all robots have Three Laws they must abide by.",
+            "dialogue": "With today's advanced technology, robots are able to attend to all the needs a human may have.",
+            "textSpeed": 0.075
+        },
+        {
+            "character": "",
+            "dialogue": "Robots can be housemaids, firefighters, doctors... the possiblities are endless.",
+            "textSpeed": 0.075
+        },
+        {
+            "character": "",
+            "dialogue": "However, all robots have Three Laws they must abide by.",
             "textSpeed": 0.075
         },
         {
@@ -18,7 +27,6 @@
         },
         {
             "character": "",
-            "cgSprite": "HeadshotAstaContent",
             "dialogue": "Second, unless they conflict with the First Law, a robot must obey their human's orders;",
             "textSpeed": 0.075
         },
@@ -60,7 +68,6 @@
         },
         {
             "character": "",
-            "cgSprite": "HeadshotVirgoCurious",
             "dialogue": "Error. Error. Error. Errrrrr",
             "textSpeed": 0.125
         },

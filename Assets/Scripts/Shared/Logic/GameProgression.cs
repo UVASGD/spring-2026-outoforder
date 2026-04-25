@@ -88,6 +88,9 @@ public class GameProgression : MonoBehaviour
 
         DialogueSystem = (DialogueSystem)FindInChildrenIncludingInactive<DialogueSystem>(GameObject.Find("Canvas"));
 
+        audioSourceBGM.loop = true;
+        GameData.autoDialogueProgression = false;
+
         // TODO: fill out as we go
         switch (currentScene)
         {
@@ -97,6 +100,8 @@ public class GameProgression : MonoBehaviour
             case "Cutscene":
                 // TODO : different for endings
                 StartCoroutine(PlayBGM(1));
+                audioSourceBGM.loop = false;
+                GameData.autoDialogueProgression = true;
                 break;
             case "VisualNovel":
                 break;

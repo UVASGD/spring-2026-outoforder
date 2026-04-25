@@ -7346,4 +7346,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df517e76a5328304cb797b196b8a7a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuBarScript
-  currentMenuName: log
+  currentMenuName: none
