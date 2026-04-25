@@ -4068,7 +4068,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2016656638472462059, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
       propertyPath: debugEscapeRoomNumber
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4961446670045982556, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10264,8 +10264,12 @@ PrefabInstance:
       value: DialogueBox
       objectReference: {fileID: 0}
     - target: {fileID: 1784026436303785415, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784026436303785415, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 250
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 1818273957940348668, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_Name
@@ -10344,12 +10348,20 @@ PrefabInstance:
       value: SpeakerSpriteAstaActive
       objectReference: {fileID: 0}
     - target: {fileID: 4842151826250586825, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842151826250586825, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 250
+      value: 225
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889339535459065786, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 4889339535459065786, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -250
+      value: -225
       objectReference: {fileID: 0}
     - target: {fileID: 7104046946914916958, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -10405,7 +10417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9202293761066718353, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 300
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 9202293761066718353, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_SizeDelta.y
@@ -10413,7 +10425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9202293761066718353, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -250
+      value: -225
       objectReference: {fileID: 0}
     - target: {fileID: 9202293761066718353, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_AnchoredPosition.y

@@ -3,7 +3,13 @@
         {
             "character": "",
             "cgSprite": "HeadshotVirgoCurious",
-            "dialogue": "In this world, there exists humans and the robots that serve them. With today's advanced technology, robots are able to attend to all the needs a human may have.",
+            "dialogue": "In this world, there exists humans and the robots that serve them.",
+            "textSpeed": 0.075
+        },
+        {
+            "character": "",
+            "cgSprite": "HeadshotVirgoCurious",
+            "dialogue": "With today's advanced technology, robots are able to attend to all the needs a human may have.",
             "textSpeed": 0.075
         },
         {
