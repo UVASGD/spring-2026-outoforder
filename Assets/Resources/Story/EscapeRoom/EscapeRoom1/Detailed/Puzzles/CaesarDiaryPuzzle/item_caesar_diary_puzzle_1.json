@@ -2,12 +2,12 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "A Caesar cipher, huh? But what would the shift value be?"
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "All that's interesting, but what does that have to do with any of this?"
         },
         {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaCurious",
             "dialogue": "I wonder if there's anything near to help us figure that out.",
             "endOfScene": true
         }

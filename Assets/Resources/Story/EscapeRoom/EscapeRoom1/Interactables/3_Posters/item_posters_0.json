@@ -3,12 +3,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "HeadshotVirgoPensive",
-            "dialogue": "What are these posters?"
+            "dialogue": "Safety first, huh?"
         },
         {
             "character": "ASTA",
             "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "dialogue": "Yes. It seems that some areas of the facility would be quite hazardous to traverse.",
             "endOfScene": true
         }
     ]

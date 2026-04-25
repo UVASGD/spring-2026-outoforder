@@ -2,18 +2,18 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoShocked",
             "dialogue": "Ah! This file..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "Hmm. It's hard to tell what it is. It's definitely an image but it's all distorted."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Though, I'm sure this is a good start... here, why don't we try rearranging the grid for one?'",
+            "speakerSprite": "HeadshotAstaStern",
+            "dialogue": "Though, I am sure this is a good start... here, why don't we try rearranging the grid for one?'",
             "endOfScene": true
         }
     ]

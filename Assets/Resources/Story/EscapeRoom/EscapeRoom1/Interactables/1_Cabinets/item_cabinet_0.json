@@ -2,18 +2,28 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_cabinet_0"
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "Hey, Asta. Look at all these files."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "That is strange. I did not know there were physical files being kept by the organization."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "Why doesn't an organization that's so advanced keep all their info digitally?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "This area seems to be some sort of archive."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "Maybe we should look around to see if anything else in here could be useful.",
             "endOfScene": true
         }
     ]

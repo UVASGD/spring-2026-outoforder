@@ -23,7 +23,7 @@
         {
             "character": "Virgo",
             "speakerSprite": "HeadshotVirgoDetermined",
-            "dialogue": "",
+            "dialogue": "I see... maybe we can fix it from here?",
             "endOfScene": true
         }
     ]

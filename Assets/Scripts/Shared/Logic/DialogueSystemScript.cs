@@ -45,6 +45,12 @@ public class DialogueSystem : MonoBehaviour
     private Coroutine typewriterCoroutine;
     public int dialogueIndex = -1;
     private string dialogueOnDisplay;
+    private HashSet<string> validSprites = new()
+    {
+        "Virgo",
+        "4574",
+        "ASTA"
+    };
 
     // FADE
     private bool automaticFadeComplete;
@@ -317,32 +323,48 @@ public class DialogueSystem : MonoBehaviour
     
     public void SetSprite()
     {
-        if (SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
+        if (validSprites.Contains(currentDialogue.character)) 
         {
-            CheckFadeSpeakerSprite(speakerSpriteImageOld, speakerSpriteImageActive, currentDialogue.speakerSprite);
+            if (SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
+            {
+                CheckFadeSpeakerSprite(speakerSpriteImageOld, speakerSpriteImageActive, currentDialogue.speakerSprite);
+            }
+            else if (SceneManager.GetActiveScene().name.Equals("VisualNovel") || GameData.loadedSave != -1)
+            {
+                speakerSpriteAstaImageActive.color = currentDialogue.character.Equals("???") || currentDialogue.character.Contains("4574") || currentDialogue.character.Equals("ASTA") 
+                    ? Color.white
+                    : Color.gray;
+                speakerSpriteVirgoImageActive.color = currentDialogue.character.Equals("Virgo")
+                    ? Color.white
+                    : Color.gray;
+                
+                if (SceneManager.GetActiveScene().name.Equals("VisualNovel"))
+                {
+                    CheckFadeSpeakerSprite(speakerSpriteAstaImageOld, speakerSpriteAstaImageActive, currentDialogue.speakerSpriteAsta);
+                    CheckFadeSpeakerSprite(speakerSpriteVirgoImageOld, speakerSpriteVirgoImageActive, currentDialogue.speakerSpriteVirgo);   
+                }
+                else if (GameData.loadedSave != -1)
+                {
+                    // TODO NOT REACHABLE. AND NEED IT TO DO THIS TO MAKE NON SPEAKING CHARACTER GRAYED OUT WHEN SAVE LOADS.
+                    print("abc");
+                    speakerSpriteAstaImageOld.color = new Color(speakerSpriteAstaImageOld.color.r, speakerSpriteAstaImageOld.color.g, speakerSpriteAstaImageOld.color.b, 0);
+                    speakerSpriteVirgoImageOld.color = new Color(speakerSpriteVirgoImageOld.color.r, speakerSpriteVirgoImageOld.color.g, speakerSpriteVirgoImageOld.color.b, 0);
+                }
+            }
         }
-        else if (SceneManager.GetActiveScene().name.Equals("VisualNovel") || GameData.loadedSave != -1)
+        else
         {
-            speakerSpriteAstaImageActive.color = currentDialogue.character.Equals("???") || currentDialogue.character.Contains("4574") || currentDialogue.character.Equals("ASTA") 
-                ? Color.white
-                : Color.gray;
-            speakerSpriteVirgoImageActive.color = currentDialogue.character.Equals("Virgo")
-                ? Color.white
-                : Color.gray;
-            
-            if (SceneManager.GetActiveScene().name.Equals("VisualNovel"))
+            if (SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
             {
-                CheckFadeSpeakerSprite(speakerSpriteAstaImageOld, speakerSpriteAstaImageActive, currentDialogue.speakerSpriteAsta);
-                CheckFadeSpeakerSprite(speakerSpriteVirgoImageOld, speakerSpriteVirgoImageActive, currentDialogue.speakerSpriteVirgo);   
+                speakerSpriteImageActive.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
             }
-            else if (GameData.loadedSave != -1)
+            else
             {
-                // TODO NOT REACHABLE. AND NEED IT TO DO THIS TO MAKE NON SPEAKING CHARACTER GRAYED OUT WHEN SAVE LOADS.
-                print("abc");
-                speakerSpriteAstaImageOld.color = new Color(speakerSpriteAstaImageOld.color.r, speakerSpriteAstaImageOld.color.g, speakerSpriteAstaImageOld.color.b, 0);
-                speakerSpriteVirgoImageOld.color = new Color(speakerSpriteVirgoImageOld.color.r, speakerSpriteVirgoImageOld.color.g, speakerSpriteVirgoImageOld.color.b, 0);
+                speakerSpriteAstaImageActive.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
+                speakerSpriteVirgoImageActive.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
             }
         }
+      
     }
 
     public void SetDialogue() 

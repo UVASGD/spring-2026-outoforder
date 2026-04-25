@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_scale_0"
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "Hey, what's that underneath the rack?"
         },
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "Maybe we should take a look.",
             "endOfScene": true
         }
     ]

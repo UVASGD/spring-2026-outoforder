@@ -2,18 +2,18 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_papers_0"
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "(It's a bunch of papers...? What are these drawings?)"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoShocked",
+            "dialogue": "(These kind of look like... ASTA...)"
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "dialogue": "(These must be the other patrol robot models.)",
             "endOfScene": true
         }
     ]

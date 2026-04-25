@@ -3,12 +3,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "item_gears_0"
+            "dialogue": "It's a bunch of gears."
         },
         {
             "character": "ASTA",
             "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "dialogue": "It appears that they are of various sizes, widths, and weights.",
             "endOfScene": true
         }
     ]
