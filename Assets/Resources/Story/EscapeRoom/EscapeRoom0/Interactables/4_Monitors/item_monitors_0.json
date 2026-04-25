@@ -2,12 +2,12 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Monitors."
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "A bunch of monitors."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "... They're all off though. Huh.",
             "endOfScene": true
         }

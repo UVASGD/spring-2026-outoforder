@@ -2,8 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Ah, it opened. 2"
+            "speakerSprite": "HeadshotVirgoShocked",
+            "dialogue": "Ah!! It opened!"
         },
         {
             "character": "Virgo",

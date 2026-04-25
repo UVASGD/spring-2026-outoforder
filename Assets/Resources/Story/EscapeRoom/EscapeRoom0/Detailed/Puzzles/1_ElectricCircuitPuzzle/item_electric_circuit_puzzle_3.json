@@ -2,18 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "it charged it!"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "It charged the core!"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "So the second slot for the gate must take one."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "What combination of gates could that be...",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "Now I think I can use the cyan core.",
             "endOfScene": true
         }
     ]

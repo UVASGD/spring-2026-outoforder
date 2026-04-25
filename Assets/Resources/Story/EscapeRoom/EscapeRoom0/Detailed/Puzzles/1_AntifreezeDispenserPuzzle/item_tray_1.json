@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "i just placed the yellow core here awesome"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "Seems the yellow core fits here."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Looks like electricity from the circuit recharged the blue core.",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "Now I just need to figure out how to operate this thing...",
             "endOfScene": true
         }
     ]

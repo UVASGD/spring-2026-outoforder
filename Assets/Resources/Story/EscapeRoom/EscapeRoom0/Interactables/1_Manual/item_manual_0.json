@@ -2,18 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "This looks like... item_manual_0"
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "A manual?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "I wonder what it's for...",
             "endOfScene": true
         }
     ]

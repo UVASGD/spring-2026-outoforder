@@ -2,17 +2,17 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Using the remote for these monitors turned them all on."
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "Looks like the remote was for these monitors."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "Now there's just a bunch of colors."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "Cyan, magenta, and yellow... have I seen that somewhere else before?",
             "endOfScene": true
         }

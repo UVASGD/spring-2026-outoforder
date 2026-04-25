@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "locked drawer puzzle 0"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "The drawer is locked. I need to use the right code to get it open."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I'll just have to work with what I have. I'll keep thinking about it.",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "Could there be some sort of hint around here?",
             "endOfScene": true
         }
     ]

@@ -2,23 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "locked box puzzle 0"
+            "speakerSprite": "HeadshotVirgoShocked",
+            "dialogue": "That was the right code!"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "But it looks like something is missing. There's an empty slot."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Could there be a lever for this?"
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I guess I'll just have to find it.",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "It's filled with... a bunch of cores?",
             "endOfScene": true
         }
     ]

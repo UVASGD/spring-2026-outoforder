@@ -2,18 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Oh hey..."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "There's a faint, but glowing blue light here."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Could this be useful later?",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "There's a faint, but glowing blue light here.",
             "endOfScene": true
         }
     ]

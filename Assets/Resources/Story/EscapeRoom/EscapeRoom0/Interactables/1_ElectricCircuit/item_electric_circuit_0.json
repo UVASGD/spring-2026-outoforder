@@ -2,18 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_electric_circuit_0"
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "Some sort of circuit board?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "It's too dark to use... I probably shouldn't touch it for now.",
             "endOfScene": true
         }
     ]

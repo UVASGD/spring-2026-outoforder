@@ -3,17 +3,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "lights off item_antifreeze_dispenser_0"
+            "dialogue": "There's some sort of machine here."
         },
         {
             "character": "Virgo",
             "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "dialogue": "It's too dark to tell what it is... I need to get the lights on.",
             "endOfScene": true
         }
     ]

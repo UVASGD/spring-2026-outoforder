@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoShocked",
             "dialogue": "That worked... the lights are all back on."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look around the room. There must be something in here that can help me."
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "I should take a closer look around the area now. There must be something in here that can help me."
         },
         {
             "hideUI": true,
@@ -16,7 +16,7 @@
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "Now, where was I?",
             "playBGM": "-1"
         },
@@ -26,53 +26,53 @@
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "Wait... what is that?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoShocked",
             "dialogue": "...!?",
             "playSFX": "4"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "I didn't see it before but..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "That's definitely a leg, right?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "Not a human at that but..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "It's not moving at all. Maybe I can take a closer look."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoPensive",
             "dialogue": "It's already the two of us anyway.",
             "flag": "firstInteractionRobot"
         },
@@ -82,39 +82,39 @@
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Ah...",
+            "speakerSprite": "HeadshotVirgoShocked",
+            "dialogue": "Ah...!!",
             "playSFX": "7"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoShocked",
             "dialogue": "A patrol robot that's... out of order."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Somewhat ironic in a facility like this"
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "Somewhat ironic in a facility like this..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "AS... TA... ASTA?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "It's chestplate is open and there are three cores."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I need to get out so maybe i can use this robots auth once i turn it on again"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "I really need to get out of here... if I reactivate this robot, could I use its authentication to gain access to other areas?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "i am going to fix this robot so it helps me",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "I need to fix it. Maybe it could help me...",
             "endOfScene": true
         }
     ]
