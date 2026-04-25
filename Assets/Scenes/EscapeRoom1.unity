@@ -18667,9 +18667,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
   eventOffset: 0
   activatingFlags:
-  - firstInteractionGears
+  - firstInteractionGearsZoom
   triggeringFlags:
-  - firstInteractionGears
+  - firstInteractionGearsZoom
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
