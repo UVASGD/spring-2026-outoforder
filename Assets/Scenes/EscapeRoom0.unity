@@ -5005,8 +5005,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
-  eventOffset: 0
+  eventOffset: 1
   activatingFlags:
+  - solvedLightSwitchPuzzle
   - firstInteractionAntifreezeDispenser
   triggeringFlags:
   - firstInteractionAntifreezeDispenser
@@ -7100,8 +7101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 885ff88af002e644ab32c4abf9b457bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManualInteraction
-  eventOffset: 0
+  eventOffset: 1
   activatingFlags:
+  - solvedLightSwitchPuzzle
   - firstInteractionElectricCircuit
   triggeringFlags:
   - firstInteractionElectricCircuit
@@ -8619,6 +8621,18 @@ PrefabInstance:
       propertyPath: debugEscapeRoomNumber
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2016656638472462059, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
+      propertyPath: audioClipsSFX.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2016656638472462059, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
+      propertyPath: 'audioClipsSFX.Array.data[10]'
+      value: 
+      objectReference: {fileID: 8300000, guid: efd26bf1301c6514db036ffc65e22452, type: 3}
+    - target: {fileID: 2016656638472462059, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
+      propertyPath: 'audioClipsSFX.Array.data[11]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 326d4cb7b7362aa419ed32e5e6a3aa48, type: 3}
     - target: {fileID: 4961446670045982556, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -91,6 +91,7 @@ public class Puzzle : MonoBehaviour
 
     private void SolvedPuzzle()
     {
+        GameProgression.GameProgressionInstance.PlaySFX(10);
         print("TODO: CORRECT GUESS UI");
         solved = true;
         SolvedPuzzleSpecific();
@@ -98,6 +99,7 @@ public class Puzzle : MonoBehaviour
 
     private void ErrorPuzzle()
     {
+        GameProgression.GameProgressionInstance.PlaySFX(11);
         print($"TODO: ERROR GUESS UI; the guess was {new string(guess)}");
     }
 
