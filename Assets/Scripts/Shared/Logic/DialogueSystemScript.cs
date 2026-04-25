@@ -14,6 +14,7 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private List<DialogueStruct> dialogueStructList = new();
 
     [Header("[UI]")]
+    public Image dialogueBox;
     public Image dialogueBoxBackgroundImage;
     public Image dialogueBoxBorderImage;
     public Image dialogueBoxOverlayImage;
@@ -57,6 +58,8 @@ public class DialogueSystem : MonoBehaviour
     void Awake()
     {
         // UI
+        dialogueBox = transform.Find("DialogueBox")?.GetComponent<Image>();
+
         dialogueBoxBackgroundImage = transform.Find("DialogueBox/DialogueBoxBackground")?.GetComponent<Image>();
         dialogueBoxBorderImage = transform.Find("DialogueBox/DialogueBoxBorder")?.GetComponent<Image>();
         dialogueBoxOverlayImage = transform.Find("DialogueBox/DialogueBoxOverlay")?.GetComponent<Image>();
@@ -274,6 +277,10 @@ public class DialogueSystem : MonoBehaviour
                 speakerSpriteAstaImageActive.enabled = false;
                 speakerSpriteVirgoImageActive.enabled = false;
             }
+        }
+        else
+        {
+            dialogueBox.enabled = false;
         }
         nameTMP.enabled = false;
         dialogueTMP.enabled = false;
