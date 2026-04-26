@@ -2245,11 +2245,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "PRODUCTION\r\nkanmiiii\r\n\r\nCONCEPT + STORY\r\nkanmiiii\r\nheavenlydraco\r\n\r\nWRITING\r\nLEAD,
-    VISUAL NOVEL, ESCAPE ROOM magnesianova\r\nOPENING purplebaze\r\n\r\nART\r\nDETAILED
-    VIEWS purplebaze\nBACKGROUND VIEWS wickedwhite\r\nCHARACTER kanmiiii\r\nUI pinkiep1es\r\n\r\nMUSIC\r\nmagnesianova\r\n\r\nPUZZLE
-    DESIGN \r\nLEAD kanmiiii\r\nheavenlydraco \r\n\r\nPROGRAMMING\r\nLEAD, DESIGN,
-    SYSTEM, PROGRESSION, PUZZLE kanmiiii\r\nPUZZLE mayoe0529\r\nPUZZLE arti_creep"
+  m_text: "\xB7 PRODUCTION \xB7\r\nkanmiiii\r\n\r\n\xB7 CONCEPT + STORY \xB7\r\nkanmiiii\r\nheavenlydraco\r\n\r\n\xB7
+    WRITING \xB7\r\nLEAD, VISUAL NOVEL, ESCAPE ROOM magnesianova\r\nOPENING purplebaze\r\n\r\n\xB7
+    ART \xB7\r\nDETAILED VIEWS purplebaze\nBACKGROUND VIEWS wickedwhite\r\nCHARACTER
+    kanmiiii\r\nUI pinkiep1es\r\n\r\n\xB7 MUSIC \xB7\r\nmagnesianova\r\n\r\n\xB7
+    PUZZLE DESIGN \xB7\r\nLEAD kanmiiii\r\nheavenlydraco \r\n\r\n\xB7 PROGRAMMING
+    \xB7\r\nLEAD, DESIGN, SYSTEM, PROGRESSION, PUZZLE kanmiiii\r\nPUZZLE mayoe0529\r\nPUZZLE
+    arti_creep"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 35efc9c821bd1944699af206d24b8e82, type: 2}
   m_sharedMaterial: {fileID: -8822740615049961525, guid: 35efc9c821bd1944699af206d24b8e82, type: 2}
@@ -2599,7 +2601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1753933551
 RectTransform:
   m_ObjectHideFlags: 0
