@@ -104,6 +104,10 @@ public class Puzzle : MonoBehaviour
 
         GameData.escapeRoomGameplayManager.puzzleFeedback.SetActive(false);
 
+        yield return new WaitForSeconds(0.25f);
+
+        if (solved) SolvedPuzzleSpecific();
+
         checkPuzzleAttemptCoroutine = null;
     }
 
@@ -114,7 +118,6 @@ public class Puzzle : MonoBehaviour
         GameData.escapeRoomGameplayManager.puzzleFeedbackTMP.text = "success";
         print("TODO: CORRECT GUESS UI");
         solved = true;
-        SolvedPuzzleSpecific();
     }
 
     private void ErrorPuzzle()
