@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,6 +7,7 @@ public class LightSwitchPuzzle : Puzzle
 {
     private GameObject submit;
     private bool leverRepaired;
+    private List<Brighten> brightens = new();
 
     void Awake()
     {
@@ -12,6 +15,8 @@ public class LightSwitchPuzzle : Puzzle
         guess = new char[] { '0', '0', '0', '0', '0', '0', '0' };
 
         submit = transform.Find("Submit").gameObject;
+
+        brightens = FindObjectsByType<Brighten>(FindObjectsSortMode.None).ToList();
     }
 
     void Update()
@@ -29,6 +34,7 @@ public class LightSwitchPuzzle : Puzzle
     protected override void SolvedPuzzleSpecific()
     {
         GameData.escapeRoomGameplayManager.locationGameObjects.ForEach(location => location.GetComponent<Image>().color = Color.white);
+        brightens.ForEach(brighten => brighten.GetComponent<Image>().color = Color.white);
 
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["UnlockedLightSwitchPuzzle"];
         GameData.escapeRoomGameplayManager.locationGameObjects[0].GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["EscapeRoom0Location0Tertriary"];
