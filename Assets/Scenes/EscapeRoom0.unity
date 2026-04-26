@@ -3813,7 +3813,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -88, y: -113}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 100, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &442019180
 MonoBehaviour:
@@ -3929,14 +3929,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 59ad0297dac74054ba69c2bb6d45d339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 95bb382820aac804aa10ba3e75910964, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7385,12 +7385,20 @@ PrefabInstance:
       value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 6505607479544381824, guid: d468b7d29eb721e4c83d5c1db4d87001, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8822740615049961525, guid: 35efc9c821bd1944699af206d24b8e82, type: 2}
+    - target: {fileID: 6505607479544381824, guid: d468b7d29eb721e4c83d5c1db4d87001, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7685645524855840696, guid: d468b7d29eb721e4c83d5c1db4d87001, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8822740615049961525, guid: 35efc9c821bd1944699af206d24b8e82, type: 2}
+    - target: {fileID: 7685645524855840696, guid: d468b7d29eb721e4c83d5c1db4d87001, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8435829044367444079, guid: d468b7d29eb721e4c83d5c1db4d87001, type: 3}
       propertyPath: m_Name
@@ -7631,6 +7639,10 @@ PrefabInstance:
     - target: {fileID: 7548812002011992074, guid: e2f0dd5b4cfaf2d44be904e6cae0d15b, type: 3}
       propertyPath: m_Name
       value: Hover
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472846065667323116, guid: e2f0dd5b4cfaf2d44be904e6cae0d15b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8507458003248457371, guid: e2f0dd5b4cfaf2d44be904e6cae0d15b, type: 3}
       propertyPath: m_Pivot.x
@@ -7894,8 +7906,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: -79}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: -343, y: -20}
+  m_SizeDelta: {x: 35, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &890565705
 MonoBehaviour:
@@ -8013,14 +8025,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 59ad0297dac74054ba69c2bb6d45d339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ce9f0ee3f48c4c488d5ef25eb795f0d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16413,6 +16425,10 @@ PrefabInstance:
     - target: {fileID: 2650699005835381523, guid: 9ae121717f561b94787c6fc99ea7173f, type: 3}
       propertyPath: m_Name
       value: PuzzleFeedback
+      objectReference: {fileID: 0}
+    - target: {fileID: 2650699005835381523, guid: 9ae121717f561b94787c6fc99ea7173f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5965078054376451875, guid: 9ae121717f561b94787c6fc99ea7173f, type: 3}
       propertyPath: m_Pivot.x
