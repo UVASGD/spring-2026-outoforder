@@ -3,6 +3,7 @@
         {
             "location": "locked room",
             "character": "???",
+            "cgSprite": "EscapeRoom0Location2",
             "speakerSpriteAsta": "FullAstaCurious",
             "speakerSpriteVirgo": "FullVirgoShocked",
             "dialogue": " *bzzzkttzkbzz….*"

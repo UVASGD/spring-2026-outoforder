@@ -122,6 +122,8 @@ public class GameProgression : MonoBehaviour
 
         blackTransition = GameObject.Find("Canvas").transform.Find("BlackTransition").gameObject;
 
+        print("now fading the black transiton");
+
         float fadeSpeed = 0.5f;
 
         FadeEffect.FadeOut(blackTransition, fadeSpeed, transitioning: true);

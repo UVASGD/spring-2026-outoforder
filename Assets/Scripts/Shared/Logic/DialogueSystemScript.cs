@@ -103,11 +103,6 @@ public class DialogueSystem : MonoBehaviour
 
     void OnEnable() 
     {
-        if (!SceneManager.GetActiveScene().name.Equals("Cutscene"))
-        {
-            oldCG?.gameObject.SetActive(false);
-            activeCG?.gameObject.SetActive(false);
-        }
         narrationTMP.gameObject.SetActive(false);
         advanceDialogueButton?.SetActive(true);
 
@@ -313,21 +308,22 @@ public class DialogueSystem : MonoBehaviour
 
     public void SetCG()
     {
-        if (!SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
+        if (currentDialogue.cgSprite != null)
         {
-            if (currentDialogue.cgSprite != null)
-            {
-                Sprite oldCGSprite = oldCGImage.sprite;
-                Sprite newCGSprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.cgSprite];
+            activeCGImage.sprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.cgSprite];
 
-                if (!oldCGSprite.ToString().Equals(newCGSprite.ToString())) 
-                {
-                    oldCGImage.sprite = activeCGImage.sprite;
-                    GameProgression.GameProgressionInstance.FadeEffect.FadeInCGSprite(activeCG, newCGSprite);
-                    GameProgression.GameProgressionInstance.FadeEffect.FadeOutCGSprite(oldCG, oldCGSprite);
-                }
-            }    
-        }
+            // TODO FIND A BETTER FIX
+            // print("settings the cg");
+            // Sprite oldCGSprite = oldCGImage.sprite;
+            // Sprite newCGSprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.cgSprite];
+
+            // if (!oldCGSprite.ToString().Equals(newCGSprite.ToString())) 
+            // {
+            //     oldCGImage.sprite = activeCGImage.sprite;
+            //     GameProgression.GameProgressionInstance.FadeEffect.FadeInCGSprite(activeCG, newCGSprite);
+            //     GameProgression.GameProgressionInstance.FadeEffect.FadeOutCGSprite(oldCG, oldCGSprite);
+            // }
+        } 
     }
     
     public void SetSprite()
