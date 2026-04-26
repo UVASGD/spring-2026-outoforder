@@ -2,17 +2,17 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "Hm, this drawer won't open."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "It looks like it needs a code of some sort...?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "Let me try inputting something.",
             "endOfScene": true
         }

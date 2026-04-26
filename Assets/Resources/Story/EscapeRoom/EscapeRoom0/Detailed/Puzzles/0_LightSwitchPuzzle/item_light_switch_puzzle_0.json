@@ -2,22 +2,22 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "The emergency light switch is here."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "But it looks like something is missing. There's an empty slot."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "Could there be a lever for this?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "I guess I'll just have to find it.",
             "endOfScene": true
         }

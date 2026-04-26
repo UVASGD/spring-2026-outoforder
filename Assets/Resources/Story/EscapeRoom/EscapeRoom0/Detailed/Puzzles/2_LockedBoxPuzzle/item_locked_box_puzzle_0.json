@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "HeadshotVirgoShocked",
-            "dialogue": "That was the right code!"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "That got the box to unlock!"
         },
         {
             "character": "Virgo",
             "speakerSprite": "HeadshotVirgoCurious",
-            "dialogue": "It's filled with... a bunch of cores?",
+            "dialogue": "It's filled with... a bunch of colored cores?",
             "endOfScene": true
         }
     ]

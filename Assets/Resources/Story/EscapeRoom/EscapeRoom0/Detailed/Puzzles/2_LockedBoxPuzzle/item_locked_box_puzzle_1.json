@@ -3,7 +3,7 @@
         {
             "character": "Virgo",
             "speakerSprite": "HeadshotVirgoCurious",
-            "dialogue": "(I wonder what these cores are for... is there anywhere I could use them?)",
+            "dialogue": "I wonder what these cores are for... is there anywhere I could use them?",
             "endOfScene": true
         }
     ]

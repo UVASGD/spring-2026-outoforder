@@ -2,27 +2,27 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "There's a box on the right side of the shelf."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "I'll just take it down and..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoShocked",
             "dialogue": "Ah. It's already open."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoPensive",
             "dialogue": "I can't see that well but... this feels like a lever? I feel like... I saw somewhere where this could've belonged..."        
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "I should take it for now.",
             "endOfScene": true
         }

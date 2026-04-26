@@ -3,17 +3,7 @@
         {
             "character": "Virgo",
             "speakerSprite": "HeadshotVirgoCurious",
-            "dialogue": "These cores..."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "HeadshotVirgoCurious",
-            "dialogue": "The first shape connects to the first two slots, and the second shape connects to the third and fourth slots. But the final shape connects to the last three."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "HeadshotVirgoCurious",
-            "dialogue": "In each of the shapes, there's... a particular rounded line. I wonder if that means anything."
+            "dialogue": "These cores... their colors..."
         },
         {
             "character": "Virgo",

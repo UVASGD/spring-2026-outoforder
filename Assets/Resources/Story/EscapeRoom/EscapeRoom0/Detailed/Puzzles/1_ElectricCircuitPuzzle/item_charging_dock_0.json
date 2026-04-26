@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "before used item_charging_dock_0"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "It's a dock colored cyan."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Looks like electricity from the circuit recharged the blue core.",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "Should I try putting something on it?",
             "endOfScene": true
         }
     ]

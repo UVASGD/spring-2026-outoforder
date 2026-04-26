@@ -2,12 +2,12 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "There's some things on the desk."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoPensive",
             "dialogue": "I shouldn't mess with anything though. It's too dark, and I don't want to break anything.",
             "endOfScene": true
         }

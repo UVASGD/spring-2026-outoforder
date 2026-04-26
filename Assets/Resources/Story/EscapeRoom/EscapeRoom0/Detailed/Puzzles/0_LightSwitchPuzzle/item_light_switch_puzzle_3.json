@@ -3,7 +3,7 @@
         {
             "character": "Virgo",
             "speakerSprite": "HeadshotVirgoShocked",
-            "dialogue": "That worked... the lights are all back on."
+            "dialogue": "That worked! The lights are all back on."
         },
         {
             "character": "Virgo",
@@ -52,7 +52,7 @@
         },
         {
             "character": "Virgo",
-            "speakerSprite": "HeadshotVirgoCurious",
+            "speakerSprite": "HeadshotVirgoShocked",
             "dialogue": "..."
         },
         {
@@ -62,7 +62,7 @@
         },
         {
             "character": "Virgo",
-            "speakerSprite": "HeadshotVirgoCurious",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "..."
         },
         {
@@ -104,7 +104,7 @@
         {
             "character": "Virgo",
             "speakerSprite": "HeadshotVirgoCurious",
-            "dialogue": "It's chestplate is open and there are three cores."
+            "dialogue": "Its chestplate is open and there are three cores."
         },
         {
             "character": "Virgo",

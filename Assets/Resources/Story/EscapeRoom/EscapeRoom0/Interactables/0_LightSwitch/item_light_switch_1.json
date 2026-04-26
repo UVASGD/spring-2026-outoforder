@@ -2,7 +2,7 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "It's the emergency light switch.",
             "endOfScene": true
         }

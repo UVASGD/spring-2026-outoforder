@@ -2,12 +2,12 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "I can't make out what this figure is. From the feel of it... it's a drawer?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "I should turn on the light first though. I don't want to mess with anything by accident.",
             "endOfScene": true
         }

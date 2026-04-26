@@ -2,13 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "there, put it in. now to fix it"
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Looks like electricity from the circuit recharged the blue core.",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "OK, I put the core in. Now to charge it",
             "endOfScene": true
         }
     ]

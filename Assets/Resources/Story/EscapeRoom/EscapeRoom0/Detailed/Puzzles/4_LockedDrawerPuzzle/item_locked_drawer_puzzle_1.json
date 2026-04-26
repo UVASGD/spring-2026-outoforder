@@ -3,7 +3,7 @@
         {
             "character": "Virgo",
             "speakerSprite": "HeadshotVirgoPensive",
-            "dialogue": "(Still locked...)",
+            "dialogue": "Still locked...",
             "endOfScene": true
         }
     ]

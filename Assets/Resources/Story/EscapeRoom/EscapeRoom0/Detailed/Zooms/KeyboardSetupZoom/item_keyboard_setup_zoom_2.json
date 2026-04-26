@@ -2,7 +2,7 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "Well, that's definitely a unique way of remembering a passcode.",
             "endOfScene": true
         }
