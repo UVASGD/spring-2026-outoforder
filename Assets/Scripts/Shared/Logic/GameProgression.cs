@@ -224,8 +224,16 @@ public class GameProgression : MonoBehaviour
     }
 
     // Fade
-    public void Fade(string type, bool cg = false, string cgName = "")
+    public void Fade(string type, bool cg = false, string cgName = "", GameObject ui = null, float speed = 0.25f)
     {
+        // TODO NEED TO CLEAN
+        if (ui != null)
+        {
+            if (type.Equals("in")) FadeEffect.FadeIn(ui, speed);
+            else FadeEffect.FadeOut(ui, speed);
+            return;    
+        }
+
         if (!string.IsNullOrEmpty(cgName))
         {
             print($"getting {cgName}");
@@ -233,7 +241,7 @@ public class GameProgression : MonoBehaviour
         }
         
         if (type.Equals("in")) FadeEffect.FadeIn(!cg ? blackTransition : cgTransition, 0.5f);
-            else FadeEffect.FadeOut(!cg ? blackTransition : cgTransition, 0.5f);
+        else FadeEffect.FadeOut(!cg ? blackTransition : cgTransition, 0.5f);
     }
 
     // Other - OUTDATED

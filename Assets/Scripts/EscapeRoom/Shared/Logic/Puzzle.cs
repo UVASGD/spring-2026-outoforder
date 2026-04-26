@@ -98,11 +98,11 @@ public class Puzzle : MonoBehaviour
             ErrorPuzzle();
         }
 
-        GameData.escapeRoomGameplayManager.puzzleFeedback.SetActive(true);
+        GameProgression.GameProgressionInstance.Fade("in", ui: GameData.escapeRoomGameplayManager.puzzleFeedback);
 
         yield return new WaitForSeconds(1f);
 
-        GameData.escapeRoomGameplayManager.puzzleFeedback.SetActive(false);
+        GameProgression.GameProgressionInstance.Fade("out", ui: GameData.escapeRoomGameplayManager.puzzleFeedback);
 
         yield return new WaitForSeconds(0.25f);
 
@@ -116,7 +116,6 @@ public class Puzzle : MonoBehaviour
         GameProgression.GameProgressionInstance.PlaySFX(10);
         GameData.escapeRoomGameplayManager.puzzleFeedbackImage.color = Color.cyan;
         GameData.escapeRoomGameplayManager.puzzleFeedbackTMP.text = "success";
-        print("TODO: CORRECT GUESS UI");
         solved = true;
     }
 
@@ -125,7 +124,7 @@ public class Puzzle : MonoBehaviour
         GameProgression.GameProgressionInstance.PlaySFX(11);
         GameData.escapeRoomGameplayManager.puzzleFeedbackImage.color = Color.magenta;
         GameData.escapeRoomGameplayManager.puzzleFeedbackTMP.text = "error";
-        print($"TODO: ERROR GUESS UI; the guess was {new string(guess)}");
+        // print($"the guess was {new string(guess)}");
     }
 
     protected virtual void ConvertGuess() {}
