@@ -4,23 +4,23 @@
             "location": "locked room",
             "character": "???",
             "cgSprite": "EscapeRoom0Location2",
-            "speakerSpriteAsta": "FullAstaCurious",
+            "speakerSpriteAsta": "FullAstaContent",
             "speakerSpriteVirgo": "FullVirgoShocked",
             "dialogue": " *bzzzkttzkbzz….*"
         },
         {
             "character": "???",
-            "speakerSpriteAsta": "FullAstaCurious",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Ini7i4lizing 574r7up pro7ocol."
         },
         {
             "character": "???",
-            "speakerSpriteAsta": "FullAstaCurious",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Decl4ring environmen74l v4ri4ble5."
         },
         {
             "character": "4574?",
-            "speakerSpriteAsta": "FullAstaConfident",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "7h4nk you for your p47ience. P47rol roBo7 FOUR-FIVE-5EVEN-FOUR reboo7 5ucce55ful."
         },
         {
@@ -30,22 +30,22 @@
         },
         {
             "character": "4574?",
-            "speakerSpriteAsta": "FullAstaConfident",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Ye5."
         },
         {
             "character": "4574?",
-            "speakerSpriteAsta": "FullAstaConfident",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "I 4m P47rol roBo7 FOUR-FIVE-5EVEN-FOUR of 7he Omni-On7o Org4niz47ion."
         },
         {
             "character": "4574?",
-            "speakerSpriteAsta": "FullAstaConfident",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "My purpo5e i5 7o en5ure 7he 5ecuri7y 4nd 5e4mle55 flow of f4cili7y 455e75."
         },
         {
             "character": "4574?",
-            "speakerSpriteAsta": "FullAstaCurious",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Fur7hermore, 4ll uni75 under 7he Org4niz47ion 5h4ll be iden7ified by 7heir 455igned 5eri4l number."
         },
         {
@@ -55,12 +55,12 @@
         },
         {
             "character": "4574?",
-            "speakerSpriteAsta": "FullAstaThoughtful",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "4h. Hm."
         },
         {
             "character": "4574",
-            "speakerSpriteAsta": "FullAstaConfident",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "How about now? Is this voice to your liking?",
             "playBGM": 6
         },
@@ -71,7 +71,7 @@
         },
         {
             "character": "4574",
-            "speakerSpriteAsta": "FullAstaCurious",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "? Is there a problem?"
         },
         {
@@ -81,27 +81,27 @@
         },
         {
             "character": "4574",
-            "speakerSpriteAsta": "FullAstaThoughtful",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Read it wrong... is that so?"
         },
         {
             "character": "4574",
-            "speakerSpriteAsta": "FullAstaThoughtful",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "4574... 4574..."
         },
         {
             "character": "4574",
-            "speakerSpriteAsta": "FullAstaCurious",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Ah. Could you have thought ASTA?"
         },
         {
             "character": "4574",
-            "speakerSpriteAsta": "FullAstaCurious",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "That is quite interesting. I never thought of it that way."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "FullAstaConfident",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Well, I suppose ASTA may roll off the tongue nicer than a string of numbers anyway. Feel free to address me as you wish."
         },
         {
@@ -121,12 +121,12 @@
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "FullAstaConfident",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "This is the robot maintenance and disposal facility of the Omni-Ontological-Organization."
         },
         {
             "character": "ASTA",
-            "speakerSpriteAsta": "FullAstaCurious",
+            "speakerSpriteAsta": "FullAstaContent",
             "dialogue": "Would you like to learn more about this facility?"
         },
         {
