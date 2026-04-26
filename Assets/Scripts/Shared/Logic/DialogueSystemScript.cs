@@ -363,7 +363,7 @@ public class DialogueSystem : MonoBehaviour
             {
                 speakerSpriteImageActive.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
             }
-            else if (SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
+            else if (SceneManager.GetActiveScene().name.Equals("VisualNovel"))
             {
                 speakerSpriteAstaImageActive.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
                 speakerSpriteVirgoImageActive.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
