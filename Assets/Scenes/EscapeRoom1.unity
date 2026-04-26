@@ -4195,8 +4195,8 @@ MonoBehaviour:
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
-  - {fileID: 4900000, guid: 8640f4486a767a640b1bf3753b6f5104, type: 3}
-  - {fileID: 4900000, guid: e67d66385eeda6c49a5e92bac2b261d4, type: 3}
+  - {fileID: 4900000, guid: 63ff3f72316ba034ca78c126285828e1, type: 3}
+  - {fileID: 4900000, guid: beecc90a4088ba04a8a1b33026d45129, type: 3}
   itemData:
     name: 
     detailed: 0
@@ -11102,9 +11102,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Locations, Assembly-CSharp
-        m_MethodName: ExamineItem
+      - m_Target: {fileID: 1413472710}
+        m_TargetAssemblyTypeName: ManualInteraction, Assembly-CSharp
+        m_MethodName: ItemInteraction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
