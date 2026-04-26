@@ -1,0 +1,22 @@
+{
+    "dialogues": [
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "oh dont i have al lthe cores now time to put it back into the robot."
+        },
+        {
+            "hideUI": true,
+            "method": "ChangeLocation,corner"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "here u go asta"
+        },
+        {
+            "hideUI": true,
+            "scene": "VisualNovel"
+        }
+    ]
+}
