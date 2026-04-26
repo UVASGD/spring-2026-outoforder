@@ -67,7 +67,7 @@
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": ""
+      "description": "The key obtained from the printer."
    },
    "Cabinets": {
       "name": "Cabinets",
@@ -102,7 +102,7 @@
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": ""
+      "description": "A familiar-looking antenna."
    },
    "Screwdriver": {
       "name": "Screwdriver",
@@ -179,70 +179,70 @@
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": "A gear."
+      "description": "A medium yellow gear."
    },
    "GearB": {
       "name": "Gear B",
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": "A gear."
+      "description": "A small magenta gear."
    },
    "GearC": {
       "name": "Gear C",
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": "A gear."
+      "description": "A medium yellow gear."
    },
    "GearD": {
       "name": "Gear D",
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": "A gear."
+      "description": "A medium cyan gear."
    },
    "GearE": {
       "name": "Gear E",
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": "A gear."
+      "description": "A medium yellow gear."
    },
    "GearF": {
       "name": "Gear F",
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": "A gear."
+      "description": "A small magenta gear."
    },
    "GearG": {
       "name": "Gear G",
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": "A gear."
+      "description": "A medium cyan gear."
    },
    "GearH": {
       "name": "Gear H",
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": "A gear."
+      "description": "A medium yellow gear."
    },
    "GearI": {
       "name": "Gear I",
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": "A gear."
+      "description": "A medium magenta gear."
    },
    "GearJ": {
       "name": "Gear J",
       "detailed": false,
       "puzzle": false,
       "collectible": true,
-      "description": "A gear."
+      "description": "A medium cyan gear."
    },
    "Gate": {
       "name": "Gate",
