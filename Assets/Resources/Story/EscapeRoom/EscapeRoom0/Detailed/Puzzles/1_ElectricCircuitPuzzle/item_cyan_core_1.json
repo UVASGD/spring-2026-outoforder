@@ -2,12 +2,7 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "looks charged to me"
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "Looks like electricity from the circuit recharged the blue core.",
             "endOfScene": true
         }

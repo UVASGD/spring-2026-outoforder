@@ -6,13 +6,13 @@
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "So it was antifreeze."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "The yellow core is filled now.",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "Looks like the yellow core is filled now.",
             "endOfScene": true
         }
     ]

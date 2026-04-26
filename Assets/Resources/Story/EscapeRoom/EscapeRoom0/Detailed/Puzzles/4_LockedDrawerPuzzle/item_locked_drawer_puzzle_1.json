@@ -2,13 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "locked drawer puzzle 1"
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I'll just have to work with what I have. I'll keep thinking about it.",
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "Still locked...",
             "endOfScene": true
         }
     ]

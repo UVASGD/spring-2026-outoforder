@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "The typical keyboard setup."
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "The typical keyboard setup..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "No, it feels a bit offputting.",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "Wait, no... something feels a bit off.",
             "endOfScene": true
         }
     ]

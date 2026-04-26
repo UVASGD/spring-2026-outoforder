@@ -2,18 +2,18 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Oh god, it's a circuit."
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "Hmm... it's a circuit."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "The two lights on the left are on, on the one on the right is off."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I'm assuming that I'd just have to place the correct logic gates so that the last light is switched on as well.",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "I guess I have to place the correct logic gates so that the last light is switched on as well.",
             "endOfScene": true
         }
     ]

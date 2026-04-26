@@ -2,12 +2,12 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "There's gallons of something on this shelf."
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "There are gallon containers of something on this shelf."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "I can't read the text off these labels though. I'm sure if the light was on...",
             "endOfScene": true
         }

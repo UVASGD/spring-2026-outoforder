@@ -2,18 +2,28 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "This looks like... item_manual_0"
+            "speakerSprite": "HeadshotVirgoShocked",
+            "dialogue": "Ow! I tripped on something!"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "There's something on the ground... what's this...? A book?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "Weird cover. Some of these words are gibberish too..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "I wonder what it's for..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "Huh. Guess I'll hold onto it for now.",
             "endOfScene": true
         }
     ]

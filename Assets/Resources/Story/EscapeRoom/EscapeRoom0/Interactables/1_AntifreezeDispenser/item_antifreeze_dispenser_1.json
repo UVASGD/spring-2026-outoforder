@@ -2,8 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_antifreeze_dispenser_1",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "There's some sort of dispenser machine here. I should check it out",
             "endOfScene": true
         }
     ]

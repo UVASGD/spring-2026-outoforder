@@ -2,8 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_electric_circuit_1",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "It's a circuit board. It might be useful.",
             "endOfScene": true
         }
     ]

@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "i put the core on the charging dock"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "The core is on the charging dock."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Looks like electricity from the circuit recharged the blue core.",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "Now... how can I get it to work?",
             "endOfScene": true
         }
     ]

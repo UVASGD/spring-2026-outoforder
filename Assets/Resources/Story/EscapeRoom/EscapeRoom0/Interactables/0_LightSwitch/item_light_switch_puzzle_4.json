@@ -2,7 +2,7 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "The lights are on now. There's no time to waste.",
             "endOfScene": true
         }

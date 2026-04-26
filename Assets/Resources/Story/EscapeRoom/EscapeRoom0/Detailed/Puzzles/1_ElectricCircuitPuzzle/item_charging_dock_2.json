@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "after solving puzzle and taking core again"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "Looks like electricity from the circuit recharged the cyan core."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Looks like electricity from the circuit recharged the blue core.",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "The cyan core should be ready now.",
             "endOfScene": true
         }
     ]

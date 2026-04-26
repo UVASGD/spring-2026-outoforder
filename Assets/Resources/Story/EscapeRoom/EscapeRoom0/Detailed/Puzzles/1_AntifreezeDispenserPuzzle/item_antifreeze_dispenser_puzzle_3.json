@@ -2,7 +2,7 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "Using this device filled the yellow core with antifreeze.",
             "endOfScene": true
         }

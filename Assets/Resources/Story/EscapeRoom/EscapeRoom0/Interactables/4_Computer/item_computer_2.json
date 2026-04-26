@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "That's unfortunate, I guess."
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "The computer's unplugged..."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Still, there's got to be something else useful in this area.",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "That's unfortunate. Still, there might be something around that could help me out.",
             "endOfScene": true
         }
     ]

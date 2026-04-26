@@ -2,22 +2,12 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "There's a box on the left side of the shelf here."
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "It's a locked box."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I can try opening it, right?"
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "..."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "It won't budge, and it feels like theres a keyhole on the side. Maybe I'll figure out a way to open it later?",
             "endOfScene": true
         }

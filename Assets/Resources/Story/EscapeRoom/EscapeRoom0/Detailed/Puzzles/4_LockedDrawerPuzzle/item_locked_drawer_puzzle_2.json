@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Ah, it opened. 2"
+            "speakerSprite": "HeadshotVirgoShocked",
+            "dialogue": "Ah! It opened!"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "There's a remote inside.",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "There's a remote inside. What's it for?",
             "endOfScene": true
         }
     ]

@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "could this be for charging the cyan core? there is a dock here, and its cyan."
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "There's a dock here, and it's cyan... could this be used for charging the cyan core?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "Let's see if i can put that on first.",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "Let's see if I can put it on here.",
             "endOfScene": true
         }
     ]
