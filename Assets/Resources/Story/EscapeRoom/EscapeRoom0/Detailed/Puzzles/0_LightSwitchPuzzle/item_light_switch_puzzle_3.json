@@ -22,7 +22,7 @@
         },
         {
             "hideUI": true,
-            "method": "ChangeLocation,Storage"
+            "method": "ChangeLocation,storage"
         },
         {
             "character": "Virgo",
@@ -78,7 +78,7 @@
         },
         {
             "hideUI": true,
-            "method": "ChangeLocation,Corner"
+            "method": "ChangeLocation,corner"
         },
         {
             "character": "Virgo",

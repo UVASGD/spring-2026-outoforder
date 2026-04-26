@@ -613,6 +613,7 @@ public class DialogueSystem : MonoBehaviour
             string[] method = currentDialogue.method.Split(',');
             if (method.Length > 1) 
             {
+                print($"wawa {method[0]} and {method[1]}");
                 GameData.escapeRoomGameplayManager.locations.SendMessage(method[0], method[1]);
             }
             else 

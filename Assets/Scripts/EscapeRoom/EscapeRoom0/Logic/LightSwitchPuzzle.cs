@@ -18,6 +18,8 @@ public class LightSwitchPuzzle : Puzzle
     {
         if (!leverRepaired && GameProgression.GameProgressionInstance.GetFlag("usedLever"))
         {
+            GameData.escapeRoomGameplayManager.locationGameObjects[0].GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["EscapeRoom0Location0Secondary"];
+
             leverRepaired = true;
             submit.GetComponent<Button>().enabled = true;
             submit.GetComponent<Image>().enabled = true;
@@ -29,6 +31,7 @@ public class LightSwitchPuzzle : Puzzle
         GameData.escapeRoomGameplayManager.locationGameObjects.ForEach(location => location.GetComponent<Image>().color = Color.white);
 
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["UnlockedLightSwitchPuzzle"];
+        GameData.escapeRoomGameplayManager.locationGameObjects[0].GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["EscapeRoom0Location0Tertriary"];
 
         submit.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["LeverDown"];
 

@@ -59,7 +59,7 @@ public class HoverManagerTMP : MonoBehaviour
             }
         }
 
-        if (!foundManual || GameData.currentlyTalking)
+        if (!foundManual || GameData.currentlyTalking || !GameData.escapeRoomGameplayManager.menuBar.currentMenuName.Equals("none"))
         {
             hover.gameObject.SetActive(false);
         }

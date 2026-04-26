@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class MenuBar : MonoBehaviour
 {
-    [SerializeField] private string currentMenuName = "none";
+    public string currentMenuName = "none";
     private GameObject currentPopUp;
     private GameObject interactionBlocker;
     private GameObject popUpAreas;
