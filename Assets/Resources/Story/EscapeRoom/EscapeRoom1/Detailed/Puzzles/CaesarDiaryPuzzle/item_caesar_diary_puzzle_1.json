@@ -3,12 +3,12 @@
         {
             "character": "Virgo",
             "speakerSprite": "HeadshotVirgoPensive",
-            "dialogue": "All that's interesting, but what does that have to do with any of this?"
+            "dialogue": "All that info's interesting, but what does that have to do with any of this?"
         },
         {
             "character": "ASTA",
             "speakerSprite": "HeadshotAstaCurious",
-            "dialogue": "I wonder if there's anything near to help us figure that out.",
+            "dialogue": "I wonder if his name has any significance to the code?",
             "endOfScene": true
         }
     ]

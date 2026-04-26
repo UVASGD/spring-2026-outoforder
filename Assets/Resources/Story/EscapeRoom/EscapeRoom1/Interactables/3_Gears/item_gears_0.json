@@ -2,12 +2,12 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoDetermined",
             "dialogue": "It's a bunch of gears."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
+            "speakerSprite": "HeadshotAstaCurious",
             "dialogue": "It appears that they are of various sizes, widths, and weights.",
             "endOfScene": true
         }

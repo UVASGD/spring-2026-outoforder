@@ -1,14 +1,14 @@
 {
     "dialogues": [
         {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_operation_table_1"
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "Virgo? Are you still looking at that operating table?"
         },
         {
-            "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "Oh! Sorry, no... just zoning out... I guess.",
             "endOfScene": true
         }
     ]

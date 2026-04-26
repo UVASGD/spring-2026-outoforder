@@ -2,12 +2,12 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_gear_8"
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "It's a gear."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "(That seemed to be the correct answer? She looks pleased.)",
             "endOfScene": true
         }

@@ -2,18 +2,18 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_flash_drive_0"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "It's a flash drive."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "What's it for though?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "It might come in handy later.",
             "endOfScene": true
         }
     ]

@@ -2,13 +2,18 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_screwdriver_0"
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "It's a screwdriver."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "speakerSprite": "HeadshotAstaContent",
+            "dialogue": "Yes. You can take me apart anytime you'd like, Virgo."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoFlustered",
+            "dialogue": "(WHATWHATWHATWHAT)",
             "endOfScene": true
         }
     ]
