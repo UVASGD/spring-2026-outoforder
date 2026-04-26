@@ -2,8 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "HeadshotVirgoDetermined",
-            "dialogue": "That seemed to do the trick!",
+            "speakerSprite": "VirgoEyes",
+            "dialogue": "caesar0",
             "endOfScene": true
         }
     ]
