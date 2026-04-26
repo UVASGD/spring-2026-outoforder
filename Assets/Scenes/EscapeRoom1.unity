@@ -16704,6 +16704,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LocationsScript
   debugItemNames:
   - Key
+  - GearI
+  - GearE
+  - GearJ
+  - GearB
+  - GearG
+  - GearD
 --- !u!224 &1906050052
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17842,12 +17848,11 @@ MonoBehaviour:
   activatingFlags:
   - firstInteractionCounterweightSheavePuzzle
   - usedKey
-  - secondInteractionCounterweightSheave
   - solvedCounterweightSheavePuzzle
   triggeringFlags:
   - firstInteractionCounterweightSheavePuzzle
   - 
-  - InteractionCounterweightSheave
+  - 
   waitingFlags: []
   dialoguesIndex: 0
   characterDialogues:
@@ -19138,7 +19143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4741147390600254136, guid: 162caae5da9edc04ea2f4a5922aa2460, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 175
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 4741147390600254136, guid: 162caae5da9edc04ea2f4a5922aa2460, type: 3}
       propertyPath: m_SizeDelta.y
@@ -19174,11 +19179,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4741147390600254136, guid: 162caae5da9edc04ea2f4a5922aa2460, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -105
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4741147390600254136, guid: 162caae5da9edc04ea2f4a5922aa2460, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -250
+      value: -185
       objectReference: {fileID: 0}
     - target: {fileID: 4741147390600254136, guid: 162caae5da9edc04ea2f4a5922aa2460, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
