@@ -280,7 +280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7b7e4e19e24df0741b6a721b42844ee7, type: 2}
   m_sharedMaterial: {fileID: -8805106466051974484, guid: 7b7e4e19e24df0741b6a721b42844ee7, type: 2}
@@ -1722,6 +1722,7 @@ MonoBehaviour:
     endOfScene: 0
     scene: VisualNovel
     flag: 
+  dialogueBox: {fileID: 0}
   dialogueBoxBackgroundImage: {fileID: 0}
   dialogueBoxBorderImage: {fileID: 0}
   dialogueBoxOverlayImage: {fileID: 0}

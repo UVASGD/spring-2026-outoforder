@@ -403,7 +403,7 @@ public class DialogueSystem : MonoBehaviour
         }        
 
         // set character name
-        nameTMP.text = currentDialogue.character;
+        if (!GameProgression.GameProgressionInstance.currentScene.Equals("Cutscene")) nameTMP.text = currentDialogue.character;
 
         // set dialogue
         typewriterCoroutine = StartCoroutine(TypewriterEffect(currentDialogue.character, currentDialogue.dialogue));
