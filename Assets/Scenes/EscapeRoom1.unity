@@ -16702,14 +16702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4327da9cc17bd4489b65135dbf8a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LocationsScript
-  debugItemNames:
-  - Key
-  - GearI
-  - GearE
-  - GearJ
-  - GearB
-  - GearG
-  - GearD
+  debugItemNames: []
 --- !u!224 &1906050052
 RectTransform:
   m_ObjectHideFlags: 0
