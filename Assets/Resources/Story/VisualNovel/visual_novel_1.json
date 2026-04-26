@@ -20,8 +20,7 @@
         {
             "character": "4574?",
             "speakerSpriteAsta": "FullAstaConfident",
-            "dialogue": "7h4nk you for your p47ience. P47rol roBo7 FOUR-FIVE-5EVEN-FOUR reboo7 5ucce55ful.",
-            "playBGM": 6
+            "dialogue": "7h4nk you for your p47ience. P47rol roBo7 FOUR-FIVE-5EVEN-FOUR reboo7 5ucce55ful."
         },
         {
             "character": "Virgo",
@@ -60,8 +59,9 @@
         },
         {
             "character": "4574",
-            "speakerSpriteAsta": "FullAstaCurious",
-            "dialogue": "How about now? Is this voice to your liking?"
+            "speakerSpriteAsta": "FullAstaConfident",
+            "dialogue": "How about now? Is this voice to your liking?",
+            "playBGM": 6
         },
         {
             "character": "Virgo",

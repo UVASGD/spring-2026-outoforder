@@ -49,7 +49,9 @@ public class DialogueSystem : MonoBehaviour
     private HashSet<string> validSprites = new()
     {
         "Virgo",
+        "???",
         "4574",
+        "4574?",
         "ASTA"
     };
 
