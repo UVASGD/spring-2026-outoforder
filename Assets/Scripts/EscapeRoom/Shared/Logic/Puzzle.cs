@@ -13,7 +13,7 @@ public class Puzzle : MonoBehaviour
 
     public void AttemptSolve()
     {
-        if (checkPuzzleAttemptCoroutine == null)
+        if (checkPuzzleAttemptCoroutine == null && !solved)
         {
             checkPuzzleAttemptCoroutine = StartCoroutine(CheckPuzzleAttemptCoroutine());
         }
