@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e6a24bfe1ecb2974b890c575650aad36
+guid: d40e177ec9f6ce64c98bdf32fc4bc5c2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7265030304132387844
-    second: Location1_0
+      213: -5340057329184715391
+    second: EscapeRoom0Location0Tertiary_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,6 +97,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -113,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Location1_0
+      name: EscapeRoom0Location0Tertiary_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cfbadbf1e6d6d2b90800000000000000
-      internalID: -7265030304132387844
+      spriteID: 18d49b5e62e44e5b0800000000000000
+      internalID: -5340057329184715391
       vertices: []
       indices: 
       edges: []
@@ -148,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Location1_0: -7265030304132387844
+      EscapeRoom0Location0Tertiary_0: -5340057329184715391
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

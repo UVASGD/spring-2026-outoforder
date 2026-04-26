@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1bcb415b5e9cd2f4d8ffb5b40baffce7
+guid: 3a3128a2df11084498e96e279ea4f1f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -332233981676622189
-    second: Remote_0
+      213: 6682924327510760702
+    second: EscapeRoom0Location0Secondary_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Remote_0
+      name: EscapeRoom0Location0Secondary_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 12
-        width: 132
-        height: 162
+        x: 0
+        y: 0
+        width: 800
+        height: 600
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 39ee9d334faa36bf0800000000000000
-      internalID: -332233981676622189
+      spriteID: efc581aa4448ebc50800000000000000
+      internalID: 6682924327510760702
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Remote_0: -332233981676622189
+      EscapeRoom0Location0Secondary_0: 6682924327510760702
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

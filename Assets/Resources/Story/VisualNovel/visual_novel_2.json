@@ -321,7 +321,7 @@
         },
         {
             "hideUI": true,
-            "scene": "EscapeRoom2"
+            "scene": "EndScreen"
         }
     ]
 }

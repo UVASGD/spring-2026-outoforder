@@ -41,6 +41,8 @@ public class CounterweightSheavePuzzle : Puzzle
     {
         if (!compartmentUnlocked && GameProgression.GameProgressionInstance.GetFlag("usedKey"))
         {
+            GameProgression.GameProgressionInstance.SetFlag("firstInteractionCounterweightSheavePuzzle", true);
+
             compartmentUnlocked = true;
             submit.GetComponent<Button>().enabled = true;
             submit.GetComponent<Image>().enabled = true;
@@ -71,7 +73,6 @@ public class CounterweightSheavePuzzle : Puzzle
         gameObject.GetComponent<Image>().sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["CounterweightSheavePuzzleSecondary"];
 
         // TODO: THIS COULD PROBABLY BE A METHOD IN PUZZLE THIS CODE IS REPEATED A LOT
-        GameProgression.GameProgressionInstance.SetFlag("secondInteractionCounterweightSheavePuzzle", true);
         GameProgression.GameProgressionInstance.SetFlag("solvedCounterweightSheavePuzzle", true);
         gameObject.GetComponent<ManualInteraction>().ItemInteraction();
     }

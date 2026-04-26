@@ -4068,7 +4068,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2016656638472462059, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
       propertyPath: debugEscapeRoomNumber
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4961446670045982556, guid: 77a79a8371ffca149b03d5d3d8bc36f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10343,6 +10343,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3659409789963847485, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4309090426856261661, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_Name
       value: SpeakerSpriteAstaActive
@@ -10362,6 +10366,10 @@ PrefabInstance:
     - target: {fileID: 4889339535459065786, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -225
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062727920452075741, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7104046946914916958, guid: 5c578f01055c4af4ea65af6ba2621242, type: 3}
       propertyPath: m_AnchoredPosition.x

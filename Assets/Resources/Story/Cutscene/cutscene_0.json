@@ -31,7 +31,7 @@
             "textSpeed": 0.075
         },
         {
-            "character": "",
+            "character": "Virgo",
             "dialogue": "(Huh...?)",
             "textSpeed": 0.05
         },
@@ -42,7 +42,7 @@
         },
 
         {
-            "character": "",
+            "character": "Virgo",
             "dialogue": "(The Three Laws? Of course, I know those. I'm a mechanic, after all. But... why...?)",
             "textSpeed": 0.05
         },
@@ -62,7 +62,7 @@
             "textSpeed": 0.1
         },
         {
-            "character": "",
+            "character": "Virgo",
             "dialogue": "(Error...? Wait--)",
             "textSpeed": 0.05
         },

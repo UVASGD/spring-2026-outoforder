@@ -49,7 +49,9 @@ public class DialogueSystem : MonoBehaviour
     private HashSet<string> validSprites = new()
     {
         "Virgo",
+        "???",
         "4574",
+        "4574?",
         "ASTA"
     };
 
@@ -101,11 +103,6 @@ public class DialogueSystem : MonoBehaviour
 
     void OnEnable() 
     {
-        if (!SceneManager.GetActiveScene().name.Equals("Cutscene"))
-        {
-            oldCG?.gameObject.SetActive(false);
-            activeCG?.gameObject.SetActive(false);
-        }
         narrationTMP.gameObject.SetActive(false);
         advanceDialogueButton?.SetActive(true);
 
@@ -311,21 +308,22 @@ public class DialogueSystem : MonoBehaviour
 
     public void SetCG()
     {
-        if (!SceneManager.GetActiveScene().name.Contains("EscapeRoom"))
+        if (currentDialogue.cgSprite != null)
         {
-            if (currentDialogue.cgSprite != null)
-            {
-                Sprite oldCGSprite = oldCGImage.sprite;
-                Sprite newCGSprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.cgSprite];
+            activeCGImage.sprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.cgSprite];
 
-                if (!oldCGSprite.ToString().Equals(newCGSprite.ToString())) 
-                {
-                    oldCGImage.sprite = activeCGImage.sprite;
-                    GameProgression.GameProgressionInstance.FadeEffect.FadeInCGSprite(activeCG, newCGSprite);
-                    GameProgression.GameProgressionInstance.FadeEffect.FadeOutCGSprite(oldCG, oldCGSprite);
-                }
-            }    
-        }
+            // TODO FIND A BETTER FIX
+            // print("settings the cg");
+            // Sprite oldCGSprite = oldCGImage.sprite;
+            // Sprite newCGSprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.cgSprite];
+
+            // if (!oldCGSprite.ToString().Equals(newCGSprite.ToString())) 
+            // {
+            //     oldCGImage.sprite = activeCGImage.sprite;
+            //     GameProgression.GameProgressionInstance.FadeEffect.FadeInCGSprite(activeCG, newCGSprite);
+            //     GameProgression.GameProgressionInstance.FadeEffect.FadeOutCGSprite(oldCG, oldCGSprite);
+            // }
+        } 
     }
     
     public void SetSprite()
@@ -365,7 +363,7 @@ public class DialogueSystem : MonoBehaviour
             {
                 speakerSpriteImageActive.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
             }
-            else
+            else if (SceneManager.GetActiveScene().name.Equals("VisualNovel"))
             {
                 speakerSpriteAstaImageActive.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
                 speakerSpriteVirgoImageActive.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
@@ -405,7 +403,7 @@ public class DialogueSystem : MonoBehaviour
         }        
 
         // set character name
-        nameTMP.text = currentDialogue.character;
+        if (!GameProgression.GameProgressionInstance.currentScene.Equals("Cutscene")) nameTMP.text = currentDialogue.character;
 
         // set dialogue
         typewriterCoroutine = StartCoroutine(TypewriterEffect(currentDialogue.character, currentDialogue.dialogue));
@@ -615,6 +613,7 @@ public class DialogueSystem : MonoBehaviour
             string[] method = currentDialogue.method.Split(',');
             if (method.Length > 1) 
             {
+                print($"wawa {method[0]} and {method[1]}");
                 GameData.escapeRoomGameplayManager.locations.SendMessage(method[0], method[1]);
             }
             else 

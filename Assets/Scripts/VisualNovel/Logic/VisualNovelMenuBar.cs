@@ -54,6 +54,7 @@ public class VisualNovelMenuBar : MonoBehaviour
 
     public void ChangeState(string newMenuName)
     {
+        print("trying to change state");
         if (!GameProgression.GameProgressionInstance.transitioning)
         {
             if (currentMenuName == newMenuName)
