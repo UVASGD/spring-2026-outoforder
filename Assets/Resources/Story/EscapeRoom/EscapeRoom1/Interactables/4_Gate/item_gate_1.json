@@ -2,13 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_gate_1"
-        },
-        {
-            "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "It's the gate we came through.",
             "endOfScene": true
         }
     ]

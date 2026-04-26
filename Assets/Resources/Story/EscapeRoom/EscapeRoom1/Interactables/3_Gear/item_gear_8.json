@@ -3,12 +3,7 @@
         {
             "character": "Virgo",
             "speakerSprite": "HeadshotVirgoCurious",
-            "dialogue": "It's a gear."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "HeadshotVirgoCurious",
-            "dialogue": "(That seemed to be the correct answer? She looks pleased.)",
+            "dialogue": "(Why are there so many gears just lying around. Are they not important.)",
             "endOfScene": true
         }
     ]

@@ -1,14 +1,19 @@
 {
     "dialogues": [
         {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_mirror_zoom_1"
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "Virgo?"
         },
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "Why are you staring at the mirror so deeply?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "Is everything alright?",
             "endOfScene": true
         }
     ]

@@ -2,12 +2,12 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "HeadshotVirgoPensive",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "Safety first, huh?"
         },
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
+            "speakerSprite": "HeadshotAstaStern",
             "dialogue": "Yes. It seems that some areas of the facility would be quite hazardous to traverse.",
             "endOfScene": true
         }

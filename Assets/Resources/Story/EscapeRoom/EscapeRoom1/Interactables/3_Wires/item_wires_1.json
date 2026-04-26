@@ -3,7 +3,7 @@
         {
             "character": "Virgo",
             "speakerSprite": "HeadshotVirgoFrustrated",
-            "dialogue": "These wires are a total mess...",
+            "dialogue": "(These wires are a total mess...)",
             "endOfScene": true
         }
     ]
