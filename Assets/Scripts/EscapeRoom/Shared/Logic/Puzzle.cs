@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -8,20 +9,13 @@ public class Puzzle : MonoBehaviour
     protected char[] answer;
     protected char[] guess;
     protected bool solved;
+    private Coroutine checkPuzzleAttemptCoroutine;
 
     public void AttemptSolve()
     {
-        ConvertGuess();
-        
-        print($"the answer is {new string(answer)} and the guess was {new string(guess)}");
-        // TODO: VERY TEMPORARY
-        if (!solved && answer.SequenceEqual(guess)) 
+        if (checkPuzzleAttemptCoroutine == null)
         {
-            SolvedPuzzle();
-        }
-        else if (!answer.SequenceEqual(guess))
-        {
-            ErrorPuzzle();
+            checkPuzzleAttemptCoroutine = StartCoroutine(CheckPuzzleAttemptCoroutine());
         }
     }
 
@@ -89,9 +83,35 @@ public class Puzzle : MonoBehaviour
         } 
     }
 
+    private IEnumerator CheckPuzzleAttemptCoroutine()
+    {
+        ConvertGuess();
+        
+        print($"the answer is {new string(answer)} and the guess was {new string(guess)}");
+        // TODO: VERY TEMPORARY
+        if (!solved && answer.SequenceEqual(guess)) 
+        {
+            SolvedPuzzle();
+        }
+        else if (!answer.SequenceEqual(guess))
+        {
+            ErrorPuzzle();
+        }
+
+        GameData.escapeRoomGameplayManager.puzzleFeedback.SetActive(true);
+
+        yield return new WaitForSeconds(1f);
+
+        GameData.escapeRoomGameplayManager.puzzleFeedback.SetActive(false);
+
+        checkPuzzleAttemptCoroutine = null;
+    }
+
     private void SolvedPuzzle()
     {
         GameProgression.GameProgressionInstance.PlaySFX(10);
+        GameData.escapeRoomGameplayManager.puzzleFeedbackImage.color = Color.cyan;
+        GameData.escapeRoomGameplayManager.puzzleFeedbackTMP.text = "success";
         print("TODO: CORRECT GUESS UI");
         solved = true;
         SolvedPuzzleSpecific();
@@ -100,6 +120,8 @@ public class Puzzle : MonoBehaviour
     private void ErrorPuzzle()
     {
         GameProgression.GameProgressionInstance.PlaySFX(11);
+        GameData.escapeRoomGameplayManager.puzzleFeedbackImage.color = Color.magenta;
+        GameData.escapeRoomGameplayManager.puzzleFeedbackTMP.text = "error";
         print($"TODO: ERROR GUESS UI; the guess was {new string(guess)}");
     }
 

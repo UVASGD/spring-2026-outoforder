@@ -1,7 +1,9 @@
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EscapeRoomGameplay : MonoBehaviour
 {
@@ -12,6 +14,9 @@ public class EscapeRoomGameplay : MonoBehaviour
     public List<GameObject> locationGameObjects;
 
     public Dictionary<string, GameObject> puzzles = new();
+    public GameObject puzzleFeedback;
+    public Image puzzleFeedbackImage;
+    public TextMeshProUGUI puzzleFeedbackTMP;
     
     public string selectedItem;
     public Dictionary<string, ItemData> items = new();
@@ -31,6 +36,11 @@ public class EscapeRoomGameplay : MonoBehaviour
         
         locationNames = JsonConvert.DeserializeObject<List<string>>(Resources.Load<TextAsset>($"Story/EscapeRoom/EscapeRoom{GameData.escapeRoomNumber}/Data/locations").text);
         locationGameObjects.AddRange(Enumerable.Range(0, 5).Select(i => GameObject.Find($"Location{i}")));
+
+        puzzleFeedback = GameObject.Find("PuzzleFeedback");
+        puzzleFeedbackImage = puzzleFeedback.GetComponentInChildren<Image>();
+        puzzleFeedbackTMP = puzzleFeedback.GetComponentInChildren<TextMeshProUGUI>();
+        puzzleFeedback.SetActive(false);
 
         items = JsonConvert.DeserializeObject<Dictionary<string, ItemData>>(Resources.Load<TextAsset>($"Story/EscapeRoom/EscapeRoom{GameData.escapeRoomNumber}/Data/items").text);
         foreach (ItemData item in items.Values)
