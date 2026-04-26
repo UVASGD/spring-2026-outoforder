@@ -2,13 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_gear_8"
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "(That seemed to be the correct answer? She looks pleased.)",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "(Why are there so many gears just lying around. Are they not important.)",
             "endOfScene": true
         }
     ]

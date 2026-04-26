@@ -1,14 +1,14 @@
 {
     "dialogues": [
         {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "final dialogue tysm virgo such a nice gift hehe"
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaConfident",
+            "dialogue": "Such a wonderful gift! You have my thanks."
         },
         {
-            "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoFlustered",
+            "dialogue": "(hehe)",
             "endOfScene": true
         }
     ]

@@ -1,9 +1,9 @@
 {
     "dialogues": [
         {
-            "character": "Virgo",
-            "speakerSprite": "HeadshotVirgoCurious",
-            "dialogue": "beep. beepbeep. beep. beep.  bzzzk. bzzzk. beep beep. ... ?"
+            "character": "Radio",
+            "speakerSprite": "Radio",
+            "dialogue": "bzk bzk bzk bzk... bzk... bzzzk bzk bzk bzzzk"
         },
          {
             "character": "Virgo",
@@ -13,7 +13,7 @@
         {
             "character": "ASTA",
             "speakerSprite": "HeadshotAstaCurious",
-            "dialogue": "Why does it keep repeating? It must be a code for something. Maybe we could find something to help us decipher.",
+            "dialogue": "It keeps repeating... it might be a code for something. Maybe we could find something to help us decipher.",
             "endOfScene": true
         }
     ]

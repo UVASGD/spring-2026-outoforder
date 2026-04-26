@@ -2,13 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_gear_5"
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "(That seemed to be the correct answer? She looks pleased.)",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "(It's a metal gear.)",
             "endOfScene": true
         }
     ]

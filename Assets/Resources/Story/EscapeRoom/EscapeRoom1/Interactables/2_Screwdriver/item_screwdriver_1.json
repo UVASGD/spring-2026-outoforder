@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_screwdriver_1"
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "(It's a screwdriver.)"
         },
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "speakerSprite": "HeadshotAstaContent",
+            "dialogue": "Such a useful tool, isn't it?",
             "endOfScene": true
         }
     ]

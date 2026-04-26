@@ -2,8 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "caesar 111111111111",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "It's a diary... I wonder what's inside?",
             "endOfScene": true
         }
     ]

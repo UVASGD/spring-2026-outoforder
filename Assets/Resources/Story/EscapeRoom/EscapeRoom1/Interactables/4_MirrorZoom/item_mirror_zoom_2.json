@@ -2,13 +2,58 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "hidden interaction here."
+            "speakerSprite": "HeadshotVirgoShocked",
+            "dialogue": "Oh! Um... I just noticed your antenna."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoShocked",
+            "dialogue": "Are you missing one?"
         },
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "My antenna?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "Yes, it seems that only one remained intact."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "It is no great issue though. I am still functional without it."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "Actually... Asta?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "I found this antenna back there..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoFlustered",
+            "dialogue": "Maybe I could... give it to you?"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaConfident",
+            "dialogue": "Oh my! How thoughtful of you, Virgo!"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaContent",
+            "dialogue": "My model may not need this, but of course...! I accept this gift with great gratitude!"
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaContent",
+            "dialogue": "Ehehhehe... yeah no big deal...",
             "endOfScene": true
         }
     ]

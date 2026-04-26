@@ -2,13 +2,18 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_operation_table_0"
+            "speakerSprite": "HeadshotVirgoShocked",
+            "dialogue": "An operating table? That's kinda fancy..."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "speakerSprite": "HeadshotAstaContent",
+            "dialogue": "This is a state-of-the-art facility, after all."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "(It kinda creeps me out too...)",
             "endOfScene": true
         }
     ]

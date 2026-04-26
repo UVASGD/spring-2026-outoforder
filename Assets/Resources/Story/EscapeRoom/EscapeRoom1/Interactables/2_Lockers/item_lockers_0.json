@@ -8,12 +8,7 @@
         {
             "character": "ASTA",
             "speakerSprite": "HeadshotAstaContent",
-            "dialogue": "Yes. It seems as though most are unlocked."
-        },
-        {
-            "character": "ASTA",
-            "speakerSprite": "HeadshotAstaContent",
-            "dialogue": "Shall we take a look through them separately and see what we can find?",
+            "dialogue": "Yes. Shall we take a look through them separately and see what we can find?",
             "endOfScene": true
         },
         {

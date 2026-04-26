@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "This must be the gate for (gate for what?)"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "This is the gate we came through."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. It seems as though most are unlocked.",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "Yes. Did you leave something behind?",
             "endOfScene": true
         }
     ]

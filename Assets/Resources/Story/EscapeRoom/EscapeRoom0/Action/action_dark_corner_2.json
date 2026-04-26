@@ -2,8 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "oh dont i have al lthe cores now time to put it back into the robot."
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "I've got all the cores now. I think I can put them back into that robot..."
         },
         {
             "hideUI": true,
@@ -11,8 +11,48 @@
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "here u go asta"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "Well. Here's the magenta core..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "Now for the yellow core..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "And finally the cyan core."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoCurious",
+            "dialogue": "..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoFrustrated",
+            "dialogue": "..."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoFrustrated",
+            "dialogue": "What the hell...? It's still not working?"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "Ugh I was so stupid for thinking that this would work... this robot is clearly beyond repair."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoPensive",
+            "dialogue": "Well... I guess I should probably try and find something else to-"
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoShocked",
+            "dialogue": "Gwah!!"
         },
         {
             "hideUI": true,

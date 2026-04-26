@@ -2,13 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "It's a safety first poster."
         },
         {
             "character": "ASTA",
-            "speakerSprite": "AstaEyes",
-            "dialogue": "Yes. This facility may be hazardous to your biology.",
+            "speakerSprite": "HeadshotAstaStern",
+            "dialogue": "Yes. We should be careful while traversing the facility.",
             "endOfScene": true
         }
     ]
