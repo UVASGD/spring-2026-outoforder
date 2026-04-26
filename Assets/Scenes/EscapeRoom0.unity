@@ -10956,6 +10956,7 @@ MonoBehaviour:
   eventOffset: 0
   activatingFlags:
   - actionDarkCorner0
+  - actionDarkCorner1
   triggeringFlags:
   - actionDarkCorner0
   waitingFlags: []
@@ -10963,6 +10964,7 @@ MonoBehaviour:
   characterDialogues:
   - {fileID: 4900000, guid: 062cb5ab8d2b92d428fc17bbadb42ae5, type: 3}
   - {fileID: 4900000, guid: 3d6a04b5d6536864db0c200a86e8226d, type: 3}
+  - {fileID: 4900000, guid: 81326bdcdb25cdc49bfc29378fe8513c, type: 3}
   itemData:
     name: 
     detailed: 0

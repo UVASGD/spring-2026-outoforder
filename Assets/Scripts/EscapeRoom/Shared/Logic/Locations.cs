@@ -18,6 +18,7 @@ public class Locations : MonoBehaviour
     private string currentPuzzle;
     private Button backButton;
     private int itemsEntered;
+    private bool allGlowingCores;
 
     // DEBUG ONLY -- HOW TO CHEAT ITEMS INTO YOUR INVENTORY
     [SerializeField] List<string> debugItemNames = new();
@@ -73,6 +74,19 @@ public class Locations : MonoBehaviour
             scrollViewItem.name = debugItem.name.Replace(" ", "");
             scrollViewItem.GetComponentInChildren<TextMeshProUGUI>().text = debugItem.name;
             GameData.escapeRoomGameplayManager.collectedItemsScrollView[debugItem.name] = scrollViewItem;
+        }
+    }
+
+    void Update()
+    {
+        // TODO CLEAN THIS
+        if (!allGlowingCores && GameData.escapeRoomNumber == 0 && itemsEntered == 0 && new[] { "Glowing Cyan Core", "Glowing Magenta Core", "Glowing Yellow Core" }.All(GameData.escapeRoomGameplayManager.collectedItemsScrollView.ContainsKey))
+        {
+            allGlowingCores = true;
+
+            GameProgression.GameProgressionInstance.SetFlag("actionDarkCorner0", true);
+            GameProgression.GameProgressionInstance.SetFlag("actionDarkCorner1", true);
+            action.ItemInteraction();
         }
     }
 
