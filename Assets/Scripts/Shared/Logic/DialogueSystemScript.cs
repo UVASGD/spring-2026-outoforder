@@ -603,7 +603,11 @@ public class DialogueSystem : MonoBehaviour
     
     private void SetScene()
     {
-        if (!string.IsNullOrEmpty(currentDialogue.scene)) GameProgression.GameProgressionInstance.SceneTransition(currentDialogue.scene);
+        if (!string.IsNullOrEmpty(currentDialogue.scene)) 
+        {
+            if (GameProgression.GameProgressionInstance.currentScene.Contains("EscapeRoom")) GameData.escapeRoomNumber++;
+            GameProgression.GameProgressionInstance.SceneTransition(currentDialogue.scene);
+        }
     }
 
     private void SetMethod()

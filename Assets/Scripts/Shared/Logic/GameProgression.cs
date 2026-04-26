@@ -69,7 +69,7 @@ public class GameProgression : MonoBehaviour
 
         GameData.escapeRoomNumber = (GameData.loadedSave != -1)
             ? PlayerPrefs.GetInt($"{GameData.loadedSave}_escapeRoomNumber")
-            : debugEscapeRoomNumber;
+            : GameData.escapeRoomNumber;
 
         audioSourceBGM = GetComponent<AudioSource>();
         audioSourceSFX = transform.GetChild(0).GetComponent<AudioSource>();
