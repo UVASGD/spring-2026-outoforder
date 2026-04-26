@@ -2,8 +2,8 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_counterweight_sheave_puzzle_2",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "That seemed to do the trick!",
             "endOfScene": true
         }
     ]

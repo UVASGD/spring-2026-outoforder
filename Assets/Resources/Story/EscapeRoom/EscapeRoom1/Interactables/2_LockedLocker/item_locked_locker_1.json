@@ -2,18 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_locked_locker_1"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "This one looks pretty securely locked."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "I wonder what's inside.",
             "endOfScene": true
         }
     ]

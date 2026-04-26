@@ -2,18 +2,33 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
+            "speakerSprite": "HeadshotVirgoCurious",
             "dialogue": "A diary? Who the hell is Caesar?"
         },
         {
             "character": "ASTA",
             "speakerSprite": "HeadshotAstaConfident",
-            "dialogue": "lore dump caesar big boss"
+            "dialogue": "Ah! Caesar is the creator of this facility."
         },
         {
             "character": "ASTA",
             "speakerSprite": "HeadshotAstaConfident",
-            "dialogue": "Do you think anything around here could help us find the shift value?",
+            "dialogue": "He founded the Omni-Ontological-Organization to further advance the integration of technology and mankind."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaStern",
+            "dialogue": "But now, he has withdrawn from the facility. I suppose he concluded his work was complete and that his service units could sustian the facility from now on."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "I suppose he also had some strange fascination with puzzles as well... as evidenced by the layout of all these rooms."
+        },
+        {
+            "character": "Virgo",
+            "speakerSprite": "HeadshotVirgoFrustrated",
+            "dialogue": "Lucky for us, I guess...",
             "endOfScene": true
         }
     ]

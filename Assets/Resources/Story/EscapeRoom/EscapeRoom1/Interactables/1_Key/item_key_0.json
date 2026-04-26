@@ -2,18 +2,13 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_key_0"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "It's a key."
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "I should try using this on the lift.",
             "endOfScene": true
         }
     ]

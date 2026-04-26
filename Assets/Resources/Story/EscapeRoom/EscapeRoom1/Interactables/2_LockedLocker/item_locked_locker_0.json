@@ -2,18 +2,18 @@
     "dialogues": [
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_locked_locker_0"
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "This locker's got a pretty major lock on it."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "Yes. Perhaps it contains something important?"
         },
         {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "How convenient."
-        },
-        {
-            "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "I should take a closer look.",
+            "speakerSprite": "HeadshotVirgoDetermined",
+            "dialogue": "Let's try to get it open and find out.",
             "endOfScene": true
         }
     ]

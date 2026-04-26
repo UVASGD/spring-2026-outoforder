@@ -1,9 +1,19 @@
 {
     "dialogues": [
         {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "Still locked, Virgo?"
+        },
+        {
             "character": "Virgo",
-            "speakerSprite": "VirgoEyes",
-            "dialogue": "item_locked_locker_puzzle_1",
+            "speakerSprite": "HeadshotVirgoFrustrated",
+            "dialogue": "Yeah... I'm trying to figure out what this code could be."
+        },
+        {
+            "character": "ASTA",
+            "speakerSprite": "HeadshotAstaCurious",
+            "dialogue": "Is there anything around that might help us?",
             "endOfScene": true
         }
     ]
